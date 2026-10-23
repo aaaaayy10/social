@@ -1,0 +1,14 @@
+.tools/
+.npm-cache/
+.template-import/
+.claude/
+.next/
+node_modules/
+.admin-login.local.txt
+.env.local
+.env.*.local
+*.zip
+*.tsbuildinfo
+INSTALL-STATUS.md
+start-local.cmd
+node-runtime.zip

@@ -1,0 +1,411 @@
+{
+  "asOf": "2026-10-22",
+  "source": "26.10.22. 수강신청프로그램현황.pdf",
+  "programs": [
+    {
+      "id": "course-1",
+      "name": "난타 초급",
+      "capacity": 31,
+      "waiting": 0,
+      "applications": 31,
+      "paid": 28,
+      "refunds": 2
+    },
+    {
+      "id": "course-2",
+      "name": "건강체조",
+      "capacity": 60,
+      "waiting": 50,
+      "applications": 60,
+      "paid": 59,
+      "refunds": 3
+    },
+    {
+      "id": "course-3",
+      "name": "필라테스 1",
+      "capacity": 50,
+      "waiting": null,
+      "applications": 42,
+      "paid": 42,
+      "refunds": 4
+    },
+    {
+      "id": "course-4",
+      "name": "필라테스 2",
+      "capacity": 50,
+      "waiting": 7,
+      "applications": 50,
+      "paid": 49,
+      "refunds": 6
+    },
+    {
+      "id": "course-5",
+      "name": "요가 1",
+      "capacity": 50,
+      "waiting": 0,
+      "applications": 48,
+      "paid": 48,
+      "refunds": 5
+    },
+    {
+      "id": "course-6",
+      "name": "요가 2",
+      "capacity": 50,
+      "waiting": 6,
+      "applications": 50,
+      "paid": 49,
+      "refunds": 2
+    },
+    {
+      "id": "course-7",
+      "name": "댄스스포츠",
+      "capacity": 50,
+      "waiting": null,
+      "applications": 19,
+      "paid": 19,
+      "refunds": 3
+    },
+    {
+      "id": "course-8",
+      "name": "라인댄스 1",
+      "capacity": 60,
+      "waiting": 5,
+      "applications": 60,
+      "paid": 60,
+      "refunds": 14
+    },
+    {
+      "id": "course-9",
+      "name": "라인댄스 2",
+      "capacity": 60,
+      "waiting": 0,
+      "applications": 53,
+      "paid": 53,
+      "refunds": 4
+    },
+    {
+      "id": "course-10",
+      "name": "힐링노래교실",
+      "capacity": 80,
+      "waiting": 0,
+      "applications": 73,
+      "paid": 73,
+      "refunds": 9
+    },
+    {
+      "id": "course-11",
+      "name": "오카리나 초급",
+      "capacity": 40,
+      "waiting": null,
+      "applications": 25,
+      "paid": 25,
+      "refunds": 1
+    },
+    {
+      "id": "course-12",
+      "name": "오카리나 중급",
+      "capacity": 40,
+      "waiting": null,
+      "applications": 25,
+      "paid": 25,
+      "refunds": null
+    },
+    {
+      "id": "course-13",
+      "name": "오카리나 고급",
+      "capacity": 40,
+      "waiting": null,
+      "applications": 39,
+      "paid": 39,
+      "refunds": null
+    },
+    {
+      "id": "course-14",
+      "name": "생활체조",
+      "capacity": 60,
+      "waiting": 74,
+      "applications": 60,
+      "paid": 56,
+      "refunds": 29
+    },
+    {
+      "id": "course-15",
+      "name": "기타 초중급",
+      "capacity": 40,
+      "waiting": null,
+      "applications": 26,
+      "paid": 26,
+      "refunds": 2
+    },
+    {
+      "id": "course-16",
+      "name": "기타 고급",
+      "capacity": 40,
+      "waiting": null,
+      "applications": 38,
+      "paid": 38,
+      "refunds": null
+    },
+    {
+      "id": "course-17",
+      "name": "하모니카 초급",
+      "capacity": 25,
+      "waiting": 7,
+      "applications": 25,
+      "paid": 24,
+      "refunds": 3
+    },
+    {
+      "id": "course-18",
+      "name": "신빠람 사물 초급",
+      "capacity": 25,
+      "waiting": null,
+      "applications": 13,
+      "paid": 13,
+      "refunds": null
+    },
+    {
+      "id": "course-19",
+      "name": "신빠람 사물 중급",
+      "capacity": 25,
+      "waiting": 0,
+      "applications": 25,
+      "paid": 25,
+      "refunds": null
+    },
+    {
+      "id": "course-20",
+      "name": "난타 중급",
+      "capacity": 35,
+      "waiting": 2,
+      "applications": 35,
+      "paid": 34,
+      "refunds": 3
+    },
+    {
+      "id": "course-21",
+      "name": "캘리그라피 초급",
+      "capacity": 14,
+      "waiting": 0,
+      "applications": 12,
+      "paid": 12,
+      "refunds": 4
+    },
+    {
+      "id": "course-22",
+      "name": "동양화",
+      "capacity": 14,
+      "waiting": null,
+      "applications": 12,
+      "paid": 12,
+      "refunds": 1
+    },
+    {
+      "id": "course-23",
+      "name": "서예",
+      "capacity": 14,
+      "waiting": 0,
+      "applications": 12,
+      "paid": 12,
+      "refunds": 2
+    },
+    {
+      "id": "course-24",
+      "name": "힐링수채화",
+      "capacity": 14,
+      "waiting": 10,
+      "applications": 14,
+      "paid": 14,
+      "refunds": null
+    },
+    {
+      "id": "course-25",
+      "name": "에어로빅",
+      "capacity": 60,
+      "waiting": 29,
+      "applications": 60,
+      "paid": 59,
+      "refunds": 5
+    },
+    {
+      "id": "course-26",
+      "name": "연필인물화 초급",
+      "capacity": 15,
+      "waiting": 0,
+      "applications": 13,
+      "paid": 13,
+      "refunds": 1
+    },
+    {
+      "id": "course-27",
+      "name": "민화 1",
+      "capacity": 14,
+      "waiting": null,
+      "applications": 10,
+      "paid": 10,
+      "refunds": 1
+    },
+    {
+      "id": "course-28",
+      "name": "실용영어",
+      "capacity": 25,
+      "waiting": 0,
+      "applications": 18,
+      "paid": 18,
+      "refunds": 7
+    },
+    {
+      "id": "course-29",
+      "name": "일본어 초급",
+      "capacity": 21,
+      "waiting": 10,
+      "applications": 21,
+      "paid": 21,
+      "refunds": 1
+    },
+    {
+      "id": "course-30",
+      "name": "한자 초급",
+      "capacity": 20,
+      "waiting": null,
+      "applications": 11,
+      "paid": 11,
+      "refunds": 1
+    },
+    {
+      "id": "course-31",
+      "name": "한문(논어)",
+      "capacity": 20,
+      "waiting": null,
+      "applications": 14,
+      "paid": 13,
+      "refunds": null
+    },
+    {
+      "id": "course-32",
+      "name": "컴퓨터 초급",
+      "capacity": 20,
+      "waiting": 3,
+      "applications": 20,
+      "paid": 19,
+      "refunds": 1
+    },
+    {
+      "id": "course-33",
+      "name": "스마트폰 중급",
+      "capacity": 20,
+      "waiting": 0,
+      "applications": 20,
+      "paid": 19,
+      "refunds": 3
+    },
+    {
+      "id": "course-34",
+      "name": "스마트폰 초급",
+      "capacity": 20,
+      "waiting": 39,
+      "applications": 20,
+      "paid": 19,
+      "refunds": 1
+    },
+    {
+      "id": "course-35",
+      "name": "컴퓨터 활용",
+      "capacity": 20,
+      "waiting": 3,
+      "applications": 20,
+      "paid": 19,
+      "refunds": 1
+    },
+    {
+      "id": "course-36",
+      "name": "풀잎합창단",
+      "capacity": 40,
+      "waiting": null,
+      "applications": 40,
+      "paid": 40,
+      "refunds": 1
+    },
+    {
+      "id": "course-37",
+      "name": "하모니카 중급",
+      "capacity": 30,
+      "waiting": null,
+      "applications": 26,
+      "paid": 26,
+      "refunds": 4
+    },
+    {
+      "id": "course-38",
+      "name": "민화 2",
+      "capacity": 14,
+      "waiting": null,
+      "applications": 7,
+      "paid": 7,
+      "refunds": 1
+    },
+    {
+      "id": "course-39",
+      "name": "연필인물화 중급",
+      "capacity": 15,
+      "waiting": 2,
+      "applications": 15,
+      "paid": 15,
+      "refunds": 1
+    },
+    {
+      "id": "course-40",
+      "name": "캘리그라피 중급",
+      "capacity": 14,
+      "waiting": null,
+      "applications": 10,
+      "paid": 10,
+      "refunds": null
+    },
+    {
+      "id": "course-41",
+      "name": "우쿨렐레",
+      "capacity": 30,
+      "waiting": null,
+      "applications": 21,
+      "paid": 21,
+      "refunds": null
+    },
+    {
+      "id": "course-42",
+      "name": "건강100세 운동교실",
+      "capacity": 80,
+      "waiting": 45,
+      "applications": 80,
+      "paid": 80,
+      "refunds": 1
+    },
+    {
+      "id": "course-43",
+      "name": "가락장구",
+      "capacity": 30,
+      "waiting": 2,
+      "applications": 30,
+      "paid": 29,
+      "refunds": 2
+    },
+    {
+      "id": "course-44",
+      "name": "숟가락 난타",
+      "capacity": 40,
+      "waiting": null,
+      "applications": 14,
+      "paid": 14,
+      "refunds": 3
+    },
+    {
+      "id": "course-45",
+      "name": "금빛스케치",
+      "capacity": 14,
+      "waiting": 5,
+      "applications": 14,
+      "paid": 14,
+      "refunds": 2
+    }
+  ]
+}

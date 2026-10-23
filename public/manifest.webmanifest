@@ -1,0 +1,13 @@
+{
+  "name": "노년사회화교육사업",
+  "short_name": "노년사회화교육사업",
+  "description": "노년사회화교육사업 - 내부 운영 대시보드",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#dde7f5",
+  "theme_color": "#dde7f5",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/apple-icon.svg", "sizes": "180x180", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

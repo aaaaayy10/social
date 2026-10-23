@@ -1,0 +1,23 @@
+{
+  "source": "사용자가 제공한 노년사회화교육 프로그램 이용 현황표",
+  "ageGroups": ["10세 이하", "11~20세", "21~64세", "65~67세", "68~69세", "70~72세", "73~74세", "75세 이상"],
+  "programs": [
+    {"name":"건강체조","usage":[10.2,0.5,9.6],"total":2062,"male":111,"female":1951,"ages":[[null,null],[null,null],[null,33],[null,163],[12,121],[41,274],[null,153],[58,1207]]},
+    {"name":"필라테스 1","usage":[7.4,0.6,6.8],"total":1489,"male":117,"female":1372,"ages":[[null,null],[null,null],[null,88],[null,134],[null,173],[null,88],[26,162],[91,727]]},
+    {"name":"필라테스 2","usage":[7.8,1.0,6.9],"total":1585,"male":198,"female":1387,"ages":[[null,null],[null,null],[null,77],[null,169],[11,143],[75,210],[27,196],[85,592]]},
+    {"name":"요가 1","usage":[7.3,0.5,6.9],"total":1486,"male":97,"female":1389,"ages":[[null,null],[null,null],[null,null],[null,134],[13,107],[11,125],[null,150],[73,873]]},
+    {"name":"요가 2","usage":[7.5,1.2,6.4],"total":1522,"male":237,"female":1285,"ages":[[null,null],[null,null],[1,27],[null,125],[40,215],[52,263],[20,210],[124,445]]},
+    {"name":"라인댄스 1","usage":[10.4,1.0,9.5],"total":2106,"male":193,"female":1913,"ages":[[null,null],[null,null],[null,69],[null,199],[null,314],[36,355],[43,415],[114,561]]},
+    {"name":"라인댄스 2","usage":[6.2,0.7,5.5],"total":1245,"male":136,"female":1109,"ages":[[null,null],[null,null],[null,13],[null,27],[null,14],[null,143],[36,167],[100,745]]},
+    {"name":"힐링노래교실","usage":[6.3,1.1,5.3],"total":1282,"male":215,"female":1067,"ages":[[null,null],[null,null],[6,29],[13,128],[30,125],[27,176],[24,127],[115,482]]},
+    {"name":"생활체조","usage":[8.5,1.2,7.3],"total":1721,"male":240,"female":1481,"ages":[[null,null],[null,null],[19,24],[null,101],[14,164],[null,368],[43,177],[164,647]]},
+    {"name":"하모니카 초급","usage":[0.0,0.0,0.0],"total":4,"male":null,"female":4,"ages":[[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,4]]},
+    {"name":"에어로빅","usage":[11.0,0.2,10.8],"total":2228,"male":35,"female":2193,"ages":[[null,null],[null,null],[null,45],[null,172],[null,133],[null,305],[null,282],[35,1256]]},
+    {"name":"컴퓨터 초급","usage":[0.0,0.0,0.0],"total":3,"male":3,"female":null,"ages":[[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[3,null]]},
+    {"name":"스마트폰 중급","usage":[0.0,0.0,0.0],"total":4,"male":4,"female":null,"ages":[[null,null],[null,null],[null,null],[null,null],[4,null],[null,null],[null,null],[null,null]]},
+    {"name":"스마트폰 초급","usage":[0.2,0.1,0.2],"total":48,"male":12,"female":36,"ages":[[null,null],[null,null],[null,null],[6,4],[null,3],[2,10],[null,15],[4,4]]},
+    {"name":"컴퓨터 활용","usage":[0.2,0.1,0.1],"total":36,"male":16,"female":20,"ages":[[null,null],[null,null],[null,4],[3,3],[1,10],[null,null],[null,null],[12,3]]},
+    {"name":"건강100세 운동교실","usage":[16.8,1.5,15.3],"total":3399,"male":309,"female":3090,"ages":[[null,null],[null,null],[null,46],[null,252],[42,114],[null,517],[null,240],[267,1921]]}
+  ],
+  "sourceTotals": {"total":20220,"male":1923,"female":18297,"usage":[100.0,9.5,90.5],"ages":[[0,0],[0,0],[26,455],[22,1611],[167,1636],[244,2834],[219,2294],[1245,9467]]}
+}
