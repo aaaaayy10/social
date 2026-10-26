@@ -1,0 +1,4562 @@
+{
+  "source": "통합 문서1.pdf",
+  "pages": 144,
+  "asOf": "2026-10-23",
+  "ageGroups": [
+    "64세 이하",
+    "65~69세",
+    "70~74세",
+    "75~79세",
+    "80~84세",
+    "85세 이상"
+  ],
+  "total": {
+    "records": 3078,
+    "registrants": 1038,
+    "ageKnown": 1036,
+    "ageUnknown": 2,
+    "paidCount": 2246,
+    "zeroCount": 832,
+    "refundEntries": 431,
+    "refundCount": 244,
+    "zeroRefundCount": 187,
+    "amount": 99254000,
+    "refund": 10259800,
+    "net": 88994200,
+    "averageAge": 73,
+    "minAge": 58,
+    "maxAge": 91,
+    "ageCounts": [
+      70,
+      262,
+      299,
+      243,
+      125,
+      37
+    ],
+    "categories": {
+      "일반": 905,
+      "수급자": 116,
+      "장애인(1-3등급)": 3,
+      "수급자(유료)": 5,
+      "타기관중복(식당)": 5,
+      "차상위": 4
+    },
+    "receiptCategories": {
+      "일반": 2591,
+      "수급자": 396,
+      "수급자(유료)": 55,
+      "장애인(1-3등급)": 9,
+      "타기관중복(식당)": 18,
+      "차상위": 6,
+      "선택안함": 3
+    },
+    "months": [
+      {
+        "month": "2026-01",
+        "records": 1052,
+        "paidCount": 839,
+        "amount": 44827500,
+        "refundEntries": 197,
+        "refundCount": 116,
+        "refund": 5592400
+      },
+      {
+        "month": "2026-02",
+        "records": 387,
+        "paidCount": 216,
+        "amount": 11821500,
+        "refundEntries": 65,
+        "refundCount": 28,
+        "refund": 1149000
+      },
+      {
+        "month": "2026-03",
+        "records": 114,
+        "paidCount": 69,
+        "amount": 2787000,
+        "refundEntries": 24,
+        "refundCount": 13,
+        "refund": 456400
+      },
+      {
+        "month": "2026-04",
+        "records": 39,
+        "paidCount": 19,
+        "amount": 588000,
+        "refundEntries": 6,
+        "refundCount": 2,
+        "refund": 60000
+      },
+      {
+        "month": "2026-05",
+        "records": 54,
+        "paidCount": 20,
+        "amount": 551000,
+        "refundEntries": 5,
+        "refundCount": 2,
+        "refund": 43200
+      },
+      {
+        "month": "2026-06",
+        "records": 19,
+        "paidCount": 18,
+        "amount": 311000,
+        "refundEntries": 1,
+        "refundCount": 0,
+        "refund": 0
+      },
+      {
+        "month": "2026-07",
+        "records": 78,
+        "paidCount": 0,
+        "amount": 0,
+        "refundEntries": 2,
+        "refundCount": 0,
+        "refund": 0
+      },
+      {
+        "month": "2026-08",
+        "records": 437,
+        "paidCount": 286,
+        "amount": 9820000,
+        "refundEntries": 43,
+        "refundCount": 26,
+        "refund": 946000
+      },
+      {
+        "month": "2026-09",
+        "records": 857,
+        "paidCount": 756,
+        "amount": 27985000,
+        "refundEntries": 84,
+        "refundCount": 57,
+        "refund": 2012800
+      },
+      {
+        "month": "2026-10",
+        "records": 41,
+        "paidCount": 23,
+        "amount": 563000,
+        "refundEntries": 4,
+        "refundCount": 0,
+        "refund": 0
+      }
+    ],
+    "firstDate": "2026-01-26",
+    "lastDate": "2026-10-23"
+  },
+  "programs": [
+    {
+      "id": "detail-1",
+      "name": "가락장구",
+      "records": 63,
+      "registrants": 47,
+      "ageKnown": 47,
+      "ageUnknown": 0,
+      "paidCount": 51,
+      "zeroCount": 12,
+      "refundEntries": 12,
+      "refundCount": 9,
+      "zeroRefundCount": 3,
+      "amount": 2462000,
+      "refund": 344700,
+      "net": 2117300,
+      "averageAge": 72.3,
+      "minAge": 61,
+      "maxAge": 87,
+      "ageCounts": [
+        1,
+        13,
+        23,
+        6,
+        3,
+        1
+      ],
+      "categories": {
+        "수급자": 9,
+        "일반": 37,
+        "타기관중복(식당)": 1
+      },
+      "receiptCategories": {
+        "수급자": 8,
+        "일반": 52,
+        "수급자(유료)": 2,
+        "타기관중복(식당)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 25,
+          "paidCount": 21,
+          "amount": 1260000,
+          "refundEntries": 8,
+          "refundCount": 6,
+          "refund": 258200
+        },
+        {
+          "month": "2026-02",
+          "records": 3,
+          "paidCount": 2,
+          "amount": 109000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 3,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 33000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 30000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 26600
+        },
+        {
+          "month": "2026-08",
+          "records": 9,
+          "paidCount": 6,
+          "amount": 240000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 20,
+          "paidCount": 19,
+          "amount": 760000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 59900
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 30000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-02"
+    },
+    {
+      "id": "detail-2",
+      "name": "건강100세 운동교실",
+      "records": 165,
+      "registrants": 87,
+      "ageKnown": 87,
+      "ageUnknown": 0,
+      "paidCount": 0,
+      "zeroCount": 165,
+      "refundEntries": 10,
+      "refundCount": 0,
+      "zeroRefundCount": 10,
+      "amount": 0,
+      "refund": 0,
+      "net": 0,
+      "averageAge": 75.9,
+      "minAge": 61,
+      "maxAge": 89,
+      "ageCounts": [
+        2,
+        13,
+        22,
+        21,
+        23,
+        6
+      ],
+      "categories": {
+        "일반": 73,
+        "수급자": 13,
+        "장애인(1-3등급)": 1
+      },
+      "receiptCategories": {
+        "일반": 139,
+        "수급자": 20,
+        "장애인(1-3등급)": 2,
+        "수급자(유료)": 4
+      },
+      "months": [
+        {
+          "month": "2026-02",
+          "records": 78,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 8,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 4,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 3,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-07",
+          "records": 78,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 2,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 2,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-02-10",
+      "lastDate": "2026-09-23"
+    },
+    {
+      "id": "detail-3",
+      "name": "건강체조",
+      "records": 149,
+      "registrants": 114,
+      "ageKnown": 114,
+      "ageUnknown": 0,
+      "paidCount": 107,
+      "zeroCount": 42,
+      "refundEntries": 21,
+      "refundCount": 18,
+      "zeroRefundCount": 3,
+      "amount": 5209000,
+      "refund": 726100,
+      "net": 4482900,
+      "averageAge": 75,
+      "minAge": 63,
+      "maxAge": 88,
+      "ageCounts": [
+        2,
+        24,
+        31,
+        27,
+        21,
+        9
+      ],
+      "categories": {
+        "일반": 80,
+        "수급자": 33,
+        "장애인(1-3등급)": 1
+      },
+      "receiptCategories": {
+        "일반": 107,
+        "수급자": 41,
+        "장애인(1-3등급)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 40,
+          "paidCount": 25,
+          "amount": 1500000,
+          "refundEntries": 13,
+          "refundCount": 10,
+          "refund": 459600
+        },
+        {
+          "month": "2026-02",
+          "records": 36,
+          "paidCount": 30,
+          "amount": 1680000,
+          "refundEntries": 3,
+          "refundCount": 3,
+          "refund": 126600
+        },
+        {
+          "month": "2026-03",
+          "records": 9,
+          "paidCount": 8,
+          "amount": 377000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 46600
+        },
+        {
+          "month": "2026-04",
+          "records": 2,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 3,
+          "paidCount": 2,
+          "amount": 57000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 37000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 15,
+          "paidCount": 8,
+          "amount": 320000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 39,
+          "paidCount": 30,
+          "amount": 1189000,
+          "refundEntries": 3,
+          "refundCount": 3,
+          "refund": 93300
+        },
+        {
+          "month": "2026-10",
+          "records": 3,
+          "paidCount": 2,
+          "amount": 49000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-22"
+    },
+    {
+      "id": "detail-4",
+      "name": "금빛스케치",
+      "records": 32,
+      "registrants": 23,
+      "ageKnown": 23,
+      "ageUnknown": 0,
+      "paidCount": 29,
+      "zeroCount": 3,
+      "refundEntries": 4,
+      "refundCount": 3,
+      "zeroRefundCount": 1,
+      "amount": 1382000,
+      "refund": 103300,
+      "net": 1278700,
+      "averageAge": 73.2,
+      "minAge": 63,
+      "maxAge": 82,
+      "ageCounts": [
+        1,
+        5,
+        7,
+        6,
+        4,
+        0
+      ],
+      "categories": {
+        "일반": 21,
+        "수급자": 2
+      },
+      "receiptCategories": {
+        "일반": 29,
+        "수급자": 2,
+        "수급자(유료)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 12,
+          "paidCount": 10,
+          "amount": 600000,
+          "refundEntries": 2,
+          "refundCount": 1,
+          "refund": 30000
+        },
+        {
+          "month": "2026-02",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 116000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 46000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 27000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 6,
+          "paidCount": 5,
+          "amount": 200000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 40000
+        },
+        {
+          "month": "2026-09",
+          "records": 10,
+          "paidCount": 10,
+          "amount": 393000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 33300
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-22"
+    },
+    {
+      "id": "detail-5",
+      "name": "기타 고급",
+      "records": 70,
+      "registrants": 40,
+      "ageKnown": 40,
+      "ageUnknown": 0,
+      "paidCount": 69,
+      "zeroCount": 1,
+      "refundEntries": 0,
+      "refundCount": 0,
+      "zeroRefundCount": 0,
+      "amount": 4290000,
+      "refund": 0,
+      "net": 4290000,
+      "averageAge": 71.8,
+      "minAge": 60,
+      "maxAge": 81,
+      "ageCounts": [
+        2,
+        10,
+        16,
+        9,
+        3,
+        0
+      ],
+      "categories": {
+        "일반": 39,
+        "수급자": 1
+      },
+      "receiptCategories": {
+        "일반": 69,
+        "수급자(유료)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 31,
+          "paidCount": 30,
+          "amount": 2700000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 85000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 45000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 30000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 11,
+          "paidCount": 11,
+          "amount": 440000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 24,
+          "paidCount": 24,
+          "amount": 960000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 30000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-01"
+    },
+    {
+      "id": "detail-6",
+      "name": "기타 초중급",
+      "records": 53,
+      "registrants": 40,
+      "ageKnown": 40,
+      "ageUnknown": 0,
+      "paidCount": 39,
+      "zeroCount": 14,
+      "refundEntries": 7,
+      "refundCount": 3,
+      "zeroRefundCount": 4,
+      "amount": 2415000,
+      "refund": 163300,
+      "net": 2251700,
+      "averageAge": 69.6,
+      "minAge": 60,
+      "maxAge": 82,
+      "ageCounts": [
+        6,
+        15,
+        11,
+        7,
+        1,
+        0
+      ],
+      "categories": {
+        "수급자": 9,
+        "일반": 30,
+        "수급자(유료)": 1
+      },
+      "receiptCategories": {
+        "수급자": 12,
+        "일반": 39,
+        "수급자(유료)": 2
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 18,
+          "paidCount": 11,
+          "amount": 990000,
+          "refundEntries": 5,
+          "refundCount": 2,
+          "refund": 130000
+        },
+        {
+          "month": "2026-02",
+          "records": 6,
+          "paidCount": 6,
+          "amount": 530000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 55000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 13,
+          "paidCount": 7,
+          "amount": 280000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 15,
+          "paidCount": 14,
+          "amount": 560000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 33300
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-30"
+    },
+    {
+      "id": "detail-7",
+      "name": "난타중급",
+      "records": 73,
+      "registrants": 44,
+      "ageKnown": 44,
+      "ageUnknown": 0,
+      "paidCount": 67,
+      "zeroCount": 6,
+      "refundEntries": 7,
+      "refundCount": 6,
+      "zeroRefundCount": 1,
+      "amount": 3301000,
+      "refund": 229800,
+      "net": 3071200,
+      "averageAge": 70.4,
+      "minAge": 60,
+      "maxAge": 80,
+      "ageCounts": [
+        4,
+        14,
+        19,
+        6,
+        1,
+        0
+      ],
+      "categories": {
+        "일반": 40,
+        "수급자": 3,
+        "타기관중복(식당)": 1
+      },
+      "receiptCategories": {
+        "일반": 67,
+        "수급자": 5,
+        "수급자(유료)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 27,
+          "paidCount": 25,
+          "amount": 1500000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 90000
+        },
+        {
+          "month": "2026-02",
+          "records": 8,
+          "paidCount": 7,
+          "amount": 402000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 73200
+        },
+        {
+          "month": "2026-03",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 50000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 40000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 9,
+          "paidCount": 7,
+          "amount": 280000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 27,
+          "paidCount": 26,
+          "amount": 1029000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 66600
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-22"
+    },
+    {
+      "id": "detail-8",
+      "name": "난타초급",
+      "records": 60,
+      "registrants": 50,
+      "ageKnown": 49,
+      "ageUnknown": 1,
+      "paidCount": 53,
+      "zeroCount": 7,
+      "refundEntries": 6,
+      "refundCount": 0,
+      "zeroRefundCount": 6,
+      "amount": 530000,
+      "refund": 0,
+      "net": 530000,
+      "averageAge": 69.3,
+      "minAge": 60,
+      "maxAge": 83,
+      "ageCounts": [
+        6,
+        22,
+        13,
+        7,
+        1,
+        0
+      ],
+      "categories": {
+        "일반": 44,
+        "타기관중복(식당)": 2,
+        "수급자": 4
+      },
+      "receiptCategories": {
+        "일반": 53,
+        "수급자(유료)": 3,
+        "수급자": 3,
+        "타기관중복(식당)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 18,
+          "paidCount": 16,
+          "amount": 160000,
+          "refundEntries": 2,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 5,
+          "paidCount": 4,
+          "amount": 40000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 4,
+          "paidCount": 3,
+          "amount": 30000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 3,
+          "paidCount": 3,
+          "amount": 30000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 14,
+          "paidCount": 12,
+          "amount": 120000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 15,
+          "paidCount": 14,
+          "amount": 140000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-23"
+    },
+    {
+      "id": "detail-9",
+      "name": "댄스스포츠",
+      "records": 51,
+      "registrants": 36,
+      "ageKnown": 35,
+      "ageUnknown": 1,
+      "paidCount": 43,
+      "zeroCount": 8,
+      "refundEntries": 10,
+      "refundCount": 8,
+      "zeroRefundCount": 2,
+      "amount": 2072000,
+      "refund": 363100,
+      "net": 1708900,
+      "averageAge": 74.4,
+      "minAge": 60,
+      "maxAge": 86,
+      "ageCounts": [
+        1,
+        5,
+        12,
+        9,
+        6,
+        2
+      ],
+      "categories": {
+        "일반": 29,
+        "수급자": 5,
+        "타기관중복(식당)": 2
+      },
+      "receiptCategories": {
+        "일반": 43,
+        "수급자": 3,
+        "수급자(유료)": 3,
+        "타기관중복(식당)": 2
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 24,
+          "paidCount": 18,
+          "amount": 1080000,
+          "refundEntries": 7,
+          "refundCount": 5,
+          "refund": 253200
+        },
+        {
+          "month": "2026-02",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 109000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 3,
+          "paidCount": 2,
+          "amount": 54000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 8,
+          "paidCount": 7,
+          "amount": 280000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 73300
+        },
+        {
+          "month": "2026-09",
+          "records": 14,
+          "paidCount": 14,
+          "amount": 549000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 36600
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-23"
+    },
+    {
+      "id": "detail-10",
+      "name": "동양화",
+      "records": 26,
+      "registrants": 15,
+      "ageKnown": 15,
+      "ageUnknown": 0,
+      "paidCount": 23,
+      "zeroCount": 3,
+      "refundEntries": 1,
+      "refundCount": 0,
+      "zeroRefundCount": 1,
+      "amount": 230000,
+      "refund": 0,
+      "net": 230000,
+      "averageAge": 78.7,
+      "minAge": 66,
+      "maxAge": 88,
+      "ageCounts": [
+        0,
+        2,
+        1,
+        4,
+        5,
+        3
+      ],
+      "categories": {
+        "일반": 13,
+        "수급자": 1,
+        "타기관중복(식당)": 1
+      },
+      "receiptCategories": {
+        "일반": 23,
+        "수급자": 1,
+        "수급자(유료)": 1,
+        "타기관중복(식당)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 11,
+          "paidCount": 10,
+          "amount": 100000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 4,
+          "paidCount": 2,
+          "amount": 20000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 9,
+          "paidCount": 9,
+          "amount": 90000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-23"
+    },
+    {
+      "id": "detail-11",
+      "name": "라인댄스 1",
+      "records": 145,
+      "registrants": 97,
+      "ageKnown": 97,
+      "ageUnknown": 0,
+      "paidCount": 134,
+      "zeroCount": 11,
+      "refundEntries": 29,
+      "refundCount": 27,
+      "zeroRefundCount": 2,
+      "amount": 6419000,
+      "refund": 1024300,
+      "net": 5394700,
+      "averageAge": 72.8,
+      "minAge": 60,
+      "maxAge": 84,
+      "ageCounts": [
+        3,
+        24,
+        36,
+        26,
+        8,
+        0
+      ],
+      "categories": {
+        "일반": 88,
+        "수급자": 8,
+        "타기관중복(식당)": 1
+      },
+      "receiptCategories": {
+        "일반": 135,
+        "수급자": 9,
+        "수급자(유료)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 41,
+          "paidCount": 37,
+          "amount": 2220000,
+          "refundEntries": 10,
+          "refundCount": 9,
+          "refund": 409800
+        },
+        {
+          "month": "2026-02",
+          "records": 24,
+          "paidCount": 22,
+          "amount": 1259000,
+          "refundEntries": 2,
+          "refundCount": 1,
+          "refund": 15000
+        },
+        {
+          "month": "2026-03",
+          "records": 6,
+          "paidCount": 6,
+          "amount": 296000,
+          "refundEntries": 3,
+          "refundCount": 3,
+          "refund": 120000
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 33000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 27000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 16,
+          "paidCount": 13,
+          "amount": 520000,
+          "refundEntries": 3,
+          "refundCount": 3,
+          "refund": 106600
+        },
+        {
+          "month": "2026-09",
+          "records": 52,
+          "paidCount": 50,
+          "amount": 1956000,
+          "refundEntries": 11,
+          "refundCount": 11,
+          "refund": 372900
+        },
+        {
+          "month": "2026-10",
+          "records": 4,
+          "paidCount": 4,
+          "amount": 108000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-13"
+    },
+    {
+      "id": "detail-12",
+      "name": "라인댄스 2",
+      "records": 109,
+      "registrants": 69,
+      "ageKnown": 69,
+      "ageUnknown": 0,
+      "paidCount": 102,
+      "zeroCount": 7,
+      "refundEntries": 11,
+      "refundCount": 9,
+      "zeroRefundCount": 2,
+      "amount": 4965000,
+      "refund": 373100,
+      "net": 4591900,
+      "averageAge": 75.3,
+      "minAge": 63,
+      "maxAge": 86,
+      "ageCounts": [
+        1,
+        9,
+        22,
+        20,
+        15,
+        2
+      ],
+      "categories": {
+        "일반": 63,
+        "장애인(1-3등급)": 1,
+        "수급자": 5
+      },
+      "receiptCategories": {
+        "일반": 100,
+        "장애인(1-3등급)": 2,
+        "수급자": 6,
+        "수급자(유료)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 38,
+          "paidCount": 35,
+          "amount": 2100000,
+          "refundEntries": 4,
+          "refundCount": 3,
+          "refund": 140000
+        },
+        {
+          "month": "2026-02",
+          "records": 12,
+          "paidCount": 10,
+          "amount": 592000,
+          "refundEntries": 3,
+          "refundCount": 2,
+          "refund": 86600
+        },
+        {
+          "month": "2026-03",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 96000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 17000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 9,
+          "paidCount": 8,
+          "amount": 320000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 73300
+        },
+        {
+          "month": "2026-09",
+          "records": 47,
+          "paidCount": 46,
+          "amount": 1840000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 73200
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-09"
+    },
+    {
+      "id": "detail-13",
+      "name": "민화 1",
+      "records": 24,
+      "registrants": 17,
+      "ageKnown": 17,
+      "ageUnknown": 0,
+      "paidCount": 24,
+      "zeroCount": 0,
+      "refundEntries": 3,
+      "refundCount": 3,
+      "zeroRefundCount": 0,
+      "amount": 1189000,
+      "refund": 149900,
+      "net": 1039100,
+      "averageAge": 72.5,
+      "minAge": 65,
+      "maxAge": 86,
+      "ageCounts": [
+        0,
+        6,
+        7,
+        2,
+        1,
+        1
+      ],
+      "categories": {
+        "일반": 17
+      },
+      "receiptCategories": {
+        "일반": 24
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 11,
+          "paidCount": 11,
+          "amount": 660000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 116600
+        },
+        {
+          "month": "2026-02",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 60000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 46000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 40000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 5,
+          "paidCount": 5,
+          "amount": 200000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 33300
+        },
+        {
+          "month": "2026-09",
+          "records": 4,
+          "paidCount": 4,
+          "amount": 153000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 30000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-01"
+    },
+    {
+      "id": "detail-14",
+      "name": "민화 2",
+      "records": 17,
+      "registrants": 13,
+      "ageKnown": 13,
+      "ageUnknown": 0,
+      "paidCount": 17,
+      "zeroCount": 0,
+      "refundEntries": 5,
+      "refundCount": 5,
+      "zeroRefundCount": 0,
+      "amount": 843000,
+      "refund": 203200,
+      "net": 639800,
+      "averageAge": 71.2,
+      "minAge": 60,
+      "maxAge": 84,
+      "ageCounts": [
+        3,
+        2,
+        4,
+        2,
+        2,
+        0
+      ],
+      "categories": {
+        "일반": 13
+      },
+      "receiptCategories": {
+        "일반": 17
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 5,
+          "paidCount": 5,
+          "amount": 300000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 86600
+        },
+        {
+          "month": "2026-02",
+          "records": 3,
+          "paidCount": 3,
+          "amount": 180000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 46600
+        },
+        {
+          "month": "2026-03",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 43000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 30000
+        },
+        {
+          "month": "2026-08",
+          "records": 5,
+          "paidCount": 5,
+          "amount": 200000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 3,
+          "paidCount": 3,
+          "amount": 120000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 40000
+        }
+      ],
+      "firstDate": "2026-01-27",
+      "lastDate": "2026-09-03"
+    },
+    {
+      "id": "detail-15",
+      "name": "생활체조",
+      "records": 210,
+      "registrants": 169,
+      "ageKnown": 169,
+      "ageUnknown": 0,
+      "paidCount": 0,
+      "zeroCount": 210,
+      "refundEntries": 83,
+      "refundCount": 0,
+      "zeroRefundCount": 83,
+      "amount": 0,
+      "refund": 0,
+      "net": 0,
+      "averageAge": 74.3,
+      "minAge": 62,
+      "maxAge": 89,
+      "ageCounts": [
+        6,
+        30,
+        55,
+        46,
+        26,
+        6
+      ],
+      "categories": {
+        "일반": 151,
+        "수급자": 18
+      },
+      "receiptCategories": {
+        "일반": 188,
+        "수급자": 19,
+        "수급자(유료)": 2,
+        "선택안함": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 48,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 25,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 42,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 20,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 22,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 5,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 3,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 2,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 10,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 2,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 1,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 11,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 2,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 61,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 23,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-10",
+          "records": 12,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 3,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-22"
+    },
+    {
+      "id": "detail-16",
+      "name": "서예",
+      "records": 31,
+      "registrants": 21,
+      "ageKnown": 21,
+      "ageUnknown": 0,
+      "paidCount": 22,
+      "zeroCount": 9,
+      "refundEntries": 6,
+      "refundCount": 4,
+      "zeroRefundCount": 2,
+      "amount": 1103000,
+      "refund": 201600,
+      "net": 901400,
+      "averageAge": 75.5,
+      "minAge": 69,
+      "maxAge": 91,
+      "ageCounts": [
+        0,
+        4,
+        6,
+        7,
+        2,
+        2
+      ],
+      "categories": {
+        "일반": 14,
+        "수급자": 6,
+        "타기관중복(식당)": 1
+      },
+      "receiptCategories": {
+        "일반": 23,
+        "수급자": 7,
+        "타기관중복(식당)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 15,
+          "paidCount": 11,
+          "amount": 660000,
+          "refundEntries": 4,
+          "refundCount": 3,
+          "refund": 165000
+        },
+        {
+          "month": "2026-02",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 60000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 27000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 6,
+          "paidCount": 1,
+          "amount": 40000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 8,
+          "paidCount": 8,
+          "amount": 316000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 36600
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-15"
+    },
+    {
+      "id": "detail-17",
+      "name": "숟가락 난타",
+      "records": 51,
+      "registrants": 42,
+      "ageKnown": 42,
+      "ageUnknown": 0,
+      "paidCount": 35,
+      "zeroCount": 16,
+      "refundEntries": 7,
+      "refundCount": 5,
+      "zeroRefundCount": 2,
+      "amount": 1766000,
+      "refund": 193200,
+      "net": 1572800,
+      "averageAge": 73.1,
+      "minAge": 64,
+      "maxAge": 86,
+      "ageCounts": [
+        1,
+        11,
+        14,
+        10,
+        4,
+        2
+      ],
+      "categories": {
+        "수급자": 13,
+        "일반": 27,
+        "타기관중복(식당)": 1,
+        "수급자(유료)": 1
+      },
+      "receiptCategories": {
+        "수급자": 13,
+        "일반": 35,
+        "수급자(유료)": 3
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 24,
+          "paidCount": 16,
+          "amount": 960000,
+          "refundEntries": 2,
+          "refundCount": 1,
+          "refund": 50000
+        },
+        {
+          "month": "2026-02",
+          "records": 6,
+          "paidCount": 2,
+          "amount": 120000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 50000
+        },
+        {
+          "month": "2026-03",
+          "records": 2,
+          "paidCount": 1,
+          "amount": 46000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 2,
+          "paidCount": 1,
+          "amount": 40000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 8,
+          "paidCount": 6,
+          "amount": 240000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 26600
+        },
+        {
+          "month": "2026-09",
+          "records": 9,
+          "paidCount": 9,
+          "amount": 360000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 66600
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-04"
+    },
+    {
+      "id": "detail-18",
+      "name": "스마트폰 중급",
+      "records": 46,
+      "registrants": 45,
+      "ageKnown": 45,
+      "ageUnknown": 0,
+      "paidCount": 34,
+      "zeroCount": 12,
+      "refundEntries": 9,
+      "refundCount": 7,
+      "zeroRefundCount": 2,
+      "amount": 1688000,
+      "refund": 271500,
+      "net": 1416500,
+      "averageAge": 72.3,
+      "minAge": 61,
+      "maxAge": 86,
+      "ageCounts": [
+        5,
+        11,
+        12,
+        11,
+        5,
+        1
+      ],
+      "categories": {
+        "일반": 33,
+        "수급자": 10,
+        "타기관중복(식당)": 1,
+        "차상위": 1
+      },
+      "receiptCategories": {
+        "일반": 35,
+        "수급자": 8,
+        "수급자(유료)": 2,
+        "차상위": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 16,
+          "paidCount": 13,
+          "amount": 780000,
+          "refundEntries": 4,
+          "refundCount": 3,
+          "refund": 146600
+        },
+        {
+          "month": "2026-02",
+          "records": 3,
+          "paidCount": 3,
+          "amount": 180000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 4,
+          "paidCount": 3,
+          "amount": 146000,
+          "refundEntries": 2,
+          "refundCount": 1,
+          "refund": 35000
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 33000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 7,
+          "paidCount": 2,
+          "amount": 80000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 36600
+        },
+        {
+          "month": "2026-09",
+          "records": 14,
+          "paidCount": 12,
+          "amount": 469000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 53300
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-19"
+    },
+    {
+      "id": "detail-19",
+      "name": "스마트폰 초급",
+      "records": 47,
+      "registrants": 44,
+      "ageKnown": 44,
+      "ageUnknown": 0,
+      "paidCount": 30,
+      "zeroCount": 17,
+      "refundEntries": 5,
+      "refundCount": 1,
+      "zeroRefundCount": 4,
+      "amount": 1427000,
+      "refund": 56600,
+      "net": 1370400,
+      "averageAge": 75,
+      "minAge": 64,
+      "maxAge": 86,
+      "ageCounts": [
+        1,
+        9,
+        12,
+        11,
+        9,
+        2
+      ],
+      "categories": {
+        "일반": 29,
+        "수급자": 14,
+        "차상위": 1
+      },
+      "receiptCategories": {
+        "일반": 30,
+        "수급자": 15,
+        "차상위": 1,
+        "타기관중복(식당)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 12,
+          "paidCount": 8,
+          "amount": 480000,
+          "refundEntries": 3,
+          "refundCount": 1,
+          "refund": 56600
+        },
+        {
+          "month": "2026-02",
+          "records": 8,
+          "paidCount": 5,
+          "amount": 289000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 3,
+          "paidCount": 1,
+          "amount": 43000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 2,
+          "paidCount": 1,
+          "amount": 36000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 2,
+          "paidCount": 1,
+          "amount": 23000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 8,
+          "paidCount": 2,
+          "amount": 80000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 12,
+          "paidCount": 12,
+          "amount": 476000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-17"
+    },
+    {
+      "id": "detail-20",
+      "name": "신빠람 사물 중급",
+      "records": 49,
+      "registrants": 31,
+      "ageKnown": 31,
+      "ageUnknown": 0,
+      "paidCount": 36,
+      "zeroCount": 13,
+      "refundEntries": 1,
+      "refundCount": 0,
+      "zeroRefundCount": 1,
+      "amount": 360000,
+      "refund": 0,
+      "net": 360000,
+      "averageAge": 72.5,
+      "minAge": 63,
+      "maxAge": 87,
+      "ageCounts": [
+        1,
+        11,
+        9,
+        6,
+        3,
+        1
+      ],
+      "categories": {
+        "수급자": 8,
+        "일반": 23
+      },
+      "receiptCategories": {
+        "수급자": 13,
+        "일반": 36
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 23,
+          "paidCount": 18,
+          "amount": 180000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 12,
+          "paidCount": 6,
+          "amount": 60000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 13,
+          "paidCount": 12,
+          "amount": 120000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-07"
+    },
+    {
+      "id": "detail-21",
+      "name": "신빠람 사물 초급",
+      "records": 31,
+      "registrants": 29,
+      "ageKnown": 29,
+      "ageUnknown": 0,
+      "paidCount": 22,
+      "zeroCount": 9,
+      "refundEntries": 4,
+      "refundCount": 1,
+      "zeroRefundCount": 3,
+      "amount": 220000,
+      "refund": 10000,
+      "net": 210000,
+      "averageAge": 72.8,
+      "minAge": 61,
+      "maxAge": 86,
+      "ageCounts": [
+        1,
+        10,
+        5,
+        11,
+        1,
+        1
+      ],
+      "categories": {
+        "일반": 21,
+        "수급자": 8
+      },
+      "receiptCategories": {
+        "일반": 23,
+        "수급자": 7,
+        "수급자(유료)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 14,
+          "paidCount": 8,
+          "amount": 80000,
+          "refundEntries": 4,
+          "refundCount": 1,
+          "refund": 10000
+        },
+        {
+          "month": "2026-02",
+          "records": 3,
+          "paidCount": 2,
+          "amount": 20000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 7,
+          "paidCount": 5,
+          "amount": 50000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 5,
+          "paidCount": 5,
+          "amount": 50000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-08"
+    },
+    {
+      "id": "detail-22",
+      "name": "실용영어",
+      "records": 50,
+      "registrants": 33,
+      "ageKnown": 33,
+      "ageUnknown": 0,
+      "paidCount": 38,
+      "zeroCount": 12,
+      "refundEntries": 12,
+      "refundCount": 7,
+      "zeroRefundCount": 5,
+      "amount": 1796000,
+      "refund": 276400,
+      "net": 1519600,
+      "averageAge": 72.9,
+      "minAge": 61,
+      "maxAge": 89,
+      "ageCounts": [
+        4,
+        8,
+        8,
+        8,
+        3,
+        2
+      ],
+      "categories": {
+        "일반": 24,
+        "수급자": 8,
+        "차상위": 1
+      },
+      "receiptCategories": {
+        "일반": 38,
+        "수급자(유료)": 2,
+        "타기관중복(식당)": 2,
+        "수급자": 7,
+        "차상위": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 14,
+          "paidCount": 10,
+          "amount": 600000,
+          "refundEntries": 3,
+          "refundCount": 1,
+          "refund": 56600
+        },
+        {
+          "month": "2026-02",
+          "records": 3,
+          "paidCount": 2,
+          "amount": 120000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 8,
+          "paidCount": 6,
+          "amount": 296000,
+          "refundEntries": 2,
+          "refundCount": 1,
+          "refund": 36600
+        },
+        {
+          "month": "2026-06",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 20000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 9,
+          "paidCount": 5,
+          "amount": 200000,
+          "refundEntries": 3,
+          "refundCount": 2,
+          "refund": 76600
+        },
+        {
+          "month": "2026-09",
+          "records": 15,
+          "paidCount": 14,
+          "amount": 560000,
+          "refundEntries": 4,
+          "refundCount": 3,
+          "refund": 106600
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-07"
+    },
+    {
+      "id": "detail-23",
+      "name": "에어로빅",
+      "records": 142,
+      "registrants": 99,
+      "ageKnown": 99,
+      "ageUnknown": 0,
+      "paidCount": 127,
+      "zeroCount": 15,
+      "refundEntries": 22,
+      "refundCount": 17,
+      "zeroRefundCount": 5,
+      "amount": 6326000,
+      "refund": 683000,
+      "net": 5643000,
+      "averageAge": 75,
+      "minAge": 62,
+      "maxAge": 87,
+      "ageCounts": [
+        3,
+        18,
+        27,
+        26,
+        19,
+        6
+      ],
+      "categories": {
+        "일반": 86,
+        "수급자": 13
+      },
+      "receiptCategories": {
+        "일반": 127,
+        "수급자": 15
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 40,
+          "paidCount": 33,
+          "amount": 1980000,
+          "refundEntries": 10,
+          "refundCount": 8,
+          "refund": 344800
+        },
+        {
+          "month": "2026-02",
+          "records": 37,
+          "paidCount": 35,
+          "amount": 2010000,
+          "refundEntries": 6,
+          "refundCount": 5,
+          "refund": 211600
+        },
+        {
+          "month": "2026-03",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 89000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 20000
+        },
+        {
+          "month": "2026-08",
+          "records": 16,
+          "paidCount": 10,
+          "amount": 400000,
+          "refundEntries": 3,
+          "refundCount": 1,
+          "refund": 33300
+        },
+        {
+          "month": "2026-09",
+          "records": 46,
+          "paidCount": 46,
+          "amount": 1821000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 73300
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 26000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-15"
+    },
+    {
+      "id": "detail-24",
+      "name": "연필인물화 중급",
+      "records": 31,
+      "registrants": 23,
+      "ageKnown": 23,
+      "ageUnknown": 0,
+      "paidCount": 29,
+      "zeroCount": 2,
+      "refundEntries": 3,
+      "refundCount": 2,
+      "zeroRefundCount": 1,
+      "amount": 1406000,
+      "refund": 79900,
+      "net": 1326100,
+      "averageAge": 71.6,
+      "minAge": 61,
+      "maxAge": 82,
+      "ageCounts": [
+        1,
+        9,
+        6,
+        3,
+        4,
+        0
+      ],
+      "categories": {
+        "일반": 21,
+        "수급자": 1,
+        "타기관중복(식당)": 1
+      },
+      "receiptCategories": {
+        "일반": 29,
+        "수급자(유료)": 2
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 13,
+          "paidCount": 11,
+          "amount": 660000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 113000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 46600
+        },
+        {
+          "month": "2026-08",
+          "records": 3,
+          "paidCount": 3,
+          "amount": 120000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 33300
+        },
+        {
+          "month": "2026-09",
+          "records": 13,
+          "paidCount": 13,
+          "amount": 513000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-23"
+    },
+    {
+      "id": "detail-25",
+      "name": "연필인물화 초급",
+      "records": 29,
+      "registrants": 24,
+      "ageKnown": 24,
+      "ageUnknown": 0,
+      "paidCount": 22,
+      "zeroCount": 7,
+      "refundEntries": 2,
+      "refundCount": 1,
+      "zeroRefundCount": 1,
+      "amount": 1106000,
+      "refund": 40000,
+      "net": 1066000,
+      "averageAge": 71,
+      "minAge": 61,
+      "maxAge": 85,
+      "ageCounts": [
+        2,
+        10,
+        7,
+        2,
+        2,
+        1
+      ],
+      "categories": {
+        "일반": 20,
+        "수급자": 2,
+        "타기관중복(식당)": 2
+      },
+      "receiptCategories": {
+        "일반": 22,
+        "수급자": 4,
+        "타기관중복(식당)": 3
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 14,
+          "paidCount": 12,
+          "amount": 720000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 1,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 7,
+          "paidCount": 3,
+          "amount": 120000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 6,
+          "paidCount": 6,
+          "amount": 240000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 40000
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 26000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-12"
+    },
+    {
+      "id": "detail-26",
+      "name": "오카리나 고급",
+      "records": 76,
+      "registrants": 39,
+      "ageKnown": 39,
+      "ageUnknown": 0,
+      "paidCount": 74,
+      "zeroCount": 2,
+      "refundEntries": 2,
+      "refundCount": 2,
+      "zeroRefundCount": 0,
+      "amount": 3720000,
+      "refund": 110000,
+      "net": 3610000,
+      "averageAge": 75,
+      "minAge": 66,
+      "maxAge": 86,
+      "ageCounts": [
+        0,
+        3,
+        18,
+        11,
+        6,
+        1
+      ],
+      "categories": {
+        "수급자": 1,
+        "장애인(1-3등급)": 1,
+        "일반": 37
+      },
+      "receiptCategories": {
+        "수급자(유료)": 1,
+        "수급자": 1,
+        "장애인(1-3등급)": 2,
+        "일반": 72
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 38,
+          "paidCount": 37,
+          "amount": 2220000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 110000
+        },
+        {
+          "month": "2026-02",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 60000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 13,
+          "paidCount": 12,
+          "amount": 480000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 24,
+          "paidCount": 24,
+          "amount": 960000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-02"
+    },
+    {
+      "id": "detail-27",
+      "name": "오카리나 중급",
+      "records": 50,
+      "registrants": 28,
+      "ageKnown": 28,
+      "ageUnknown": 0,
+      "paidCount": 47,
+      "zeroCount": 3,
+      "refundEntries": 1,
+      "refundCount": 1,
+      "zeroRefundCount": 0,
+      "amount": 2310000,
+      "refund": 30000,
+      "net": 2280000,
+      "averageAge": 68.7,
+      "minAge": 61,
+      "maxAge": 76,
+      "ageCounts": [
+        5,
+        10,
+        11,
+        2,
+        0,
+        0
+      ],
+      "categories": {
+        "일반": 26,
+        "수급자": 2
+      },
+      "receiptCategories": {
+        "일반": 47,
+        "수급자": 2,
+        "수급자(유료)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 23,
+          "paidCount": 21,
+          "amount": 1260000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 50000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 80000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 30000
+        },
+        {
+          "month": "2026-08",
+          "records": 10,
+          "paidCount": 9,
+          "amount": 360000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 14,
+          "paidCount": 14,
+          "amount": 560000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-08"
+    },
+    {
+      "id": "detail-28",
+      "name": "오카리나 초급",
+      "records": 43,
+      "registrants": 30,
+      "ageKnown": 30,
+      "ageUnknown": 0,
+      "paidCount": 41,
+      "zeroCount": 2,
+      "refundEntries": 3,
+      "refundCount": 0,
+      "zeroRefundCount": 3,
+      "amount": 410000,
+      "refund": 0,
+      "net": 410000,
+      "averageAge": 70.1,
+      "minAge": 60,
+      "maxAge": 84,
+      "ageCounts": [
+        4,
+        9,
+        14,
+        2,
+        1,
+        0
+      ],
+      "categories": {
+        "일반": 29,
+        "수급자": 1
+      },
+      "receiptCategories": {
+        "일반": 41,
+        "수급자": 2
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 15,
+          "paidCount": 14,
+          "amount": 140000,
+          "refundEntries": 2,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 20000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 9,
+          "paidCount": 8,
+          "amount": 80000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 16,
+          "paidCount": 16,
+          "amount": 160000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-18"
+    },
+    {
+      "id": "detail-29",
+      "name": "요가 1",
+      "records": 108,
+      "registrants": 76,
+      "ageKnown": 76,
+      "ageUnknown": 0,
+      "paidCount": 88,
+      "zeroCount": 20,
+      "refundEntries": 15,
+      "refundCount": 12,
+      "zeroRefundCount": 3,
+      "amount": 4306000,
+      "refund": 478100,
+      "net": 3827900,
+      "averageAge": 74.9,
+      "minAge": 62,
+      "maxAge": 89,
+      "ageCounts": [
+        1,
+        19,
+        13,
+        25,
+        15,
+        3
+      ],
+      "categories": {
+        "수급자": 15,
+        "일반": 60,
+        "수급자(유료)": 1
+      },
+      "receiptCategories": {
+        "수급자": 19,
+        "일반": 88,
+        "수급자(유료)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 39,
+          "paidCount": 31,
+          "amount": 1860000,
+          "refundEntries": 6,
+          "refundCount": 5,
+          "refund": 278200
+        },
+        {
+          "month": "2026-02",
+          "records": 13,
+          "paidCount": 12,
+          "amount": 701000,
+          "refundEntries": 3,
+          "refundCount": 3,
+          "refund": 90000
+        },
+        {
+          "month": "2026-03",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 43000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 36600
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 36000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 27000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 20000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 15,
+          "paidCount": 8,
+          "amount": 320000,
+          "refundEntries": 2,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 35,
+          "paidCount": 32,
+          "amount": 1269000,
+          "refundEntries": 3,
+          "refundCount": 3,
+          "refund": 73300
+        },
+        {
+          "month": "2026-10",
+          "records": 2,
+          "paidCount": 1,
+          "amount": 30000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-21"
+    },
+    {
+      "id": "detail-30",
+      "name": "요가 2",
+      "records": 106,
+      "registrants": 77,
+      "ageKnown": 77,
+      "ageUnknown": 0,
+      "paidCount": 86,
+      "zeroCount": 20,
+      "refundEntries": 16,
+      "refundCount": 14,
+      "zeroRefundCount": 2,
+      "amount": 4169500,
+      "refund": 624400,
+      "net": 3545100,
+      "averageAge": 72.8,
+      "minAge": 60,
+      "maxAge": 86,
+      "ageCounts": [
+        7,
+        20,
+        22,
+        14,
+        12,
+        2
+      ],
+      "categories": {
+        "일반": 65,
+        "수급자": 11,
+        "수급자(유료)": 1
+      },
+      "receiptCategories": {
+        "일반": 87,
+        "수급자": 16,
+        "수급자(유료)": 3
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 39,
+          "paidCount": 35,
+          "amount": 2057500,
+          "refundEntries": 11,
+          "refundCount": 10,
+          "refund": 449600
+        },
+        {
+          "month": "2026-02",
+          "records": 9,
+          "paidCount": 6,
+          "amount": 349000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 46600
+        },
+        {
+          "month": "2026-03",
+          "records": 5,
+          "paidCount": 4,
+          "amount": 200000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 91600
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 27000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 37000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 18,
+          "paidCount": 8,
+          "amount": 320000,
+          "refundEntries": 2,
+          "refundCount": 1,
+          "refund": 36600
+        },
+        {
+          "month": "2026-09",
+          "records": 30,
+          "paidCount": 29,
+          "amount": 1149000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 30000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-02"
+    },
+    {
+      "id": "detail-31",
+      "name": "우쿨렐레",
+      "records": 42,
+      "registrants": 27,
+      "ageKnown": 27,
+      "ageUnknown": 0,
+      "paidCount": 36,
+      "zeroCount": 6,
+      "refundEntries": 3,
+      "refundCount": 3,
+      "zeroRefundCount": 0,
+      "amount": 1790000,
+      "refund": 130000,
+      "net": 1660000,
+      "averageAge": 69.2,
+      "minAge": 61,
+      "maxAge": 77,
+      "ageCounts": [
+        4,
+        10,
+        10,
+        3,
+        0,
+        0
+      ],
+      "categories": {
+        "일반": 23,
+        "수급자": 4
+      },
+      "receiptCategories": {
+        "일반": 36,
+        "수급자": 6
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 19,
+          "paidCount": 16,
+          "amount": 960000,
+          "refundEntries": 3,
+          "refundCount": 3,
+          "refund": 130000
+        },
+        {
+          "month": "2026-02",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 60000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 50000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 8,
+          "paidCount": 5,
+          "amount": 200000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 13,
+          "paidCount": 13,
+          "amount": 520000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-07"
+    },
+    {
+      "id": "detail-32",
+      "name": "일본어 초급",
+      "records": 49,
+      "registrants": 33,
+      "ageKnown": 33,
+      "ageUnknown": 0,
+      "paidCount": 39,
+      "zeroCount": 10,
+      "refundEntries": 6,
+      "refundCount": 0,
+      "zeroRefundCount": 6,
+      "amount": 390000,
+      "refund": 0,
+      "net": 390000,
+      "averageAge": 73.8,
+      "minAge": 61,
+      "maxAge": 89,
+      "ageCounts": [
+        1,
+        8,
+        11,
+        7,
+        4,
+        2
+      ],
+      "categories": {
+        "수급자": 6,
+        "일반": 26,
+        "타기관중복(식당)": 1
+      },
+      "receiptCategories": {
+        "수급자": 9,
+        "일반": 39,
+        "타기관중복(식당)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 17,
+          "paidCount": 15,
+          "amount": 150000,
+          "refundEntries": 3,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 3,
+          "paidCount": 3,
+          "amount": 30000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 6,
+          "paidCount": 4,
+          "amount": 40000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 1,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 12,
+          "paidCount": 9,
+          "amount": 90000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 7,
+          "paidCount": 7,
+          "amount": 70000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-10",
+          "records": 2,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-20"
+    },
+    {
+      "id": "detail-33",
+      "name": "찾아가는 시니어 디지털 스쿨",
+      "records": 20,
+      "registrants": 20,
+      "ageKnown": 20,
+      "ageUnknown": 0,
+      "paidCount": 0,
+      "zeroCount": 20,
+      "refundEntries": 0,
+      "refundCount": 0,
+      "zeroRefundCount": 0,
+      "amount": 0,
+      "refund": 0,
+      "net": 0,
+      "averageAge": 73,
+      "minAge": 61,
+      "maxAge": 87,
+      "ageCounts": [
+        2,
+        5,
+        3,
+        7,
+        2,
+        1
+      ],
+      "categories": {
+        "일반": 19,
+        "수급자": 1
+      },
+      "receiptCategories": {
+        "일반": 19,
+        "수급자": 1
+      },
+      "months": [
+        {
+          "month": "2026-05",
+          "records": 20,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-05-12",
+      "lastDate": "2026-05-12"
+    },
+    {
+      "id": "detail-34",
+      "name": "치매예방교실",
+      "records": 1,
+      "registrants": 1,
+      "ageKnown": 1,
+      "ageUnknown": 0,
+      "paidCount": 0,
+      "zeroCount": 1,
+      "refundEntries": 0,
+      "refundCount": 0,
+      "zeroRefundCount": 0,
+      "amount": 0,
+      "refund": 0,
+      "net": 0,
+      "averageAge": 72,
+      "minAge": 72,
+      "maxAge": 72,
+      "ageCounts": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "categories": {
+        "수급자": 1
+      },
+      "receiptCategories": {
+        "수급자": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 1,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-01-26"
+    },
+    {
+      "id": "detail-35",
+      "name": "캘리그라피 중급",
+      "records": 24,
+      "registrants": 18,
+      "ageKnown": 18,
+      "ageUnknown": 0,
+      "paidCount": 19,
+      "zeroCount": 5,
+      "refundEntries": 4,
+      "refundCount": 3,
+      "zeroRefundCount": 1,
+      "amount": 980000,
+      "refund": 170000,
+      "net": 810000,
+      "averageAge": 73.3,
+      "minAge": 63,
+      "maxAge": 88,
+      "ageCounts": [
+        1,
+        4,
+        5,
+        5,
+        2,
+        1
+      ],
+      "categories": {
+        "일반": 14,
+        "수급자": 4
+      },
+      "receiptCategories": {
+        "일반": 19,
+        "수급자(유료)": 2,
+        "수급자": 3
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 14,
+          "paidCount": 11,
+          "amount": 660000,
+          "refundEntries": 4,
+          "refundCount": 3,
+          "refund": 170000
+        },
+        {
+          "month": "2026-08",
+          "records": 4,
+          "paidCount": 3,
+          "amount": 120000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 6,
+          "paidCount": 5,
+          "amount": 200000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-17"
+    },
+    {
+      "id": "detail-36",
+      "name": "캘리그라피 초급",
+      "records": 28,
+      "registrants": 20,
+      "ageKnown": 20,
+      "ageUnknown": 0,
+      "paidCount": 18,
+      "zeroCount": 10,
+      "refundEntries": 8,
+      "refundCount": 5,
+      "zeroRefundCount": 3,
+      "amount": 878000,
+      "refund": 204500,
+      "net": 673500,
+      "averageAge": 69.7,
+      "minAge": 61,
+      "maxAge": 82,
+      "ageCounts": [
+        6,
+        3,
+        7,
+        2,
+        2,
+        0
+      ],
+      "categories": {
+        "일반": 14,
+        "수급자": 5,
+        "타기관중복(식당)": 1
+      },
+      "receiptCategories": {
+        "일반": 18,
+        "수급자": 9,
+        "타기관중복(식당)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 9,
+          "paidCount": 5,
+          "amount": 300000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 4,
+          "paidCount": 4,
+          "amount": 222000,
+          "refundEntries": 3,
+          "refundCount": 3,
+          "refund": 134600
+        },
+        {
+          "month": "2026-08",
+          "records": 4,
+          "paidCount": 1,
+          "amount": 40000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 10,
+          "paidCount": 8,
+          "amount": 316000,
+          "refundEntries": 3,
+          "refundCount": 2,
+          "refund": 69900
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-07"
+    },
+    {
+      "id": "detail-37",
+      "name": "컴퓨터 초급",
+      "records": 44,
+      "registrants": 38,
+      "ageKnown": 38,
+      "ageUnknown": 0,
+      "paidCount": 33,
+      "zeroCount": 11,
+      "refundEntries": 5,
+      "refundCount": 0,
+      "zeroRefundCount": 5,
+      "amount": 330000,
+      "refund": 0,
+      "net": 330000,
+      "averageAge": 72.1,
+      "minAge": 60,
+      "maxAge": 84,
+      "ageCounts": [
+        5,
+        11,
+        7,
+        9,
+        6,
+        0
+      ],
+      "categories": {
+        "일반": 26,
+        "수급자": 11,
+        "장애인(1-3등급)": 1
+      },
+      "receiptCategories": {
+        "일반": 31,
+        "수급자": 11,
+        "장애인(1-3등급)": 1,
+        "수급자(유료)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 15,
+          "paidCount": 13,
+          "amount": 130000,
+          "refundEntries": 3,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 5,
+          "paidCount": 2,
+          "amount": 20000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 4,
+          "paidCount": 4,
+          "amount": 40000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 11,
+          "paidCount": 7,
+          "amount": 70000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 8,
+          "paidCount": 7,
+          "amount": 70000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-14"
+    },
+    {
+      "id": "detail-38",
+      "name": "컴퓨터 활용",
+      "records": 37,
+      "registrants": 29,
+      "ageKnown": 29,
+      "ageUnknown": 0,
+      "paidCount": 28,
+      "zeroCount": 9,
+      "refundEntries": 6,
+      "refundCount": 4,
+      "zeroRefundCount": 2,
+      "amount": 1360000,
+      "refund": 206500,
+      "net": 1153500,
+      "averageAge": 72.8,
+      "minAge": 61,
+      "maxAge": 87,
+      "ageCounts": [
+        1,
+        11,
+        7,
+        4,
+        4,
+        2
+      ],
+      "categories": {
+        "일반": 22,
+        "수급자": 6,
+        "타기관중복(식당)": 1
+      },
+      "receiptCategories": {
+        "일반": 28,
+        "수급자": 6,
+        "타기관중복(식당)": 2,
+        "수급자(유료)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 14,
+          "paidCount": 12,
+          "amount": 720000,
+          "refundEntries": 3,
+          "refundCount": 3,
+          "refund": 173200
+        },
+        {
+          "month": "2026-02",
+          "records": 2,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 0,
+          "amount": 0,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 7,
+          "paidCount": 4,
+          "amount": 160000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 33300
+        },
+        {
+          "month": "2026-09",
+          "records": 13,
+          "paidCount": 12,
+          "amount": 480000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-21"
+    },
+    {
+      "id": "detail-39",
+      "name": "풀잎합창단",
+      "records": 78,
+      "registrants": 43,
+      "ageKnown": 43,
+      "ageUnknown": 0,
+      "paidCount": 73,
+      "zeroCount": 5,
+      "refundEntries": 5,
+      "refundCount": 4,
+      "zeroRefundCount": 1,
+      "amount": 3527000,
+      "refund": 206600,
+      "net": 3320400,
+      "averageAge": 73.1,
+      "minAge": 64,
+      "maxAge": 81,
+      "ageCounts": [
+        1,
+        7,
+        18,
+        16,
+        1,
+        0
+      ],
+      "categories": {
+        "일반": 40,
+        "수급자": 3
+      },
+      "receiptCategories": {
+        "일반": 73,
+        "수급자": 5
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 30,
+          "paidCount": 27,
+          "amount": 1620000,
+          "refundEntries": 3,
+          "refundCount": 2,
+          "refund": 116600
+        },
+        {
+          "month": "2026-02",
+          "records": 6,
+          "paidCount": 6,
+          "amount": 356000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 50000
+        },
+        {
+          "month": "2026-03",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 46000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 33000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 5,
+          "paidCount": 4,
+          "amount": 160000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 34,
+          "paidCount": 33,
+          "amount": 1312000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 40000
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-16"
+    },
+    {
+      "id": "detail-40",
+      "name": "필라테스 1",
+      "records": 94,
+      "registrants": 61,
+      "ageKnown": 61,
+      "ageUnknown": 0,
+      "paidCount": 83,
+      "zeroCount": 11,
+      "refundEntries": 10,
+      "refundCount": 9,
+      "zeroRefundCount": 1,
+      "amount": 4116000,
+      "refund": 313300,
+      "net": 3802700,
+      "averageAge": 73.7,
+      "minAge": 58,
+      "maxAge": 86,
+      "ageCounts": [
+        4,
+        16,
+        12,
+        13,
+        14,
+        2
+      ],
+      "categories": {
+        "수급자": 8,
+        "일반": 53
+      },
+      "receiptCategories": {
+        "수급자": 10,
+        "일반": 84
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 45,
+          "paidCount": 38,
+          "amount": 2280000,
+          "refundEntries": 5,
+          "refundCount": 4,
+          "refund": 130000
+        },
+        {
+          "month": "2026-02",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 56000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 100000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 40000
+        },
+        {
+          "month": "2026-08",
+          "records": 17,
+          "paidCount": 14,
+          "amount": 560000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 63300
+        },
+        {
+          "month": "2026-09",
+          "records": 29,
+          "paidCount": 28,
+          "amount": 1120000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 80000
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-04"
+    },
+    {
+      "id": "detail-41",
+      "name": "필라테스 2",
+      "records": 117,
+      "registrants": 79,
+      "ageKnown": 79,
+      "ageUnknown": 0,
+      "paidCount": 107,
+      "zeroCount": 10,
+      "refundEntries": 19,
+      "refundCount": 19,
+      "zeroRefundCount": 0,
+      "amount": 5218500,
+      "refund": 821100,
+      "net": 4397400,
+      "averageAge": 73.1,
+      "minAge": 60,
+      "maxAge": 84,
+      "ageCounts": [
+        5,
+        18,
+        24,
+        21,
+        11,
+        0
+      ],
+      "categories": {
+        "일반": 72,
+        "수급자": 7
+      },
+      "receiptCategories": {
+        "일반": 108,
+        "수급자": 9
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 47,
+          "paidCount": 44,
+          "amount": 2640000,
+          "refundEntries": 11,
+          "refundCount": 11,
+          "refund": 538000
+        },
+        {
+          "month": "2026-02",
+          "records": 11,
+          "paidCount": 9,
+          "amount": 478500,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 100000
+        },
+        {
+          "month": "2026-03",
+          "records": 3,
+          "paidCount": 3,
+          "amount": 150000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 30000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 17000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 18,
+          "paidCount": 13,
+          "amount": 520000,
+          "refundEntries": 2,
+          "refundCount": 2,
+          "refund": 49900
+        },
+        {
+          "month": "2026-09",
+          "records": 34,
+          "paidCount": 34,
+          "amount": 1334000,
+          "refundEntries": 4,
+          "refundCount": 4,
+          "refund": 133200
+        },
+        {
+          "month": "2026-10",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 49000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-21"
+    },
+    {
+      "id": "detail-42",
+      "name": "하모니카 중급",
+      "records": 61,
+      "registrants": 41,
+      "ageKnown": 41,
+      "ageUnknown": 0,
+      "paidCount": 58,
+      "zeroCount": 3,
+      "refundEntries": 5,
+      "refundCount": 5,
+      "zeroRefundCount": 0,
+      "amount": 2806000,
+      "refund": 202600,
+      "net": 2603400,
+      "averageAge": 71.8,
+      "minAge": 60,
+      "maxAge": 86,
+      "ageCounts": [
+        2,
+        12,
+        17,
+        6,
+        3,
+        1
+      ],
+      "categories": {
+        "수급자": 2,
+        "일반": 38,
+        "장애인(1-3등급)": 1
+      },
+      "receiptCategories": {
+        "수급자(유료)": 1,
+        "수급자": 2,
+        "일반": 57,
+        "장애인(1-3등급)": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 27,
+          "paidCount": 26,
+          "amount": 1560000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 50000
+        },
+        {
+          "month": "2026-02",
+          "records": 2,
+          "paidCount": 1,
+          "amount": 60000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 40000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 12,
+          "paidCount": 11,
+          "amount": 440000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 40000
+        },
+        {
+          "month": "2026-09",
+          "records": 17,
+          "paidCount": 17,
+          "amount": 676000,
+          "refundEntries": 3,
+          "refundCount": 3,
+          "refund": 112600
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 30000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-01"
+    },
+    {
+      "id": "detail-43",
+      "name": "하모니카 초급",
+      "records": 57,
+      "registrants": 44,
+      "ageKnown": 43,
+      "ageUnknown": 1,
+      "paidCount": 50,
+      "zeroCount": 7,
+      "refundEntries": 8,
+      "refundCount": 4,
+      "zeroRefundCount": 4,
+      "amount": 2432000,
+      "refund": 183300,
+      "net": 2248700,
+      "averageAge": 71.3,
+      "minAge": 61,
+      "maxAge": 87,
+      "ageCounts": [
+        7,
+        13,
+        9,
+        8,
+        5,
+        1
+      ],
+      "categories": {
+        "일반": 37,
+        "수급자": 6,
+        "차상위": 1
+      },
+      "receiptCategories": {
+        "일반": 50,
+        "수급자": 6,
+        "차상위": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 21,
+          "paidCount": 17,
+          "amount": 1020000,
+          "refundEntries": 5,
+          "refundCount": 2,
+          "refund": 120000
+        },
+        {
+          "month": "2026-02",
+          "records": 7,
+          "paidCount": 6,
+          "amount": 352000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 50000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 20000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 7,
+          "paidCount": 6,
+          "amount": 240000,
+          "refundEntries": 2,
+          "refundCount": 1,
+          "refund": 40000
+        },
+        {
+          "month": "2026-09",
+          "records": 19,
+          "paidCount": 18,
+          "amount": 720000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 23300
+        },
+        {
+          "month": "2026-10",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 30000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-01"
+    },
+    {
+      "id": "detail-44",
+      "name": "한문(논어)",
+      "records": 32,
+      "registrants": 23,
+      "ageKnown": 23,
+      "ageUnknown": 0,
+      "paidCount": 31,
+      "zeroCount": 1,
+      "refundEntries": 1,
+      "refundCount": 0,
+      "zeroRefundCount": 1,
+      "amount": 310000,
+      "refund": 0,
+      "net": 310000,
+      "averageAge": 73.8,
+      "minAge": 61,
+      "maxAge": 86,
+      "ageCounts": [
+        2,
+        5,
+        6,
+        5,
+        3,
+        2
+      ],
+      "categories": {
+        "일반": 22,
+        "수급자": 1
+      },
+      "receiptCategories": {
+        "일반": 30,
+        "수급자": 1,
+        "선택안함": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 15,
+          "paidCount": 15,
+          "amount": 150000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 2,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-06",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 5,
+          "paidCount": 5,
+          "amount": 50000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 8,
+          "paidCount": 8,
+          "amount": 80000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-04"
+    },
+    {
+      "id": "detail-45",
+      "name": "한자 초급",
+      "records": 30,
+      "registrants": 23,
+      "ageKnown": 23,
+      "ageUnknown": 0,
+      "paidCount": 28,
+      "zeroCount": 2,
+      "refundEntries": 3,
+      "refundCount": 0,
+      "zeroRefundCount": 3,
+      "amount": 280000,
+      "refund": 0,
+      "net": 280000,
+      "averageAge": 73.1,
+      "minAge": 65,
+      "maxAge": 87,
+      "ageCounts": [
+        0,
+        10,
+        5,
+        5,
+        1,
+        2
+      ],
+      "categories": {
+        "일반": 21,
+        "수급자": 2
+      },
+      "receiptCategories": {
+        "일반": 28,
+        "수급자(유료)": 1,
+        "수급자": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 17,
+          "paidCount": 15,
+          "amount": 150000,
+          "refundEntries": 2,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 3,
+          "paidCount": 3,
+          "amount": 30000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 6,
+          "paidCount": 6,
+          "amount": 60000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-10",
+          "records": 2,
+          "paidCount": 2,
+          "amount": 20000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-08"
+    },
+    {
+      "id": "detail-46",
+      "name": "힐링노래교실",
+      "records": 196,
+      "registrants": 156,
+      "ageKnown": 156,
+      "ageUnknown": 0,
+      "paidCount": 127,
+      "zeroCount": 69,
+      "refundEntries": 28,
+      "refundCount": 23,
+      "zeroRefundCount": 5,
+      "amount": 7146000,
+      "refund": 1086400,
+      "net": 6059600,
+      "averageAge": 73.7,
+      "minAge": 61,
+      "maxAge": 89,
+      "ageCounts": [
+        10,
+        36,
+        44,
+        35,
+        23,
+        8
+      ],
+      "categories": {
+        "일반": 104,
+        "수급자": 45,
+        "수급자(유료)": 3,
+        "타기관중복(식당)": 2,
+        "차상위": 2
+      },
+      "receiptCategories": {
+        "일반": 126,
+        "수급자": 54,
+        "수급자(유료)": 11,
+        "타기관중복(식당)": 2,
+        "차상위": 2,
+        "선택안함": 1
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 62,
+          "paidCount": 43,
+          "amount": 2580000,
+          "refundEntries": 14,
+          "refundCount": 10,
+          "refund": 523200
+        },
+        {
+          "month": "2026-02",
+          "records": 28,
+          "paidCount": 17,
+          "amount": 953000,
+          "refundEntries": 3,
+          "refundCount": 2,
+          "refund": 71600
+        },
+        {
+          "month": "2026-03",
+          "records": 12,
+          "paidCount": 8,
+          "amount": 384000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-04",
+          "records": 8,
+          "paidCount": 3,
+          "amount": 112000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 30000
+        },
+        {
+          "month": "2026-05",
+          "records": 6,
+          "paidCount": 6,
+          "amount": 167000,
+          "refundEntries": 1,
+          "refundCount": 1,
+          "refund": 16600
+        },
+        {
+          "month": "2026-08",
+          "records": 36,
+          "paidCount": 12,
+          "amount": 720000,
+          "refundEntries": 3,
+          "refundCount": 3,
+          "refund": 150000
+        },
+        {
+          "month": "2026-09",
+          "records": 42,
+          "paidCount": 37,
+          "amount": 2185000,
+          "refundEntries": 6,
+          "refundCount": 6,
+          "refund": 295000
+        },
+        {
+          "month": "2026-10",
+          "records": 2,
+          "paidCount": 1,
+          "amount": 45000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-10-16"
+    },
+    {
+      "id": "detail-47",
+      "name": "힐링수채화",
+      "records": 31,
+      "registrants": 27,
+      "ageKnown": 27,
+      "ageUnknown": 0,
+      "paidCount": 27,
+      "zeroCount": 4,
+      "refundEntries": 3,
+      "refundCount": 0,
+      "zeroRefundCount": 3,
+      "amount": 270000,
+      "refund": 0,
+      "net": 270000,
+      "averageAge": 71.9,
+      "minAge": 60,
+      "maxAge": 82,
+      "ageCounts": [
+        3,
+        7,
+        8,
+        6,
+        3,
+        0
+      ],
+      "categories": {
+        "일반": 24,
+        "수급자": 3
+      },
+      "receiptCategories": {
+        "일반": 27,
+        "수급자": 4
+      },
+      "months": [
+        {
+          "month": "2026-01",
+          "records": 11,
+          "paidCount": 10,
+          "amount": 100000,
+          "refundEntries": 2,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-02",
+          "records": 3,
+          "paidCount": 2,
+          "amount": 20000,
+          "refundEntries": 1,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-03",
+          "records": 2,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-05",
+          "records": 1,
+          "paidCount": 1,
+          "amount": 10000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-08",
+          "records": 5,
+          "paidCount": 5,
+          "amount": 50000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        },
+        {
+          "month": "2026-09",
+          "records": 9,
+          "paidCount": 8,
+          "amount": 80000,
+          "refundEntries": 0,
+          "refundCount": 0,
+          "refund": 0
+        }
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-09-11"
+    }
+  ]
+}
