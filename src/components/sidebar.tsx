@@ -178,7 +178,7 @@ function Brand({ collapsed = false }: { collapsed?: boolean }) {
   return (
     <Link href="/dashboard/workspace" className={cn("group flex items-center gap-3", collapsed && "justify-center")}>
       <div className="shrink-0 overflow-hidden rounded-2xl border border-primary/15 bg-white/80 p-1 shadow-[0_18px_36px_-24px_rgba(23,81,208,0.55)]">
-        <Image src="/logo.png" alt="노년사회화교육사업 로고" width={232} height={97} className="h-9 w-auto rounded-lg object-contain" />
+        <Image src="/welfare-logo.png" alt="목포이랜드노인복지관 로고" width={178} height={182} className="h-12 w-auto object-contain" />
       </div>
       {!collapsed ? (
         <div className="min-w-0">

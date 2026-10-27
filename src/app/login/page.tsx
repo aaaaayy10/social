@@ -143,11 +143,11 @@ export default function LoginPage() {
             <div className="space-y-4 text-center">
               <div className="mx-auto flex h-24 w-24 items-center justify-center overflow-hidden rounded-[1.75rem] border border-primary/10 bg-white/85 shadow-[0_24px_40px_-26px_rgba(23,81,208,0.45)]">
                 <Image
-                  src="/logo.png"
-                  alt="노년사회화교육사업 로고"
-                  width={232}
-                  height={97}
-                  className="h-auto w-20 rounded-[1.25rem] object-contain"
+                  src="/welfare-logo.png"
+                  alt="목포이랜드노인복지관 로고"
+                  width={178}
+                  height={182}
+                  className="h-auto w-20 object-contain"
                 />
               </div>
               <div className="space-y-1.5">
