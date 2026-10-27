@@ -11,10 +11,14 @@ import { EnrollmentDashboard } from "@/components/enrollment-dashboard";
 const fields = ["capacity", "waiting", "applications", "paid", "refunds"] as const;
 const totals = Object.fromEntries(fields.map(field => [field, enrollment.programs.reduce((sum, row) => sum + (row[field] ?? 0), 0)])) as Record<typeof fields[number], number>;
 const displayCount = (value: number | null) => value === null ? "—" : value.toLocaleString("ko-KR");
-const displayRate = (numerator: number | null, denominator: number | null) =>
+const rateValue = (numerator: number | null, denominator: number | null) =>
   numerator === null || denominator === null || denominator <= 0
-    ? "—"
-    : `${((numerator / denominator) * 100).toFixed(1)}%`;
+    ? null
+    : numerator / denominator;
+const displayRate = (numerator: number | null, denominator: number | null) => {
+  const value = rateValue(numerator, denominator);
+  return value === null ? "—" : `${(value * 100).toFixed(1)}%`;
+};
 
 export function CourseEnrollment() {
   const [search, setSearch] = useState("");
@@ -27,6 +31,17 @@ export function CourseEnrollment() {
     if (filter === "full") return row.capacity !== null && row.applications !== null && row.applications >= row.capacity;
     return true;
   });
+  if (filter.endsWith("-asc") || filter.endsWith("-desc")) {
+    const applicationRate = filter.startsWith("application-");
+    const direction = filter.endsWith("-asc") ? 1 : -1;
+    programs.sort((a, b) => {
+      const left = applicationRate ? rateValue(a.applications, a.capacity) : rateValue(a.paid, a.applications);
+      const right = applicationRate ? rateValue(b.applications, b.capacity) : rateValue(b.paid, b.applications);
+      if (left === null) return right === null ? 0 : 1;
+      if (right === null) return -1;
+      return (left - right) * direction;
+    });
+  }
   const filteredTotals = fields.map(field => programs.reduce((sum, row) => sum + (row[field] ?? 0), 0));
 
   function exportCsv() {
@@ -63,6 +78,8 @@ export function CourseEnrollment() {
             </div>
             <select aria-label="프로그램 현황 필터" value={filter} onChange={event => setFilter(event.target.value)} className="h-9 rounded-md border border-input bg-card px-3 text-sm">
               <option value="all">전체 프로그램</option><option value="available">정원 여유</option><option value="full">정원 도달</option><option value="waiting">대기자 있음</option>
+              <option value="application-asc">신청률 낮은 순</option><option value="application-desc">신청률 높은 순</option>
+              <option value="payment-asc">수납률 낮은 순</option><option value="payment-desc">수납률 높은 순</option>
             </select>
             {(search || filter !== "all") && <Button variant="ghost" onClick={() => { setSearch(""); setFilter("all"); }}>검색 초기화</Button>}
           </div>
@@ -83,8 +100,10 @@ export function CourseEnrollment() {
           <p>출처: {enrollment.source} · 문서 기준일의 현황입니다.</p>
           <p>—는 원본의 빈칸이며 0과 구분합니다. 합계는 숫자가 기재된 항목만 더한 값입니다. 신청·수납·환불은 각각 원본 값을 유지했습니다.</p>
           <p>신청률 = 신청 ÷ 정원 × 100 · 수납률 = 수납 ÷ 신청 × 100 (소수점 첫째 자리). 환불은 차감하지 않습니다. 값이 없거나 분모가 0이면 —로 표시하며, 합계 비율은 합산 건수로 계산합니다.</p>
+          <p>비율 정렬은 반올림 전 값을 기준으로 하며, 계산할 수 없는 항목은 마지막에 표시합니다. CSV에도 선택한 정렬 순서가 적용됩니다.</p>
         </div>
       </section>
     </PageShell>
   );
 }
+
