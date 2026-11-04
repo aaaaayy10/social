@@ -2,7 +2,7 @@ import enrollment from "@/data/course-enrollment.json";
 
 export const managementStatuses = ["확인 필요", "처리 중", "처리 완료"] as const;
 export type ManagementStatus = typeof managementStatuses[number];
-export type CaseAction = { status: ManagementStatus; assignee: string; note: string; updatedBy: string; updatedAt: string | null };
+export type CaseAction = { status: ManagementStatus; assignee?: string; note: string; updatedBy: string; updatedAt: string | null };
 export type AbsenceSource = { asOf: string; period: string; programCode: string; programName: string; source: string; sourceSha256: string; classDates: string[]; rows: { memberId: string; attendance: number[]; row: number; page: number; caseId: string }[] };
 export type ManagementCase = {
   id: string; kind: "absence" | "recruitment"; title: string; memberId?: string; programName: string;
@@ -14,21 +14,28 @@ export type PrivateCaseSource = Pick<ManagementPayload, "asOf" | "sourceName" | 
 
 export function buildAbsenceCases(source: AbsenceSource): ManagementCase[] {
   const ids = new Set<string>();
-  if (source.classDates.length !== 7 || source.classDates.some((date, index) => !date.startsWith("2026-10-") || (index > 0 && date <= source.classDates[index - 1]))) throw new Error("수업일 자료를 확인해야 합니다.");
+  if (source.classDates.some((date, index) => !/^\d{4}-\d{2}-\d{2}$/.test(date) || (index > 0 && date <= source.classDates[index - 1]))) throw new Error("수업일 자료를 확인해야 합니다.");
+  const classDates = source.classDates.filter(date => date <= source.asOf);
   return source.rows.flatMap(row => {
     if (!/^20\d{2}-\d{5}$/.test(row.memberId) || ids.has(row.memberId) || row.attendance.length !== source.classDates.length || row.attendance.some(value => value !== 0 && value !== 1)) throw new Error("회원 출석 자료를 확인해야 합니다.");
     ids.add(row.memberId);
-    const streaks: string[][] = [];
-    let current: string[] = [];
-    for (let i = 0; i <= row.attendance.length; i++) {
-      if (i < row.attendance.length && row.attendance[i] === 0) current.push(source.classDates[i]);
-      else { if (current.length >= 3) streaks.push(current); current = []; }
-    }
-    if (!streaks.length) return [];
+    const marks = row.attendance.slice(0, classDates.length);
     let endingStreak = 0;
-    for (let i = row.attendance.length - 1; i >= 0 && row.attendance[i] === 0; i--) endingStreak++;
-    return [{ id: row.caseId, kind: "absence" as const, title: "3회 이상 연속 결석 확인", memberId: row.memberId, programName: source.programName, streaks, longestStreak: Math.max(...streaks.map(value => value.length)), endingStreak, lastAttended: source.classDates.filter((_, index) => row.attendance[index] === 1).at(-1) ?? null, attendance: row.attendance, sourcePage: row.page }];
-  }).sort((a, b) => (b.endingStreak ?? 0) - (a.endingStreak ?? 0) || (b.longestStreak ?? 0) - (a.longestStreak ?? 0));
+    for (let index = marks.length - 1; index >= 0 && marks[index] === 0; index--) endingStreak++;
+    if (endingStreak < 3) return [];
+    return [{ id: row.caseId, kind: "absence" as const, title: "3회 이상 연속 결석 확인", memberId: row.memberId, programName: source.programName, streaks: [classDates.slice(-endingStreak)], longestStreak: endingStreak, endingStreak, lastAttended: classDates.filter((_, index) => marks[index] === 1).at(-1) ?? null, attendance: marks, sourcePage: row.page }];
+  }).sort((a, b) => (b.endingStreak ?? 0) - (a.endingStreak ?? 0));
+}
+
+// Filter the saved historical candidates without deleting their prior action notes.
+export function currentAbsenceCases(source: PrivateCaseSource): ManagementCase[] {
+  const latestDate = source.classDates.filter(date => date <= source.asOf).at(-1);
+  if (!latestDate) return [];
+  return source.cases.flatMap(row => {
+    const streak = row.streaks?.find(dates => dates.at(-1) === latestDate);
+    if (!streak || streak.length < 3 || (row.lastAttended && row.lastAttended >= streak[0])) return [];
+    return [{ ...row, streaks: [streak], endingStreak: streak.length, longestStreak: streak.length }];
+  }).sort((a, b) => (b.endingStreak ?? 0) - (a.endingStreak ?? 0));
 }
 
 export function buildRecruitmentCases(): ManagementCase[] {

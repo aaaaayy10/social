@@ -7,13 +7,16 @@ export type AttendanceSource = { id: string; month: string; type: "rf" | "manual
 export type AttendanceProgram = { code: string; name: string; type: "rf" | "manual" };
 // Original RF records stay intact; line dance 2 uses the manual source only.
 const rfRecords = raw.records.filter(row => row.programCode !== "A1811");
+const programs = [...raw.programs.filter(row => row.code !== "A1811"), ...manual.programs] as AttendanceProgram[];
+const januaryRecords: AttendanceRecord[] = programs.map(program => ({ month: "2026-01", programCode: program.code, sourceId: "january-vacation-" + program.type, sourceType: program.type, dailyCounts: program.type === "rf" ? [] : null, datedCounts: null, manualTotal: program.type === "manual" ? 0 : null, manualSessions: program.type === "manual" ? 0 : null, readingStatus: "사용자 확인", note: "1월 방학 · 일본어 초급은 3월 개강" }));
+const januarySources: AttendanceSource[] = (["rf", "manual"] as const).map(type => ({ id: "january-vacation-" + type, month: "2026-01", type, format: "user-confirmation", scope: "full", visiblePrograms: programs.filter(program => program.type === type).length, expectedPrograms: programs.filter(program => program.type === type).length, readingStatus: "사용자 확인", metric: "방학 휴강", note: "1월 전체 방학 · 실적0" }));
 export const attendance = {
   ...raw,
   periodStart: "2026-01",
   months: ["2026-01", ...raw.months],
-  programs: [...raw.programs.filter(row => row.code !== "A1811"), ...manual.programs] as AttendanceProgram[],
-  sources: [...raw.sources.map(source => ({ ...source, visiblePrograms: rfRecords.filter(row => row.sourceId === source.id).length, expectedPrograms: 10 })), ...manual.sources] as AttendanceSource[],
-  records: [...rfRecords, ...manual.records] as AttendanceRecord[],
+  programs,
+  sources: [...raw.sources.map(source => ({ ...source, visiblePrograms: rfRecords.filter(row => row.sourceId === source.id).length, expectedPrograms: 10 })), ...manual.sources, ...januarySources] as AttendanceSource[],
+  records: [...rfRecords, ...manual.records, ...januaryRecords] as AttendanceRecord[],
   paidSnapshot: { ...raw.paidSnapshot, programs: [...raw.paidSnapshot.programs.filter(row => row.programCode !== "A1811"), ...manual.programs.map(row => ({ programCode: row.code, paid: row.paid }))] },
   manualSource: { name: manual.source, pageCount: manual.pageCount, conflicts: manual.conflicts },
 };
@@ -25,7 +28,7 @@ export function calculateAttendance(record: AttendanceRecord) {
   const sessions = record.dailyCounts === null ? record.manualSessions : record.dailyCounts.filter(count => count > 0).length;
   const expected = paid === null || sessions === null ? null : paid * sessions;
   const valid = attended !== null && expected !== null && expected > 0;
-  return { ...record, programName: program?.name ?? record.programCode, paid, attended, sessions, expected, absent: valid ? Math.max(0, expected - attended) : null, attendanceRate: valid ? attended / expected * 100 : null, absenceRate: valid ? Math.max(0, expected - attended) / expected * 100 : null };
+  return { ...record, programName: program?.name ?? record.programCode, paid, attended, sessions, expected, absent: attended !== null && expected !== null ? Math.max(0, expected - attended) : null, attendanceRate: valid ? attended / expected * 100 : null, absenceRate: valid ? Math.max(0, expected - attended) / expected * 100 : null };
 }
 export function summarizeAttendance(records: AttendanceRecord[]) {
   if (!records.length) return { attended: null, sessions: null, expected: null, absent: null, attendanceRate: null, absenceRate: null };
@@ -34,7 +37,7 @@ export function summarizeAttendance(records: AttendanceRecord[]) {
   const sessions = rows.every(row => row.sessions !== null) ? rows.reduce((sum, row) => sum + (row.sessions ?? 0), 0) : null;
   const expected = rows.every(row => row.expected !== null) ? rows.reduce((sum, row) => sum + (row.expected ?? 0), 0) : null;
   const valid = attended !== null && expected !== null && expected > 0;
-  return { attended, sessions, expected, absent: valid ? Math.max(0, expected - attended) : null, attendanceRate: valid ? attended / expected * 100 : null, absenceRate: valid ? Math.max(0, expected - attended) / expected * 100 : null };
+  return { attended, sessions, expected, absent: attended !== null && expected !== null ? Math.max(0, expected - attended) : null, attendanceRate: valid ? attended / expected * 100 : null, absenceRate: valid ? Math.max(0, expected - attended) / expected * 100 : null };
 }
 export function validateAttendance() {
   const seen = new Set<string>();

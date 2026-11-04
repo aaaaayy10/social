@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createRouteAuthErrorResponse, requireRouteUser } from "@/lib/route-auth";
-import { buildRecruitmentCases, getVacancies, managementStatuses, type PrivateCaseSource, type CaseAction } from "@/lib/management-cases";
+import { currentAbsenceCases, buildRecruitmentCases, getVacancies, managementStatuses, type PrivateCaseSource, type CaseAction } from "@/lib/management-cases";
 
 const sourceKey = "management:source:life-2026-10";
 const actionPrefix = "management:action:";
@@ -20,7 +20,7 @@ export async function GET() {
   if (!user) return createRouteAuthErrorResponse(authUnavailable);
   try {
     const source = await loadSource();
-    const cases = [...source.cases, ...buildRecruitmentCases()];
+    const cases = [...currentAbsenceCases(source), ...buildRecruitmentCases()];
     const { data, error } = await createAdminClient().from("system_settings").select("key,value,updated_at").in("key", cases.map(row => actionPrefix + row.id));
     if (error) throw error;
     const actions: Record<string, CaseAction> = {};
@@ -36,12 +36,14 @@ export async function PATCH(request: NextRequest) {
     let body;
     try { body = await request.json(); } catch { return json({ error: "입력값을 확인해 주세요." }, 400); }
     if (!body || typeof body !== "object") return json({ error: "입력값을 확인해 주세요." }, 400);
-    if (typeof body.id !== "string" || !managementStatuses.includes(body.status) || typeof body.assignee !== "string" || body.assignee.length > 80 || typeof body.note !== "string" || body.note.length > 4000 || !(body.revision === null || typeof body.revision === "string")) return json({ error: "입력값을 확인해 주세요." }, 400);
+    if (typeof body.id !== "string" || !managementStatuses.includes(body.status) || typeof body.note !== "string" || body.note.length > 4000 || !(body.revision === null || typeof body.revision === "string")) return json({ error: "입력값을 확인해 주세요." }, 400);
     const source = await loadSource();
-    if (![...source.cases, ...buildRecruitmentCases()].some(row => row.id === body.id)) return json({ error: "관리 항목을 찾을 수 없습니다." }, 404);
+    if (![...currentAbsenceCases(source), ...buildRecruitmentCases()].some(row => row.id === body.id)) return json({ error: "관리 항목을 찾을 수 없습니다." }, 404);
     const db = createAdminClient();
     const { data: employee } = await db.from("employees").select("name").eq("auth_uid", user.id).maybeSingle();
-    const value = { status: body.status, assignee: body.assignee.trim(), note: body.note.trim(), updatedBy: employee?.name || user.email || "담당자" };
+    const { data: existing, error: existingError } = await db.from("system_settings").select("value").eq("key", actionPrefix + body.id).maybeSingle();
+    if (existingError) throw existingError;
+    const value = { ...(existing ? JSON.parse(existing.value) : {}), status: body.status, note: body.note.trim(), updatedBy: employee?.name || user.email || "담당자" };
     const key = actionPrefix + body.id;
     const updated_at = new Date().toISOString();
     // Compare the loaded revision so another staff member's saved work is not overwritten.
