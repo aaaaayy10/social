@@ -62,7 +62,7 @@ export function CourseEnrollment() {
 
   return (
     <PageShell>
-      <PageHeader title="프로그램 현황 대시보드" description="프로그램별 모집과 수납 현황을 한눈에 확인하세요." eyebrow={`${asOfLabel} 기준`} actions={<Button variant="outline" onClick={exportCsv}><Download className="size-4" />CSV 다운로드</Button>} />
+      <PageHeader title="전체 프로그램 현황" description="프로그램별 모집과 수납 현황을 한눈에 확인하세요." eyebrow={`${asOfLabel} 기준`} actions={<Button variant="outline" onClick={exportCsv}><Download className="size-4" />CSV 다운로드</Button>} />
       <StatsGrid className="grid-cols-2 xl:grid-cols-3">
         <StatCard label="전체 프로그램" value={`${enrollment.programs.length}개`} icon={BookOpen} description="수강신청 프로그램" />
         <StatCard label="전체 정원" value={`${totals.capacity.toLocaleString("ko-KR")}명`} icon={Users} description="프로그램별 정원 합계" />

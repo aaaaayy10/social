@@ -34,7 +34,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function ProjectsPage() {
   return <Tabs defaultValue="analysis" className="gap-5">
-    <TabsList aria-label="현황 분석 화면"><TabsTrigger value="analysis">프로그램 분석</TabsTrigger><TabsTrigger value="projects">기존 프로젝트</TabsTrigger></TabsList>
+    <TabsList aria-label="이용자 분석 화면"><TabsTrigger value="analysis">이용자 분석</TabsTrigger><TabsTrigger value="projects">기존 프로젝트</TabsTrigger></TabsList>
     <TabsContent value="analysis"><ProgramDemographics /></TabsContent>
     <TabsContent value="projects"><LegacyProjectsPage /></TabsContent>
   </Tabs>;

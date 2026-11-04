@@ -43,10 +43,10 @@ const menuSections: MenuSection[] = [
     ],
   },
   {
-    title: "영업",
+    title: "프로그램 운영",
     items: [
       {
-        label: "프로그램 현황",
+        label: "전체 프로그램 현황",
         href: "/dashboard/customers",
         icon: (
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -58,7 +58,7 @@ const menuSections: MenuSection[] = [
         ),
       },
       {
-        label: "현황 분석",
+        label: "이용자 분석",
         href: "/dashboard/projects",
         icon: (
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -67,7 +67,7 @@ const menuSections: MenuSection[] = [
         ),
       },
       {
-        label: "세부 분석",
+        label: "수납/환불 세부 분석",
         href: "/dashboard/rfp-proposals",
         icon: (
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -81,10 +81,10 @@ const menuSections: MenuSection[] = [
     ],
   },
   {
-    title: "재무",
+    title: "관리",
     items: [
       {
-        label: "견적관리",
+        label: "출석/결석 관리",
         href: "/dashboard/quotations",
         icon: (
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -97,7 +97,7 @@ const menuSections: MenuSection[] = [
         ),
       },
       {
-        label: "매출관리",
+        label: "관리 필요 현황",
         href: "/dashboard/revenues",
         icon: (
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -107,7 +107,7 @@ const menuSections: MenuSection[] = [
         ),
       },
       {
-        label: "입금관리",
+        label: "사업 개선 인사이트",
         href: "/dashboard/deposits",
         icon: (
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

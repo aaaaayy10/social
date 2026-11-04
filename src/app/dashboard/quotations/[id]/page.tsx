@@ -146,7 +146,7 @@ export default function QuotationDetailPage() {
               href="/dashboard/quotations"
               className="text-sm text-muted-foreground hover:text-foreground"
             >
-              견적관리
+              출석/결석 관리
             </Link>
             <span className="text-sm text-muted-foreground">/</span>
             <span className="text-sm font-medium">{quotation.quotation_number}</span>

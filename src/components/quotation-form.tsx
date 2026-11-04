@@ -260,7 +260,7 @@ export function QuotationForm({
             href="/dashboard/quotations"
             className="text-muted-foreground hover:text-foreground"
           >
-            견적관리
+            출석/결석 관리
           </Link>
           <span className="text-muted-foreground">/</span>
           {isEdit ? (

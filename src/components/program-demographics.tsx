@@ -20,7 +20,7 @@ export function ProgramDemographics() {
     downloadCsv(`성별_연령_현황분석_${data.asOf}.csv`, [headers, ...data.programs.map(row => [row.name, row.registrants, row.genders.male, row.genders.female, row.genders.unknown, row.averageAge, row.ageKnown, row.ageUnknown, ...row.ageCounts, data.asOf])]);
   }
   return <PageShell>
-    <PageHeader title="현황 분석" eyebrow={`${data.asOf} 기준 · 최신 세부 현황 명부`} description="이용자번호 중복을 제거한 성별·연령 구성과 복수 강좌 이용 현황입니다." actions={<Button variant="outline" onClick={exportCsv}><Download className="size-4" />분석 CSV 다운로드</Button>} />
+    <PageHeader title="이용자 분석" eyebrow={`${data.asOf} 기준 · 최신 세부 현황 명부`} description="이용자번호 중복을 제거한 성별·연령 구성과 복수 강좌 이용 현황입니다." actions={<Button variant="outline" onClick={exportCsv}><Download className="size-4" />분석 CSV 다운로드</Button>} />
     <StatsGrid className="grid-cols-2 xl:grid-cols-4">
       <StatCard label="명부 실인원" value={`${number(data.total.registrants)}명`} description="전체 이용자번호 중복 제외" />
       <StatCard label="전체 여성 / 남성 비중" value={`${percent(data.total.genders.female, data.total.registrants)} / ${percent(data.total.genders.male, data.total.registrants)}`} description={`여 ${number(data.total.genders.female)}명 · 남 ${number(data.total.genders.male)}명`} />

@@ -168,7 +168,7 @@ export default function DepositDetailPage() {
               href="/dashboard/deposits"
               className="text-sm text-muted-foreground hover:text-foreground"
             >
-              입금관리
+              사업 개선 인사이트
             </Link>
             <span className="text-sm text-muted-foreground">/</span>
             <span className="text-sm font-medium">{mask("name", deposit.depositor_name)}</span>

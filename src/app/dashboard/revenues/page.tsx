@@ -399,7 +399,7 @@ export default function RevenuesPage() {
     <>
       <PageShell>
         <PageHeader
-          title="매출 관리"
+          title="관리 필요 현황"
           funKey="revenues"
           description="모든 매출을 한곳에서 관리하고 입금 상태와 세금계산서 진행 상황까지 바로 확인할 수 있습니다."
           actions={<Button onClick={handleAdd}>매출 등록</Button>}

@@ -188,7 +188,7 @@ export default function QuotationsPage() {
   return (
     <PageShell>
       <PageHeader
-        title="견적 관리"
+        title="출석/결석 관리"
         funKey="quotations"
         description="견적 작성과 버전 관리, AI 생성 기능을 같은 패턴으로 읽을 수 있도록 정리했습니다."
         actions={

@@ -24,8 +24,8 @@ type CustomerContactSummary = {
 export default function CustomersPage() {
   return (
     <Tabs defaultValue="programs" className="gap-5">
-      <TabsList aria-label="프로그램 현황 화면">
-        <TabsTrigger value="programs">프로그램 현황</TabsTrigger>
+      <TabsList aria-label="전체 프로그램 현황 화면">
+        <TabsTrigger value="programs">전체 프로그램 현황</TabsTrigger>
         <TabsTrigger value="registered">기존 등록 정보</TabsTrigger>
       </TabsList>
       <TabsContent value="programs"><CourseEnrollment /></TabsContent>

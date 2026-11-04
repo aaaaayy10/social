@@ -106,7 +106,7 @@ function NewRevenueContent() {
     <PageShell>
       <PageHeader
         breadcrumbs={[
-          { label: "매출관리", href: "/dashboard/revenues" },
+          { label: "관리 필요 현황", href: "/dashboard/revenues" },
           { label: "신규 등록" },
         ]}
         title="매출 등록"

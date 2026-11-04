@@ -239,7 +239,7 @@ export default function DepositsPage() {
   return (
     <PageShell>
       <PageHeader
-        title="입금 관리"
+        title="사업 개선 인사이트"
         funKey="deposits"
         description="사업자 통장 입금 내역을 수기 입력과 자동 수집 기준으로 함께 관리합니다."
         actions={
