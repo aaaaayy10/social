@@ -239,7 +239,7 @@ export default function ProfitAnalysisPage() {
           label={`${year}년 매출`}
           value={`${formatAmount(yearlyRevenue)}원`}
           mobileValue={formatAmountInMan(yearlyRevenue)}
-          description="관리 필요 현황 등록 합계"
+          description="관리 필요 등록 합계"
           icon={ArrowUpRight}
           tone="info"
           sensitive="amount"
@@ -581,3 +581,4 @@ function CategoryBreakdown({
     </div>
   );
 }
+

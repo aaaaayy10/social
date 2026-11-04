@@ -876,7 +876,7 @@ export default function RevenueDetailPage() {
       ];
     }
     return [
-      { label: "관리 필요 현황", href: "/dashboard/revenues" },
+      { label: "관리 필요", href: "/dashboard/revenues" },
       { label: maskedHeaderTitle },
     ];
   })();
@@ -1784,3 +1784,4 @@ function IssueTextarea(props: TextareaHTMLAttributes<HTMLTextAreaElement>) {
     />
   );
 }
+

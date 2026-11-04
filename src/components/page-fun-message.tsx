@@ -100,7 +100,7 @@ const FUN_MESSAGES: Record<PageFunMessageKey, string[]> = {
     "숫자는 거짓말을 안 하지만 가끔 마음을 흔듭니다.",
     "잘 팔린 날은 보고서도 예뻐 보입니다.",
     "이번 달도 그래프 우상향, 마음도 우상향.",
-    "관리 필요 현황의 핵심은 꼼꼼함과 약간의 간절함입니다.",
+    "관리 필요의 핵심은 꼼꼼함과 약간의 간절함입니다.",
     "수금까지 들어와야 비로소 진짜 미소가 나옵니다.",
   ],
   quotations: [
@@ -201,3 +201,4 @@ export function PageFunMessage({ page }: { page: PageFunMessageKey }) {
 
   return <span suppressHydrationWarning>{message}</span>;
 }
+
