@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { ParticipationEstimate } from "@/components/participation-estimate";
+import financial from "@/data/program-details.json";
+import { money } from "@/components/program-analysis-ui";
 import { BookOpen, Users, ClipboardList, Wallet, Search, Download } from "lucide-react";
 import enrollment from "@/data/course-enrollment.json";
 import { PageHeader, PageShell, StatCard, StatsGrid } from "@/components/page-shell";
@@ -63,22 +66,24 @@ export function CourseEnrollment() {
       <StatsGrid className="grid-cols-2 xl:grid-cols-3">
         <StatCard label="전체 프로그램" value={`${enrollment.programs.length}개`} icon={BookOpen} description="수강신청 프로그램" />
         <StatCard label="전체 정원" value={`${totals.capacity.toLocaleString("ko-KR")}명`} icon={Users} description="프로그램별 정원 합계" />
-        <StatCard label="등록 연인원" value={`${totals.applications.toLocaleString("ko-KR")}명`} icon={ClipboardList} description="강좌별 등록인원 합계 · 강좌 간 중복 포함" />
+        <StatCard label="등록인원 합계" value={`${totals.applications.toLocaleString("ko-KR")}명`} icon={ClipboardList} description="강좌별 등록인원 합계 · 강좌 간 중복 포함" />
         <StatCard label="명부 실인원" value={enrollment.uniqueRegistrants === null ? "집계 대기" : `${displayCount(enrollment.uniqueRegistrants)}명`} icon={Users} description="세부 현황 누적 기록의 이용자번호 중복 제외" />
         <StatCard label="수납인원 합계" value={`${totals.paid.toLocaleString("ko-KR")}명`} icon={Wallet} description="강좌별 수납인원 합계 · 강좌 간 중복 포함" />
         <StatCard label="환불인원 합계(현황표)" value={`${totals.refunds.toLocaleString("ko-KR")}명`} description="현재 현황표 기재값 · 별도 환불보고서 누계와 다름" />
       </StatsGrid>
-      <p className="rounded-xl border bg-card/80 px-4 py-3 text-xs leading-6 text-muted-foreground">자료 기준일은 {asOfLabel}입니다. 등록 연인원 {totals.applications.toLocaleString("ko-KR")}명은 현재 현황표 {enrollment.programs.length}개 강좌의 등록 합계입니다. 명부 실인원 {displayCount(enrollment.uniqueRegistrants)}명은 세부 현황 {enrollment.rosterProgramCount}개 프로그램의 누적 수납 기록에서 중복 제거한 값으로 집계 범위가 다릅니다. 현재 등록자만의 전체 실인원이나 출석 연인원으로 해석하지 않습니다.</p>
+      <p className="rounded-xl border bg-card/80 px-4 py-3 text-xs leading-6 text-muted-foreground">자료 기준일은 {asOfLabel}입니다. 등록인원 합계 {totals.applications.toLocaleString("ko-KR")}명은 현재 현황표 {enrollment.programs.length}개 강좌의 등록 합계입니다. 명부 실인원 {displayCount(enrollment.uniqueRegistrants)}명은 세부 현황 {enrollment.rosterProgramCount}개 프로그램의 누적 수납 기록에서 중복 제거한 값으로 집계 범위가 다릅니다. 현재 등록자만의 전체 실인원이나 출석 연인원으로 해석하지 않습니다.</p>
       <section className="space-y-4 rounded-2xl border bg-card/95 p-5" aria-label="실인원과 연인원 통계">
         <h2 className="text-lg font-semibold">실인원·연인원 통계 · {asOfLabel} 기준</h2>
         <div className="grid gap-3 sm:grid-cols-3">
           <StatCard label="명부 실인원" value={`${displayCount(enrollment.uniqueRegistrants)}명`} description="이용자번호 기준 · 전체 중복 제외" />
-          <StatCard label="명부 강좌별 연인원" value={`${enrollment.rosterProgramEnrollments.toLocaleString("ko-KR")}명`} description="이용자+강좌 중복 제외 후 합계 · 강좌 간 중복 포함" />
-          <StatCard label="명부 수납 기록" value={`${enrollment.rosterRecords.toLocaleString("ko-KR")}건`} description="반복 납부와 0원 기록 포함 · 출석 횟수 아님" />
+          <StatCard label="고유 이용자·강좌 조합" value={`${enrollment.rosterProgramEnrollments.toLocaleString("ko-KR")}명`} description="이용자+강좌 중복 제외 후 합계 · 강좌 간 중복 포함" />
+          <StatCard label="명부 연인원(중복 포함)" value={`${enrollment.rosterRecords.toLocaleString("ko-KR")}명·건`} description="반복 납부와 0원 기록 포함 · 출석 횟수 아님" />
         </div>
-        <p className="text-xs leading-6 text-muted-foreground">명부 출처: {enrollment.rosterSource} · 기록 입금일 {enrollment.rosterFirstDate}~{enrollment.rosterLastDate}. 현재 등록 현황표의 등록 연인원 {totals.applications.toLocaleString("ko-KR")}명과 위 명부 강좌별 연인원은 집계 범위가 달라 차이가 있습니다. 출석 자료가 없어 실제 출석 연인원은 계산하지 않습니다.</p>
-        <Button variant="outline" onClick={() => downloadCsv(`실인원_연인원_통계_${enrollment.asOf}.csv`, [["항목", "값", "단위", "집계 기준", "자료 기준일"], ["현재 등록 연인원", totals.applications, "명", "프로그램 현황표 45개 강좌의 등록인원 합계", enrollment.asOf], ["명부 실인원", enrollment.uniqueRegistrants, "명", "세부 현황 전체 이용자번호 중복 제외", enrollment.asOf], ["명부 강좌별 연인원", enrollment.rosterProgramEnrollments, "명", "이용자번호+프로그램명 중복 제외 합계", enrollment.asOf], ["명부 수납 기록", enrollment.rosterRecords, "건", "반복 납부와 0원 포함", enrollment.asOf]])}><Download className="size-4" />인원 통계 CSV 다운로드</Button>
+        <p className="text-xs leading-6 text-muted-foreground">명부 출처: {enrollment.rosterSource} · 기록 입금일 {enrollment.rosterFirstDate}~{enrollment.rosterLastDate}. 현재 등록 현황표의 등록인원 합계 {totals.applications.toLocaleString("ko-KR")}명과 위 고유 이용자·강좌 조합은 집계 범위가 달라 차이가 있습니다. 실제 출석 연인원은 자료가 없어 아래에 운영 조건에 따른 추정 참여 연인원을 별도로 제공합니다.</p>
+        <Button variant="outline" onClick={() => downloadCsv(`실인원_연인원_통계_${enrollment.asOf}.csv`, [["항목", "값", "단위", "집계 기준", "자료 기준일"], ["현재 등록인원 합계", totals.applications, "명", "프로그램 현황표 45개 강좌의 등록인원 합계", enrollment.asOf], ["명부 실인원", enrollment.uniqueRegistrants, "명", "세부 현황 전체 이용자번호 중복 제외", enrollment.asOf], ["고유 이용자·강좌 조합", enrollment.rosterProgramEnrollments, "명", "이용자번호+프로그램명 중복 제외 합계", enrollment.asOf], ["명부 연인원(중복 포함)", enrollment.rosterRecords, "명·건", "반복 납부와 0원 포함", enrollment.asOf]])}><Download className="size-4" />인원 통계 CSV 다운로드</Button>
       </section>
+      <ParticipationEstimate />
+      <section aria-label="수납·환불 금액" className="space-y-3"><h2 className="text-lg font-semibold">수납·환불 금액 · {asOfLabel} 기준</h2><StatsGrid className="grid-cols-1 sm:grid-cols-3"><StatCard label="수납액(원본 입금액)" value={money(financial.refundReport.totals.deposit)} description={financial.refundReport.source} /><StatCard label="환불액" value={money(financial.refundReport.totals.refund)} /><StatCard label="차인잔액" value={money(financial.refundReport.totals.balance)} description="같은 PDF의 입금액 − 환불액" /></StatsGrid><p className="text-xs leading-6 text-muted-foreground">금액은 사용자가 지정한 PDF에 기재된 합계입니다. 보고서 범위: {financial.refundReport.periodStart}~{financial.asOf}.</p></section>
       <EnrollmentDashboard programs={programs} onSelectProgram={name => { setFilter("all"); setSearch(name); document.getElementById("program-status-title")?.scrollIntoView({behavior:"smooth",block:"start"}); }} onFilter={value => { setSearch(""); setFilter(value); document.getElementById("program-status-title")?.scrollIntoView({behavior:"smooth",block:"start"}); }} />
       <section className="overflow-hidden rounded-2xl border border-border bg-card/95 shadow-sm" aria-labelledby="program-status-title">
         <div className="space-y-4 border-b p-4 sm:p-6">
@@ -121,6 +126,9 @@ export function CourseEnrollment() {
     </PageShell>
   );
 }
+
+
+
 
 
 

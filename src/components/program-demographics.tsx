@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ParticipationEstimate } from "@/components/participation-estimate";
 import { Download } from "lucide-react";
 import data from "@/data/program-demographics.json";
 import { PageHeader, PageShell, StatCard, StatsGrid } from "@/components/page-shell";
@@ -26,6 +27,7 @@ export function ProgramDemographics() {
       <StatCard label="평균 만 나이" value={`${data.total.averageAge.toFixed(1)}세`} description={`${data.asOf} 기준 · 유효 ${number(data.total.ageKnown)}명`} />
       <StatCard label="복수 강좌 이용자" value={`${number(data.total.multiProgramPeople)}명`} description={`명부 실인원의 ${percent(data.total.multiProgramPeople, data.total.registrants)} · 2개 이상 강좌`} />
     </StatsGrid>
+    <ParticipationEstimate />
     <div className="rounded-xl border bg-secondary/60 p-4 text-xs leading-6">자료 기준일은 <strong>{data.asOf}</strong>입니다. 명부에는 {data.total.firstDate}~{data.total.lastDate} 입금 기록이 포함됩니다. 현재 등록 현황표와 집계 범위가 다르며 출석 연인원을 뜻하지 않습니다. 이전 별도 이용 현황표 대신 이번 명부에서 성별·연령을 새로 계산했습니다.</div>
     <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border bg-card p-4"><label htmlFor="demographic-program" className="text-sm font-medium">분석 프로그램 선택</label><select id="demographic-program" value={selected} onChange={event => setSelected(event.target.value)} className="h-10 w-full max-w-full rounded-lg border bg-card px-3 text-sm sm:w-72"><option value="all">전체 명부</option>{data.programs.map(row => <option key={row.id} value={row.id}>{row.name}</option>)}</select></div>
     <AnalysisPanel title={`${title} · 성별·연령 요약`}>
@@ -44,5 +46,6 @@ export function ProgramDemographics() {
     </AnalysisPanel>
   </PageShell>;
 }
+
 
 
