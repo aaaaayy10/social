@@ -11,8 +11,8 @@ export function calculateAttendance(record: AttendanceRecord) {
   const attended = record.dailyCounts === null ? record.manualTotal : record.dailyCounts.reduce((sum, count) => sum + count, 0);
   const sessions = record.dailyCounts === null ? record.manualSessions : record.dailyCounts.filter(count => count > 0).length;
   const expected = paid === null || sessions === null ? null : paid * sessions;
-  const valid = attended !== null && expected !== null && expected > 0 && attended <= expected;
-  return { ...record, programName: program?.name ?? record.programCode, paid, attended, sessions, expected, absent: valid ? expected - attended : null, attendanceRate: valid ? attended / expected * 100 : null, absenceRate: valid ? (expected - attended) / expected * 100 : null };
+  const valid = attended !== null && expected !== null && expected > 0;
+  return { ...record, programName: program?.name ?? record.programCode, paid, attended, sessions, expected, absent: valid ? Math.max(0, expected - attended) : null, attendanceRate: valid ? attended / expected * 100 : null, absenceRate: valid ? Math.max(0, expected - attended) / expected * 100 : null };
 }
 export function summarizeAttendance(records: AttendanceRecord[]) {
   if (!records.length) return { attended: null, sessions: null, expected: null, absent: null, attendanceRate: null, absenceRate: null };
@@ -20,8 +20,8 @@ export function summarizeAttendance(records: AttendanceRecord[]) {
   const attended = rows.every(row => row.attended !== null) ? rows.reduce((sum, row) => sum + (row.attended ?? 0), 0) : null;
   const sessions = rows.every(row => row.sessions !== null) ? rows.reduce((sum, row) => sum + (row.sessions ?? 0), 0) : null;
   const expected = rows.every(row => row.expected !== null) ? rows.reduce((sum, row) => sum + (row.expected ?? 0), 0) : null;
-  const valid = attended !== null && expected !== null && expected > 0 && rows.every(row => row.attended !== null && row.expected !== null && row.attended <= row.expected);
-  return { attended, sessions, expected, absent: valid ? expected - attended : null, attendanceRate: valid ? attended / expected * 100 : null, absenceRate: valid ? (expected - attended) / expected * 100 : null };
+  const valid = attended !== null && expected !== null && expected > 0;
+  return { attended, sessions, expected, absent: valid ? Math.max(0, expected - attended) : null, attendanceRate: valid ? attended / expected * 100 : null, absenceRate: valid ? Math.max(0, expected - attended) / expected * 100 : null };
 }
 export function validateAttendance() {
   const seen = new Set<string>();

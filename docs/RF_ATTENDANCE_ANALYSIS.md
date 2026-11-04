@@ -19,8 +19,10 @@ Latest July–October screenshots replace earlier sources for these months. Augu
 | October | 3,218 |
 | Total | 20,503 |
 
-Screenshot transcription has not been compared with an original spreadsheet. No dates or hidden program values are invented. Sequences are stored privately in the aggregate data for repeatable arithmetic, but the public dashboard shows summaries, trends, program comparisons and reference attendance/absence rates. It does not show the old daily-addition evidence table, October individual-PDF verification panel or extra-material/manual-extension panel.
+Screenshot transcription has not been compared with an original spreadsheet. No dates or hidden program values are invented. Sequences are stored in the aggregate data for repeatable arithmetic, but the public dashboard shows summaries, trends, program comparisons and reference attendance/absence rates. It does not show the old daily-addition evidence table, October individual-PDF verification panel or extra-material/manual-extension panel.
 
-March aerobics has 183 visits versus the current-paid denominator of 180. Keep the source count; suppress absence and rates for any selection containing that invalid denominator, rather than cap the percentage or create negative absence. Zero-session rows show zero visits/expected and no rate.
+March aerobics has 183 visits versus the current-paid denominator of 180. User requested calculation including this row: attendance is 101.7%, absence is zero. For any selected scope, attendance rate = summed attendance / summed expected; absence = max(0, summed expected - summed attendance), absence rate = absence / summed expected. These are weighted rates labelled average attendance/absence rates. No attendance count is capped and no negative absence is reported. Zero-session rows show zero visits/expected and no rate. Overall attendance 20,503 / expected 28,539 = 71.8%; absence 8,036 = 28.2%.
 
 CSV respects the selected program and month. Monthly overview deliberately retains all nine months for trend context, with the selected month highlighted. Program summary and KPI totals follow both filters. Manual monthly totals remain supported by the data type, without user-facing implementation details.
+
+Program summary table precedes monthly summary; program table supports attendance/absence ascending and descending, with undefined zero-session rates last. Expected column label is user-specified: 수납자 기준 출석 기준 연인원.
