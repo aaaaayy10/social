@@ -1,3 +1,5 @@
+> Current source classification and manual totals are documented in MANUAL_ATTENDANCE.md. RF now contains 10 programs; line dance 2 uses manual source data by user instruction. The figures below describe the previous RF-only version.
+
 # RF attendance analytics — 2026-11-04 update
 
 The dashboard covers the 11 identifiable RF programs in the supplied February–October screenshots, not all 45 registered programs. Other blurred programs are excluded.

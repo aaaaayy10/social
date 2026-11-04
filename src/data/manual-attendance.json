@@ -1,0 +1,7065 @@
+{
+  "asOf": "2026-11-04",
+  "source": "2026년 1월~10월 출석자 명단.pdf",
+  "sourceSha256": "f3e963188a1274212cb6c05243a48f79bc21fe6d4756eb5f915d18bc9c97816e",
+  "pageCount": 367,
+  "programs": [
+    {
+      "code": "manual-course-1",
+      "name": "난타 초급",
+      "type": "manual",
+      "paid": 31
+    },
+    {
+      "code": "manual-course-7",
+      "name": "댄스스포츠",
+      "type": "manual",
+      "paid": 19
+    },
+    {
+      "code": "A1811",
+      "name": "라인댄스 2",
+      "type": "manual",
+      "paid": 54
+    },
+    {
+      "code": "manual-course-11",
+      "name": "오카리나 초급",
+      "type": "manual",
+      "paid": 25
+    },
+    {
+      "code": "manual-course-12",
+      "name": "오카리나 중급",
+      "type": "manual",
+      "paid": 25
+    },
+    {
+      "code": "manual-course-13",
+      "name": "오카리나 고급",
+      "type": "manual",
+      "paid": 38
+    },
+    {
+      "code": "manual-course-15",
+      "name": "기타 초중급",
+      "type": "manual",
+      "paid": 28
+    },
+    {
+      "code": "manual-course-16",
+      "name": "기타 고급",
+      "type": "manual",
+      "paid": 37
+    },
+    {
+      "code": "manual-course-17",
+      "name": "하모니카 초급",
+      "type": "manual",
+      "paid": 23
+    },
+    {
+      "code": "manual-course-18",
+      "name": "신빠람 사물 초급",
+      "type": "manual",
+      "paid": 13
+    },
+    {
+      "code": "manual-course-19",
+      "name": "신빠람 사물 중급",
+      "type": "manual",
+      "paid": 25
+    },
+    {
+      "code": "manual-course-20",
+      "name": "난타 중급",
+      "type": "manual",
+      "paid": 35
+    },
+    {
+      "code": "manual-course-21",
+      "name": "캘리그라피 초급",
+      "type": "manual",
+      "paid": 12
+    },
+    {
+      "code": "manual-course-22",
+      "name": "동양화",
+      "type": "manual",
+      "paid": 11
+    },
+    {
+      "code": "manual-course-23",
+      "name": "서예",
+      "type": "manual",
+      "paid": 12
+    },
+    {
+      "code": "manual-course-24",
+      "name": "힐링수채화",
+      "type": "manual",
+      "paid": 13
+    },
+    {
+      "code": "manual-course-26",
+      "name": "연필인물화 초급",
+      "type": "manual",
+      "paid": 12
+    },
+    {
+      "code": "manual-course-27",
+      "name": "민화 1",
+      "type": "manual",
+      "paid": 10
+    },
+    {
+      "code": "manual-course-28",
+      "name": "실용영어",
+      "type": "manual",
+      "paid": 17
+    },
+    {
+      "code": "manual-course-29",
+      "name": "일본어 초급",
+      "type": "manual",
+      "paid": 20
+    },
+    {
+      "code": "manual-course-30",
+      "name": "한자 초급",
+      "type": "manual",
+      "paid": 13
+    },
+    {
+      "code": "manual-course-31",
+      "name": "한문(논어)",
+      "type": "manual",
+      "paid": 13
+    },
+    {
+      "code": "manual-course-32",
+      "name": "컴퓨터 초급",
+      "type": "manual",
+      "paid": 19
+    },
+    {
+      "code": "manual-course-33",
+      "name": "스마트폰 중급",
+      "type": "manual",
+      "paid": 19
+    },
+    {
+      "code": "manual-course-34",
+      "name": "스마트폰 초급",
+      "type": "manual",
+      "paid": 19
+    },
+    {
+      "code": "manual-course-35",
+      "name": "컴퓨터 활용",
+      "type": "manual",
+      "paid": 19
+    },
+    {
+      "code": "manual-course-36",
+      "name": "풀잎합창단",
+      "type": "manual",
+      "paid": 40
+    },
+    {
+      "code": "manual-course-37",
+      "name": "하모니카 중급",
+      "type": "manual",
+      "paid": 26
+    },
+    {
+      "code": "manual-course-38",
+      "name": "민화 2",
+      "type": "manual",
+      "paid": 7
+    },
+    {
+      "code": "manual-course-39",
+      "name": "연필인물화 중급",
+      "type": "manual",
+      "paid": 15
+    },
+    {
+      "code": "manual-course-40",
+      "name": "캘리그라피 중급",
+      "type": "manual",
+      "paid": 9
+    },
+    {
+      "code": "manual-course-41",
+      "name": "우쿨렐레",
+      "type": "manual",
+      "paid": 21
+    },
+    {
+      "code": "manual-course-43",
+      "name": "가락장구",
+      "type": "manual",
+      "paid": 29
+    },
+    {
+      "code": "manual-course-44",
+      "name": "숟가락 난타",
+      "type": "manual",
+      "paid": 14
+    },
+    {
+      "code": "manual-course-45",
+      "name": "금빛스케치",
+      "type": "manual",
+      "paid": 14
+    }
+  ],
+  "sources": [
+    {
+      "id": "manual-scan-2026-02",
+      "month": "2026-02",
+      "type": "manual",
+      "format": "scanned-operation-log",
+      "scope": "partial",
+      "visiblePrograms": 34,
+      "expectedPrograms": 35,
+      "readingStatus": "수업별 인원 전사·합산",
+      "metric": "참여 연인원",
+      "source": "2026년 1월~10월 출석자 명단.pdf",
+      "note": "일본어 초급 일지 미제공"
+    },
+    {
+      "id": "manual-scan-2026-03",
+      "month": "2026-03",
+      "type": "manual",
+      "format": "scanned-operation-log",
+      "scope": "full",
+      "visiblePrograms": 35,
+      "expectedPrograms": 35,
+      "readingStatus": "수업별 인원 전사·합산",
+      "metric": "참여 연인원",
+      "source": "2026년 1월~10월 출석자 명단.pdf",
+      "note": "RF10개 자료와 강사별 중복 일지 제외"
+    },
+    {
+      "id": "manual-scan-2026-04",
+      "month": "2026-04",
+      "type": "manual",
+      "format": "scanned-operation-log",
+      "scope": "full",
+      "visiblePrograms": 35,
+      "expectedPrograms": 35,
+      "readingStatus": "수업별 인원 전사·합산",
+      "metric": "참여 연인원",
+      "source": "2026년 1월~10월 출석자 명단.pdf",
+      "note": "RF10개 자료와 강사별 중복 일지 제외"
+    },
+    {
+      "id": "manual-scan-2026-05",
+      "month": "2026-05",
+      "type": "manual",
+      "format": "scanned-operation-log",
+      "scope": "full",
+      "visiblePrograms": 35,
+      "expectedPrograms": 35,
+      "readingStatus": "수업별 인원 전사·합산",
+      "metric": "참여 연인원",
+      "source": "2026년 1월~10월 출석자 명단.pdf",
+      "note": "RF10개 자료와 강사별 중복 일지 제외"
+    },
+    {
+      "id": "manual-scan-2026-06",
+      "month": "2026-06",
+      "type": "manual",
+      "format": "scanned-operation-log",
+      "scope": "full",
+      "visiblePrograms": 35,
+      "expectedPrograms": 35,
+      "readingStatus": "수업별 인원 전사·합산",
+      "metric": "참여 연인원",
+      "source": "2026년 1월~10월 출석자 명단.pdf",
+      "note": "RF10개 자료와 강사별 중복 일지 제외"
+    },
+    {
+      "id": "manual-scan-2026-07",
+      "month": "2026-07",
+      "type": "manual",
+      "format": "scanned-operation-log",
+      "scope": "full",
+      "visiblePrograms": 35,
+      "expectedPrograms": 35,
+      "readingStatus": "수업별 인원 전사·합산",
+      "metric": "참여 연인원",
+      "source": "2026년 1월~10월 출석자 명단.pdf",
+      "note": "RF10개 자료와 강사별 중복 일지 제외"
+    },
+    {
+      "id": "manual-vacation-2026-08",
+      "month": "2026-08",
+      "type": "manual",
+      "format": "user-confirmation",
+      "scope": "full",
+      "visiblePrograms": 35,
+      "expectedPrograms": 35,
+      "readingStatus": "수업별 인원 전사·합산",
+      "metric": "참여 연인원",
+      "source": "2026년 1월~10월 출석자 명단.pdf",
+      "note": "방학 휴강 사용자 확인"
+    },
+    {
+      "id": "manual-scan-2026-09",
+      "month": "2026-09",
+      "type": "manual",
+      "format": "scanned-operation-log",
+      "scope": "full",
+      "visiblePrograms": 35,
+      "expectedPrograms": 35,
+      "readingStatus": "수업별 인원 전사·합산",
+      "metric": "참여 연인원",
+      "source": "2026년 1월~10월 출석자 명단.pdf",
+      "note": "RF10개 자료와 강사별 중복 일지 제외"
+    },
+    {
+      "id": "manual-scan-2026-10",
+      "month": "2026-10",
+      "type": "manual",
+      "format": "scanned-operation-log",
+      "scope": "full",
+      "visiblePrograms": 35,
+      "expectedPrograms": 35,
+      "readingStatus": "수업별 인원 전사·합산",
+      "metric": "참여 연인원",
+      "source": "2026년 1월~10월 출석자 명단.pdf",
+      "note": "RF10개 자료와 강사별 중복 일지 제외"
+    }
+  ],
+  "records": [
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-30",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 58,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 1쪽",
+      "sourcePages": [
+        1
+      ],
+      "classCounts": [
+        14,
+        12,
+        8,
+        11,
+        13
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-1",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 100,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 2쪽",
+      "sourcePages": [
+        2
+      ],
+      "classCounts": [
+        14,
+        16,
+        14,
+        14,
+        11,
+        15,
+        16
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-22",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 42,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 3쪽",
+      "sourcePages": [
+        3
+      ],
+      "classCounts": [
+        10,
+        10,
+        11,
+        11
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-31",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 55,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 4쪽",
+      "sourcePages": [
+        4
+      ],
+      "classCounts": [
+        11,
+        10,
+        9,
+        10,
+        8,
+        7
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-32",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 65,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 5쪽",
+      "sourcePages": [
+        5
+      ],
+      "classCounts": [
+        10,
+        11,
+        10,
+        10,
+        12,
+        12
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-19",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 55,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 6쪽",
+      "sourcePages": [
+        6
+      ],
+      "classCounts": [
+        19,
+        20,
+        16
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-18",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 40,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 8쪽",
+      "sourcePages": [
+        8
+      ],
+      "classCounts": [
+        10,
+        8,
+        11,
+        11
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-36",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 78,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 9쪽",
+      "sourcePages": [
+        9
+      ],
+      "classCounts": [
+        27,
+        28,
+        23
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-24",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 36,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 11쪽",
+      "sourcePages": [
+        11
+      ],
+      "classCounts": [
+        10,
+        13,
+        13
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-11",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 103,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 12쪽",
+      "sourcePages": [
+        12
+      ],
+      "classCounts": [
+        16,
+        16,
+        14,
+        12,
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1811",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 150,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 20쪽",
+      "sourcePages": [
+        20
+      ],
+      "classCounts": [
+        34,
+        41,
+        30,
+        45
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-7",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 97,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 21쪽",
+      "sourcePages": [
+        21
+      ],
+      "classCounts": [
+        18,
+        16,
+        16,
+        16,
+        14,
+        17
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-15",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 99,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 22쪽",
+      "sourcePages": [
+        22
+      ],
+      "classCounts": [
+        11,
+        14,
+        12,
+        15,
+        15,
+        17,
+        15
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-16",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 186,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 23쪽",
+      "sourcePages": [
+        23
+      ],
+      "classCounts": [
+        26,
+        27,
+        24,
+        24,
+        26,
+        31,
+        28
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-12",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 152,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 24쪽",
+      "sourcePages": [
+        24
+      ],
+      "classCounts": [
+        20,
+        20,
+        21,
+        22,
+        23,
+        23,
+        23
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-13",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 271,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 25쪽",
+      "sourcePages": [
+        25
+      ],
+      "classCounts": [
+        38,
+        40,
+        37,
+        38,
+        38,
+        40,
+        40
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-17",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 57,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 26쪽",
+      "sourcePages": [
+        26
+      ],
+      "classCounts": [
+        11,
+        15,
+        13,
+        18
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-37",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 98,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 27쪽",
+      "sourcePages": [
+        27
+      ],
+      "classCounts": [
+        23,
+        26,
+        26,
+        23
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-41",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 46,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 28쪽",
+      "sourcePages": [
+        28
+      ],
+      "classCounts": [
+        14,
+        17,
+        15
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-44",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 81,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 29쪽",
+      "sourcePages": [
+        29
+      ],
+      "classCounts": [
+        28,
+        27,
+        26
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-43",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 87,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 30쪽",
+      "sourcePages": [
+        30
+      ],
+      "classCounts": [
+        24,
+        19,
+        20,
+        24
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-20",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 201,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 31쪽",
+      "sourcePages": [
+        31
+      ],
+      "classCounts": [
+        34,
+        28,
+        33,
+        29,
+        22,
+        25,
+        30
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-21",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 47,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 33쪽",
+      "sourcePages": [
+        33
+      ],
+      "classCounts": [
+        17,
+        11,
+        8,
+        11
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-40",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 36,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 34쪽",
+      "sourcePages": [
+        34
+      ],
+      "classCounts": [
+        8,
+        10,
+        9,
+        9
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-23",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 81,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 35쪽",
+      "sourcePages": [
+        35
+      ],
+      "classCounts": [
+        12,
+        13,
+        12,
+        12,
+        10,
+        11,
+        11
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-27",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 29,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 36쪽",
+      "sourcePages": [
+        36
+      ],
+      "classCounts": [
+        9,
+        10,
+        10
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-38",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 22,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 37쪽",
+      "sourcePages": [
+        37
+      ],
+      "classCounts": [
+        9,
+        9,
+        4
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-45",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 33,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 38쪽",
+      "sourcePages": [
+        38
+      ],
+      "classCounts": [
+        11,
+        12,
+        10
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-26",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 38,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 39쪽",
+      "sourcePages": [
+        39
+      ],
+      "classCounts": [
+        12,
+        13,
+        13
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-39",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 37,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 40쪽",
+      "sourcePages": [
+        40
+      ],
+      "classCounts": [
+        10,
+        13,
+        14
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-28",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 35,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 41쪽",
+      "sourcePages": [
+        41
+      ],
+      "classCounts": [
+        11,
+        10,
+        14
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-35",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 36,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 42쪽",
+      "sourcePages": [
+        42
+      ],
+      "classCounts": [
+        10,
+        14,
+        12
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-33",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 50,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 43쪽",
+      "sourcePages": [
+        43
+      ],
+      "classCounts": [
+        11,
+        12,
+        12,
+        15
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-34",
+      "sourceId": "manual-scan-2026-02",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 54,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 44쪽",
+      "sourcePages": [
+        44
+      ],
+      "classCounts": [
+        9,
+        16,
+        13,
+        16
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-24",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 40,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 45쪽",
+      "sourcePages": [
+        45
+      ],
+      "classCounts": [
+        9,
+        11,
+        11,
+        9
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-11",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 126,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 46쪽",
+      "sourcePages": [
+        46
+      ],
+      "classCounts": [
+        15,
+        14,
+        14,
+        12,
+        14,
+        14,
+        14,
+        14,
+        15
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-36",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 134,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 47쪽",
+      "sourcePages": [
+        47
+      ],
+      "classCounts": [
+        23,
+        26,
+        28,
+        30,
+        27
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-30",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 49,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 49쪽",
+      "sourcePages": [
+        49
+      ],
+      "classCounts": [
+        13,
+        12,
+        11,
+        13
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-22",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 43,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 50쪽",
+      "sourcePages": [
+        50
+      ],
+      "classCounts": [
+        11,
+        11,
+        10,
+        11
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-19",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 49,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 51쪽",
+      "sourcePages": [
+        51
+      ],
+      "classCounts": [
+        16,
+        17,
+        16
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-18",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 31,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 52쪽",
+      "sourcePages": [
+        52
+      ],
+      "classCounts": [
+        6,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-31",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 65,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 53쪽",
+      "sourcePages": [
+        53
+      ],
+      "classCounts": [
+        9,
+        10,
+        8,
+        9,
+        9,
+        8,
+        12
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-32",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 86,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 54쪽",
+      "sourcePages": [
+        54
+      ],
+      "classCounts": [
+        13,
+        11,
+        11,
+        8,
+        11,
+        11,
+        12,
+        9
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-1",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 126,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 55쪽",
+      "sourcePages": [
+        55
+      ],
+      "classCounts": [
+        17,
+        19,
+        16,
+        17,
+        17,
+        14,
+        13,
+        13
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-29",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 160,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 56쪽",
+      "sourcePages": [
+        56
+      ],
+      "classCounts": [
+        20,
+        17,
+        16,
+        17,
+        17,
+        17,
+        18,
+        17,
+        21
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1811",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 266,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 66쪽",
+      "sourcePages": [
+        66
+      ],
+      "classCounts": [
+        41,
+        33,
+        36,
+        37,
+        40,
+        40,
+        39
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-7",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 114,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 67쪽",
+      "sourcePages": [
+        67
+      ],
+      "classCounts": [
+        13,
+        17,
+        14,
+        14,
+        12,
+        16,
+        15,
+        13
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-15",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 111,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 68쪽",
+      "sourcePages": [
+        68
+      ],
+      "classCounts": [
+        15,
+        17,
+        12,
+        14,
+        13,
+        16,
+        13,
+        11
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-16",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 213,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 69쪽",
+      "sourcePages": [
+        69
+      ],
+      "classCounts": [
+        23,
+        26,
+        28,
+        29,
+        31,
+        26,
+        26,
+        24
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-12",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 207,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 70쪽",
+      "sourcePages": [
+        70
+      ],
+      "classCounts": [
+        24,
+        24,
+        23,
+        24,
+        22,
+        23,
+        22,
+        22,
+        23
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-13",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 335,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 71쪽",
+      "sourcePages": [
+        71
+      ],
+      "classCounts": [
+        38,
+        38,
+        39,
+        36,
+        38,
+        36,
+        39,
+        35,
+        36
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-17",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 73,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 72쪽",
+      "sourcePages": [
+        72
+      ],
+      "classCounts": [
+        16,
+        20,
+        19,
+        18
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-37",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 101,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 73쪽",
+      "sourcePages": [
+        73
+      ],
+      "classCounts": [
+        27,
+        23,
+        26,
+        25
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-41",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 49,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 74쪽",
+      "sourcePages": [
+        74
+      ],
+      "classCounts": [
+        14,
+        15,
+        10,
+        10
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-44",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 87,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 75쪽",
+      "sourcePages": [
+        75
+      ],
+      "classCounts": [
+        23,
+        22,
+        20,
+        22
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-43",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 79,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 76쪽",
+      "sourcePages": [
+        76
+      ],
+      "classCounts": [
+        22,
+        15,
+        19,
+        23
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-20",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 217,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 77쪽",
+      "sourcePages": [
+        77
+      ],
+      "classCounts": [
+        20,
+        20,
+        24,
+        26,
+        24,
+        26,
+        25,
+        27,
+        25
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-21",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 40,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 79쪽",
+      "sourcePages": [
+        79
+      ],
+      "classCounts": [
+        11,
+        11,
+        10,
+        8
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-40",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 32,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 80쪽",
+      "sourcePages": [
+        80
+      ],
+      "classCounts": [
+        8,
+        9,
+        6,
+        9
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-23",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 85,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 81쪽",
+      "sourcePages": [
+        81
+      ],
+      "classCounts": [
+        12,
+        11,
+        10,
+        11,
+        10,
+        10,
+        11,
+        10
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-27",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 45,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 82쪽",
+      "sourcePages": [
+        82
+      ],
+      "classCounts": [
+        8,
+        8,
+        9,
+        8,
+        12
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-38",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 31,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 83쪽",
+      "sourcePages": [
+        83
+      ],
+      "classCounts": [
+        4,
+        7,
+        7,
+        7,
+        6
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-45",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 46,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 84쪽",
+      "sourcePages": [
+        84
+      ],
+      "classCounts": [
+        12,
+        13,
+        9,
+        12
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-26",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 45,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 85쪽",
+      "sourcePages": [
+        85
+      ],
+      "classCounts": [
+        10,
+        12,
+        11,
+        12
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-39",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 45,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 86쪽",
+      "sourcePages": [
+        86
+      ],
+      "classCounts": [
+        14,
+        10,
+        11,
+        10
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-28",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 180,
+      "manualSessions": 12,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 87, 88쪽",
+      "sourcePages": [
+        87,
+        88
+      ],
+      "classCounts": [
+        15,
+        15,
+        16,
+        14,
+        14,
+        17,
+        14,
+        14,
+        16,
+        12,
+        16,
+        17
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-35",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 57,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 89쪽",
+      "sourcePages": [
+        89
+      ],
+      "classCounts": [
+        11,
+        12,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-33",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 54,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 90쪽",
+      "sourcePages": [
+        90
+      ],
+      "classCounts": [
+        15,
+        13,
+        13,
+        13
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-34",
+      "sourceId": "manual-scan-2026-03",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 55,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 91쪽",
+      "sourcePages": [
+        91
+      ],
+      "classCounts": [
+        13,
+        12,
+        15,
+        15
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-18",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 34,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 93쪽",
+      "sourcePages": [
+        93
+      ],
+      "classCounts": [
+        8,
+        8,
+        9,
+        9
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-1",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 123,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 94쪽",
+      "sourcePages": [
+        94
+      ],
+      "classCounts": [
+        17,
+        17,
+        14,
+        18,
+        12,
+        11,
+        17,
+        17
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-29",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 146,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 95쪽",
+      "sourcePages": [
+        95
+      ],
+      "classCounts": [
+        22,
+        15,
+        21,
+        15,
+        20,
+        18,
+        16,
+        19
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-19",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 85,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 96쪽",
+      "sourcePages": [
+        96
+      ],
+      "classCounts": [
+        16,
+        17,
+        17,
+        17,
+        18
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-31",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 96,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 97쪽",
+      "sourcePages": [
+        97
+      ],
+      "classCounts": [
+        11,
+        10,
+        21,
+        10,
+        8,
+        9,
+        9,
+        10,
+        8
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-22",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 45,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 98쪽",
+      "sourcePages": [
+        98
+      ],
+      "classCounts": [
+        11,
+        10,
+        9,
+        8,
+        7
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-32",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 94,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 99쪽",
+      "sourcePages": [
+        99
+      ],
+      "classCounts": [
+        10,
+        10,
+        10,
+        12,
+        10,
+        12,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-30",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 40,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 101쪽",
+      "sourcePages": [
+        101
+      ],
+      "classCounts": [
+        10,
+        9,
+        13,
+        8
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-36",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 116,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 102쪽",
+      "sourcePages": [
+        102
+      ],
+      "classCounts": [
+        26,
+        30,
+        28,
+        32
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-24",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 31,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 104쪽",
+      "sourcePages": [
+        104
+      ],
+      "classCounts": [
+        10,
+        12,
+        9
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-11",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 109,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 105쪽",
+      "sourcePages": [
+        105
+      ],
+      "classCounts": [
+        12,
+        14,
+        15,
+        15,
+        13,
+        13,
+        13,
+        14
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1811",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 337,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 114쪽",
+      "sourcePages": [
+        114
+      ],
+      "classCounts": [
+        34,
+        34,
+        36,
+        42,
+        37,
+        41,
+        34,
+        40,
+        39
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-7",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 89,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 115쪽",
+      "sourcePages": [
+        115
+      ],
+      "classCounts": [
+        12,
+        10,
+        10,
+        13,
+        11,
+        12,
+        11,
+        10
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-15",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 132,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 116쪽",
+      "sourcePages": [
+        116
+      ],
+      "classCounts": [
+        15,
+        15,
+        13,
+        17,
+        16,
+        12,
+        16,
+        14,
+        14
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-16",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 238,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 117쪽",
+      "sourcePages": [
+        117
+      ],
+      "classCounts": [
+        29,
+        28,
+        23,
+        29,
+        29,
+        17,
+        29,
+        30,
+        24
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-12",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 195,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 118쪽",
+      "sourcePages": [
+        118
+      ],
+      "classCounts": [
+        24,
+        24,
+        26,
+        24,
+        25,
+        25,
+        25,
+        22
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-13",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 302,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 119쪽",
+      "sourcePages": [
+        119
+      ],
+      "classCounts": [
+        38,
+        38,
+        38,
+        39,
+        36,
+        36,
+        38,
+        39
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-17",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 92,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 120쪽",
+      "sourcePages": [
+        120
+      ],
+      "classCounts": [
+        20,
+        18,
+        19,
+        19,
+        16
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-37",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 127,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 121쪽",
+      "sourcePages": [
+        121
+      ],
+      "classCounts": [
+        28,
+        23,
+        25,
+        25,
+        26
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-41",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 58,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 122쪽",
+      "sourcePages": [
+        122
+      ],
+      "classCounts": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-44",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 103,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 123쪽",
+      "sourcePages": [
+        123
+      ],
+      "classCounts": [
+        22,
+        22,
+        20,
+        18,
+        21
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-43",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 100,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 124쪽",
+      "sourcePages": [
+        124
+      ],
+      "classCounts": [
+        21,
+        19,
+        22,
+        17,
+        21
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-20",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 245,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 125쪽",
+      "sourcePages": [
+        125
+      ],
+      "classCounts": [
+        28,
+        26,
+        27,
+        24,
+        30,
+        29,
+        27,
+        27,
+        27
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-21",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 48,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 127쪽",
+      "sourcePages": [
+        127
+      ],
+      "classCounts": [
+        17,
+        8,
+        9,
+        7,
+        7
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-40",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 33,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 128쪽",
+      "sourcePages": [
+        128
+      ],
+      "classCounts": [
+        7,
+        6,
+        6,
+        6,
+        8
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-23",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 91,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 129쪽",
+      "sourcePages": [
+        129
+      ],
+      "classCounts": [
+        11,
+        10,
+        8,
+        11,
+        9,
+        10,
+        10,
+        11,
+        11
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-27",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 43,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 130쪽",
+      "sourcePages": [
+        130
+      ],
+      "classCounts": [
+        8,
+        11,
+        11,
+        13
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-38",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 21,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 131쪽",
+      "sourcePages": [
+        131
+      ],
+      "classCounts": [
+        6,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-45",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 45,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 132쪽",
+      "sourcePages": [
+        132
+      ],
+      "classCounts": [
+        12,
+        12,
+        9,
+        12
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-26",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 48,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 133쪽",
+      "sourcePages": [
+        133
+      ],
+      "classCounts": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-39",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 62,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 134쪽",
+      "sourcePages": [
+        134
+      ],
+      "classCounts": [
+        10,
+        13,
+        13,
+        13,
+        13
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-28",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 123,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 135쪽",
+      "sourcePages": [
+        135
+      ],
+      "classCounts": [
+        13,
+        17,
+        14,
+        17,
+        17,
+        17,
+        12,
+        16
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-35",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 41,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 136쪽",
+      "sourcePages": [
+        136
+      ],
+      "classCounts": [
+        8,
+        12,
+        10,
+        11
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-33",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 76,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 137쪽",
+      "sourcePages": [
+        137
+      ],
+      "classCounts": [
+        15,
+        13,
+        14,
+        18,
+        16
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-34",
+      "sourceId": "manual-scan-2026-04",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 58,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 138쪽",
+      "sourcePages": [
+        138
+      ],
+      "classCounts": [
+        14,
+        16,
+        15,
+        13
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-22",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 36,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 140쪽",
+      "sourcePages": [
+        140
+      ],
+      "classCounts": [
+        9,
+        10,
+        7,
+        10
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-31",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 62,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 141쪽",
+      "sourcePages": [
+        141
+      ],
+      "classCounts": [
+        11,
+        9,
+        9,
+        8,
+        8,
+        8,
+        9
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-32",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 60,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 142쪽",
+      "sourcePages": [
+        142
+      ],
+      "classCounts": [
+        11,
+        9,
+        10,
+        11,
+        10,
+        9
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-30",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 34,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 143쪽",
+      "sourcePages": [
+        143
+      ],
+      "classCounts": [
+        8,
+        9,
+        8,
+        9
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-19",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 54,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 145쪽",
+      "sourcePages": [
+        145
+      ],
+      "classCounts": [
+        15,
+        17,
+        14,
+        8
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-29",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 117,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 146쪽",
+      "sourcePages": [
+        146
+      ],
+      "classCounts": [
+        17,
+        15,
+        16,
+        15,
+        16,
+        18,
+        20
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-18",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 37,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 147쪽",
+      "sourcePages": [
+        147
+      ],
+      "classCounts": [
+        10,
+        9,
+        9,
+        9
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-1",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 63,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 148쪽",
+      "sourcePages": [
+        148
+      ],
+      "classCounts": [
+        12,
+        10,
+        11,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-36",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 90,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 149쪽",
+      "sourcePages": [
+        149
+      ],
+      "classCounts": [
+        29,
+        33,
+        28
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-24",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 27,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 151쪽",
+      "sourcePages": [
+        151
+      ],
+      "classCounts": [
+        9,
+        9,
+        9
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-11",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 90,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 152쪽",
+      "sourcePages": [
+        152
+      ],
+      "classCounts": [
+        12,
+        14,
+        13,
+        13,
+        13,
+        12,
+        13
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1811",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 235,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 161쪽",
+      "sourcePages": [
+        161
+      ],
+      "classCounts": [
+        36,
+        36,
+        28,
+        38,
+        31,
+        35,
+        31
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-7",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 90,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 162쪽",
+      "sourcePages": [
+        162
+      ],
+      "classCounts": [
+        11,
+        12,
+        13,
+        11,
+        13,
+        16,
+        14
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-15",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 84,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 163쪽",
+      "sourcePages": [
+        163
+      ],
+      "classCounts": [
+        14,
+        11,
+        11,
+        13,
+        12,
+        12,
+        11
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-16",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 178,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 164쪽",
+      "sourcePages": [
+        164
+      ],
+      "classCounts": [
+        25,
+        32,
+        27,
+        28,
+        17,
+        24,
+        25
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-12",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 155,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 165쪽",
+      "sourcePages": [
+        165
+      ],
+      "classCounts": [
+        22,
+        24,
+        21,
+        23,
+        22,
+        21,
+        22
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-13",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 245,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 166쪽",
+      "sourcePages": [
+        166
+      ],
+      "classCounts": [
+        38,
+        37,
+        33,
+        34,
+        34,
+        33,
+        36
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-17",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 58,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 167쪽",
+      "sourcePages": [
+        167
+      ],
+      "classCounts": [
+        13,
+        14,
+        16,
+        15
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-37",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 99,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 168쪽",
+      "sourcePages": [
+        168
+      ],
+      "classCounts": [
+        29,
+        24,
+        22,
+        24
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-41",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 37,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 169쪽",
+      "sourcePages": [
+        169
+      ],
+      "classCounts": [
+        11,
+        14,
+        12
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-44",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 79,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 170쪽",
+      "sourcePages": [
+        170
+      ],
+      "classCounts": [
+        19,
+        21,
+        20,
+        19
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-43",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 69,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 171쪽",
+      "sourcePages": [
+        171
+      ],
+      "classCounts": [
+        21,
+        20,
+        19,
+        9
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-20",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 186,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 172쪽",
+      "sourcePages": [
+        172
+      ],
+      "classCounts": [
+        29,
+        25,
+        25,
+        28,
+        27,
+        25,
+        27
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-21",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 32,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 174쪽",
+      "sourcePages": [
+        174
+      ],
+      "classCounts": [
+        7,
+        8,
+        8,
+        9
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-40",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 34,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 175쪽",
+      "sourcePages": [
+        175
+      ],
+      "classCounts": [
+        8,
+        9,
+        9,
+        8
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-23",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 70,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 176쪽",
+      "sourcePages": [
+        176
+      ],
+      "classCounts": [
+        10,
+        11,
+        10,
+        9,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-27",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 26,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 177쪽",
+      "sourcePages": [
+        177
+      ],
+      "classCounts": [
+        8,
+        10,
+        8
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-38",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 15,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 178쪽",
+      "sourcePages": [
+        178
+      ],
+      "classCounts": [
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-45",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 49,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 179쪽",
+      "sourcePages": [
+        179
+      ],
+      "classCounts": [
+        12,
+        12,
+        13,
+        12
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-26",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 35,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 180쪽",
+      "sourcePages": [
+        180
+      ],
+      "classCounts": [
+        10,
+        13,
+        12
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-39",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 55,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 181쪽",
+      "sourcePages": [
+        181
+      ],
+      "classCounts": [
+        13,
+        14,
+        14,
+        14
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-28",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 105,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 182쪽",
+      "sourcePages": [
+        182
+      ],
+      "classCounts": [
+        14,
+        16,
+        19,
+        14,
+        14,
+        12,
+        16
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-35",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 29,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 183쪽",
+      "sourcePages": [
+        183
+      ],
+      "classCounts": [
+        11,
+        10,
+        8
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-33",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 72,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 184쪽",
+      "sourcePages": [
+        184
+      ],
+      "classCounts": [
+        18,
+        19,
+        17,
+        18
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-34",
+      "sourceId": "manual-scan-2026-05",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 48,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 185쪽",
+      "sourcePages": [
+        185
+      ],
+      "classCounts": [
+        13,
+        12,
+        11,
+        12
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-29",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 135,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 187쪽",
+      "sourcePages": [
+        187
+      ],
+      "classCounts": [
+        18,
+        18,
+        18,
+        17,
+        15,
+        18,
+        15,
+        16
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-1",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 98,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 189쪽",
+      "sourcePages": [
+        189
+      ],
+      "classCounts": [
+        13,
+        11,
+        12,
+        10,
+        13,
+        10,
+        11,
+        9,
+        9
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-18",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 38,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 190쪽",
+      "sourcePages": [
+        190
+      ],
+      "classCounts": [
+        9,
+        9,
+        10,
+        10
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-19",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 56,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 191쪽",
+      "sourcePages": [
+        191
+      ],
+      "classCounts": [
+        18,
+        19,
+        19
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-22",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 28,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 192쪽",
+      "sourcePages": [
+        192
+      ],
+      "classCounts": [
+        9,
+        8,
+        11
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-32",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 71,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 193쪽",
+      "sourcePages": [
+        193
+      ],
+      "classCounts": [
+        10,
+        9,
+        9,
+        10,
+        8,
+        9,
+        8,
+        8
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-31",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 58,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 194쪽",
+      "sourcePages": [
+        194
+      ],
+      "classCounts": [
+        6,
+        9,
+        7,
+        9,
+        6,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-30",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 27,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 195쪽",
+      "sourcePages": [
+        195
+      ],
+      "classCounts": [
+        5,
+        6,
+        9,
+        7
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-36",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 154,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 196쪽",
+      "sourcePages": [
+        196
+      ],
+      "classCounts": [
+        29,
+        30,
+        36,
+        29,
+        30
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-24",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 29,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 198쪽",
+      "sourcePages": [
+        198
+      ],
+      "classCounts": [
+        10,
+        9,
+        10
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-11",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 97,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 199쪽",
+      "sourcePages": [
+        199
+      ],
+      "classCounts": [
+        12,
+        12,
+        11,
+        12,
+        12,
+        12,
+        12,
+        14
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1811",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 218,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 207쪽",
+      "sourcePages": [
+        207
+      ],
+      "classCounts": [
+        36,
+        40,
+        33,
+        39,
+        42,
+        28
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-7",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 102,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 208쪽",
+      "sourcePages": [
+        208
+      ],
+      "classCounts": [
+        17,
+        16,
+        11,
+        11,
+        13,
+        16,
+        18
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-15",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 82,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 209쪽",
+      "sourcePages": [
+        209
+      ],
+      "classCounts": [
+        10,
+        11,
+        8,
+        8,
+        9,
+        8,
+        10,
+        9,
+        9
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-16",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 224,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 210쪽",
+      "sourcePages": [
+        210
+      ],
+      "classCounts": [
+        32,
+        26,
+        30,
+        26,
+        17,
+        14,
+        29,
+        27,
+        23
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-12",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 180,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 211쪽",
+      "sourcePages": [
+        211
+      ],
+      "classCounts": [
+        22,
+        21,
+        22,
+        23,
+        23,
+        23,
+        22,
+        24
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-13",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 304,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 212쪽",
+      "sourcePages": [
+        212
+      ],
+      "classCounts": [
+        38,
+        38,
+        39,
+        39,
+        39,
+        37,
+        38,
+        36
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-17",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 48,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 213쪽",
+      "sourcePages": [
+        213
+      ],
+      "classCounts": [
+        11,
+        13,
+        12,
+        12
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-37",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 91,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 214쪽",
+      "sourcePages": [
+        214
+      ],
+      "classCounts": [
+        23,
+        24,
+        23,
+        21
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-41",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 61,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 215쪽",
+      "sourcePages": [
+        215
+      ],
+      "classCounts": [
+        14,
+        11,
+        10,
+        13,
+        13
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-44",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 50,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 216쪽",
+      "sourcePages": [
+        216
+      ],
+      "classCounts": [
+        16,
+        17,
+        17
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-43",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 76,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 217쪽",
+      "sourcePages": [
+        217
+      ],
+      "classCounts": [
+        19,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-20",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 238,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 218쪽",
+      "sourcePages": [
+        218
+      ],
+      "classCounts": [
+        27,
+        27,
+        26,
+        20,
+        26,
+        29,
+        28,
+        25,
+        30
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-21",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 33,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 220쪽",
+      "sourcePages": [
+        220
+      ],
+      "classCounts": [
+        10,
+        7,
+        8,
+        8
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-40",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 33,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 221쪽",
+      "sourcePages": [
+        221
+      ],
+      "classCounts": [
+        8,
+        9,
+        8,
+        8
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-23",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 91,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 222쪽",
+      "sourcePages": [
+        222
+      ],
+      "classCounts": [
+        11,
+        10,
+        11,
+        11,
+        11,
+        10,
+        9,
+        9,
+        9
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-27",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 51,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 223쪽",
+      "sourcePages": [
+        223
+      ],
+      "classCounts": [
+        9,
+        9,
+        11,
+        12,
+        10
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-38",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 25,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 224쪽",
+      "sourcePages": [
+        224
+      ],
+      "classCounts": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-45",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 25,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 225쪽",
+      "sourcePages": [
+        225
+      ],
+      "classCounts": [
+        12,
+        13
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-26",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 63,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 226쪽",
+      "sourcePages": [
+        226
+      ],
+      "classCounts": [
+        13,
+        12,
+        13,
+        12,
+        13
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-39",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 34,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 227쪽",
+      "sourcePages": [
+        227
+      ],
+      "classCounts": [
+        11,
+        12,
+        11
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-28",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 131,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 228쪽",
+      "sourcePages": [
+        228
+      ],
+      "classCounts": [
+        18,
+        14,
+        15,
+        12,
+        16,
+        14,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-35",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 61,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 229쪽",
+      "sourcePages": [
+        229
+      ],
+      "classCounts": [
+        16,
+        12,
+        11,
+        11,
+        11
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-33",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 73,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 230쪽",
+      "sourcePages": [
+        230
+      ],
+      "classCounts": [
+        19,
+        20,
+        18,
+        16
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-34",
+      "sourceId": "manual-scan-2026-06",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 50,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 231쪽",
+      "sourcePages": [
+        231
+      ],
+      "classCounts": [
+        13,
+        13,
+        12,
+        12
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-24",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 16,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 232쪽",
+      "sourcePages": [
+        232
+      ],
+      "classCounts": [
+        8,
+        8
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-11",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 56,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 233쪽",
+      "sourcePages": [
+        233
+      ],
+      "classCounts": [
+        14,
+        14,
+        14,
+        14
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1811",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 171,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 241쪽",
+      "sourcePages": [
+        241
+      ],
+      "classCounts": [
+        35,
+        34,
+        38,
+        34,
+        30
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-7",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 78,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 242쪽",
+      "sourcePages": [
+        242
+      ],
+      "classCounts": [
+        12,
+        12,
+        9,
+        13,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-15",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 53,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 243쪽",
+      "sourcePages": [
+        243
+      ],
+      "classCounts": [
+        11,
+        11,
+        11,
+        11,
+        9
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-16",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 116,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 244쪽",
+      "sourcePages": [
+        244
+      ],
+      "classCounts": [
+        26,
+        26,
+        28,
+        15,
+        21
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-12",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 93,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 245쪽",
+      "sourcePages": [
+        245
+      ],
+      "classCounts": [
+        22,
+        24,
+        23,
+        24
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-13",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 152,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 246쪽",
+      "sourcePages": [
+        246
+      ],
+      "classCounts": [
+        37,
+        38,
+        38,
+        39
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-17",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 41,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 247쪽",
+      "sourcePages": [
+        247
+      ],
+      "classCounts": [
+        19,
+        10,
+        12
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-37",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 70,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 248쪽",
+      "sourcePages": [
+        248
+      ],
+      "classCounts": [
+        19,
+        24,
+        27
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-41",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 26,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 249쪽",
+      "sourcePages": [
+        249
+      ],
+      "classCounts": [
+        11,
+        15
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-44",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 50,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 250쪽",
+      "sourcePages": [
+        250
+      ],
+      "classCounts": [
+        16,
+        17,
+        17
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-43",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 59,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 251쪽",
+      "sourcePages": [
+        251
+      ],
+      "classCounts": [
+        19,
+        20,
+        20
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-20",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 132,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 252쪽",
+      "sourcePages": [
+        252
+      ],
+      "classCounts": [
+        28,
+        26,
+        27,
+        23,
+        28
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-21",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 23,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 254쪽",
+      "sourcePages": [
+        254
+      ],
+      "classCounts": [
+        8,
+        7,
+        8
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-40",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 20,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 255쪽",
+      "sourcePages": [
+        255
+      ],
+      "classCounts": [
+        8,
+        5,
+        7
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-23",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 32,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 256쪽",
+      "sourcePages": [
+        256
+      ],
+      "classCounts": [
+        7,
+        8,
+        8,
+        9
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-27",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 17,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 257쪽",
+      "sourcePages": [
+        257
+      ],
+      "classCounts": [
+        9,
+        8
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-38",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 10,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 258쪽",
+      "sourcePages": [
+        258
+      ],
+      "classCounts": [
+        5,
+        5
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-45",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 33,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 259쪽",
+      "sourcePages": [
+        259
+      ],
+      "classCounts": [
+        12,
+        10,
+        11
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-26",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 24,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 260쪽",
+      "sourcePages": [
+        260
+      ],
+      "classCounts": [
+        12,
+        12
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-39",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 33,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 261쪽",
+      "sourcePages": [
+        261
+      ],
+      "classCounts": [
+        11,
+        11,
+        11
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-28",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 65,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 262쪽",
+      "sourcePages": [
+        262
+      ],
+      "classCounts": [
+        14,
+        17,
+        16,
+        18
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-35",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 21,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 263쪽",
+      "sourcePages": [
+        263
+      ],
+      "classCounts": [
+        11,
+        10
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-33",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 52,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 264쪽",
+      "sourcePages": [
+        264
+      ],
+      "classCounts": [
+        16,
+        19,
+        17
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-34",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 24,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 265쪽",
+      "sourcePages": [
+        265
+      ],
+      "classCounts": [
+        13,
+        11
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-36",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 70,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 266, 267쪽",
+      "sourcePages": [
+        266,
+        267
+      ],
+      "classCounts": [
+        35,
+        35
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-32",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 43,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 268쪽",
+      "sourcePages": [
+        268
+      ],
+      "classCounts": [
+        8,
+        9,
+        9,
+        8,
+        9
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-29",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 67,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 269쪽",
+      "sourcePages": [
+        269
+      ],
+      "classCounts": [
+        14,
+        17,
+        19,
+        17
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-31",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 38,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 270쪽",
+      "sourcePages": [
+        270
+      ],
+      "classCounts": [
+        7,
+        7,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-22",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 24,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 271쪽",
+      "sourcePages": [
+        271
+      ],
+      "classCounts": [
+        9,
+        8,
+        7
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-1",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 44,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 272쪽",
+      "sourcePages": [
+        272
+      ],
+      "classCounts": [
+        10,
+        12,
+        10,
+        12
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-18",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 8,
+      "manualSessions": 1,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 273쪽",
+      "sourcePages": [
+        273
+      ],
+      "classCounts": [
+        8
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-19",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 36,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 274쪽",
+      "sourcePages": [
+        274
+      ],
+      "classCounts": [
+        18,
+        18
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-30",
+      "sourceId": "manual-scan-2026-07",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 24,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 275쪽",
+      "sourcePages": [
+        275
+      ],
+      "classCounts": [
+        8,
+        9,
+        7
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-24",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 32,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 277쪽",
+      "sourcePages": [
+        277
+      ],
+      "classCounts": [
+        10,
+        9,
+        13
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-36",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 152,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 278쪽",
+      "sourcePages": [
+        278
+      ],
+      "classCounts": [
+        37,
+        38,
+        39,
+        38
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-18",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 21,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 282쪽",
+      "sourcePages": [
+        282
+      ],
+      "classCounts": [
+        11,
+        10
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-19",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 73,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 283쪽",
+      "sourcePages": [
+        283
+      ],
+      "classCounts": [
+        21,
+        18,
+        18,
+        16
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-1",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 127,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 284쪽",
+      "sourcePages": [
+        284
+      ],
+      "classCounts": [
+        18,
+        22,
+        23,
+        21,
+        18,
+        25
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-30",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 14,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 285쪽",
+      "sourcePages": [
+        285
+      ],
+      "classCounts": [
+        8,
+        6
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-29",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 54,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 286쪽",
+      "sourcePages": [
+        286
+      ],
+      "classCounts": [
+        14,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-31",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 59,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 287쪽",
+      "sourcePages": [
+        287
+      ],
+      "classCounts": [
+        10,
+        9,
+        8,
+        7,
+        7,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-22",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 37,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 288쪽",
+      "sourcePages": [
+        288
+      ],
+      "classCounts": [
+        11,
+        10,
+        6,
+        10
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-32",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 131,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 289쪽",
+      "sourcePages": [
+        289
+      ],
+      "classCounts": [
+        12,
+        17,
+        18,
+        18,
+        16,
+        16,
+        17,
+        17
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1811",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 371,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 297쪽",
+      "sourcePages": [
+        297
+      ],
+      "classCounts": [
+        49,
+        47,
+        48,
+        50,
+        46,
+        40,
+        43,
+        48
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-7",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 92,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 298쪽",
+      "sourcePages": [
+        298
+      ],
+      "classCounts": [
+        14,
+        16,
+        15,
+        19,
+        14,
+        14
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-15",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 111,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 299쪽",
+      "sourcePages": [
+        299
+      ],
+      "classCounts": [
+        17,
+        18,
+        22,
+        18,
+        20,
+        16
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-16",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 158,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 300쪽",
+      "sourcePages": [
+        300
+      ],
+      "classCounts": [
+        29,
+        30,
+        29,
+        27,
+        13,
+        30
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-11",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 123,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 301쪽",
+      "sourcePages": [
+        301
+      ],
+      "classCounts": [
+        20,
+        19,
+        23,
+        17,
+        22,
+        22
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-12",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 132,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 302쪽",
+      "sourcePages": [
+        302
+      ],
+      "classCounts": [
+        22,
+        24,
+        21,
+        23,
+        22,
+        20
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-13",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 225,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 303쪽",
+      "sourcePages": [
+        303
+      ],
+      "classCounts": [
+        38,
+        38,
+        38,
+        35,
+        38,
+        38
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-17",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 44,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 304쪽",
+      "sourcePages": [
+        304
+      ],
+      "classCounts": [
+        24,
+        20
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-37",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 48,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 305쪽",
+      "sourcePages": [
+        305
+      ],
+      "classCounts": [
+        26,
+        22
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-41",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 65,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 306쪽",
+      "sourcePages": [
+        306
+      ],
+      "classCounts": [
+        17,
+        16,
+        14,
+        18
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-44",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 53,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 307쪽",
+      "sourcePages": [
+        307
+      ],
+      "classCounts": [
+        16,
+        16,
+        10,
+        11
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-43",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 53,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 308쪽",
+      "sourcePages": [
+        308
+      ],
+      "classCounts": [
+        27,
+        26
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-20",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 157,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 309쪽",
+      "sourcePages": [
+        309
+      ],
+      "classCounts": [
+        24,
+        27,
+        28,
+        24,
+        26,
+        28
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-21",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 22,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 311쪽",
+      "sourcePages": [
+        311
+      ],
+      "classCounts": [
+        10,
+        12
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-40",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 14,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 312쪽",
+      "sourcePages": [
+        312
+      ],
+      "classCounts": [
+        8,
+        6
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-23",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 70,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 313쪽",
+      "sourcePages": [
+        313
+      ],
+      "classCounts": [
+        13,
+        11,
+        12,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-27",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 32,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 314쪽",
+      "sourcePages": [
+        314
+      ],
+      "classCounts": [
+        7,
+        9,
+        8,
+        8
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-38",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 28,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 315쪽",
+      "sourcePages": [
+        315
+      ],
+      "classCounts": [
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-45",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 41,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 316쪽",
+      "sourcePages": [
+        316
+      ],
+      "classCounts": [
+        10,
+        11,
+        9,
+        11
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-26",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 35,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 317쪽",
+      "sourcePages": [
+        317
+      ],
+      "classCounts": [
+        7,
+        11,
+        8,
+        9
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-39",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 50,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 318쪽",
+      "sourcePages": [
+        318
+      ],
+      "classCounts": [
+        12,
+        12,
+        13,
+        13
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-28",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 96,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 319쪽",
+      "sourcePages": [
+        319
+      ],
+      "classCounts": [
+        18,
+        16,
+        17,
+        16,
+        15,
+        14
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-35",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 67,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 320쪽",
+      "sourcePages": [
+        320
+      ],
+      "classCounts": [
+        14,
+        17,
+        18,
+        18
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-33",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 30,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 321쪽",
+      "sourcePages": [
+        321
+      ],
+      "classCounts": [
+        16,
+        14
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-34",
+      "sourceId": "manual-scan-2026-09",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 56,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 322쪽",
+      "sourcePages": [
+        322
+      ],
+      "classCounts": [
+        12,
+        16,
+        14,
+        14
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-24",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 23,
+      "manualSessions": 2,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 323쪽",
+      "sourcePages": [
+        323
+      ],
+      "classCounts": [
+        12,
+        11
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-36",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 154,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 324쪽",
+      "sourcePages": [
+        324
+      ],
+      "classCounts": [
+        37,
+        39,
+        39,
+        39
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-29",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 99,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 326쪽",
+      "sourcePages": [
+        326
+      ],
+      "classCounts": [
+        13,
+        15,
+        15,
+        14,
+        12,
+        15,
+        15
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-1",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 139,
+      "manualSessions": 6,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 327쪽",
+      "sourcePages": [
+        327
+      ],
+      "classCounts": [
+        19,
+        22,
+        24,
+        23,
+        24,
+        27
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-18",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 33,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 328쪽",
+      "sourcePages": [
+        328
+      ],
+      "classCounts": [
+        10,
+        7,
+        8,
+        8
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-19",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 72,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 329쪽",
+      "sourcePages": [
+        329
+      ],
+      "classCounts": [
+        16,
+        20,
+        19,
+        17
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-30",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 42,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 330쪽",
+      "sourcePages": [
+        330
+      ],
+      "classCounts": [
+        8,
+        9,
+        9,
+        8,
+        8
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-22",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 36,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 332쪽",
+      "sourcePages": [
+        332
+      ],
+      "classCounts": [
+        11,
+        9,
+        9,
+        7
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-31",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 40,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 333쪽",
+      "sourcePages": [
+        333
+      ],
+      "classCounts": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-32",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 98,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 334쪽",
+      "sourcePages": [
+        334
+      ],
+      "classCounts": [
+        17,
+        13,
+        14,
+        14,
+        13,
+        15,
+        12
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1811",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 305,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 342쪽",
+      "sourcePages": [
+        342
+      ],
+      "classCounts": [
+        44,
+        37,
+        45,
+        46,
+        46,
+        43,
+        44
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-7",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 129,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 343쪽",
+      "sourcePages": [
+        343
+      ],
+      "classCounts": [
+        16,
+        17,
+        13,
+        16,
+        16,
+        17,
+        14,
+        10,
+        10
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-15",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 124,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 344쪽",
+      "sourcePages": [
+        344
+      ],
+      "classCounts": [
+        14,
+        17,
+        17,
+        16,
+        14,
+        10,
+        17,
+        19
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-16",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 209,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 345쪽",
+      "sourcePages": [
+        345
+      ],
+      "classCounts": [
+        33,
+        31,
+        25,
+        26,
+        19,
+        22,
+        28,
+        25
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-11",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 147,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 346쪽",
+      "sourcePages": [
+        346
+      ],
+      "classCounts": [
+        23,
+        23,
+        17,
+        20,
+        21,
+        20,
+        23
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-12",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 149,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 347쪽",
+      "sourcePages": [
+        347
+      ],
+      "classCounts": [
+        21,
+        22,
+        22,
+        21,
+        22,
+        21,
+        20
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-13",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 250,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 348쪽",
+      "sourcePages": [
+        348
+      ],
+      "classCounts": [
+        38,
+        38,
+        36,
+        37,
+        36,
+        32,
+        33
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-17",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 96,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 349쪽",
+      "sourcePages": [
+        349
+      ],
+      "classCounts": [
+        22,
+        19,
+        21,
+        18,
+        16
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-37",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 109,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 350쪽",
+      "sourcePages": [
+        350
+      ],
+      "classCounts": [
+        23,
+        26,
+        21,
+        23,
+        16
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-41",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 46,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 351쪽",
+      "sourcePages": [
+        351
+      ],
+      "classCounts": [
+        16,
+        16,
+        14
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-44",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 46,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 352쪽",
+      "sourcePages": [
+        352
+      ],
+      "classCounts": [
+        16,
+        9,
+        11,
+        10
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-43",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 129,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 353쪽",
+      "sourcePages": [
+        353
+      ],
+      "classCounts": [
+        26,
+        25,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-20",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 252,
+      "manualSessions": 9,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 354쪽",
+      "sourcePages": [
+        354
+      ],
+      "classCounts": [
+        27,
+        28,
+        30,
+        31,
+        31,
+        24,
+        30,
+        24,
+        27
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-21",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 48,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 356쪽",
+      "sourcePages": [
+        356
+      ],
+      "classCounts": [
+        11,
+        9,
+        11,
+        10,
+        7
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-40",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 37,
+      "manualSessions": 5,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 357쪽",
+      "sourcePages": [
+        357
+      ],
+      "classCounts": [
+        7,
+        8,
+        6,
+        8,
+        8
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-23",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 93,
+      "manualSessions": 8,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 358쪽",
+      "sourcePages": [
+        358
+      ],
+      "classCounts": [
+        12,
+        11,
+        11,
+        11,
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-27",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 35,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 359쪽",
+      "sourcePages": [
+        359
+      ],
+      "classCounts": [
+        8,
+        9,
+        9,
+        9
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-38",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 28,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 360쪽",
+      "sourcePages": [
+        360
+      ],
+      "classCounts": [
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-45",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 37,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 361쪽",
+      "sourcePages": [
+        361
+      ],
+      "classCounts": [
+        8,
+        8,
+        10,
+        11
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-26",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 33,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 362쪽",
+      "sourcePages": [
+        362
+      ],
+      "classCounts": [
+        10,
+        12,
+        11
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-39",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 54,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 363쪽",
+      "sourcePages": [
+        363
+      ],
+      "classCounts": [
+        13,
+        14,
+        13,
+        14
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-28",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 92,
+      "manualSessions": 7,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 364쪽",
+      "sourcePages": [
+        364
+      ],
+      "classCounts": [
+        12,
+        16,
+        13,
+        15,
+        13,
+        12,
+        11
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-35",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 66,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 365쪽",
+      "sourcePages": [
+        365
+      ],
+      "classCounts": [
+        17,
+        15,
+        16,
+        18
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-33",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 61,
+      "manualSessions": 4,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 366쪽",
+      "sourcePages": [
+        366
+      ],
+      "classCounts": [
+        17,
+        15,
+        14,
+        15
+      ]
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-34",
+      "sourceId": "manual-scan-2026-10",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 44,
+      "manualSessions": 3,
+      "readingStatus": "스캔 일지 판독",
+      "note": "수업별 출석인원 합산 · 367쪽",
+      "sourcePages": [
+        367
+      ],
+      "classCounts": [
+        14,
+        14,
+        16
+      ]
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-1",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-7",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1811",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-11",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-12",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-13",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-15",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-16",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-17",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-18",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-19",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-20",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-21",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-22",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-23",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-24",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-26",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-27",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-28",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-29",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-30",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-31",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-32",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-33",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-34",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-35",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-36",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-37",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-38",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-39",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-40",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-41",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-43",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-44",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    },
+    {
+      "month": "2026-08",
+      "programCode": "manual-course-45",
+      "sourceId": "manual-vacation-2026-08",
+      "sourceType": "manual",
+      "dailyCounts": null,
+      "datedCounts": null,
+      "manualTotal": 0,
+      "manualSessions": 0,
+      "readingStatus": "사용자 확인",
+      "note": "방학으로 건강100세 외 휴강",
+      "sourcePages": [],
+      "classCounts": []
+    }
+  ],
+  "excludedDuplicatePages": [
+    {
+      "page": 10,
+      "originalPage": 9,
+      "month": "2026-02",
+      "program": "풀잎합창단"
+    },
+    {
+      "page": 48,
+      "originalPage": 47,
+      "month": "2026-03",
+      "program": "풀잎합창단"
+    },
+    {
+      "page": 103,
+      "originalPage": 102,
+      "month": "2026-04",
+      "program": "풀잎합창단"
+    },
+    {
+      "page": 150,
+      "originalPage": 149,
+      "month": "2026-05",
+      "program": "풀잎합창단"
+    },
+    {
+      "page": 197,
+      "originalPage": 196,
+      "month": "2026-06",
+      "program": "풀잎합창단"
+    },
+    {
+      "page": 267,
+      "originalPage": 266,
+      "month": "2026-07",
+      "program": "풀잎합창단"
+    },
+    {
+      "page": 279,
+      "originalPage": 278,
+      "month": "2026-09",
+      "program": "풀잎합창단"
+    },
+    {
+      "page": 325,
+      "originalPage": 324,
+      "month": "2026-10",
+      "program": "풀잎합창단"
+    }
+  ],
+  "coverageNotes": [
+    "1월 기록 미제공",
+    "2월 일본어 초급 일지 미제공",
+    "8월은 건강100세만 운영: 수기35개 휴강",
+    "라인댄스2 수기 변경 사용자 확인"
+  ],
+  "conflicts": [
+    {
+      "month": "2026-07",
+      "program": "풀잎합창단",
+      "date": "2026-07-07",
+      "pages": [
+        266,
+        267
+      ],
+      "counts": [
+        32,
+        35
+      ],
+      "selected": 35,
+      "decision": "사용자 지정: 더 많은 인원"
+    },
+    {
+      "month": "2026-09",
+      "program": "풀잎합창단",
+      "date": "2026-09-29",
+      "pages": [
+        278,
+        279
+      ],
+      "counts": [
+        38,
+        36
+      ],
+      "selected": 38,
+      "decision": "사용자 지정: 더 많은 인원"
+    }
+  ]
+}

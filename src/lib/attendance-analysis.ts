@@ -1,9 +1,22 @@
 import raw from "@/data/rf-attendance.json";
+import manual from "@/data/manual-attendance.json";
 
 
 export type AttendanceRecord = { month: string; programCode: string; sourceId: string; sourceType: "rf" | "manual"; dailyCounts: number[] | null; datedCounts: { date: string; count: number }[] | null; manualTotal: number | null; manualSessions: number | null; readingStatus: string; note: string };
 export type AttendanceSource = { id: string; month: string; type: "rf" | "manual"; format: string; scope: "full" | "partial"; visiblePrograms: number; expectedPrograms: number | null; readingStatus: string; metric: string; note: string; source?: string; sourceSha256?: string };
-export const attendance = raw as Omit<typeof raw, "records" | "sources"> & { records: AttendanceRecord[]; sources: AttendanceSource[] };
+export type AttendanceProgram = { code: string; name: string; type: "rf" | "manual" };
+// Original RF records stay intact; line dance 2 uses the manual source only.
+const rfRecords = raw.records.filter(row => row.programCode !== "A1811");
+export const attendance = {
+  ...raw,
+  periodStart: "2026-01",
+  months: ["2026-01", ...raw.months],
+  programs: [...raw.programs.filter(row => row.code !== "A1811"), ...manual.programs] as AttendanceProgram[],
+  sources: [...raw.sources.map(source => ({ ...source, visiblePrograms: rfRecords.filter(row => row.sourceId === source.id).length, expectedPrograms: 10 })), ...manual.sources] as AttendanceSource[],
+  records: [...rfRecords, ...manual.records] as AttendanceRecord[],
+  paidSnapshot: { ...raw.paidSnapshot, programs: [...raw.paidSnapshot.programs.filter(row => row.programCode !== "A1811"), ...manual.programs.map(row => ({ programCode: row.code, paid: row.paid }))] },
+  manualSource: { name: manual.source, pageCount: manual.pageCount, conflicts: manual.conflicts },
+};
 export function calculateAttendance(record: AttendanceRecord) {
   const program = attendance.programs.find(row => row.code === record.programCode);
   const row = attendance.paidSnapshot.programs.find(row => row.programCode === record.programCode);
@@ -29,6 +42,7 @@ export function validateAttendance() {
     const key = `${row.month}|${row.programCode}|${row.sourceType}`;
     if (seen.has(key)) throw new Error("중복 월·프로그램 집계가 있습니다.");
     seen.add(key);
+    if (attendance.programs.find(program => program.code === row.programCode)?.type !== row.sourceType) throw new Error("RF·수기 분류가 일치하지 않습니다.");
     if (!attendance.sources.some(source => source.id === row.sourceId && source.month === row.month)) throw new Error("자료 출처가 일치하지 않습니다.");
     if (row.sourceType === "rf" && row.dailyCounts === null) throw new Error("RF 일자별 참석자 수가 없습니다.");
     if (row.dailyCounts !== null && (row.dailyCounts.length > 31 || row.dailyCounts.some(value => !Number.isSafeInteger(value) || value <= 0))) throw new Error("일자별 참석자 수가 올바르지 않습니다.");
