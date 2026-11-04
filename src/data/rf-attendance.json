@@ -1,0 +1,1639 @@
+{
+  "asOf": "2026-11-04",
+  "periodStart": "2026-02",
+  "periodEnd": "2026-10",
+  "months": [
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10"
+  ],
+  "basisConfirmed": true,
+  "basis": "사용자 지시: 일자별 참석자 수 직접 합산, 출석 있는 일자를 운영일로 계산",
+  "programs": [
+    {
+      "code": "A1862",
+      "name": "건강100세 운동교실",
+      "type": "rf"
+    },
+    {
+      "code": "A0164",
+      "name": "건강체조",
+      "type": "rf"
+    },
+    {
+      "code": "A1810",
+      "name": "라인댄스 1",
+      "type": "rf"
+    },
+    {
+      "code": "A1811",
+      "name": "라인댄스 2",
+      "type": "rf"
+    },
+    {
+      "code": "A1817",
+      "name": "생활체조",
+      "type": "rf"
+    },
+    {
+      "code": "A1831",
+      "name": "에어로빅",
+      "type": "rf"
+    },
+    {
+      "code": "A1804",
+      "name": "요가 1",
+      "type": "rf"
+    },
+    {
+      "code": "A1805",
+      "name": "요가 2",
+      "type": "rf"
+    },
+    {
+      "code": "A1802",
+      "name": "필라테스 1",
+      "type": "rf"
+    },
+    {
+      "code": "A1803",
+      "name": "필라테스 2",
+      "type": "rf"
+    },
+    {
+      "code": "A1813",
+      "name": "힐링노래교실",
+      "type": "rf"
+    }
+  ],
+  "sources": [
+    {
+      "id": "chat-image-2",
+      "month": "2026-02",
+      "type": "rf",
+      "format": "screenshot",
+      "scope": "full",
+      "visiblePrograms": 11,
+      "expectedPrograms": 11,
+      "note": "프로그램별 일자 칸 판독. 원본 합계 열과 하단 합계는 사용하지 않음",
+      "metric": "날짜별 참석자 수 직접 합산",
+      "readingStatus": "원본 엑셀 대조 미완료"
+    },
+    {
+      "id": "chat-image-3",
+      "month": "2026-03",
+      "type": "rf",
+      "format": "screenshot",
+      "scope": "full",
+      "visiblePrograms": 11,
+      "expectedPrograms": 11,
+      "note": "프로그램별 일자 칸 판독. 원본 합계 열과 하단 합계는 사용하지 않음",
+      "metric": "날짜별 참석자 수 직접 합산",
+      "readingStatus": "원본 엑셀 대조 미완료"
+    },
+    {
+      "id": "chat-image-4",
+      "month": "2026-04",
+      "type": "rf",
+      "format": "screenshot",
+      "scope": "full",
+      "visiblePrograms": 11,
+      "expectedPrograms": 11,
+      "note": "프로그램별 일자 칸 판독. 원본 합계 열과 하단 합계는 사용하지 않음",
+      "metric": "날짜별 참석자 수 직접 합산",
+      "readingStatus": "원본 엑셀 대조 미완료"
+    },
+    {
+      "id": "chat-image-5",
+      "month": "2026-05",
+      "type": "rf",
+      "format": "screenshot",
+      "scope": "full",
+      "visiblePrograms": 11,
+      "expectedPrograms": 11,
+      "note": "프로그램별 일자 칸 판독. 원본 합계 열과 하단 합계는 사용하지 않음",
+      "metric": "날짜별 참석자 수 직접 합산",
+      "readingStatus": "원본 엑셀 대조 미완료"
+    },
+    {
+      "id": "chat-image-6",
+      "month": "2026-06",
+      "type": "rf",
+      "format": "screenshot",
+      "scope": "full",
+      "visiblePrograms": 11,
+      "expectedPrograms": 11,
+      "note": "프로그램별 일자 칸 판독. 원본 합계 열과 하단 합계는 사용하지 않음",
+      "metric": "날짜별 참석자 수 직접 합산",
+      "readingStatus": "원본 엑셀 대조 미완료"
+    },
+    {
+      "id": "chat-image-8",
+      "month": "2026-08",
+      "type": "rf",
+      "format": "screenshot",
+      "scope": "partial",
+      "visiblePrograms": 1,
+      "expectedPrograms": null,
+      "note": "건강100세 운동교실 한 행의 일자 칸만 판독",
+      "metric": "날짜별 참석자 수 직접 합산",
+      "readingStatus": "원본 엑셀 대조 미완료"
+    },
+    {
+      "id": "chat-image-9",
+      "month": "2026-09",
+      "type": "rf",
+      "format": "screenshot",
+      "scope": "partial",
+      "visiblePrograms": 11,
+      "expectedPrograms": null,
+      "note": "보이는 11개 프로그램의 일자 칸만 판독. 가려진 행 제외",
+      "metric": "날짜별 참석자 수 직접 합산",
+      "readingStatus": "원본 엑셀 대조 미완료"
+    },
+    {
+      "id": "october-life-pdf",
+      "month": "2026-10",
+      "type": "rf",
+      "format": "pdf",
+      "scope": "partial",
+      "visiblePrograms": 1,
+      "expectedPrograms": null,
+      "readingStatus": "날짜별 1 직접 합산·행 대조 완료",
+      "metric": "개인별 RF 출석 1 합산",
+      "source": "10월 생활체조 RF 출석부.pdf",
+      "sourceSha256": "1578b7ca70eb50d9a5dedb19e338054c044eac0180d5736a1b276843353e2c08",
+      "note": "10월 생활체조 1개만 제공. 11월 3일 44회 제외"
+    }
+  ],
+  "records": [
+    {
+      "month": "2026-02",
+      "programCode": "A1862",
+      "sourceId": "chat-image-2",
+      "sourceType": "rf",
+      "dailyCounts": [],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A0164",
+      "sourceId": "chat-image-2",
+      "sourceType": "rf",
+      "dailyCounts": [
+        20,
+        26,
+        32,
+        27,
+        45,
+        53
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1810",
+      "sourceId": "chat-image-2",
+      "sourceType": "rf",
+      "dailyCounts": [
+        35,
+        35,
+        45,
+        38,
+        37,
+        50,
+        43
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1811",
+      "sourceId": "chat-image-2",
+      "sourceType": "rf",
+      "dailyCounts": [
+        21,
+        34,
+        30,
+        32,
+        30
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1817",
+      "sourceId": "chat-image-2",
+      "sourceType": "rf",
+      "dailyCounts": [
+        30,
+        27,
+        26,
+        38,
+        2,
+        48
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1831",
+      "sourceId": "chat-image-2",
+      "sourceType": "rf",
+      "dailyCounts": [
+        3,
+        35,
+        39,
+        43,
+        43,
+        51,
+        56
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1804",
+      "sourceId": "chat-image-2",
+      "sourceType": "rf",
+      "dailyCounts": [
+        27,
+        33,
+        31,
+        36,
+        31
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1805",
+      "sourceId": "chat-image-2",
+      "sourceType": "rf",
+      "dailyCounts": [
+        32,
+        29,
+        34,
+        33,
+        36,
+        33,
+        34
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1802",
+      "sourceId": "chat-image-2",
+      "sourceType": "rf",
+      "dailyCounts": [
+        35,
+        34,
+        31,
+        31,
+        28,
+        32,
+        35,
+        36
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1803",
+      "sourceId": "chat-image-2",
+      "sourceType": "rf",
+      "dailyCounts": [
+        38,
+        35,
+        36,
+        34,
+        35
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1813",
+      "sourceId": "chat-image-2",
+      "sourceType": "rf",
+      "dailyCounts": [
+        64
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1862",
+      "sourceId": "chat-image-3",
+      "sourceType": "rf",
+      "dailyCounts": [
+        75
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A0164",
+      "sourceId": "chat-image-3",
+      "sourceType": "rf",
+      "dailyCounts": [
+        54,
+        61
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1810",
+      "sourceId": "chat-image-3",
+      "sourceType": "rf",
+      "dailyCounts": [
+        53,
+        52
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1811",
+      "sourceId": "chat-image-3",
+      "sourceType": "rf",
+      "dailyCounts": [
+        27,
+        25,
+        25
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1817",
+      "sourceId": "chat-image-3",
+      "sourceType": "rf",
+      "dailyCounts": [
+        1,
+        57
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1831",
+      "sourceId": "chat-image-3",
+      "sourceType": "rf",
+      "dailyCounts": [
+        59,
+        63,
+        61
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1804",
+      "sourceId": "chat-image-3",
+      "sourceType": "rf",
+      "dailyCounts": [
+        32,
+        37,
+        34
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1805",
+      "sourceId": "chat-image-3",
+      "sourceType": "rf",
+      "dailyCounts": [
+        39,
+        39
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1802",
+      "sourceId": "chat-image-3",
+      "sourceType": "rf",
+      "dailyCounts": [
+        37
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1803",
+      "sourceId": "chat-image-3",
+      "sourceType": "rf",
+      "dailyCounts": [
+        36,
+        38,
+        37
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1813",
+      "sourceId": "chat-image-3",
+      "sourceType": "rf",
+      "dailyCounts": [
+        3
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1862",
+      "sourceId": "chat-image-4",
+      "sourceType": "rf",
+      "dailyCounts": [
+        64,
+        73,
+        74,
+        74,
+        68,
+        74,
+        64,
+        69
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A0164",
+      "sourceId": "chat-image-4",
+      "sourceType": "rf",
+      "dailyCounts": [
+        59,
+        61,
+        45,
+        56,
+        51,
+        53,
+        51,
+        54,
+        52
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1810",
+      "sourceId": "chat-image-4",
+      "sourceType": "rf",
+      "dailyCounts": [
+        47,
+        53,
+        43,
+        45,
+        48,
+        51,
+        46,
+        51,
+        42
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1811",
+      "sourceId": "chat-image-4",
+      "sourceType": "rf",
+      "dailyCounts": [
+        23,
+        20,
+        23,
+        22,
+        31,
+        23,
+        25,
+        23
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1817",
+      "sourceId": "chat-image-4",
+      "sourceType": "rf",
+      "dailyCounts": [
+        48,
+        52,
+        55,
+        50,
+        52,
+        50,
+        52,
+        43
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1831",
+      "sourceId": "chat-image-4",
+      "sourceType": "rf",
+      "dailyCounts": [
+        51,
+        58,
+        55,
+        59,
+        53,
+        54,
+        59
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1804",
+      "sourceId": "chat-image-4",
+      "sourceType": "rf",
+      "dailyCounts": [
+        33,
+        31,
+        29,
+        34,
+        32,
+        30,
+        29,
+        33,
+        28
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1805",
+      "sourceId": "chat-image-4",
+      "sourceType": "rf",
+      "dailyCounts": [
+        37,
+        35,
+        30,
+        36,
+        29,
+        33,
+        30,
+        29
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1802",
+      "sourceId": "chat-image-4",
+      "sourceType": "rf",
+      "dailyCounts": [
+        31,
+        30,
+        27,
+        32,
+        34,
+        35,
+        35,
+        33,
+        34
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1803",
+      "sourceId": "chat-image-4",
+      "sourceType": "rf",
+      "dailyCounts": [
+        35,
+        38,
+        32,
+        38,
+        32,
+        29,
+        33,
+        35,
+        30
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1813",
+      "sourceId": "chat-image-4",
+      "sourceType": "rf",
+      "dailyCounts": [
+        59,
+        61,
+        56,
+        63
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1862",
+      "sourceId": "chat-image-5",
+      "sourceType": "rf",
+      "dailyCounts": [
+        69,
+        69,
+        65,
+        65,
+        67
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A0164",
+      "sourceId": "chat-image-5",
+      "sourceType": "rf",
+      "dailyCounts": [
+        54
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1810",
+      "sourceId": "chat-image-5",
+      "sourceType": "rf",
+      "dailyCounts": [
+        49,
+        41,
+        48
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1811",
+      "sourceId": "chat-image-5",
+      "sourceType": "rf",
+      "dailyCounts": [
+        25,
+        26,
+        28,
+        28,
+        23
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1817",
+      "sourceId": "chat-image-5",
+      "sourceType": "rf",
+      "dailyCounts": [
+        45,
+        44,
+        35,
+        46
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1831",
+      "sourceId": "chat-image-5",
+      "sourceType": "rf",
+      "dailyCounts": [
+        53,
+        51,
+        54,
+        48,
+        49
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1804",
+      "sourceId": "chat-image-5",
+      "sourceType": "rf",
+      "dailyCounts": [
+        28,
+        30,
+        26
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1805",
+      "sourceId": "chat-image-5",
+      "sourceType": "rf",
+      "dailyCounts": [
+        27,
+        26,
+        29
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1802",
+      "sourceId": "chat-image-5",
+      "sourceType": "rf",
+      "dailyCounts": [
+        35,
+        29,
+        27,
+        34
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1803",
+      "sourceId": "chat-image-5",
+      "sourceType": "rf",
+      "dailyCounts": [
+        31,
+        36,
+        34,
+        31
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1813",
+      "sourceId": "chat-image-5",
+      "sourceType": "rf",
+      "dailyCounts": [
+        43,
+        55,
+        57
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1862",
+      "sourceId": "chat-image-6",
+      "sourceType": "rf",
+      "dailyCounts": [
+        65,
+        68,
+        72,
+        70,
+        69,
+        66,
+        66,
+        66
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A0164",
+      "sourceId": "chat-image-6",
+      "sourceType": "rf",
+      "dailyCounts": [
+        43,
+        51,
+        54,
+        57,
+        56,
+        56,
+        47,
+        55
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1810",
+      "sourceId": "chat-image-6",
+      "sourceType": "rf",
+      "dailyCounts": [
+        50,
+        46,
+        47,
+        43,
+        43,
+        40,
+        16,
+        39,
+        42
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1811",
+      "sourceId": "chat-image-6",
+      "sourceType": "rf",
+      "dailyCounts": [
+        31,
+        23,
+        29,
+        23,
+        25
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1817",
+      "sourceId": "chat-image-6",
+      "sourceType": "rf",
+      "dailyCounts": [
+        54,
+        51,
+        54,
+        49,
+        51,
+        52,
+        44,
+        1
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1831",
+      "sourceId": "chat-image-6",
+      "sourceType": "rf",
+      "dailyCounts": [
+        50,
+        42,
+        51,
+        50,
+        52,
+        48,
+        53,
+        45,
+        49
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1804",
+      "sourceId": "chat-image-6",
+      "sourceType": "rf",
+      "dailyCounts": [
+        28,
+        32,
+        31,
+        33,
+        25,
+        30
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1805",
+      "sourceId": "chat-image-6",
+      "sourceType": "rf",
+      "dailyCounts": [
+        22,
+        30,
+        32,
+        32,
+        31,
+        30,
+        31,
+        30,
+        32
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1802",
+      "sourceId": "chat-image-6",
+      "sourceType": "rf",
+      "dailyCounts": [
+        34,
+        31,
+        32,
+        33,
+        32,
+        32,
+        35,
+        35
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1803",
+      "sourceId": "chat-image-6",
+      "sourceType": "rf",
+      "dailyCounts": [
+        27,
+        30,
+        31,
+        34,
+        33,
+        36,
+        32
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1813",
+      "sourceId": "chat-image-6",
+      "sourceType": "rf",
+      "dailyCounts": [
+        44,
+        42,
+        50,
+        48
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1862",
+      "sourceId": "chat-image-8",
+      "sourceType": "rf",
+      "dailyCounts": [
+        69,
+        70,
+        75,
+        69,
+        72,
+        72,
+        69,
+        71
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1862",
+      "sourceId": "chat-image-9",
+      "sourceType": "rf",
+      "dailyCounts": [
+        73,
+        68,
+        77,
+        75,
+        71,
+        68,
+        71
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A0164",
+      "sourceId": "chat-image-9",
+      "sourceType": "rf",
+      "dailyCounts": [
+        48,
+        43,
+        49,
+        37,
+        34,
+        39
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1810",
+      "sourceId": "chat-image-9",
+      "sourceType": "rf",
+      "dailyCounts": [
+        46,
+        45,
+        42,
+        44,
+        42,
+        43
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1811",
+      "sourceId": "chat-image-9",
+      "sourceType": "rf",
+      "dailyCounts": [
+        31,
+        40,
+        38,
+        40,
+        41,
+        27,
+        34,
+        35
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1817",
+      "sourceId": "chat-image-9",
+      "sourceType": "rf",
+      "dailyCounts": [
+        38,
+        38,
+        42,
+        43,
+        36
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1831",
+      "sourceId": "chat-image-9",
+      "sourceType": "rf",
+      "dailyCounts": [
+        47,
+        46,
+        43,
+        43,
+        46,
+        48
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1804",
+      "sourceId": "chat-image-9",
+      "sourceType": "rf",
+      "dailyCounts": [
+        34,
+        42,
+        33,
+        29,
+        32,
+        33
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1805",
+      "sourceId": "chat-image-9",
+      "sourceType": "rf",
+      "dailyCounts": [
+        35,
+        35,
+        38,
+        30,
+        32
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1802",
+      "sourceId": "chat-image-9",
+      "sourceType": "rf",
+      "dailyCounts": [
+        39,
+        39,
+        36,
+        36
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1803",
+      "sourceId": "chat-image-9",
+      "sourceType": "rf",
+      "dailyCounts": [
+        37,
+        39,
+        40,
+        39,
+        40,
+        23,
+        34,
+        38
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1813",
+      "sourceId": "chat-image-9",
+      "sourceType": "rf",
+      "dailyCounts": [
+        58,
+        60,
+        51,
+        44,
+        31,
+        47
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "capture",
+      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1817",
+      "sourceId": "october-life-pdf",
+      "sourceType": "rf",
+      "dailyCounts": [
+        34,
+        42,
+        41,
+        40,
+        34,
+        40,
+        42
+      ],
+      "datedCounts": [
+        {
+          "date": "2026-10-01",
+          "count": 34
+        },
+        {
+          "date": "2026-10-02",
+          "count": 0
+        },
+        {
+          "date": "2026-10-03",
+          "count": 0
+        },
+        {
+          "date": "2026-10-04",
+          "count": 0
+        },
+        {
+          "date": "2026-10-05",
+          "count": 0
+        },
+        {
+          "date": "2026-10-06",
+          "count": 42
+        },
+        {
+          "date": "2026-10-07",
+          "count": 0
+        },
+        {
+          "date": "2026-10-08",
+          "count": 41
+        },
+        {
+          "date": "2026-10-09",
+          "count": 0
+        },
+        {
+          "date": "2026-10-10",
+          "count": 0
+        },
+        {
+          "date": "2026-10-11",
+          "count": 0
+        },
+        {
+          "date": "2026-10-12",
+          "count": 0
+        },
+        {
+          "date": "2026-10-13",
+          "count": 0
+        },
+        {
+          "date": "2026-10-14",
+          "count": 0
+        },
+        {
+          "date": "2026-10-15",
+          "count": 40
+        },
+        {
+          "date": "2026-10-16",
+          "count": 0
+        },
+        {
+          "date": "2026-10-17",
+          "count": 0
+        },
+        {
+          "date": "2026-10-18",
+          "count": 0
+        },
+        {
+          "date": "2026-10-19",
+          "count": 0
+        },
+        {
+          "date": "2026-10-20",
+          "count": 34
+        },
+        {
+          "date": "2026-10-21",
+          "count": 0
+        },
+        {
+          "date": "2026-10-22",
+          "count": 40
+        },
+        {
+          "date": "2026-10-23",
+          "count": 0
+        },
+        {
+          "date": "2026-10-24",
+          "count": 0
+        },
+        {
+          "date": "2026-10-25",
+          "count": 0
+        },
+        {
+          "date": "2026-10-26",
+          "count": 0
+        },
+        {
+          "date": "2026-10-27",
+          "count": 42
+        },
+        {
+          "date": "2026-10-28",
+          "count": 0
+        },
+        {
+          "date": "2026-10-29",
+          "count": 0
+        },
+        {
+          "date": "2026-10-30",
+          "count": 0
+        },
+        {
+          "date": "2026-10-31",
+          "count": 0
+        }
+      ],
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "pdf",
+      "note": "실제 날짜별 1 직접 합산. 출석 기록이 전혀 없는 날은 휴강 처리"
+    }
+  ],
+  "duplicateSources": [
+    {
+      "id": "chat-image-7",
+      "duplicateOf": "chat-image-6",
+      "month": "2026-06",
+      "action": "excluded",
+      "reason": "조회월·프로그램·합계가 동일한 6월 중복 화면"
+    }
+  ],
+  "excludedSources": [
+    {
+      "id": "chat-image-1",
+      "reason": "조회기간 2026-01-04~2026-11-04의 프로그램 이용 현황으로 월별 출석과 범위·집계 기준 대조 필요"
+    }
+  ],
+  "manual": {
+    "supported": true,
+    "registeredSources": 0,
+    "note": "수기 프로그램은 sourceType=manual인 월별 합계와 출처·집계 기준 확인 후 추가 가능"
+  },
+  "notes": [
+    "원본 합계 열과 하단 합계는 사용하지 않음",
+    "화면에 보이는 1은 출석 1회로 그대로 합산, 다른 숫자로 추측해 바꾸지 않음",
+    "완전한 프로그램 행에서 출석 숫자가 전혀 없는 달은 운영 0회, 출석률·결석률은 계산하지 않음",
+    "가려진 행·미제공 월을 0으로 채우지 않음",
+    "캡처 숫자 판독은 원본 엑셀 대조 전이며 날짜 번호를 임의로 붙이지 않음"
+  ],
+  "denominatorBasis": {
+    "mode": "current_paid",
+    "snapshot": "2026-11-04",
+    "instruction": "예정 연인원 = 현재 수납인원 × 출석 기록이 있는 해당 월 수업 일수",
+    "warning": "과거 각 월 실제 등록 변동을 반영한 결석 실적이 아니라 현재 수납인원 기준 계산"
+  },
+  "paidSnapshot": {
+    "asOf": "2026-11-04",
+    "source": "11. 4. 기준 수강신청프로그램현황.pdf",
+    "programs": [
+      {
+        "programCode": "A1862",
+        "paid": 80
+      },
+      {
+        "programCode": "A0164",
+        "paid": 59
+      },
+      {
+        "programCode": "A1810",
+        "paid": 59
+      },
+      {
+        "programCode": "A1811",
+        "paid": 54
+      },
+      {
+        "programCode": "A1817",
+        "paid": 58
+      },
+      {
+        "programCode": "A1831",
+        "paid": 60
+      },
+      {
+        "programCode": "A1804",
+        "paid": 46
+      },
+      {
+        "programCode": "A1805",
+        "paid": 50
+      },
+      {
+        "programCode": "A1802",
+        "paid": 42
+      },
+      {
+        "programCode": "A1803",
+        "paid": 48
+      },
+      {
+        "programCode": "A1813",
+        "paid": 71
+      }
+    ]
+  }
+}

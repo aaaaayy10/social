@@ -1,0 +1,145 @@
+{
+  "asOf": "2026-11-04",
+  "month": "2026-10",
+  "programCode": "A1817",
+  "programName": "생활체조",
+  "source": "10월 생활체조 RF 출석부.pdf",
+  "sourceType": "rf",
+  "sourceSha256": "1578b7ca70eb50d9a5dedb19e338054c044eac0180d5736a1b276843353e2c08",
+  "pages": 4,
+  "method": "날짜별 개인 출석표의 1만 직접 합산. 11월 날짜는 제외.",
+  "daily": [
+    {
+      "date": "2026-10-01",
+      "count": 34
+    },
+    {
+      "date": "2026-10-02",
+      "count": 0
+    },
+    {
+      "date": "2026-10-03",
+      "count": 0
+    },
+    {
+      "date": "2026-10-04",
+      "count": 0
+    },
+    {
+      "date": "2026-10-05",
+      "count": 0
+    },
+    {
+      "date": "2026-10-06",
+      "count": 42
+    },
+    {
+      "date": "2026-10-07",
+      "count": 0
+    },
+    {
+      "date": "2026-10-08",
+      "count": 41
+    },
+    {
+      "date": "2026-10-09",
+      "count": 0
+    },
+    {
+      "date": "2026-10-10",
+      "count": 0
+    },
+    {
+      "date": "2026-10-11",
+      "count": 0
+    },
+    {
+      "date": "2026-10-12",
+      "count": 0
+    },
+    {
+      "date": "2026-10-13",
+      "count": 0
+    },
+    {
+      "date": "2026-10-14",
+      "count": 0
+    },
+    {
+      "date": "2026-10-15",
+      "count": 40
+    },
+    {
+      "date": "2026-10-16",
+      "count": 0
+    },
+    {
+      "date": "2026-10-17",
+      "count": 0
+    },
+    {
+      "date": "2026-10-18",
+      "count": 0
+    },
+    {
+      "date": "2026-10-19",
+      "count": 0
+    },
+    {
+      "date": "2026-10-20",
+      "count": 34
+    },
+    {
+      "date": "2026-10-21",
+      "count": 0
+    },
+    {
+      "date": "2026-10-22",
+      "count": 40
+    },
+    {
+      "date": "2026-10-23",
+      "count": 0
+    },
+    {
+      "date": "2026-10-24",
+      "count": 0
+    },
+    {
+      "date": "2026-10-25",
+      "count": 0
+    },
+    {
+      "date": "2026-10-26",
+      "count": 0
+    },
+    {
+      "date": "2026-10-27",
+      "count": 42
+    },
+    {
+      "date": "2026-10-28",
+      "count": 0
+    },
+    {
+      "date": "2026-10-29",
+      "count": 0
+    },
+    {
+      "date": "2026-10-30",
+      "count": 0
+    },
+    {
+      "date": "2026-10-31",
+      "count": 0
+    }
+  ],
+  "total": 273,
+  "listedPeople": 58,
+  "attendingPeople": 55,
+  "operatingDays": 7,
+  "excludedOtherMonthMarks": 44,
+  "printedTotalIgnored": 317,
+  "printedRowReconciliationFailures": 0,
+  "denominatorConfirmed": false
+}
