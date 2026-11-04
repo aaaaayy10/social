@@ -290,10 +290,11 @@
       },
       "refundReport": {
         "name": "가락장구",
+        "depositCount": 65,
+        "deposit": 2562000,
         "count": 12,
         "refund": 344700,
-        "deposit": 470000,
-        "balance": 125300
+        "balance": 2217300
       }
     },
     {
@@ -410,9 +411,10 @@
       },
       "refundReport": {
         "name": "건강100세 운동교실",
+        "depositCount": 170,
+        "deposit": null,
         "count": 11,
         "refund": null,
-        "deposit": null,
         "balance": null
       }
     },
@@ -557,10 +559,11 @@
       },
       "refundReport": {
         "name": "건강체조",
+        "depositCount": 160,
+        "deposit": 5641000,
         "count": 21,
         "refund": 726100,
-        "deposit": 974000,
-        "balance": 247900
+        "balance": 4914900
       }
     },
     {
@@ -682,10 +685,11 @@
       },
       "refundReport": {
         "name": "금빛스케치",
+        "depositCount": 32,
+        "deposit": 1382000,
         "count": 4,
         "refund": 103300,
-        "deposit": 140000,
-        "balance": 36700
+        "balance": 1278700
       }
     },
     {
@@ -806,10 +810,11 @@
       },
       "refundReport": {
         "name": "기타 고급",
+        "depositCount": 75,
+        "deposit": 4630000,
         "count": 1,
         "refund": 20000,
-        "deposit": 30000,
-        "balance": 10000
+        "balance": 4610000
       }
     },
     {
@@ -938,10 +943,11 @@
       },
       "refundReport": {
         "name": "기타 초중급",
+        "depositCount": 55,
+        "deposit": 2458000,
         "count": 7,
         "refund": 163300,
-        "deposit": 220000,
-        "balance": 56700
+        "balance": 2294700
       }
     },
     {
@@ -1071,10 +1077,11 @@
       },
       "refundReport": {
         "name": "난타 중급",
+        "depositCount": 76,
+        "deposit": 3424000,
         "count": 7,
         "refund": 229800,
-        "deposit": 309000,
-        "balance": 79200
+        "balance": 3194200
       }
     },
     {
@@ -1212,10 +1219,11 @@
       },
       "refundReport": {
         "name": "난타 초급",
+        "depositCount": 65,
+        "deposit": 570000,
         "count": 6,
         "refund": null,
-        "deposit": 40000,
-        "balance": 40000
+        "balance": 570000
       }
     },
     {
@@ -1332,10 +1340,11 @@
       },
       "refundReport": {
         "name": "댄스스포츠",
+        "depositCount": 51,
+        "deposit": 2072000,
         "count": 10,
         "refund": 363100,
-        "deposit": 420000,
-        "balance": 56900
+        "balance": 1708900
       }
     },
     {
@@ -1450,10 +1459,11 @@
       },
       "refundReport": {
         "name": "동양화",
+        "depositCount": 26,
+        "deposit": 230000,
         "count": 2,
         "refund": null,
-        "deposit": 10000,
-        "balance": 10000
+        "balance": 230000
       }
     },
     {
@@ -1588,10 +1598,11 @@
       },
       "refundReport": {
         "name": "라인댄스 1",
+        "depositCount": 148,
+        "deposit": 6559000,
         "count": 30,
         "refund": 1044300,
-        "deposit": 1339000,
-        "balance": 294700
+        "balance": 5514700
       }
     },
     {
@@ -1721,10 +1732,11 @@
       },
       "refundReport": {
         "name": "라인댄스 2",
+        "depositCount": 112,
+        "deposit": 5085000,
         "count": 11,
         "refund": 373100,
-        "deposit": 460000,
-        "balance": 86900
+        "balance": 4711900
       }
     },
     {
@@ -1850,10 +1862,11 @@
       },
       "refundReport": {
         "name": "민화 1",
+        "depositCount": 26,
+        "deposit": 1289000,
         "count": 3,
         "refund": 149900,
-        "deposit": 160000,
-        "balance": 10100
+        "balance": 1139100
       }
     },
     {
@@ -1958,10 +1971,11 @@
       },
       "refundReport": {
         "name": "민화 2",
+        "depositCount": 17,
+        "deposit": 843000,
         "count": 5,
         "refund": 203200,
-        "deposit": 263000,
-        "balance": 59800
+        "balance": 639800
       }
     },
     {
@@ -2097,9 +2111,10 @@
       },
       "refundReport": {
         "name": "생활체조",
+        "depositCount": 216,
+        "deposit": null,
         "count": 85,
         "refund": null,
-        "deposit": null,
         "balance": null
       }
     },
@@ -2216,10 +2231,11 @@
       },
       "refundReport": {
         "name": "서예",
+        "depositCount": 31,
+        "deposit": 1103000,
         "count": 6,
         "refund": 201600,
-        "deposit": 220000,
-        "balance": 18400
+        "balance": 901400
       }
     },
     {
@@ -2343,10 +2359,11 @@
       },
       "refundReport": {
         "name": "숟가락 난타",
+        "depositCount": 51,
+        "deposit": 1766000,
         "count": 7,
         "refund": 193200,
-        "deposit": 240000,
-        "balance": 46800
+        "balance": 1572800
       }
     },
     {
@@ -2478,10 +2495,11 @@
       },
       "refundReport": {
         "name": "스마트폰 중급",
+        "depositCount": 46,
+        "deposit": 1688000,
         "count": 9,
         "refund": 271500,
-        "deposit": 350000,
-        "balance": 78500
+        "balance": 1416500
       }
     },
     {
@@ -2612,10 +2630,11 @@
       },
       "refundReport": {
         "name": "스마트폰 초급",
+        "depositCount": 48,
+        "deposit": 1427000,
         "count": 6,
         "refund": 56600,
-        "deposit": 60000,
-        "balance": 3400
+        "balance": 1370400
       }
     },
     {
@@ -2722,10 +2741,11 @@
       },
       "refundReport": {
         "name": "신빠람 사물 중급",
+        "depositCount": 49,
+        "deposit": 360000,
         "count": 1,
         "refund": null,
-        "deposit": 10000,
-        "balance": 10000
+        "balance": 360000
       }
     },
     {
@@ -2846,10 +2866,11 @@
       },
       "refundReport": {
         "name": "신빠람 사물 초급",
+        "depositCount": 32,
+        "deposit": 230000,
         "count": 4,
         "refund": 10000,
-        "deposit": 20000,
-        "balance": 10000
+        "balance": 220000
       }
     },
     {
@@ -2972,10 +2993,11 @@
       },
       "refundReport": {
         "name": "실용영어",
+        "depositCount": 53,
+        "deposit": 1886000,
         "count": 13,
         "refund": 296400,
-        "deposit": 346000,
-        "balance": 49600
+        "balance": 1589600
       }
     },
     {
@@ -3096,10 +3118,11 @@
       },
       "refundReport": {
         "name": "에어로빅",
+        "depositCount": 146,
+        "deposit": 6426000,
         "count": 22,
         "refund": 683000,
-        "deposit": 943000,
-        "balance": 260000
+        "balance": 5743000
       }
     },
     {
@@ -3206,10 +3229,11 @@
       },
       "refundReport": {
         "name": "연필인물화 중급",
+        "depositCount": 31,
+        "deposit": 1406000,
         "count": 3,
         "refund": 79900,
-        "deposit": 93000,
-        "balance": 13100
+        "balance": 1326100
       }
     },
     {
@@ -3325,10 +3349,11 @@
       },
       "refundReport": {
         "name": "연필인물화 초급",
+        "depositCount": 29,
+        "deposit": 1106000,
         "count": 3,
         "refund": 60000,
-        "deposit": 80000,
-        "balance": 20000
+        "balance": 1046000
       }
     },
     {
@@ -3438,10 +3463,11 @@
       },
       "refundReport": {
         "name": "오카리나 고급",
+        "depositCount": 81,
+        "deposit": 3980000,
         "count": 4,
         "refund": 186600,
-        "deposit": 220000,
-        "balance": 33400
+        "balance": 3793400
       }
     },
     {
@@ -3556,10 +3582,11 @@
       },
       "refundReport": {
         "name": "오카리나 중급",
+        "depositCount": 52,
+        "deposit": 2406000,
         "count": 1,
         "refund": 30000,
-        "deposit": 40000,
-        "balance": 10000
+        "balance": 2376000
       }
     },
     {
@@ -3673,10 +3700,11 @@
       },
       "refundReport": {
         "name": "오카리나 초급",
+        "depositCount": 44,
+        "deposit": 420000,
         "count": 4,
         "refund": null,
-        "deposit": 30000,
-        "balance": 30000
+        "balance": 420000
       }
     },
     {
@@ -3813,10 +3841,11 @@
       },
       "refundReport": {
         "name": "요가 1",
+        "depositCount": 111,
+        "deposit": 4406000,
         "count": 17,
         "refund": 518100,
-        "deposit": 706000,
-        "balance": 187900
+        "balance": 3887900
       }
     },
     {
@@ -3960,10 +3989,11 @@
       },
       "refundReport": {
         "name": "요가 2",
+        "depositCount": 110,
+        "deposit": 4275000,
         "count": 16,
         "refund": 624400,
-        "deposit": 793000,
-        "balance": 168600
+        "balance": 3650600
       }
     },
     {
@@ -4084,10 +4114,11 @@
       },
       "refundReport": {
         "name": "우쿨렐레",
+        "depositCount": 43,
+        "deposit": 1810000,
         "count": 4,
         "refund": 146600,
-        "deposit": 220000,
-        "balance": 73400
+        "balance": 1663400
       }
     },
     {
@@ -4208,10 +4239,11 @@
       },
       "refundReport": {
         "name": "일본어 초급",
+        "depositCount": 50,
+        "deposit": 400000,
         "count": 7,
         "refund": null,
-        "deposit": 40000,
-        "balance": 40000
+        "balance": 400000
       }
     },
     {
@@ -4287,7 +4319,14 @@
       "firstDate": "2026-05-12",
       "lastDate": "2026-05-12",
       "enrollment": null,
-      "refundReport": null
+      "refundReport": {
+        "name": "찾아가는 시니어 디지털 스쿨",
+        "depositCount": 20,
+        "deposit": null,
+        "count": null,
+        "refund": null,
+        "balance": null
+      }
     },
     {
       "id": "detail-34",
@@ -4460,10 +4499,11 @@
       },
       "refundReport": {
         "name": "캘리그라피 중급",
+        "depositCount": 24,
+        "deposit": 980000,
         "count": 5,
         "refund": 186600,
-        "deposit": 220000,
-        "balance": 33400
+        "balance": 793400
       }
     },
     {
@@ -4572,10 +4612,11 @@
       },
       "refundReport": {
         "name": "캘리그라피 초급",
+        "depositCount": 30,
+        "deposit": 978000,
         "count": 8,
         "refund": 204500,
-        "deposit": 242000,
-        "balance": 37500
+        "balance": 773500
       }
     },
     {
@@ -4699,10 +4740,11 @@
       },
       "refundReport": {
         "name": "컴퓨터 초급",
+        "depositCount": 46,
+        "deposit": 350000,
         "count": 6,
         "refund": null,
-        "deposit": 50000,
-        "balance": 50000
+        "balance": 350000
       }
     },
     {
@@ -4812,10 +4854,11 @@
       },
       "refundReport": {
         "name": "컴퓨터 활용",
+        "depositCount": 39,
+        "deposit": 1420000,
         "count": 6,
         "refund": 206500,
-        "deposit": 220000,
-        "balance": 13500
+        "balance": 1213500
       }
     },
     {
@@ -4936,10 +4979,11 @@
       },
       "refundReport": {
         "name": "풀잎합창단",
+        "depositCount": 82,
+        "deposit": 3717000,
         "count": 5,
         "refund": 206600,
-        "deposit": 216000,
-        "balance": 9400
+        "balance": 3510400
       }
     },
     {
@@ -5060,10 +5104,11 @@
       },
       "refundReport": {
         "name": "필라테스 1",
+        "depositCount": 95,
+        "deposit": 4136000,
         "count": 11,
         "refund": 333300,
-        "deposit": 490000,
-        "balance": 156700
+        "balance": 3802700
       }
     },
     {
@@ -5198,10 +5243,11 @@
       },
       "refundReport": {
         "name": "필라테스 2",
+        "depositCount": 117,
+        "deposit": 5201000,
         "count": 20,
         "refund": 841100,
-        "deposit": 1056000,
-        "balance": 214900
+        "balance": 4359900
       }
     },
     {
@@ -5325,10 +5371,11 @@
       },
       "refundReport": {
         "name": "하모니카 중급",
+        "depositCount": 61,
+        "deposit": 2806000,
         "count": 5,
         "refund": 202600,
-        "deposit": 216000,
-        "balance": 13400
+        "balance": 2603400
       }
     },
     {
@@ -5458,10 +5505,11 @@
       },
       "refundReport": {
         "name": "하모니카 초급",
+        "depositCount": 57,
+        "deposit": 2432000,
         "count": 9,
         "refund": 203300,
-        "deposit": 240000,
-        "balance": 36700
+        "balance": 2228700
       }
     },
     {
@@ -5583,10 +5631,11 @@
       },
       "refundReport": {
         "name": "한문(논어)",
+        "depositCount": 32,
+        "deposit": 310000,
         "count": 1,
         "refund": null,
-        "deposit": 10000,
-        "balance": 10000
+        "balance": 310000
       }
     },
     {
@@ -5708,10 +5757,11 @@
       },
       "refundReport": {
         "name": "한자 초급",
+        "depositCount": 34,
+        "deposit": 310000,
         "count": 3,
         "refund": null,
-        "deposit": 20000,
-        "balance": 20000
+        "balance": 310000
       }
     },
     {
@@ -5853,10 +5903,11 @@
       },
       "refundReport": {
         "name": "힐링노래교실",
-        "count": 30,
-        "refund": 1133000,
-        "deposit": 1414000,
-        "balance": 281000
+        "depositCount": 200,
+        "deposit": 7262000,
+        "count": 31,
+        "refund": 1158000,
+        "balance": 6104000
       }
     },
     {
@@ -5984,339 +6035,397 @@
       },
       "refundReport": {
         "name": "힐링수채화",
+        "depositCount": 32,
+        "deposit": 280000,
         "count": 5,
         "refund": null,
-        "deposit": 40000,
-        "balance": 40000
+        "balance": 280000
       }
     }
   ],
   "refundReport": {
     "source": "11. 4. 기준 환불, 수납 금액.pdf",
-    "periodStart": "2026-01-01",
+    "sourceSha256": "a11a160c65087587f633f5ead07852a5a8c44f04828c8fb829583ce16b0b968b",
+    "sourcePages": 1,
+    "periodStart": null,
     "periodEnd": "2026-11-04",
+    "periodLabel": "2026.11.04 기준 · 집계 시작일 원본 미표기",
     "totals": {
       "name": "전체합계:",
-      "count": 456,
-      "refund": 10596200,
-      "deposit": 13680000,
-      "balance": 3083800
+      "depositCount": 3170,
+      "deposit": 102022000,
+      "count": 457,
+      "refund": 10621200,
+      "balance": 91400800
     },
     "programs": [
       {
         "name": "난타 초급",
+        "depositCount": 65,
+        "deposit": 570000,
         "count": 6,
         "refund": null,
-        "deposit": 40000,
-        "balance": 40000
+        "balance": 570000
       },
       {
         "name": "건강체조",
+        "depositCount": 160,
+        "deposit": 5641000,
         "count": 21,
         "refund": 726100,
-        "deposit": 974000,
-        "balance": 247900
+        "balance": 4914900
       },
       {
         "name": "필라테스 1",
+        "depositCount": 95,
+        "deposit": 4136000,
         "count": 11,
         "refund": 333300,
-        "deposit": 490000,
-        "balance": 156700
+        "balance": 3802700
       },
       {
         "name": "필라테스 2",
+        "depositCount": 117,
+        "deposit": 5201000,
         "count": 20,
         "refund": 841100,
-        "deposit": 1056000,
-        "balance": 214900
+        "balance": 4359900
       },
       {
         "name": "요가 1",
+        "depositCount": 111,
+        "deposit": 4406000,
         "count": 17,
         "refund": 518100,
-        "deposit": 706000,
-        "balance": 187900
+        "balance": 3887900
       },
       {
         "name": "요가 2",
+        "depositCount": 110,
+        "deposit": 4275000,
         "count": 16,
         "refund": 624400,
-        "deposit": 793000,
-        "balance": 168600
+        "balance": 3650600
       },
       {
         "name": "댄스스포츠",
+        "depositCount": 51,
+        "deposit": 2072000,
         "count": 10,
         "refund": 363100,
-        "deposit": 420000,
-        "balance": 56900
+        "balance": 1708900
       },
       {
         "name": "라인댄스 1",
+        "depositCount": 148,
+        "deposit": 6559000,
         "count": 30,
         "refund": 1044300,
-        "deposit": 1339000,
-        "balance": 294700
+        "balance": 5514700
       },
       {
         "name": "라인댄스 2",
+        "depositCount": 112,
+        "deposit": 5085000,
         "count": 11,
         "refund": 373100,
-        "deposit": 460000,
-        "balance": 86900
+        "balance": 4711900
       },
       {
         "name": "힐링노래교실",
-        "count": 30,
-        "refund": 1133000,
-        "deposit": 1414000,
-        "balance": 281000
+        "depositCount": 200,
+        "deposit": 7262000,
+        "count": 31,
+        "refund": 1158000,
+        "balance": 6104000
       },
       {
         "name": "오카리나 중급",
+        "depositCount": 52,
+        "deposit": 2406000,
         "count": 1,
         "refund": 30000,
-        "deposit": 40000,
-        "balance": 10000
+        "balance": 2376000
       },
       {
         "name": "오카리나 초급",
+        "depositCount": 44,
+        "deposit": 420000,
         "count": 4,
         "refund": null,
-        "deposit": 30000,
-        "balance": 30000
+        "balance": 420000
       },
       {
         "name": "오카리나 고급",
+        "depositCount": 81,
+        "deposit": 3980000,
         "count": 4,
         "refund": 186600,
-        "deposit": 220000,
-        "balance": 33400
+        "balance": 3793400
       },
       {
         "name": "생활체조",
+        "depositCount": 216,
+        "deposit": null,
         "count": 85,
         "refund": null,
-        "deposit": null,
         "balance": null
       },
       {
         "name": "기타 초중급",
+        "depositCount": 55,
+        "deposit": 2458000,
         "count": 7,
         "refund": 163300,
-        "deposit": 220000,
-        "balance": 56700
+        "balance": 2294700
       },
       {
         "name": "기타 고급",
+        "depositCount": 75,
+        "deposit": 4630000,
         "count": 1,
         "refund": 20000,
-        "deposit": 30000,
-        "balance": 10000
+        "balance": 4610000
       },
       {
         "name": "하모니카 초급",
+        "depositCount": 57,
+        "deposit": 2432000,
         "count": 9,
         "refund": 203300,
-        "deposit": 240000,
-        "balance": 36700
+        "balance": 2228700
       },
       {
         "name": "신빠람 사물 초급",
+        "depositCount": 32,
+        "deposit": 230000,
         "count": 4,
         "refund": 10000,
-        "deposit": 20000,
-        "balance": 10000
+        "balance": 220000
       },
       {
         "name": "신빠람 사물 중급",
+        "depositCount": 49,
+        "deposit": 360000,
         "count": 1,
         "refund": null,
-        "deposit": 10000,
-        "balance": 10000
+        "balance": 360000
       },
       {
         "name": "난타 중급",
+        "depositCount": 76,
+        "deposit": 3424000,
         "count": 7,
         "refund": 229800,
-        "deposit": 309000,
-        "balance": 79200
+        "balance": 3194200
       },
       {
         "name": "캘리그라피 초급",
+        "depositCount": 30,
+        "deposit": 978000,
         "count": 8,
         "refund": 204500,
-        "deposit": 242000,
-        "balance": 37500
+        "balance": 773500
       },
       {
         "name": "동양화",
+        "depositCount": 26,
+        "deposit": 230000,
         "count": 2,
         "refund": null,
-        "deposit": 10000,
-        "balance": 10000
+        "balance": 230000
       },
       {
         "name": "서예",
+        "depositCount": 31,
+        "deposit": 1103000,
         "count": 6,
         "refund": 201600,
-        "deposit": 220000,
-        "balance": 18400
+        "balance": 901400
       },
       {
         "name": "금빛스케치",
+        "depositCount": 32,
+        "deposit": 1382000,
         "count": 4,
         "refund": 103300,
-        "deposit": 140000,
-        "balance": 36700
+        "balance": 1278700
       },
       {
         "name": "에어로빅",
+        "depositCount": 146,
+        "deposit": 6426000,
         "count": 22,
         "refund": 683000,
-        "deposit": 943000,
-        "balance": 260000
+        "balance": 5743000
       },
       {
         "name": "연필인물화 초급",
+        "depositCount": 29,
+        "deposit": 1106000,
         "count": 3,
         "refund": 60000,
-        "deposit": 80000,
-        "balance": 20000
+        "balance": 1046000
       },
       {
         "name": "민화 1",
+        "depositCount": 26,
+        "deposit": 1289000,
         "count": 3,
         "refund": 149900,
-        "deposit": 160000,
-        "balance": 10100
+        "balance": 1139100
       },
       {
         "name": "실용영어",
+        "depositCount": 53,
+        "deposit": 1886000,
         "count": 13,
         "refund": 296400,
-        "deposit": 346000,
-        "balance": 49600
+        "balance": 1589600
       },
       {
         "name": "일본어 초급",
+        "depositCount": 50,
+        "deposit": 400000,
         "count": 7,
         "refund": null,
-        "deposit": 40000,
-        "balance": 40000
+        "balance": 400000
       },
       {
         "name": "한자 초급",
+        "depositCount": 34,
+        "deposit": 310000,
         "count": 3,
         "refund": null,
-        "deposit": 20000,
-        "balance": 20000
+        "balance": 310000
       },
       {
         "name": "한문(논어)",
+        "depositCount": 32,
+        "deposit": 310000,
         "count": 1,
         "refund": null,
-        "deposit": 10000,
-        "balance": 10000
+        "balance": 310000
       },
       {
         "name": "컴퓨터 초급",
+        "depositCount": 46,
+        "deposit": 350000,
         "count": 6,
         "refund": null,
-        "deposit": 50000,
-        "balance": 50000
+        "balance": 350000
       },
       {
         "name": "스마트폰 중급",
+        "depositCount": 46,
+        "deposit": 1688000,
         "count": 9,
         "refund": 271500,
-        "deposit": 350000,
-        "balance": 78500
+        "balance": 1416500
       },
       {
         "name": "스마트폰 초급",
+        "depositCount": 48,
+        "deposit": 1427000,
         "count": 6,
         "refund": 56600,
-        "deposit": 60000,
-        "balance": 3400
+        "balance": 1370400
       },
       {
         "name": "컴퓨터 활용",
+        "depositCount": 39,
+        "deposit": 1420000,
         "count": 6,
         "refund": 206500,
-        "deposit": 220000,
-        "balance": 13500
+        "balance": 1213500
       },
       {
         "name": "풀잎합창단",
+        "depositCount": 82,
+        "deposit": 3717000,
         "count": 5,
         "refund": 206600,
-        "deposit": 216000,
-        "balance": 9400
+        "balance": 3510400
       },
       {
         "name": "하모니카 중급",
+        "depositCount": 61,
+        "deposit": 2806000,
         "count": 5,
         "refund": 202600,
-        "deposit": 216000,
-        "balance": 13400
+        "balance": 2603400
+      },
+      {
+        "name": "찾아가는 시니어 디지털 스쿨",
+        "depositCount": 20,
+        "deposit": null,
+        "count": null,
+        "refund": null,
+        "balance": null
       },
       {
         "name": "민화 2",
+        "depositCount": 17,
+        "deposit": 843000,
         "count": 5,
         "refund": 203200,
-        "deposit": 263000,
-        "balance": 59800
+        "balance": 639800
       },
       {
         "name": "연필인물화 중급",
+        "depositCount": 31,
+        "deposit": 1406000,
         "count": 3,
         "refund": 79900,
-        "deposit": 93000,
-        "balance": 13100
+        "balance": 1326100
       },
       {
         "name": "캘리그라피 중급",
+        "depositCount": 24,
+        "deposit": 980000,
         "count": 5,
         "refund": 186600,
-        "deposit": 220000,
-        "balance": 33400
+        "balance": 793400
       },
       {
         "name": "힐링수채화",
+        "depositCount": 32,
+        "deposit": 280000,
         "count": 5,
         "refund": null,
-        "deposit": 40000,
-        "balance": 40000
+        "balance": 280000
       },
       {
         "name": "우쿨렐레",
+        "depositCount": 43,
+        "deposit": 1810000,
         "count": 4,
         "refund": 146600,
-        "deposit": 220000,
-        "balance": 73400
+        "balance": 1663400
       },
       {
         "name": "건강100세 운동교실",
+        "depositCount": 170,
+        "deposit": null,
         "count": 11,
         "refund": null,
-        "deposit": null,
         "balance": null
       },
       {
         "name": "가락장구",
+        "depositCount": 65,
+        "deposit": 2562000,
         "count": 12,
         "refund": 344700,
-        "deposit": 470000,
-        "balance": 125300
+        "balance": 2217300
       },
       {
         "name": "숟가락 난타",
+        "depositCount": 51,
+        "deposit": 1766000,
         "count": 7,
         "refund": 193200,
-        "deposit": 240000,
-        "balance": 46800
+        "balance": 1572800
       }
     ]
   }
