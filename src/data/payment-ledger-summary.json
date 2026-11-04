@@ -1,0 +1,2991 @@
+{
+  "asOf": "2026-11-04",
+  "sources": [
+    {
+      "name": "수납 세부 내역(시기별 수강 인원 파악용).pdf",
+      "sha256": "4e47711a7caed9ccce60c9477533090ba039ae83899b1cfd8687a44328e8e3da"
+    },
+    {
+      "name": "환불세부 내역(시기별 수강 인원 파악용).pdf",
+      "sha256": "909986302a7f32cba38ae09ab27e5d0aa11db484fab1e094689d8f460d9b95bf"
+    }
+  ],
+  "rules": {
+    "start": "입금일과 개강일 중 늦은 날부터 포함",
+    "end": "환불일 당일부터 제외. 종강일 포함",
+    "periods": "일반 프로그램 2.2~7.17 / 9.7~12.18. 일본어 초급 3월 개강. 건강100세는 원본 개별 기간 및 8월 운영 확인 반영",
+    "deduplication": "이용자번호+프로그램+일자 중복 제외"
+  },
+  "paymentRecords": 3170,
+  "refundRecords": 457,
+  "cumulativeUnique": 1064,
+  "currentPaidUnique": 763,
+  "currentPaid": 1309,
+  "programs": [
+    {
+      "name": "난타 초급",
+      "paid": 32,
+      "sourcePaid": 31
+    },
+    {
+      "name": "건강체조",
+      "paid": 59,
+      "sourcePaid": 59
+    },
+    {
+      "name": "필라테스 1",
+      "paid": 42,
+      "sourcePaid": 42
+    },
+    {
+      "name": "필라테스 2",
+      "paid": 48,
+      "sourcePaid": 48
+    },
+    {
+      "name": "요가 1",
+      "paid": 46,
+      "sourcePaid": 46
+    },
+    {
+      "name": "요가 2",
+      "paid": 50,
+      "sourcePaid": 50
+    },
+    {
+      "name": "댄스스포츠",
+      "paid": 19,
+      "sourcePaid": 19
+    },
+    {
+      "name": "라인댄스 1",
+      "paid": 59,
+      "sourcePaid": 59
+    },
+    {
+      "name": "라인댄스 2",
+      "paid": 54,
+      "sourcePaid": 54
+    },
+    {
+      "name": "힐링노래교실",
+      "paid": 70,
+      "sourcePaid": 71
+    },
+    {
+      "name": "오카리나 초급",
+      "paid": 24,
+      "sourcePaid": 25
+    },
+    {
+      "name": "오카리나 중급",
+      "paid": 25,
+      "sourcePaid": 25
+    },
+    {
+      "name": "오카리나 고급",
+      "paid": 38,
+      "sourcePaid": 38
+    },
+    {
+      "name": "생활체조",
+      "paid": 58,
+      "sourcePaid": 58
+    },
+    {
+      "name": "기타 초중급",
+      "paid": 28,
+      "sourcePaid": 28
+    },
+    {
+      "name": "기타 고급",
+      "paid": 37,
+      "sourcePaid": 37
+    },
+    {
+      "name": "하모니카 초급",
+      "paid": 23,
+      "sourcePaid": 23
+    },
+    {
+      "name": "신빠람 사물 초급",
+      "paid": 13,
+      "sourcePaid": 13
+    },
+    {
+      "name": "신빠람 사물 중급",
+      "paid": 25,
+      "sourcePaid": 25
+    },
+    {
+      "name": "난타 중급",
+      "paid": 35,
+      "sourcePaid": 35
+    },
+    {
+      "name": "캘리그라피 초급",
+      "paid": 12,
+      "sourcePaid": 12
+    },
+    {
+      "name": "동양화",
+      "paid": 11,
+      "sourcePaid": 11
+    },
+    {
+      "name": "서예",
+      "paid": 12,
+      "sourcePaid": 12
+    },
+    {
+      "name": "힐링수채화",
+      "paid": 13,
+      "sourcePaid": 13
+    },
+    {
+      "name": "에어로빅",
+      "paid": 60,
+      "sourcePaid": 60
+    },
+    {
+      "name": "연필인물화 초급",
+      "paid": 12,
+      "sourcePaid": 12
+    },
+    {
+      "name": "민화 1",
+      "paid": 10,
+      "sourcePaid": 10
+    },
+    {
+      "name": "실용영어",
+      "paid": 17,
+      "sourcePaid": 17
+    },
+    {
+      "name": "일본어 초급",
+      "paid": 20,
+      "sourcePaid": 20
+    },
+    {
+      "name": "한자 초급",
+      "paid": 13,
+      "sourcePaid": 13
+    },
+    {
+      "name": "한문(논어)",
+      "paid": 13,
+      "sourcePaid": 13
+    },
+    {
+      "name": "컴퓨터 초급",
+      "paid": 19,
+      "sourcePaid": 19
+    },
+    {
+      "name": "스마트폰 중급",
+      "paid": 19,
+      "sourcePaid": 19
+    },
+    {
+      "name": "스마트폰 초급",
+      "paid": 19,
+      "sourcePaid": 19
+    },
+    {
+      "name": "컴퓨터 활용",
+      "paid": 19,
+      "sourcePaid": 19
+    },
+    {
+      "name": "풀잎합창단",
+      "paid": 40,
+      "sourcePaid": 40
+    },
+    {
+      "name": "하모니카 중급",
+      "paid": 26,
+      "sourcePaid": 26
+    },
+    {
+      "name": "민화 2",
+      "paid": 7,
+      "sourcePaid": 7
+    },
+    {
+      "name": "연필인물화 중급",
+      "paid": 15,
+      "sourcePaid": 15
+    },
+    {
+      "name": "캘리그라피 중급",
+      "paid": 9,
+      "sourcePaid": 9
+    },
+    {
+      "name": "우쿨렐레",
+      "paid": 21,
+      "sourcePaid": 21
+    },
+    {
+      "name": "건강100세 운동교실",
+      "paid": 80,
+      "sourcePaid": 80
+    },
+    {
+      "name": "가락장구",
+      "paid": 29,
+      "sourcePaid": 29
+    },
+    {
+      "name": "숟가락 난타",
+      "paid": 14,
+      "sourcePaid": 14
+    },
+    {
+      "name": "금빛스케치",
+      "paid": 14,
+      "sourcePaid": 14
+    }
+  ],
+  "reconciliation": [
+    {
+      "name": "난타 초급",
+      "paid": 32,
+      "sourcePaid": 31
+    },
+    {
+      "name": "힐링노래교실",
+      "paid": 70,
+      "sourcePaid": 71
+    },
+    {
+      "name": "오카리나 초급",
+      "paid": 24,
+      "sourcePaid": 25
+    }
+  ],
+  "verification": {
+    "verifiedMonths": 96,
+    "pendingMonths": 263
+  },
+  "pending": [
+    {
+      "month": "2026-02",
+      "programCode": "A0164",
+      "program": "건강체조",
+      "attended": 203,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 71,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1810",
+      "program": "라인댄스 1",
+      "attended": 283,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 61,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1817",
+      "program": "생활체조",
+      "attended": 171,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 75,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1831",
+      "program": "에어로빅",
+      "attended": 270,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 73,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1804",
+      "program": "요가 1",
+      "attended": 158,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 48,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1805",
+      "program": "요가 2",
+      "attended": 231,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 45,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1802",
+      "program": "필라테스 1",
+      "attended": 262,
+      "sessions": 8,
+      "minEligible": 0,
+      "maxEligible": 45,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1803",
+      "program": "필라테스 2",
+      "attended": 178,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 48,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1813",
+      "program": "힐링노래교실",
+      "attended": 64,
+      "sessions": 1,
+      "minEligible": 0,
+      "maxEligible": 81,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1862",
+      "program": "건강100세 운동교실",
+      "attended": 75,
+      "sessions": 1,
+      "minEligible": 0,
+      "maxEligible": 80,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A0164",
+      "program": "건강체조",
+      "attended": 115,
+      "sessions": 2,
+      "minEligible": 71,
+      "maxEligible": 77,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1810",
+      "program": "라인댄스 1",
+      "attended": 105,
+      "sessions": 2,
+      "minEligible": 60,
+      "maxEligible": 65,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1817",
+      "program": "생활체조",
+      "attended": 58,
+      "sessions": 2,
+      "minEligible": 72,
+      "maxEligible": 76,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1831",
+      "program": "에어로빅",
+      "attended": 183,
+      "sessions": 3,
+      "minEligible": 68,
+      "maxEligible": 71,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1804",
+      "program": "요가 1",
+      "attended": 103,
+      "sessions": 3,
+      "minEligible": 47,
+      "maxEligible": 48,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1805",
+      "program": "요가 2",
+      "attended": 78,
+      "sessions": 2,
+      "minEligible": 40,
+      "maxEligible": 43,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1802",
+      "program": "필라테스 1",
+      "attended": 37,
+      "sessions": 1,
+      "minEligible": 43,
+      "maxEligible": 45,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1803",
+      "program": "필라테스 2",
+      "attended": 111,
+      "sessions": 3,
+      "minEligible": 47,
+      "maxEligible": 50,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1813",
+      "program": "힐링노래교실",
+      "attended": 3,
+      "sessions": 1,
+      "minEligible": 81,
+      "maxEligible": 91,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A0164",
+      "program": "건강체조",
+      "attended": 482,
+      "sessions": 9,
+      "minEligible": 75,
+      "maxEligible": 78,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1810",
+      "program": "라인댄스 1",
+      "attended": 426,
+      "sessions": 9,
+      "minEligible": 60,
+      "maxEligible": 61,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1817",
+      "program": "생활체조",
+      "attended": 402,
+      "sessions": 8,
+      "minEligible": 75,
+      "maxEligible": 77,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1831",
+      "program": "에어로빅",
+      "attended": 389,
+      "sessions": 7,
+      "minEligible": 67,
+      "maxEligible": 68,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1804",
+      "program": "요가 1",
+      "attended": 279,
+      "sessions": 9,
+      "minEligible": 47,
+      "maxEligible": 48,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1805",
+      "program": "요가 2",
+      "attended": 259,
+      "sessions": 8,
+      "minEligible": 42,
+      "maxEligible": 43,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1803",
+      "program": "필라테스 2",
+      "attended": 302,
+      "sessions": 9,
+      "minEligible": 48,
+      "maxEligible": 49,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1813",
+      "program": "힐링노래교실",
+      "attended": 239,
+      "sessions": 4,
+      "minEligible": 90,
+      "maxEligible": 96,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A0164",
+      "program": "건강체조",
+      "attended": 54,
+      "sessions": 1,
+      "minEligible": 78,
+      "maxEligible": 81,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1810",
+      "program": "라인댄스 1",
+      "attended": 138,
+      "sessions": 3,
+      "minEligible": 60,
+      "maxEligible": 61,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1817",
+      "program": "생활체조",
+      "attended": 170,
+      "sessions": 4,
+      "minEligible": 73,
+      "maxEligible": 77,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1831",
+      "program": "에어로빅",
+      "attended": 255,
+      "sessions": 5,
+      "minEligible": 66,
+      "maxEligible": 67,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1804",
+      "program": "요가 1",
+      "attended": 84,
+      "sessions": 3,
+      "minEligible": 47,
+      "maxEligible": 48,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1805",
+      "program": "요가 2",
+      "attended": 82,
+      "sessions": 3,
+      "minEligible": 42,
+      "maxEligible": 43,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1802",
+      "program": "필라테스 1",
+      "attended": 125,
+      "sessions": 4,
+      "minEligible": 43,
+      "maxEligible": 44,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1803",
+      "program": "필라테스 2",
+      "attended": 132,
+      "sessions": 4,
+      "minEligible": 48,
+      "maxEligible": 49,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1813",
+      "program": "힐링노래교실",
+      "attended": 155,
+      "sessions": 3,
+      "minEligible": 94,
+      "maxEligible": 100,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A0164",
+      "program": "건강체조",
+      "attended": 419,
+      "sessions": 8,
+      "minEligible": 79,
+      "maxEligible": 80,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1810",
+      "program": "라인댄스 1",
+      "attended": 366,
+      "sessions": 9,
+      "minEligible": 59,
+      "maxEligible": 60,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1817",
+      "program": "생활체조",
+      "attended": 356,
+      "sessions": 8,
+      "minEligible": 73,
+      "maxEligible": 74,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1831",
+      "program": "에어로빅",
+      "attended": 440,
+      "sessions": 9,
+      "minEligible": 64,
+      "maxEligible": 66,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1804",
+      "program": "요가 1",
+      "attended": 179,
+      "sessions": 6,
+      "minEligible": 48,
+      "maxEligible": 49,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1805",
+      "program": "요가 2",
+      "attended": 270,
+      "sessions": 9,
+      "minEligible": 42,
+      "maxEligible": 44,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1802",
+      "program": "필라테스 1",
+      "attended": 264,
+      "sessions": 8,
+      "minEligible": 42,
+      "maxEligible": 43,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1803",
+      "program": "필라테스 2",
+      "attended": 223,
+      "sessions": 7,
+      "minEligible": 49,
+      "maxEligible": 50,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1813",
+      "program": "힐링노래교실",
+      "attended": 184,
+      "sessions": 4,
+      "minEligible": 99,
+      "maxEligible": 100,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A0164",
+      "program": "건강체조",
+      "attended": 164,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 80,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1810",
+      "program": "라인댄스 1",
+      "attended": 208,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 59,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1817",
+      "program": "생활체조",
+      "attended": 150,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 73,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1831",
+      "program": "에어로빅",
+      "attended": 198,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 64,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1804",
+      "program": "요가 1",
+      "attended": 142,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 48,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1805",
+      "program": "요가 2",
+      "attended": 140,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 44,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1802",
+      "program": "필라테스 1",
+      "attended": 160,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 42,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1803",
+      "program": "필라테스 2",
+      "attended": 158,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 49,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1813",
+      "program": "힐링노래교실",
+      "attended": 92,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 99,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1862",
+      "program": "건강100세 운동교실",
+      "attended": 567,
+      "sessions": 8,
+      "minEligible": 79,
+      "maxEligible": 80,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A0164",
+      "program": "건강체조",
+      "attended": 249,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 57,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1810",
+      "program": "라인댄스 1",
+      "attended": 262,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 58,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1817",
+      "program": "생활체조",
+      "attended": 197,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 60,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1831",
+      "program": "에어로빅",
+      "attended": 275,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 60,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1804",
+      "program": "요가 1",
+      "attended": 270,
+      "sessions": 8,
+      "minEligible": 0,
+      "maxEligible": 48,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1805",
+      "program": "요가 2",
+      "attended": 214,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 48,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1802",
+      "program": "필라테스 1",
+      "attended": 150,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 46,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1803",
+      "program": "필라테스 2",
+      "attended": 276,
+      "sessions": 8,
+      "minEligible": 0,
+      "maxEligible": 50,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1813",
+      "program": "힐링노래교실",
+      "attended": 291,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 76,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A0164",
+      "program": "건강체조",
+      "attended": 353,
+      "sessions": 9,
+      "minEligible": 56,
+      "maxEligible": 59,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1810",
+      "program": "라인댄스 1",
+      "attended": 404,
+      "sessions": 9,
+      "minEligible": 57,
+      "maxEligible": 60,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1817",
+      "program": "생활체조",
+      "attended": 279,
+      "sessions": 7,
+      "minEligible": 52,
+      "maxEligible": 59,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1831",
+      "program": "에어로빅",
+      "attended": 244,
+      "sessions": 7,
+      "minEligible": 59,
+      "maxEligible": 60,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1804",
+      "program": "요가 1",
+      "attended": 244,
+      "sessions": 7,
+      "minEligible": 46,
+      "maxEligible": 49,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1805",
+      "program": "요가 2",
+      "attended": 324,
+      "sessions": 9,
+      "minEligible": 48,
+      "maxEligible": 50,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1802",
+      "program": "필라테스 1",
+      "attended": 265,
+      "sessions": 8,
+      "minEligible": 41,
+      "maxEligible": 42,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1803",
+      "program": "필라테스 2",
+      "attended": 244,
+      "sessions": 7,
+      "minEligible": 48,
+      "maxEligible": 50,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1813",
+      "program": "힐링노래교실",
+      "attended": 247,
+      "sessions": 6,
+      "minEligible": 72,
+      "maxEligible": 73,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-30",
+      "program": "한자 초급",
+      "attended": 58,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 18,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-1",
+      "program": "난타 초급",
+      "attended": 100,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-22",
+      "program": "동양화",
+      "attended": 42,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 12,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-31",
+      "program": "한문(논어)",
+      "attended": 55,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 16,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-32",
+      "program": "컴퓨터 초급",
+      "attended": 65,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 18,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-19",
+      "program": "신빠람 사물 중급",
+      "attended": 55,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-18",
+      "program": "신빠람 사물 초급",
+      "attended": 40,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 16,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-36",
+      "program": "풀잎합창단",
+      "attended": 78,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 35,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-24",
+      "program": "힐링수채화",
+      "attended": 36,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-11",
+      "program": "오카리나 초급",
+      "attended": 103,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 16,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1811",
+      "program": "라인댄스 2",
+      "attended": 150,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 48,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-7",
+      "program": "댄스스포츠",
+      "attended": 97,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-15",
+      "program": "기타 초중급",
+      "attended": 99,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 22,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-16",
+      "program": "기타 고급",
+      "attended": 186,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 35,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-12",
+      "program": "오카리나 중급",
+      "attended": 152,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 24,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-13",
+      "program": "오카리나 고급",
+      "attended": 271,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 41,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-17",
+      "program": "하모니카 초급",
+      "attended": 57,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 24,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-37",
+      "program": "하모니카 중급",
+      "attended": 98,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 29,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-41",
+      "program": "우쿨렐레",
+      "attended": 46,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 20,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-44",
+      "program": "숟가락 난타",
+      "attended": 81,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 29,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-43",
+      "program": "가락장구",
+      "attended": 87,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 26,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-20",
+      "program": "난타 중급",
+      "attended": 201,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 35,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-21",
+      "program": "캘리그라피 초급",
+      "attended": 47,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-40",
+      "program": "캘리그라피 중급",
+      "attended": 36,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-23",
+      "program": "서예",
+      "attended": 81,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-27",
+      "program": "민화 1",
+      "attended": 29,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 12,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-38",
+      "program": "민화 2",
+      "attended": 22,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 8,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-45",
+      "program": "금빛스케치",
+      "attended": 33,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-26",
+      "program": "연필인물화 초급",
+      "attended": 38,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-39",
+      "program": "연필인물화 중급",
+      "attended": 37,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-28",
+      "program": "실용영어",
+      "attended": 35,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 17,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-35",
+      "program": "컴퓨터 활용",
+      "attended": 36,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-33",
+      "program": "스마트폰 중급",
+      "attended": 50,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 19,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-34",
+      "program": "스마트폰 초급",
+      "attended": 54,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 20,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-24",
+      "program": "힐링수채화",
+      "attended": 40,
+      "sessions": 4,
+      "minEligible": 12,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-11",
+      "program": "오카리나 초급",
+      "attended": 126,
+      "sessions": 9,
+      "minEligible": 14,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-36",
+      "program": "풀잎합창단",
+      "attended": 134,
+      "sessions": 5,
+      "minEligible": 34,
+      "maxEligible": 36,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-30",
+      "program": "한자 초급",
+      "attended": 49,
+      "sessions": 4,
+      "minEligible": 17,
+      "maxEligible": 18,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-19",
+      "program": "신빠람 사물 중급",
+      "attended": 49,
+      "sessions": 3,
+      "minEligible": 22,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-18",
+      "program": "신빠람 사물 초급",
+      "attended": 31,
+      "sessions": 4,
+      "minEligible": 14,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-31",
+      "program": "한문(논어)",
+      "attended": 65,
+      "sessions": 7,
+      "minEligible": 16,
+      "maxEligible": 17,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-32",
+      "program": "컴퓨터 초급",
+      "attended": 86,
+      "sessions": 8,
+      "minEligible": 17,
+      "maxEligible": 20,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-1",
+      "program": "난타 초급",
+      "attended": 126,
+      "sessions": 8,
+      "minEligible": 23,
+      "maxEligible": 25,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-29",
+      "program": "일본어 초급",
+      "attended": 160,
+      "sessions": 9,
+      "minEligible": 0,
+      "maxEligible": 25,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1811",
+      "program": "라인댄스 2",
+      "attended": 266,
+      "sessions": 7,
+      "minEligible": 47,
+      "maxEligible": 49,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-7",
+      "program": "댄스스포츠",
+      "attended": 114,
+      "sessions": 8,
+      "minEligible": 19,
+      "maxEligible": 22,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-15",
+      "program": "기타 초중급",
+      "attended": 111,
+      "sessions": 8,
+      "minEligible": 20,
+      "maxEligible": 22,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-12",
+      "program": "오카리나 중급",
+      "attended": 207,
+      "sessions": 9,
+      "minEligible": 24,
+      "maxEligible": 25,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-17",
+      "program": "하모니카 초급",
+      "attended": 73,
+      "sessions": 4,
+      "minEligible": 23,
+      "maxEligible": 24,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-41",
+      "program": "우쿨렐레",
+      "attended": 49,
+      "sessions": 4,
+      "minEligible": 18,
+      "maxEligible": 20,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-44",
+      "program": "숟가락 난타",
+      "attended": 87,
+      "sessions": 4,
+      "minEligible": 28,
+      "maxEligible": 30,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-43",
+      "program": "가락장구",
+      "attended": 79,
+      "sessions": 4,
+      "minEligible": 25,
+      "maxEligible": 26,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-20",
+      "program": "난타 중급",
+      "attended": 217,
+      "sessions": 9,
+      "minEligible": 34,
+      "maxEligible": 35,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-21",
+      "program": "캘리그라피 초급",
+      "attended": 40,
+      "sessions": 4,
+      "minEligible": 11,
+      "maxEligible": 12,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-23",
+      "program": "서예",
+      "attended": 85,
+      "sessions": 8,
+      "minEligible": 12,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-27",
+      "program": "민화 1",
+      "attended": 45,
+      "sessions": 5,
+      "minEligible": 11,
+      "maxEligible": 12,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-38",
+      "program": "민화 2",
+      "attended": 31,
+      "sessions": 5,
+      "minEligible": 5,
+      "maxEligible": 8,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-45",
+      "program": "금빛스케치",
+      "attended": 46,
+      "sessions": 4,
+      "minEligible": 13,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-39",
+      "program": "연필인물화 중급",
+      "attended": 45,
+      "sessions": 4,
+      "minEligible": 14,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-28",
+      "program": "실용영어",
+      "attended": 180,
+      "sessions": 12,
+      "minEligible": 17,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-35",
+      "program": "컴퓨터 활용",
+      "attended": 57,
+      "sessions": 5,
+      "minEligible": 14,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-33",
+      "program": "스마트폰 중급",
+      "attended": 54,
+      "sessions": 4,
+      "minEligible": 17,
+      "maxEligible": 19,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-34",
+      "program": "스마트폰 초급",
+      "attended": 55,
+      "sessions": 4,
+      "minEligible": 18,
+      "maxEligible": 21,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-1",
+      "program": "난타 초급",
+      "attended": 123,
+      "sessions": 8,
+      "minEligible": 24,
+      "maxEligible": 27,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-29",
+      "program": "일본어 초급",
+      "attended": 146,
+      "sessions": 8,
+      "minEligible": 24,
+      "maxEligible": 25,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-19",
+      "program": "신빠람 사물 중급",
+      "attended": 85,
+      "sessions": 5,
+      "minEligible": 22,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-22",
+      "program": "동양화",
+      "attended": 45,
+      "sessions": 5,
+      "minEligible": 12,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-32",
+      "program": "컴퓨터 초급",
+      "attended": 94,
+      "sessions": 9,
+      "minEligible": 20,
+      "maxEligible": 21,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-30",
+      "program": "한자 초급",
+      "attended": 40,
+      "sessions": 4,
+      "minEligible": 17,
+      "maxEligible": 18,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1811",
+      "program": "라인댄스 2",
+      "attended": 337,
+      "sessions": 9,
+      "minEligible": 46,
+      "maxEligible": 49,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-15",
+      "program": "기타 초중급",
+      "attended": 132,
+      "sessions": 9,
+      "minEligible": 20,
+      "maxEligible": 21,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-12",
+      "program": "오카리나 중급",
+      "attended": 195,
+      "sessions": 8,
+      "minEligible": 25,
+      "maxEligible": 27,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-44",
+      "program": "숟가락 난타",
+      "attended": 103,
+      "sessions": 5,
+      "minEligible": 29,
+      "maxEligible": 30,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-43",
+      "program": "가락장구",
+      "attended": 100,
+      "sessions": 5,
+      "minEligible": 23,
+      "maxEligible": 26,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-20",
+      "program": "난타 중급",
+      "attended": 245,
+      "sessions": 9,
+      "minEligible": 35,
+      "maxEligible": 36,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-21",
+      "program": "캘리그라피 초급",
+      "attended": 48,
+      "sessions": 5,
+      "minEligible": 10,
+      "maxEligible": 11,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-27",
+      "program": "민화 1",
+      "attended": 43,
+      "sessions": 4,
+      "minEligible": 12,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-38",
+      "program": "민화 2",
+      "attended": 21,
+      "sessions": 4,
+      "minEligible": 5,
+      "maxEligible": 6,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-45",
+      "program": "금빛스케치",
+      "attended": 45,
+      "sessions": 4,
+      "minEligible": 13,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-26",
+      "program": "연필인물화 초급",
+      "attended": 48,
+      "sessions": 4,
+      "minEligible": 14,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-28",
+      "program": "실용영어",
+      "attended": 123,
+      "sessions": 8,
+      "minEligible": 22,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-35",
+      "program": "컴퓨터 활용",
+      "attended": 41,
+      "sessions": 4,
+      "minEligible": 14,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-33",
+      "program": "스마트폰 중급",
+      "attended": 76,
+      "sessions": 5,
+      "minEligible": 17,
+      "maxEligible": 19,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-34",
+      "program": "스마트폰 초급",
+      "attended": 58,
+      "sessions": 4,
+      "minEligible": 20,
+      "maxEligible": 22,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-29",
+      "program": "일본어 초급",
+      "attended": 117,
+      "sessions": 7,
+      "minEligible": 23,
+      "maxEligible": 25,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-24",
+      "program": "힐링수채화",
+      "attended": 27,
+      "sessions": 3,
+      "minEligible": 13,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-11",
+      "program": "오카리나 초급",
+      "attended": 90,
+      "sessions": 7,
+      "minEligible": 14,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-7",
+      "program": "댄스스포츠",
+      "attended": 90,
+      "sessions": 7,
+      "minEligible": 19,
+      "maxEligible": 22,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-16",
+      "program": "기타 고급",
+      "attended": 178,
+      "sessions": 7,
+      "minEligible": 35,
+      "maxEligible": 36,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-43",
+      "program": "가락장구",
+      "attended": 69,
+      "sessions": 4,
+      "minEligible": 24,
+      "maxEligible": 25,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-20",
+      "program": "난타 중급",
+      "attended": 186,
+      "sessions": 7,
+      "minEligible": 34,
+      "maxEligible": 35,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-23",
+      "program": "서예",
+      "attended": 70,
+      "sessions": 7,
+      "minEligible": 12,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-45",
+      "program": "금빛스케치",
+      "attended": 49,
+      "sessions": 4,
+      "minEligible": 13,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-39",
+      "program": "연필인물화 중급",
+      "attended": 55,
+      "sessions": 4,
+      "minEligible": 13,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-34",
+      "program": "스마트폰 초급",
+      "attended": 48,
+      "sessions": 4,
+      "minEligible": 21,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-29",
+      "program": "일본어 초급",
+      "attended": 135,
+      "sessions": 8,
+      "minEligible": 23,
+      "maxEligible": 24,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-18",
+      "program": "신빠람 사물 초급",
+      "attended": 38,
+      "sessions": 4,
+      "minEligible": 14,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-31",
+      "program": "한문(논어)",
+      "attended": 58,
+      "sessions": 8,
+      "minEligible": 17,
+      "maxEligible": 18,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-36",
+      "program": "풀잎합창단",
+      "attended": 154,
+      "sessions": 5,
+      "minEligible": 35,
+      "maxEligible": 37,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-11",
+      "program": "오카리나 초급",
+      "attended": 97,
+      "sessions": 8,
+      "minEligible": 14,
+      "maxEligible": 16,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1811",
+      "program": "라인댄스 2",
+      "attended": 218,
+      "sessions": 6,
+      "minEligible": 46,
+      "maxEligible": 47,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-17",
+      "program": "하모니카 초급",
+      "attended": 48,
+      "sessions": 4,
+      "minEligible": 24,
+      "maxEligible": 25,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-37",
+      "program": "하모니카 중급",
+      "attended": 91,
+      "sessions": 4,
+      "minEligible": 28,
+      "maxEligible": 30,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-33",
+      "program": "스마트폰 중급",
+      "attended": 73,
+      "sessions": 4,
+      "minEligible": 18,
+      "maxEligible": 18,
+      "reason": "출석 합계가 대상 건수 초과: 원본 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-24",
+      "program": "힐링수채화",
+      "attended": 16,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-11",
+      "program": "오카리나 초급",
+      "attended": 56,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 16,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1811",
+      "program": "라인댄스 2",
+      "attended": 171,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 47,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-7",
+      "program": "댄스스포츠",
+      "attended": 78,
+      "sessions": 7,
+      "minEligible": 0,
+      "maxEligible": 22,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-15",
+      "program": "기타 초중급",
+      "attended": 53,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 20,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-16",
+      "program": "기타 고급",
+      "attended": 116,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 37,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-12",
+      "program": "오카리나 중급",
+      "attended": 93,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 26,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-13",
+      "program": "오카리나 고급",
+      "attended": 152,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 39,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-17",
+      "program": "하모니카 초급",
+      "attended": 41,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 25,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-37",
+      "program": "하모니카 중급",
+      "attended": 70,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 30,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-41",
+      "program": "우쿨렐레",
+      "attended": 26,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 18,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-44",
+      "program": "숟가락 난타",
+      "attended": 50,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 30,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-43",
+      "program": "가락장구",
+      "attended": 59,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 24,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-20",
+      "program": "난타 중급",
+      "attended": 132,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 34,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-21",
+      "program": "캘리그라피 초급",
+      "attended": 23,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 10,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-40",
+      "program": "캘리그라피 중급",
+      "attended": 20,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 10,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-23",
+      "program": "서예",
+      "attended": 32,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-27",
+      "program": "민화 1",
+      "attended": 17,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-38",
+      "program": "민화 2",
+      "attended": 10,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 5,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-45",
+      "program": "금빛스케치",
+      "attended": 33,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-26",
+      "program": "연필인물화 초급",
+      "attended": 24,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-39",
+      "program": "연필인물화 중급",
+      "attended": 33,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-28",
+      "program": "실용영어",
+      "attended": 65,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-35",
+      "program": "컴퓨터 활용",
+      "attended": 21,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-33",
+      "program": "스마트폰 중급",
+      "attended": 52,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 18,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-34",
+      "program": "스마트폰 초급",
+      "attended": 24,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-36",
+      "program": "풀잎합창단",
+      "attended": 70,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 37,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-32",
+      "program": "컴퓨터 초급",
+      "attended": 43,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 21,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-29",
+      "program": "일본어 초급",
+      "attended": 67,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-31",
+      "program": "한문(논어)",
+      "attended": 38,
+      "sessions": 5,
+      "minEligible": 0,
+      "maxEligible": 18,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-22",
+      "program": "동양화",
+      "attended": 24,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-1",
+      "program": "난타 초급",
+      "attended": 44,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 27,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-18",
+      "program": "신빠람 사물 초급",
+      "attended": 8,
+      "sessions": 1,
+      "minEligible": 0,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-19",
+      "program": "신빠람 사물 중급",
+      "attended": 36,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 23,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-30",
+      "program": "한자 초급",
+      "attended": 24,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 18,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-24",
+      "program": "힐링수채화",
+      "attended": 32,
+      "sessions": 3,
+      "minEligible": 0,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-36",
+      "program": "풀잎합창단",
+      "attended": 152,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 40,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-18",
+      "program": "신빠람 사물 초급",
+      "attended": 21,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 12,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-19",
+      "program": "신빠람 사물 중급",
+      "attended": 73,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 25,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-1",
+      "program": "난타 초급",
+      "attended": 127,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 30,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-30",
+      "program": "한자 초급",
+      "attended": 14,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 10,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-29",
+      "program": "일본어 초급",
+      "attended": 54,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 20,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-31",
+      "program": "한문(논어)",
+      "attended": 59,
+      "sessions": 8,
+      "minEligible": 0,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-22",
+      "program": "동양화",
+      "attended": 37,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 12,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-32",
+      "program": "컴퓨터 초급",
+      "attended": 131,
+      "sessions": 8,
+      "minEligible": 0,
+      "maxEligible": 20,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1811",
+      "program": "라인댄스 2",
+      "attended": 371,
+      "sessions": 8,
+      "minEligible": 0,
+      "maxEligible": 55,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-7",
+      "program": "댄스스포츠",
+      "attended": 92,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 19,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-15",
+      "program": "기타 초중급",
+      "attended": 111,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 26,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-16",
+      "program": "기타 고급",
+      "attended": 158,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 37,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-11",
+      "program": "오카리나 초급",
+      "attended": 123,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 24,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-12",
+      "program": "오카리나 중급",
+      "attended": 132,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 25,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-13",
+      "program": "오카리나 고급",
+      "attended": 225,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 39,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-17",
+      "program": "하모니카 초급",
+      "attended": 44,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 24,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-37",
+      "program": "하모니카 중급",
+      "attended": 48,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 27,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-41",
+      "program": "우쿨렐레",
+      "attended": 65,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 21,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-44",
+      "program": "숟가락 난타",
+      "attended": 53,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 17,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-43",
+      "program": "가락장구",
+      "attended": 53,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 30,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-20",
+      "program": "난타 중급",
+      "attended": 157,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 35,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-21",
+      "program": "캘리그라피 초급",
+      "attended": 22,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-40",
+      "program": "캘리그라피 중급",
+      "attended": 14,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 10,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-23",
+      "program": "서예",
+      "attended": 70,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-27",
+      "program": "민화 1",
+      "attended": 32,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 9,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-38",
+      "program": "민화 2",
+      "attended": 28,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 7,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-45",
+      "program": "금빛스케치",
+      "attended": 41,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-26",
+      "program": "연필인물화 초급",
+      "attended": 35,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 12,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-39",
+      "program": "연필인물화 중급",
+      "attended": 50,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 15,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-28",
+      "program": "실용영어",
+      "attended": 96,
+      "sessions": 6,
+      "minEligible": 0,
+      "maxEligible": 22,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-35",
+      "program": "컴퓨터 활용",
+      "attended": 67,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 19,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-33",
+      "program": "스마트폰 중급",
+      "attended": 30,
+      "sessions": 2,
+      "minEligible": 0,
+      "maxEligible": 20,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-34",
+      "program": "스마트폰 초급",
+      "attended": 56,
+      "sessions": 4,
+      "minEligible": 0,
+      "maxEligible": 20,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-24",
+      "program": "힐링수채화",
+      "attended": 23,
+      "sessions": 2,
+      "minEligible": 13,
+      "maxEligible": 14,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-29",
+      "program": "일본어 초급",
+      "attended": 99,
+      "sessions": 7,
+      "minEligible": 20,
+      "maxEligible": 21,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-1",
+      "program": "난타 초급",
+      "attended": 139,
+      "sessions": 6,
+      "minEligible": 28,
+      "maxEligible": 30,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-18",
+      "program": "신빠람 사물 초급",
+      "attended": 33,
+      "sessions": 4,
+      "minEligible": 12,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-30",
+      "program": "한자 초급",
+      "attended": 42,
+      "sessions": 5,
+      "minEligible": 10,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-32",
+      "program": "컴퓨터 초급",
+      "attended": 98,
+      "sessions": 7,
+      "minEligible": 19,
+      "maxEligible": 20,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-15",
+      "program": "기타 초중급",
+      "attended": 124,
+      "sessions": 8,
+      "minEligible": 26,
+      "maxEligible": 27,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-16",
+      "program": "기타 고급",
+      "attended": 209,
+      "sessions": 8,
+      "minEligible": 37,
+      "maxEligible": 38,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-13",
+      "program": "오카리나 고급",
+      "attended": 250,
+      "sessions": 7,
+      "minEligible": 38,
+      "maxEligible": 39,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-17",
+      "program": "하모니카 초급",
+      "attended": 96,
+      "sessions": 5,
+      "minEligible": 23,
+      "maxEligible": 25,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-20",
+      "program": "난타 중급",
+      "attended": 252,
+      "sessions": 9,
+      "minEligible": 34,
+      "maxEligible": 35,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-21",
+      "program": "캘리그라피 초급",
+      "attended": 48,
+      "sessions": 5,
+      "minEligible": 12,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-26",
+      "program": "연필인물화 초급",
+      "attended": 33,
+      "sessions": 3,
+      "minEligible": 12,
+      "maxEligible": 13,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-28",
+      "program": "실용영어",
+      "attended": 92,
+      "sessions": 7,
+      "minEligible": 17,
+      "maxEligible": 18,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-33",
+      "program": "스마트폰 중급",
+      "attended": 61,
+      "sessions": 4,
+      "minEligible": 18,
+      "maxEligible": 19,
+      "reason": "수업일별 날짜 대조 필요"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-34",
+      "program": "스마트폰 초급",
+      "attended": 44,
+      "sessions": 3,
+      "minEligible": 19,
+      "maxEligible": 20,
+      "reason": "수업일별 날짜 대조 필요"
+    }
+  ],
+  "months": [
+    {
+      "month": "2026-01",
+      "depositCount": 1080,
+      "deposit": 45880000,
+      "refundCount": 11,
+      "refund": 420000
+    },
+    {
+      "month": "2026-02",
+      "depositCount": 397,
+      "deposit": 12169000,
+      "refundCount": 128,
+      "refund": 4204600
+    },
+    {
+      "month": "2026-03",
+      "depositCount": 116,
+      "deposit": 2887000,
+      "refundCount": 87,
+      "refund": 1589000
+    },
+    {
+      "month": "2026-04",
+      "depositCount": 41,
+      "deposit": 654000,
+      "refundCount": 37,
+      "refund": 772800
+    },
+    {
+      "month": "2026-05",
+      "depositCount": 54,
+      "deposit": 551000,
+      "refundCount": 28,
+      "refund": 233000
+    },
+    {
+      "month": "2026-06",
+      "depositCount": 19,
+      "deposit": 311000,
+      "refundCount": 11,
+      "refund": 138200
+    },
+    {
+      "month": "2026-07",
+      "depositCount": 80,
+      "deposit": 0,
+      "refundCount": 0,
+      "refund": 0
+    },
+    {
+      "month": "2026-08",
+      "depositCount": 449,
+      "deposit": 10160000,
+      "refundCount": 1,
+      "refund": 0
+    },
+    {
+      "month": "2026-09",
+      "depositCount": 877,
+      "deposit": 28648000,
+      "refundCount": 105,
+      "refund": 2652600
+    },
+    {
+      "month": "2026-10",
+      "depositCount": 51,
+      "deposit": 662000,
+      "refundCount": 43,
+      "refund": 536200
+    },
+    {
+      "month": "2026-11",
+      "depositCount": 6,
+      "deposit": 100000,
+      "refundCount": 6,
+      "refund": 74800
+    }
+  ],
+  "paymentRange": [
+    "2026-01-26",
+    "2026-11-03"
+  ],
+  "refundRange": [
+    "2026-01-27",
+    "2026-11-04"
+  ]
+}

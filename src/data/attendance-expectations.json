@@ -1,0 +1,885 @@
+{
+  "asOf": "2026-11-04",
+  "sources": [
+    {
+      "name": "수납 세부 내역(시기별 수강 인원 파악용).pdf",
+      "sha256": "4e47711a7caed9ccce60c9477533090ba039ae83899b1cfd8687a44328e8e3da"
+    },
+    {
+      "name": "환불세부 내역(시기별 수강 인원 파악용).pdf",
+      "sha256": "909986302a7f32cba38ae09ab27e5d0aa11db484fab1e094689d8f460d9b95bf"
+    }
+  ],
+  "rules": {
+    "start": "입금일과 개강일 중 늦은 날부터 포함",
+    "end": "환불일 당일부터 제외. 종강일 포함",
+    "periods": "일반 프로그램 2.2~7.17 / 9.7~12.18. 일본어 초급 3월 개강. 건강100세는 원본 개별 기간 및 8월 운영 확인 반영",
+    "deduplication": "이용자번호+프로그램+일자 중복 제외"
+  },
+  "records": [
+    {
+      "month": "2026-04",
+      "programCode": "A1862",
+      "expected": 640,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 80
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1802",
+      "expected": 396,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 44
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1862",
+      "expected": 400,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 80
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1862",
+      "expected": 640,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 80
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1862",
+      "expected": 640,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 80
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1862",
+      "expected": 640,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 80
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1862",
+      "expected": 400,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 80
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-22",
+      "expected": 48,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 12
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-16",
+      "expected": 280,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 35
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-13",
+      "expected": 351,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 39
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-37",
+      "expected": 112,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 28
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-40",
+      "expected": 40,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 10
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-26",
+      "expected": 60,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 15
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-18",
+      "expected": 56,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 14
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-31",
+      "expected": 153,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 17
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-36",
+      "expected": 140,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 35
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-24",
+      "expected": 39,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 13
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-11",
+      "expected": 120,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 15
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-7",
+      "expected": 152,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 19
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-16",
+      "expected": 315,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 35
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-13",
+      "expected": 312,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 39
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-17",
+      "expected": 120,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 24
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-37",
+      "expected": 140,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 28
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-41",
+      "expected": 72,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 18
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-40",
+      "expected": 50,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 10
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-23",
+      "expected": 108,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 12
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-39",
+      "expected": 70,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 14
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-22",
+      "expected": 52,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 13
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-31",
+      "expected": 119,
+      "sessions": 7,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 17
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-32",
+      "expected": 126,
+      "sessions": 6,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 21
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-30",
+      "expected": 72,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 18
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-19",
+      "expected": 92,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 23
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-18",
+      "expected": 56,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 14
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-1",
+      "expected": 162,
+      "sessions": 6,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 27
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-36",
+      "expected": 105,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 35
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1811",
+      "expected": 322,
+      "sessions": 7,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 46
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-15",
+      "expected": 140,
+      "sessions": 7,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 20
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-12",
+      "expected": 182,
+      "sessions": 7,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 26
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-13",
+      "expected": 273,
+      "sessions": 7,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 39
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-17",
+      "expected": 96,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 24
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-37",
+      "expected": 112,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 28
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-41",
+      "expected": 54,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 18
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-44",
+      "expected": 120,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 30
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-21",
+      "expected": 40,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 10
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-40",
+      "expected": 40,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 10
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-27",
+      "expected": 39,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 13
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-38",
+      "expected": 15,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 5
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-26",
+      "expected": 42,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 14
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-28",
+      "expected": 154,
+      "sessions": 7,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 22
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-35",
+      "expected": 42,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 14
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-33",
+      "expected": 72,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 18
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-1",
+      "expected": 243,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 27
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-19",
+      "expected": 69,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 23
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-22",
+      "expected": 39,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 13
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-32",
+      "expected": 168,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 21
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-30",
+      "expected": 72,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 18
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-24",
+      "expected": 42,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 14
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-7",
+      "expected": 154,
+      "sessions": 7,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 22
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-15",
+      "expected": 180,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 20
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-16",
+      "expected": 333,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 37
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-12",
+      "expected": 208,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 26
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-13",
+      "expected": 312,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 39
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-41",
+      "expected": 90,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 18
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-44",
+      "expected": 90,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 30
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-43",
+      "expected": 96,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 24
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-20",
+      "expected": 306,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 34
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-21",
+      "expected": 40,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 10
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-40",
+      "expected": 40,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 10
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-23",
+      "expected": 117,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 13
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-27",
+      "expected": 65,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 13
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-38",
+      "expected": 25,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 5
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-45",
+      "expected": 28,
+      "sessions": 2,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 14
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-26",
+      "expected": 70,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 14
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-39",
+      "expected": 39,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 13
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-28",
+      "expected": 207,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 23
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-35",
+      "expected": 70,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 14
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-34",
+      "expected": 92,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 23
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-36",
+      "expected": 160,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 40
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-19",
+      "expected": 100,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 25
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-22",
+      "expected": 48,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 12
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-31",
+      "expected": 65,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 13
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1811",
+      "expected": 371,
+      "sessions": 7,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 53
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-7",
+      "expected": 171,
+      "sessions": 9,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 19
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-11",
+      "expected": 168,
+      "sessions": 7,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 24
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-12",
+      "expected": 175,
+      "sessions": 7,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 25
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-37",
+      "expected": 130,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 26
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-41",
+      "expected": 63,
+      "sessions": 3,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 21
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-44",
+      "expected": 56,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 14
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-43",
+      "expected": 145,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 29
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-40",
+      "expected": 50,
+      "sessions": 5,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 10
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-23",
+      "expected": 96,
+      "sessions": 8,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 12
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-27",
+      "expected": 40,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 10
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-38",
+      "expected": 28,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 7
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-45",
+      "expected": 56,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 14
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-39",
+      "expected": 60,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 15
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-35",
+      "expected": 76,
+      "sessions": 4,
+      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
+      "verifiedOn": "2026-11-04",
+      "eligiblePerSession": 19
+    }
+  ]
+}

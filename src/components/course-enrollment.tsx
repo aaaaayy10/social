@@ -1,20 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import { ParticipationEstimate } from "@/components/participation-estimate";
+import { ProgramOverviewDashboard } from "@/components/program-overview-dashboard";
+import { programMetrics } from "@/lib/program-metrics";
 import financial from "@/data/program-details.json";
 import { money } from "@/components/program-analysis-ui";
-import { BookOpen, Users, ClipboardList, Wallet, Search, Download } from "lucide-react";
+import { Search, Download } from "lucide-react";
 import enrollment from "@/data/course-enrollment.json";
 import { PageHeader, PageShell, StatCard, StatsGrid } from "@/components/page-shell";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { EnrollmentDashboard } from "@/components/enrollment-dashboard";
-import { downloadCsv } from "@/components/program-analysis-ui";
 
 const fields = ["capacity", "waiting", "applications", "paid", "refunds"] as const;
 const asOfLabel = enrollment.asOf.replace(/-/g, ".");
-const totals = Object.fromEntries(fields.map(field => [field, enrollment.programs.reduce((sum, row) => sum + (row[field] ?? 0), 0)])) as Record<typeof fields[number], number>;
+const totals = programMetrics.totals;
 const displayCount = (value: number | null) => value === null ? "—" : value.toLocaleString("ko-KR");
 const rateValue = (numerator: number | null, denominator: number | null) =>
   numerator === null || denominator === null || denominator <= 0
@@ -50,7 +50,7 @@ export function CourseEnrollment() {
   const filteredTotals = fields.map(field => programs.reduce((sum, row) => sum + (row[field] ?? 0), 0));
 
   function exportCsv() {
-    const rows = [["프로그램명", "정원", "대기자", "등록인원(강좌별)", "수납인원", "환불인원", "신청률(등록/정원)", "수납률(수납/등록)"], ...programs.map(row => [row.name, ...fields.map(field => row[field] ?? ""), displayRate(row.applications, row.capacity), displayRate(row.paid, row.applications)])];
+    const rows = [["프로그램명", "정원", "대기자", "현재 등록 건수", "현재 수납 건수", "현황표 환불 건수", "신청률(등록/정원)", "수납률(수납/등록)"], ...programs.map(row => [row.name, ...fields.map(field => row[field] ?? ""), displayRate(row.applications, row.capacity), displayRate(row.paid, row.applications)])];
     const csv = "\uFEFF" + rows.map(row => row.map(cell => `"${String(cell).replaceAll('"', '""')}"`).join(",")).join("\r\n");
     const url = URL.createObjectURL(new Blob([csv], {type: "text/csv;charset=utf-8;"}));
     const link = document.createElement("a");
@@ -63,25 +63,10 @@ export function CourseEnrollment() {
   return (
     <PageShell>
       <PageHeader title="전체 프로그램 현황" description="프로그램별 모집과 수납 현황을 한눈에 확인하세요." eyebrow={`${asOfLabel} 기준`} actions={<Button variant="outline" onClick={exportCsv}><Download className="size-4" />CSV 다운로드</Button>} />
-      <StatsGrid className="grid-cols-2 xl:grid-cols-3">
-        <StatCard label="전체 프로그램" value={`${enrollment.programs.length}개`} icon={BookOpen} description="수강신청 프로그램" />
-        <StatCard label="전체 정원" value={`${totals.capacity.toLocaleString("ko-KR")}명`} icon={Users} description="프로그램별 정원 합계" />
-        <StatCard label="등록인원 합계" value={`${totals.applications.toLocaleString("ko-KR")}명`} icon={ClipboardList} description="강좌별 등록인원 합계 · 강좌 간 중복 포함" />
-        <StatCard label="명부 실인원" value={enrollment.uniqueRegistrants === null ? "집계 대기" : `${displayCount(enrollment.uniqueRegistrants)}명`} icon={Users} description="세부 현황 누적 기록의 이용자번호 중복 제외" />
-        <StatCard label="수납인원 합계" value={`${totals.paid.toLocaleString("ko-KR")}명`} icon={Wallet} description="강좌별 수납인원 합계 · 강좌 간 중복 포함" />
-        <StatCard label="환불인원 합계(현황표)" value={`${totals.refunds.toLocaleString("ko-KR")}명`} description="현재 현황표 기재값 · 별도 환불보고서 누계와 다름" />
-      </StatsGrid>
-      <p className="rounded-xl border bg-card/80 px-4 py-3 text-xs leading-6 text-muted-foreground">자료 기준일은 {asOfLabel}입니다. 등록인원 합계 {totals.applications.toLocaleString("ko-KR")}명은 현재 현황표 {enrollment.programs.length}개 강좌의 등록 합계입니다. 명부 실인원 {displayCount(enrollment.uniqueRegistrants)}명은 세부 현황 {enrollment.rosterProgramCount}개 프로그램의 누적 수납 기록에서 중복 제거한 값으로 집계 범위가 다릅니다. 현재 등록자만의 전체 실인원이나 출석 연인원으로 해석하지 않습니다.</p>
-      <section className="space-y-4 rounded-2xl border bg-card/95 p-5" aria-label="실인원 통계">
-        <h2 className="text-lg font-semibold">실인원 통계 · {asOfLabel} 기준</h2>
-        <div className="max-w-sm">
-          <StatCard label="명부 실인원" value={`${displayCount(enrollment.uniqueRegistrants)}명`} description="이용자번호 기준 · 전체 중복 제외" />
-        </div>
-        <p className="text-xs leading-6 text-muted-foreground">명부 출처: {enrollment.rosterSource} · 기록 입금일 {enrollment.rosterFirstDate}~{enrollment.rosterLastDate}. 이용자번호를 기준으로 중복을 제거한 누적 명부 실인원입니다.</p>
-        <Button variant="outline" onClick={() => downloadCsv(`실인원_통계_${enrollment.asOf}.csv`, [["항목", "값", "단위", "집계 기준", "자료 기준일"], ["현재 등록인원 합계", totals.applications, "명", "프로그램 현황표 45개 강좌의 등록인원 합계", enrollment.asOf], ["명부 실인원", enrollment.uniqueRegistrants, "명", "세부 현황 전체 이용자번호 중복 제외", enrollment.asOf]])}><Download className="size-4" />인원 통계 CSV 다운로드</Button>
-      </section>
-      <ParticipationEstimate />
+      <ProgramOverviewDashboard />
+      <details className="rounded-2xl border bg-card p-5"><summary className="cursor-pointer font-semibold">현재 등록·수납 현황 상세 · {asOfLabel} 기준</summary><StatsGrid className="mt-4 grid-cols-2 xl:grid-cols-3"><StatCard label="현재 등록 건수" value={totals.applications.toLocaleString("ko-KR") + "건"} description="강좌별 합계 · 강좌 간 중복 포함" /><StatCard label="현재 수납 건수" value={totals.paid.toLocaleString("ko-KR") + "건"} description="현황표 수납 열 · 강좌 간 중복 포함" /><StatCard label="현황표 환불 건수" value={totals.refunds.toLocaleString("ko-KR") + "건"} description="금액 보고서의 누계 건수와 집계 범위가 다름" /></StatsGrid><p className="mt-4 text-xs leading-6 text-muted-foreground">현재 등록 실인원은 유효 등록·취소 상태가 포함된 이용자번호 명부가 없어 확정하지 않습니다. 최신 수납 누적 명부 실인원은 {programMetrics.cumulativeUnique}명(46개 프로그램), 현재 유효 수납 실인원은 {programMetrics.currentPaidUnique}명(45개 프로그램)입니다. 이용자 분석의 성별·연령은 정보가 확보된 {programMetrics.demographicUnique}명 범위로 구분합니다.</p></details>
       <section aria-label="수납·환불 금액" className="space-y-3"><h2 className="text-lg font-semibold">수납·환불 금액 · {asOfLabel} 기준</h2><StatsGrid className="grid-cols-1 sm:grid-cols-3"><StatCard label="수납액(원본 입금액)" value={money(financial.refundReport.totals.deposit)} description={financial.refundReport.source} /><StatCard label="환불액" value={money(financial.refundReport.totals.refund)} /><StatCard label="차인잔액" value={money(financial.refundReport.totals.balance)} description="같은 PDF의 입금액 − 환불액" /></StatsGrid><p className="text-xs leading-6 text-muted-foreground">금액은 사용자가 지정한 PDF에 기재된 합계입니다. {financial.refundReport.periodLabel}.</p></section>
+      <p className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs leading-6">최신 수납·환불 명부 대조 결과: {programMetrics.ledger.reconciliation.map(row => row.name + " 현황표 " + row.sourcePaid + " → 명부 " + row.paid + "건").join(" · ")}. 현재 수납 건수는 명부 기준으로 통일했습니다. 난타 초급은 등록 현황표보다 수납 명부 인원이 많아 등록 상태 재확인이 필요합니다.</p>
       <EnrollmentDashboard programs={programs} onSelectProgram={name => { setFilter("all"); setSearch(name); document.getElementById("program-status-title")?.scrollIntoView({behavior:"smooth",block:"start"}); }} onFilter={value => { setSearch(""); setFilter(value); document.getElementById("program-status-title")?.scrollIntoView({behavior:"smooth",block:"start"}); }} />
       <section className="overflow-hidden rounded-2xl border border-border bg-card/95 shadow-sm" aria-labelledby="program-status-title">
         <div className="space-y-4 border-b p-4 sm:p-6">
@@ -106,7 +91,7 @@ export function CourseEnrollment() {
         <div className="overflow-x-auto">
           <table className="w-full min-w-[860px] text-sm">
             <caption className="sr-only">{asOfLabel} 수강신청 프로그램 {enrollment.programs.length}개 현황. 빈칸은 대시로 표시합니다.</caption>
-            <thead className="bg-secondary"><tr><th scope="col" className="px-5 py-3 text-left">프로그램명</th>{["정원", "대기자", "등록인원", "수납인원", "환불인원", "신청률", "수납률"].map(label => <th scope="col" key={label} className="px-4 py-3 text-right">{label}</th>)}</tr></thead>
+            <thead className="bg-secondary"><tr><th scope="col" className="px-5 py-3 text-left">프로그램명</th>{["정원", "대기자", "현재 등록 건수", "현재 수납 건수", "현황표 환불 건수", "신청률", "수납률"].map(label => <th scope="col" key={label} className="px-4 py-3 text-right">{label}</th>)}</tr></thead>
             <tbody>
               {programs.map(row => <tr key={row.id} className="border-t hover:bg-secondary/50"><th scope="row" className="px-5 py-3 text-left font-medium">{row.name}</th>{fields.map(field => <td key={field} className="px-4 py-3 text-right tabular-nums">{displayCount(row[field])}</td>)}<td className="px-4 py-3 text-right font-medium tabular-nums">{displayRate(row.applications, row.capacity)}</td><td className="px-4 py-3 text-right font-medium tabular-nums">{displayRate(row.paid, row.applications)}</td></tr>)}
               {programs.length === 0 && <tr><td colSpan={8} className="p-10 text-center text-muted-foreground">검색 조건에 맞는 프로그램이 없습니다.</td></tr>}

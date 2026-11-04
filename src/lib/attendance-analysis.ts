@@ -1,5 +1,15 @@
 import raw from "@/data/rf-attendance.json";
 import manual from "@/data/manual-attendance.json";
+import expectations from "@/data/attendance-expectations.json";
+
+export type VerifiedExpectation = { month: string; programCode: string; expected: number; sessions: number; source: string; verifiedOn: string };
+export function verifiedAttendance(attended: number | null, sessions: number | null, evidence?: VerifiedExpectation) {
+  if (!evidence) return { expected: null, absent: null, attendanceRate: null, absenceRate: null, verification: "pending" as const };
+  const verifiedDate = new Date(evidence.verifiedOn + "T00:00:00Z");
+  if (!evidence.source.trim() || !/^\d{4}-\d{2}-\d{2}$/.test(evidence.verifiedOn) || Number.isNaN(verifiedDate.getTime()) || verifiedDate.toISOString().slice(0, 10) !== evidence.verifiedOn || !Number.isSafeInteger(evidence.expected) || evidence.expected < 0 || evidence.sessions !== sessions || attended === null || evidence.expected < attended || (evidence.expected === 0 && sessions !== 0)) throw new Error("출석 대상 건수의 출처·회차·인원 검증이 필요합니다.");
+  const absent = evidence.expected - attended;
+  return { expected: evidence.expected, absent, attendanceRate: evidence.expected > 0 ? attended / evidence.expected * 100 : null, absenceRate: evidence.expected > 0 ? absent / evidence.expected * 100 : null, verification: "verified" as const };
+}
 
 
 export type AttendanceRecord = { month: string; programCode: string; sourceId: string; sourceType: "rf" | "manual"; dailyCounts: number[] | null; datedCounts: { date: string; count: number }[] | null; manualTotal: number | null; manualSessions: number | null; readingStatus: string; note: string };
@@ -26,25 +36,37 @@ export function calculateAttendance(record: AttendanceRecord) {
   const paid = row?.paid ?? null;
   const attended = record.dailyCounts === null ? record.manualTotal : record.dailyCounts.reduce((sum, count) => sum + count, 0);
   const sessions = record.dailyCounts === null ? record.manualSessions : record.dailyCounts.filter(count => count > 0).length;
-  const expected = paid === null || sessions === null ? null : paid * sessions;
-  const valid = attended !== null && expected !== null && expected > 0;
-  return { ...record, programName: program?.name ?? record.programCode, paid, attended, sessions, expected, absent: attended !== null && expected !== null ? Math.max(0, expected - attended) : null, attendanceRate: valid ? attended / expected * 100 : null, absenceRate: valid ? Math.max(0, expected - attended) / expected * 100 : null };
+  const evidence = (expectations.records as VerifiedExpectation[]).find(row => row.month === record.month && row.programCode === record.programCode);
+  const result = sessions === 0 && attended === 0
+    ? { expected: 0, absent: 0, attendanceRate: null, absenceRate: null, verification: "closed" as const }
+    : verifiedAttendance(attended, sessions, evidence);
+  return { ...record, programName: program?.name ?? record.programCode, paid, attended, sessions, ...result };
 }
 export function summarizeAttendance(records: AttendanceRecord[]) {
   if (!records.length) return { attended: null, sessions: null, expected: null, absent: null, attendanceRate: null, absenceRate: null };
   const rows = records.map(calculateAttendance);
   const attended = rows.every(row => row.attended !== null) ? rows.reduce((sum, row) => sum + (row.attended ?? 0), 0) : null;
   const sessions = rows.every(row => row.sessions !== null) ? rows.reduce((sum, row) => sum + (row.sessions ?? 0), 0) : null;
-  const expected = rows.every(row => row.expected !== null) ? rows.reduce((sum, row) => sum + (row.expected ?? 0), 0) : null;
-  const valid = attended !== null && expected !== null && expected > 0;
-  return { attended, sessions, expected, absent: attended !== null && expected !== null ? Math.max(0, expected - attended) : null, attendanceRate: valid ? attended / expected * 100 : null, absenceRate: valid ? Math.max(0, expected - attended) / expected * 100 : null };
+  const verified = rows.filter(row => row.verification === "verified");
+  const pending = rows.filter(row => row.verification === "pending").length;
+  const expected = verified.length > 0 || pending === 0 ? verified.reduce((sum, row) => sum + (row.expected ?? 0), 0) : null;
+  const verifiedAttended = verified.reduce((sum, row) => sum + (row.attended ?? 0), 0);
+  const absent = expected === null ? null : expected - verifiedAttended;
+  return { attended, sessions, expected, absent, attendanceRate: expected ? verifiedAttended / expected * 100 : null, absenceRate: expected ? (expected - verifiedAttended) / expected * 100 : null, verifiedCount: verified.length, pendingCount: pending, verifiedAttended };
 }
 export function validateAttendance() {
+  const expectationKeys = new Set<string>();
+  for (const evidence of expectations.records as VerifiedExpectation[]) {
+    const key = evidence.month + "|" + evidence.programCode;
+    if (expectationKeys.has(key) || !attendance.records.some(row => row.month === evidence.month && row.programCode === evidence.programCode)) throw new Error("출석 대상 자료의 중복 또는 집계 범위를 확인해 주세요.");
+    expectationKeys.add(key);
+  }
   const seen = new Set<string>();
   for (const row of attendance.records) {
     const key = `${row.month}|${row.programCode}|${row.sourceType}`;
     if (seen.has(key)) throw new Error("중복 월·프로그램 집계가 있습니다.");
     seen.add(key);
+    calculateAttendance(row);
     if (attendance.programs.find(program => program.code === row.programCode)?.type !== row.sourceType) throw new Error("RF·수기 분류가 일치하지 않습니다.");
     if (!attendance.sources.some(source => source.id === row.sourceId && source.month === row.month)) throw new Error("자료 출처가 일치하지 않습니다.");
     if (row.sourceType === "rf" && row.dailyCounts === null) throw new Error("RF 일자별 참석자 수가 없습니다.");

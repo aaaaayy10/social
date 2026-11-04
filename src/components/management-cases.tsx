@@ -1,7 +1,6 @@
-"use client";
+﻿"use client";
 import { useCallback, useEffect, useState } from "react";
 import { PageHeader, PageShell, StatCard, StatsGrid } from "@/components/page-shell";
-import { AnalysisPanel } from "@/components/program-analysis-ui";
 import { Button } from "@/components/ui/button";
 import { managementStatuses, type CaseAction, type ManagementCase, type ManagementPayload } from "@/lib/management-cases";
 
@@ -20,6 +19,7 @@ export function ManagementCases() {
   const [messages, setMessages] = useState<Record<string, string>>({});
   const [kind, setKind] = useState("all");
   const [status, setStatus] = useState("all");
+  const [selectedId, setSelectedId] = useState("");
   const [search, setSearch] = useState("");
   const dirtyCount = Object.entries(drafts).filter(([id, draft]) => dirty(draft, data?.actions[id])).length;
   const load = useCallback(async () => {
@@ -60,6 +60,7 @@ export function ManagementCases() {
   const absence = cases.filter(row => row.kind === "absence");
   const recruitment = cases.filter(row => row.kind === "recruitment");
   const filtered = cases.filter(row => (kind === "all" || row.kind === kind) && (status === "all" || (data?.actions[row.id]?.status ?? "확인 필요") === status) && `${row.memberId ?? ""} ${row.programName}`.includes(search.trim()));
+  const selected = filtered.find(row => row.id === selectedId) ?? filtered[0];
   function card(row: ManagementCase) {
     const action = data?.actions[row.id];
     const draft = drafts[row.id] ?? action ?? empty;
@@ -88,8 +89,11 @@ export function ManagementCases() {
       <StatsGrid className="grid-cols-1 sm:grid-cols-3"><StatCard label="3회 이상 연속 결석" value={`${absence.length}명`} description="제공된 최근 수업일부터 연속 결석한 회원" tone="warning" /><StatCard label="대기자 충원 필요" value={`${recruitment.length}개 / ${recruitment.reduce((sum, row) => sum + (row.contactTarget ?? 0), 0)}자리`} description="정원 여유 + 대기자 있음" tone="brand" /><StatCard label="처리 완료" value={`${cases.filter(row => data.actions[row.id]?.status === "처리 완료").length} / ${cases.length}건`} description="담당자가 저장한 처리 상태" /></StatsGrid>
       <div className="flex flex-wrap gap-2 text-xs">{managementStatuses.map(value => <button key={value} onClick={() => setStatus(previous => previous === value ? "all" : value)} aria-pressed={status === value} className={`rounded-full border px-4 py-2 ${status === value ? "bg-primary text-primary-foreground" : "bg-card"}`}>{value} {cases.filter(row => (data.actions[row.id]?.status ?? "확인 필요") === value).length}건</button>)}{dirtyCount > 0 && <span className="px-3 py-2 text-amber-800">미저장 {dirtyCount}건 · 항목별 저장을 눌러 주세요.</span>}</div>
       <div className="flex flex-wrap gap-3 rounded-xl border bg-card p-4"><label className="text-xs">유형<select aria-label="관리 유형" value={kind} onChange={event => setKind(event.target.value)} className={control}><option value="all">전체 관리 항목</option><option value="absence">연속 결석</option><option value="recruitment">대기자 충원</option></select></label><label className="text-xs">상태<select aria-label="관리 상태" value={status} onChange={event => setStatus(event.target.value)} className={control}><option value="all">전체 상태</option>{managementStatuses.map(value => <option key={value}>{value}</option>)}</select></label><label className="min-w-0 basis-full flex-1 text-xs sm:basis-auto">검색<input aria-label="관리 항목 검색" value={search} onChange={event => setSearch(event.target.value)} placeholder="회원번호 또는 프로그램명" className={control} /></label></div>
-      {kind !== "recruitment" && <AnalysisPanel title="3회 이상 연속 결석 · 생활체조" description={`10월 명부 ${data.rosterCount}명 · 수업일 ${data.classDates.map(day).join(" · ")}`}><p className="mb-4 text-xs leading-6 text-muted-foreground">{data.asOf.replaceAll("-", ". ")} 제공 자료 기준으로 가장 최근 확인된 수업일({day(data.classDates.filter(date => date <= data.asOf).at(-1) ?? data.asOf)})부터 3회 이상 연속 결석한 회원만 표시합니다. 이후 출석을 재개한 회원은 제외하며, 마지막 확인 수업일 이후의 출결을 추정하지 않습니다. 이름은 원본에서 가려져 회원번호로 표시하며, 결석 사유와 등록 상태는 담당자 확인이 필요합니다.</p><div className="grid gap-4 xl:grid-cols-2">{filtered.filter(row => row.kind === "absence").map(card)}</div>{!filtered.some(row => row.kind === "absence") && <p className="py-6 text-sm text-muted-foreground">조회 조건에 맞는 연속 결석 항목이 없습니다.</p>}</AnalysisPanel>}
-      {kind !== "absence" && <AnalysisPanel title="대기자 연락·충원 필요" description="정원 − 현재 등록인원 > 0이며 대기자 > 0인 프로그램 · 11월 4일 등록 현황"><p className="mb-4 text-xs leading-6 text-muted-foreground">미납 등록자를 공석으로 보지 않습니다. 충원 목표는 여유 정원과 대기자 중 작은 수입니다. 실제 연락·등록 처리 후 비고와 상태를 저장하세요. 상태 변경은 등록·취소나 정원을 자동 변경하지 않습니다.</p><div className="grid gap-4 xl:grid-cols-2">{filtered.filter(row => row.kind === "recruitment").map(card)}</div>{!filtered.some(row => row.kind === "recruitment") && <p className="py-6 text-sm text-muted-foreground">조회 조건에 맞는 충원 항목이 없습니다.</p>}</AnalysisPanel>}
+      <p className="text-xs leading-6 text-muted-foreground">제공 자료 기준 최근 수업일부터 3회 이상 연속 결석한 회원만 표시합니다. 이후 출석자는 제외합니다. 충원 목표는 정원 여유와 대기자 중 작은 수이며, 처리 상태 변경은 등록·취소를 자동 변경하지 않습니다.</p>
+      <div className="grid items-start gap-4 lg:grid-cols-[minmax(250px,1fr)_minmax(0,2fr)]">
+        <section aria-label="관리 대상 목록" className="overflow-hidden rounded-xl border bg-card"><h2 className="border-b p-4 text-sm font-semibold">관리 대상 {filtered.length}건</h2><div className="max-h-[650px] overflow-y-auto">{filtered.map(row => <button key={row.id} type="button" aria-pressed={selected?.id === row.id} onClick={() => setSelectedId(row.id)} className={"block w-full border-b p-4 text-left hover:bg-secondary/60 focus-visible:outline-2 focus-visible:outline-ring " + (selected?.id === row.id ? "bg-secondary" : "")}><span className="block text-sm font-semibold">{row.memberId ?? row.programName}</span><span className="mt-1 block text-xs text-muted-foreground">{row.kind === "absence" ? row.programName + " · 최근 " + row.endingStreak + "회 결석" : "대기자 충원 · " + row.contactTarget + "자리"}</span><span className="mt-2 inline-block rounded-full border px-2 py-1 text-[10px]">{data.actions[row.id]?.status ?? "확인 필요"}</span>{dirty(drafts[row.id], data.actions[row.id]) && <span className="ml-2 text-xs text-amber-800">미저장</span>}</button>)}</div>{!filtered.length && <p className="p-6 text-sm">조회 조건에 맞는 항목이 없습니다.</p>}</section>
+        <section aria-label="선택한 관리 항목 상세" className="min-w-0 lg:sticky lg:top-4">{selected ? card(selected) : <p className="rounded-xl border bg-card p-6 text-sm text-muted-foreground">관리 항목을 선택해 주세요.</p>}</section>
+      </div>
       <details className="rounded-xl border bg-card p-4"><summary className="cursor-pointer text-sm font-medium">여유 정원 전체 확인 · 대기자 없음/미제공 포함</summary><div className="mt-4 grid gap-2 sm:grid-cols-2">{data.vacancies.map(row => <p key={row.name} className="rounded-lg bg-secondary/50 p-3 text-xs">{row.name} · 여유 {row.vacancies}명 · 대기 {row.waiting === null ? "자료 없음" : `${row.waiting}명`}</p>)}</div></details>
       <p className="text-xs leading-6 text-muted-foreground">출처: {data.sourceName} · 10월 스캔 기준. 대기자별 연락에는 대기 순번·회원번호·연락처가 포함된 최신 명부가 필요합니다. 저장한 상태와 비고는 다른 기기에서도 확인할 수 있습니다.</p>
     </>}

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { ArrowDownLeft, ArrowUpRight, CircleDollarSign, Clock3 } from "lucide-react";
@@ -35,8 +35,8 @@ export function EnrollmentDashboard({programs, onSelectProgram, onFilter}: {
     .slice(0, 8);
   const maxValue = metric === "waiting" ? Math.max(1, ...ranked.map(item => item.value)) : Math.max(100, ...ranked.map(item => item.value));
   const summaries = [
-    {label: "정원 대비 신청률", numerator: applications, denominator: capacity, detail: `정원 ${capacity.toLocaleString()}명 중 ${applications.toLocaleString()}명 등록`, color: "#6076ad", icon: ArrowUpRight},
-    {label: "신청 대비 수납률", numerator: paid, denominator: applications, detail: `등록 ${applications.toLocaleString()}명 중 ${paid.toLocaleString()}명 수납`, color: "#397d7b", icon: CircleDollarSign},
+    {label: "정원 대비 신청률", numerator: applications, denominator: capacity, detail: `정원 ${capacity.toLocaleString()}명 중 ${applications.toLocaleString()}건 등록`, color: "#6076ad", icon: ArrowUpRight},
+    {label: "신청 대비 수납률", numerator: paid, denominator: applications, detail: `등록 ${applications.toLocaleString()}건 중 ${paid.toLocaleString()}건 수납`, color: "#397d7b", icon: CircleDollarSign},
   ];
   return (
     <section aria-label="프로그램 운영 대시보드" className="space-y-5">
@@ -52,8 +52,8 @@ export function EnrollmentDashboard({programs, onSelectProgram, onFilter}: {
         })}
         <article className="rounded-2xl border border-border/70 bg-card/95 p-5 shadow-sm">
           <div className="flex items-center justify-between text-sm text-muted-foreground"><h2>수납 차이</h2><ArrowDownLeft className="size-4" /></div>
-          <p className="mt-3 text-3xl font-semibold tabular-nums">{(applications-paid).toLocaleString()}<span className="ml-1 text-base font-normal">명</span></p>
-          <p className="mt-4 text-xs leading-5 text-muted-foreground">등록인원 합계 − 수납인원 합계<br />환불은 별도 집계합니다.</p>
+          <p className="mt-3 text-3xl font-semibold tabular-nums">{(applications-paid).toLocaleString()}<span className="ml-1 text-base font-normal">건</span></p>
+          <p className="mt-4 text-xs leading-5 text-muted-foreground">현재 등록 건수 − 현재 수납 건수<br />자료 간 차이가 포함되므로 미납 인원으로 확정하지 않습니다.</p>
         </article>
         <article className="rounded-2xl border border-border/70 bg-card/95 p-5 shadow-sm">
           <div className="flex items-center justify-between text-sm text-muted-foreground"><h2>기재된 대기자 합계</h2><Clock3 className="size-4" /></div>
