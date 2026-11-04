@@ -134,42 +134,52 @@
       "readingStatus": "원본 엑셀 대조 미완료"
     },
     {
-      "id": "chat-image-8",
+      "id": "updated-screenshot-2026-07",
+      "month": "2026-07",
+      "type": "rf",
+      "format": "screenshot",
+      "scope": "full",
+      "visiblePrograms": 11,
+      "expectedPrograms": 11,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "metric": "날짜별 참석자 수 합산",
+      "note": "식별 가능한 RF 11개 프로그램 범위. 가려진 다른 프로그램은 포함하지 않음."
+    },
+    {
+      "id": "updated-screenshot-2026-08",
       "month": "2026-08",
       "type": "rf",
       "format": "screenshot",
-      "scope": "partial",
-      "visiblePrograms": 1,
-      "expectedPrograms": null,
-      "note": "건강100세 운동교실 한 행의 일자 칸만 판독",
-      "metric": "날짜별 참석자 수 직접 합산",
-      "readingStatus": "원본 엑셀 대조 미완료"
+      "scope": "full",
+      "visiblePrograms": 11,
+      "expectedPrograms": 11,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "metric": "날짜별 참석자 수 합산",
+      "note": "사용자 확인: 방학으로 건강100세만 운영. 나머지 10개 프로그램은 휴강."
     },
     {
-      "id": "chat-image-9",
+      "id": "updated-screenshot-2026-09",
       "month": "2026-09",
       "type": "rf",
       "format": "screenshot",
-      "scope": "partial",
+      "scope": "full",
       "visiblePrograms": 11,
-      "expectedPrograms": null,
-      "note": "보이는 11개 프로그램의 일자 칸만 판독. 가려진 행 제외",
-      "metric": "날짜별 참석자 수 직접 합산",
-      "readingStatus": "원본 엑셀 대조 미완료"
+      "expectedPrograms": 11,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "metric": "날짜별 참석자 수 합산",
+      "note": "식별 가능한 RF 11개 프로그램 범위. 가려진 다른 프로그램은 포함하지 않음."
     },
     {
-      "id": "october-life-pdf",
+      "id": "updated-screenshot-2026-10",
       "month": "2026-10",
       "type": "rf",
-      "format": "pdf",
-      "scope": "partial",
-      "visiblePrograms": 1,
-      "expectedPrograms": null,
-      "readingStatus": "날짜별 1 직접 합산·행 대조 완료",
-      "metric": "개인별 RF 출석 1 합산",
-      "source": "10월 생활체조 RF 출석부.pdf",
-      "sourceSha256": "1578b7ca70eb50d9a5dedb19e338054c044eac0180d5736a1b276843353e2c08",
-      "note": "10월 생활체조 1개만 제공. 11월 3일 44회 제외"
+      "format": "screenshot",
+      "scope": "full",
+      "visiblePrograms": 11,
+      "expectedPrograms": 11,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "metric": "날짜별 참석자 수 합산",
+      "note": "식별 가능한 RF 11개 프로그램 범위. 가려진 다른 프로그램은 포함하지 않음."
     }
   ],
   "records": [
@@ -1177,9 +1187,207 @@
       "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
     },
     {
+      "month": "2026-07",
+      "programCode": "A1862",
+      "sourceId": "updated-screenshot-2026-07",
+      "sourceType": "rf",
+      "dailyCounts": [
+        62,
+        1,
+        57,
+        67,
+        16,
+        66,
+        66,
+        66
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A0164",
+      "sourceId": "updated-screenshot-2026-07",
+      "sourceType": "rf",
+      "dailyCounts": [
+        56,
+        1,
+        49,
+        41,
+        15,
+        1,
+        1
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1810",
+      "sourceId": "updated-screenshot-2026-07",
+      "sourceType": "rf",
+      "dailyCounts": [
+        42,
+        43,
+        47,
+        39,
+        37
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1811",
+      "sourceId": "updated-screenshot-2026-07",
+      "sourceType": "rf",
+      "dailyCounts": [
+        16,
+        22,
+        13,
+        13,
+        26
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1817",
+      "sourceId": "updated-screenshot-2026-07",
+      "sourceType": "rf",
+      "dailyCounts": [
+        34,
+        42,
+        40,
+        34
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1831",
+      "sourceId": "updated-screenshot-2026-07",
+      "sourceType": "rf",
+      "dailyCounts": [
+        45,
+        51,
+        54,
+        48
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1804",
+      "sourceId": "updated-screenshot-2026-07",
+      "sourceType": "rf",
+      "dailyCounts": [
+        30,
+        30,
+        29,
+        27,
+        26
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1805",
+      "sourceId": "updated-screenshot-2026-07",
+      "sourceType": "rf",
+      "dailyCounts": [
+        30,
+        31,
+        25,
+        28,
+        26
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1802",
+      "sourceId": "updated-screenshot-2026-07",
+      "sourceType": "rf",
+      "dailyCounts": [
+        34,
+        33,
+        32,
+        35,
+        26
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1803",
+      "sourceId": "updated-screenshot-2026-07",
+      "sourceType": "rf",
+      "dailyCounts": [
+        35,
+        30,
+        34,
+        31,
+        28
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1813",
+      "sourceId": "updated-screenshot-2026-07",
+      "sourceType": "rf",
+      "dailyCounts": [
+        47,
+        45
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
       "month": "2026-08",
       "programCode": "A1862",
-      "sourceId": "chat-image-8",
+      "sourceId": "updated-screenshot-2026-08",
       "sourceType": "rf",
       "dailyCounts": [
         69,
@@ -1194,19 +1402,140 @@
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A0164",
+      "sourceId": "updated-screenshot-2026-08",
+      "sourceType": "rf",
+      "dailyCounts": [],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "방학 휴강(사용자 확인)"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1810",
+      "sourceId": "updated-screenshot-2026-08",
+      "sourceType": "rf",
+      "dailyCounts": [],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "방학 휴강(사용자 확인)"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1811",
+      "sourceId": "updated-screenshot-2026-08",
+      "sourceType": "rf",
+      "dailyCounts": [],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "방학 휴강(사용자 확인)"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1817",
+      "sourceId": "updated-screenshot-2026-08",
+      "sourceType": "rf",
+      "dailyCounts": [],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "방학 휴강(사용자 확인)"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1831",
+      "sourceId": "updated-screenshot-2026-08",
+      "sourceType": "rf",
+      "dailyCounts": [],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "방학 휴강(사용자 확인)"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1804",
+      "sourceId": "updated-screenshot-2026-08",
+      "sourceType": "rf",
+      "dailyCounts": [],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "방학 휴강(사용자 확인)"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1805",
+      "sourceId": "updated-screenshot-2026-08",
+      "sourceType": "rf",
+      "dailyCounts": [],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "방학 휴강(사용자 확인)"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1802",
+      "sourceId": "updated-screenshot-2026-08",
+      "sourceType": "rf",
+      "dailyCounts": [],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "방학 휴강(사용자 확인)"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1803",
+      "sourceId": "updated-screenshot-2026-08",
+      "sourceType": "rf",
+      "dailyCounts": [],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "방학 휴강(사용자 확인)"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1813",
+      "sourceId": "updated-screenshot-2026-08",
+      "sourceType": "rf",
+      "dailyCounts": [],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "방학 휴강(사용자 확인)"
     },
     {
       "month": "2026-09",
       "programCode": "A1862",
-      "sourceId": "chat-image-9",
+      "sourceId": "updated-screenshot-2026-09",
       "sourceType": "rf",
       "dailyCounts": [
         73,
         68,
         77,
         75,
+        77,
         71,
         68,
         71
@@ -1214,18 +1543,18 @@
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     },
     {
       "month": "2026-09",
       "programCode": "A0164",
-      "sourceId": "chat-image-9",
+      "sourceId": "updated-screenshot-2026-09",
       "sourceType": "rf",
       "dailyCounts": [
-        48,
-        43,
+        47,
         49,
+        43,
         37,
         34,
         39
@@ -1233,13 +1562,13 @@
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     },
     {
       "month": "2026-09",
       "programCode": "A1810",
-      "sourceId": "chat-image-9",
+      "sourceId": "updated-screenshot-2026-09",
       "sourceType": "rf",
       "dailyCounts": [
         46,
@@ -1252,13 +1581,13 @@
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     },
     {
       "month": "2026-09",
       "programCode": "A1811",
-      "sourceId": "chat-image-9",
+      "sourceId": "updated-screenshot-2026-09",
       "sourceType": "rf",
       "dailyCounts": [
         31,
@@ -1273,13 +1602,13 @@
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     },
     {
       "month": "2026-09",
       "programCode": "A1817",
-      "sourceId": "chat-image-9",
+      "sourceId": "updated-screenshot-2026-09",
       "sourceType": "rf",
       "dailyCounts": [
         38,
@@ -1291,18 +1620,18 @@
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     },
     {
       "month": "2026-09",
       "programCode": "A1831",
-      "sourceId": "chat-image-9",
+      "sourceId": "updated-screenshot-2026-09",
       "sourceType": "rf",
       "dailyCounts": [
         47,
         46,
-        43,
+        45,
         43,
         46,
         48
@@ -1310,50 +1639,53 @@
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     },
     {
       "month": "2026-09",
       "programCode": "A1804",
-      "sourceId": "chat-image-9",
+      "sourceId": "updated-screenshot-2026-09",
       "sourceType": "rf",
       "dailyCounts": [
         34,
         42,
-        33,
-        29,
+        39,
         32,
+        32,
+        25,
+        33,
         33
       ],
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     },
     {
       "month": "2026-09",
       "programCode": "A1805",
-      "sourceId": "chat-image-9",
+      "sourceId": "updated-screenshot-2026-09",
       "sourceType": "rf",
       "dailyCounts": [
         35,
-        35,
-        38,
-        30,
-        32
+        36,
+        39,
+        36,
+        33,
+        35
       ],
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     },
     {
       "month": "2026-09",
       "programCode": "A1802",
-      "sourceId": "chat-image-9",
+      "sourceId": "updated-screenshot-2026-09",
       "sourceType": "rf",
       "dailyCounts": [
         39,
@@ -1364,19 +1696,19 @@
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     },
     {
       "month": "2026-09",
       "programCode": "A1803",
-      "sourceId": "chat-image-9",
+      "sourceId": "updated-screenshot-2026-09",
       "sourceType": "rf",
       "dailyCounts": [
-        37,
+        30,
+        36,
         39,
-        40,
-        39,
+        36,
         40,
         23,
         34,
@@ -1385,13 +1717,13 @@
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     },
     {
       "month": "2026-09",
       "programCode": "A1813",
-      "sourceId": "chat-image-9",
+      "sourceId": "updated-screenshot-2026-09",
       "sourceType": "rf",
       "dailyCounts": [
         58,
@@ -1404,153 +1736,232 @@
       "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "capture",
-      "note": "왼쪽에서 오른쪽으로 보이는 날짜별 숫자만 전사. 날짜 번호는 임의 배정하지 않음"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1862",
+      "sourceId": "updated-screenshot-2026-10",
+      "sourceType": "rf",
+      "dailyCounts": [
+        74,
+        72,
+        54,
+        68,
+        72
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A0164",
+      "sourceId": "updated-screenshot-2026-10",
+      "sourceType": "rf",
+      "dailyCounts": [
+        39,
+        42,
+        36,
+        40,
+        38,
+        40,
+        42,
+        43,
+        33
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1810",
+      "sourceId": "updated-screenshot-2026-10",
+      "sourceType": "rf",
+      "dailyCounts": [
+        44,
+        46,
+        44,
+        51,
+        48,
+        42,
+        43,
+        46,
+        40
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1811",
+      "sourceId": "updated-screenshot-2026-10",
+      "sourceType": "rf",
+      "dailyCounts": [
+        38,
+        37,
+        38,
+        43,
+        29,
+        45,
+        44
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     },
     {
       "month": "2026-10",
       "programCode": "A1817",
-      "sourceId": "october-life-pdf",
+      "sourceId": "updated-screenshot-2026-10",
       "sourceType": "rf",
       "dailyCounts": [
-        34,
+        39,
         42,
-        41,
+        42,
         40,
         34,
         40,
         42
       ],
-      "datedCounts": [
-        {
-          "date": "2026-10-01",
-          "count": 34
-        },
-        {
-          "date": "2026-10-02",
-          "count": 0
-        },
-        {
-          "date": "2026-10-03",
-          "count": 0
-        },
-        {
-          "date": "2026-10-04",
-          "count": 0
-        },
-        {
-          "date": "2026-10-05",
-          "count": 0
-        },
-        {
-          "date": "2026-10-06",
-          "count": 42
-        },
-        {
-          "date": "2026-10-07",
-          "count": 0
-        },
-        {
-          "date": "2026-10-08",
-          "count": 41
-        },
-        {
-          "date": "2026-10-09",
-          "count": 0
-        },
-        {
-          "date": "2026-10-10",
-          "count": 0
-        },
-        {
-          "date": "2026-10-11",
-          "count": 0
-        },
-        {
-          "date": "2026-10-12",
-          "count": 0
-        },
-        {
-          "date": "2026-10-13",
-          "count": 0
-        },
-        {
-          "date": "2026-10-14",
-          "count": 0
-        },
-        {
-          "date": "2026-10-15",
-          "count": 40
-        },
-        {
-          "date": "2026-10-16",
-          "count": 0
-        },
-        {
-          "date": "2026-10-17",
-          "count": 0
-        },
-        {
-          "date": "2026-10-18",
-          "count": 0
-        },
-        {
-          "date": "2026-10-19",
-          "count": 0
-        },
-        {
-          "date": "2026-10-20",
-          "count": 34
-        },
-        {
-          "date": "2026-10-21",
-          "count": 0
-        },
-        {
-          "date": "2026-10-22",
-          "count": 40
-        },
-        {
-          "date": "2026-10-23",
-          "count": 0
-        },
-        {
-          "date": "2026-10-24",
-          "count": 0
-        },
-        {
-          "date": "2026-10-25",
-          "count": 0
-        },
-        {
-          "date": "2026-10-26",
-          "count": 0
-        },
-        {
-          "date": "2026-10-27",
-          "count": 42
-        },
-        {
-          "date": "2026-10-28",
-          "count": 0
-        },
-        {
-          "date": "2026-10-29",
-          "count": 0
-        },
-        {
-          "date": "2026-10-30",
-          "count": 0
-        },
-        {
-          "date": "2026-10-31",
-          "count": 0
-        }
-      ],
+      "datedCounts": null,
       "manualTotal": null,
       "manualSessions": null,
-      "readingStatus": "pdf",
-      "note": "실제 날짜별 1 직접 합산. 출석 기록이 전혀 없는 날은 휴강 처리"
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1831",
+      "sourceId": "updated-screenshot-2026-10",
+      "sourceType": "rf",
+      "dailyCounts": [
+        44,
+        1,
+        45,
+        25,
+        45,
+        43,
+        41
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1804",
+      "sourceId": "updated-screenshot-2026-10",
+      "sourceType": "rf",
+      "dailyCounts": [
+        39,
+        35,
+        36,
+        39,
+        30,
+        33,
+        32
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1805",
+      "sourceId": "updated-screenshot-2026-10",
+      "sourceType": "rf",
+      "dailyCounts": [
+        36,
+        36,
+        32,
+        35,
+        41,
+        35,
+        34,
+        36,
+        39
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1802",
+      "sourceId": "updated-screenshot-2026-10",
+      "sourceType": "rf",
+      "dailyCounts": [
+        39,
+        34,
+        35,
+        23,
+        35,
+        34,
+        34,
+        31
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1803",
+      "sourceId": "updated-screenshot-2026-10",
+      "sourceType": "rf",
+      "dailyCounts": [
+        35,
+        31,
+        36,
+        37,
+        36,
+        32,
+        37
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1813",
+      "sourceId": "updated-screenshot-2026-10",
+      "sourceType": "rf",
+      "dailyCounts": [
+        45,
+        46,
+        43,
+        45,
+        36,
+        32
+      ],
+      "datedCounts": null,
+      "manualTotal": null,
+      "manualSessions": null,
+      "readingStatus": "첨부 화면 일자별 판독",
+      "note": "최신 첨부 화면 기준. 합계 열·하단 합계 사용하지 않음."
     }
   ],
   "duplicateSources": [
@@ -1566,6 +1977,10 @@
     {
       "id": "chat-image-1",
       "reason": "조회기간 2026-01-04~2026-11-04의 프로그램 이용 현황으로 월별 출석과 범위·집계 기준 대조 필요"
+    },
+    {
+      "id": "october-life-individual-pdf",
+      "reason": "10월 최신 프로그램 현황 화면으로 대체. 서로 다른 자료를 중복 합산하지 않음."
     }
   ],
   "manual": {
@@ -1578,7 +1993,8 @@
     "화면에 보이는 1은 출석 1회로 그대로 합산, 다른 숫자로 추측해 바꾸지 않음",
     "완전한 프로그램 행에서 출석 숫자가 전혀 없는 달은 운영 0회, 출석률·결석률은 계산하지 않음",
     "가려진 행·미제공 월을 0으로 채우지 않음",
-    "캡처 숫자 판독은 원본 엑셀 대조 전이며 날짜 번호를 임의로 붙이지 않음"
+    "캡처 숫자 판독은 원본 엑셀 대조 전이며 날짜 번호를 임의로 붙이지 않음",
+    "7~10월은 최신 첨부 화면으로 갱신. 8월 건강100세 외 프로그램은 사용자 확인에 따라 방학 휴강 처리."
   ],
   "denominatorBasis": {
     "mode": "current_paid",

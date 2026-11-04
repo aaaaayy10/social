@@ -1,63 +1,26 @@
-# RF 출석/결석 통계 페이지 집계 기준
+# RF attendance analytics — 2026-11-04 update
 
-## 범위와 원칙
+The dashboard covers the 11 identifiable RF programs in the supplied February–October screenshots, not all 45 registered programs. Other blurred programs are excluded.
 
-`/dashboard/quotations`는 출석 데이터 집계·분석 전용이다. 기존 견적 목록·등록·수정·개별 결석자·수강취소·충원 업무 기능을 이 페이지에서 노출하지 않는다. 데이터는 집계값만 포함하며 개인 RF 명부 원문과 회원번호를 공개하지 않는다.
+Attendance is the sum of each program's visible daily counts. Printed row totals and footers are ignored. A visible 1 is one attendee; a day with no attendance is not a class day. Expected attendance is the frozen November 4 paid enrollment multiplied by positive-attendance class days per program/month. Rates are weighted totals, not averages of percentages. No individual operational actions are exposed.
 
-사용자의 최종 지시:
+Latest July–October screenshots replace earlier sources for these months. August vacation is user-confirmed: only health100 operated, and the other ten programs have zero sessions and zero expected attendance. No missing-data inference is used for this vacation. The October life exercise individual PDF is superseded by the latest October program screenshot, not added to it. September changed daily cells are refreshed from the latest screenshot. June duplicate remains excluded.
 
-1. 캡처 하단 합계 및 기존 ‘합계’ 열은 계산에 사용하지 않는다.
-2. 각 프로그램 날짜 칸의 참석자 수를 왼쪽부터 직접 전사해 더한다. 1은 1회로 그대로 합산하며 임의로 51 같은 숫자로 바꾸지 않는다.
-3. 출석 숫자가 있는 날짜 칸 수를 해당 강좌·월의 운영횟수로 계산한다. 온전히 보이는 행의 날짜 칸에 숫자가 하나도 없으면 운영 0회이다. 미제공·가림은 0이 아니다.
-4. 예정 참여 연인원 = 2026-11-04 현재 강좌별 수납인원 × 운영횟수. 이 기준은 과거 실제 등록 변동을 반영한 확정 결석 실적이 아닌 사용자 지정 비교 지표이다.
-5. 출석률 = 출석 합계 / 예정 연인원. 결석률 = (예정 연인원 − 출석 합계) / 예정 연인원. 분모 0·자료 누락·기준 초과는 비율을 확정하지 않는다. 임의 100% 보정이나 음수 결석을 만들지 않는다.
+| Month | Person-visits |
+|---|---:|
+| February | 1,967 |
+| March | 945 |
+| April | 3,819 |
+| May | 1,660 |
+| June | 3,374 |
+| July | 1,903 |
+| August (vacation) | 567 |
+| September | 3,050 |
+| October | 3,218 |
+| Total | 20,503 |
 
-현재 수납인원은 `rf-attendance.json`의 paidSnapshot에 기준일·출처와 함께 고정했다. 다른 화면의 등록 데이터가 바뀌더라도 과거 출석 지표가 몰래 달라지지 않게 했다.
+Screenshot transcription has not been compared with an original spreadsheet. No dates or hidden program values are invented. Sequences are stored privately in the aggregate data for repeatable arithmetic, but the public dashboard shows summaries, trends, program comparisons and reference attendance/absence rates. It does not show the old daily-addition evidence table, October individual-PDF verification panel or extra-material/manual-extension panel.
 
-## 자료 확보 상태
+March aerobics has 183 visits versus the current-paid denominator of 180. Keep the source count; suppress absence and rates for any selection containing that invalid denominator, rather than cap the percentage or create negative absence. Zero-session rows show zero visits/expected and no rate.
 
-- 2~6월: 판독 가능한 RF 프로그램 11개 날짜 칸을 전사.
-- 6월 동일 캡처 2개 중 1개만 사용. 7월로 바꾸지 않는다.
-- 7월: 미제공.
-- 8월: 건강100세 운동교실 한 행만 제공.
-- 9월: 판독 가능한 11개 프로그램만 포함. 가려진 추가 프로그램과 합계는 포함하지 않는다.
-- 10월: 작업 자료 폴더의 `10월 생활체조 RF 출석부.pdf` 4쪽에서 생활체조만 직접 합산. 다른 프로그램은 미제공.
-- 첫 프로그램 이용 현황 캡처(2026-01-04~2026-11-04)는 월별 출석과 범위가 달라 혼합하지 않는다.
-
-캡처는 일자 칸의 숫자 순서만 저장했으며 정확한 날짜 번호를 추측해 붙이지 않았다. 월 합계와 양수 칸 개수로 운영횟수를 계산한다. 원본 엑셀이 있으면 날짜별 배치 및 판독을 대조할 수 있다. 원본 대조 전인 캡처 판독이라는 점을 화면에 표시한다.
-
-## 직접 합산 결과 (제공 범위만)
-
-| 월 | 직접 합계 | 범위 |
-| --- | ---: | --- |
-| 2월 | 1,967 | 11개 프로그램 |
-| 3월 | 945 | 11개 프로그램 |
-| 4월 | 3,819 | 11개 프로그램 |
-| 5월 | 1,660 | 11개 프로그램 |
-| 6월 | 3,374 | 11개 프로그램, 중복 캡처 제외 |
-| 7월 | 미제공 | 0 아님 |
-| 8월 | 567 | 1개 프로그램 부분합 |
-| 9월 | 2,875 | 판독 가능한 11개 프로그램 부분합 |
-| 10월 | 273 | 생활체조 1개 프로그램 부분합 |
-
-판독 가능한 자료 전체의 부분합 15,480명·회. 2~10월 전체 45개 프로그램 실적이 아니다. 동일 11개 프로그램의 2~6월 합계는 11,765명·회이다.
-
-3월 에어로빅은 59+63+61=183명·회이며 현재 수납인원 60×3=180명·회를 초과한다. 출석 숫자는 유지하고 해당 행이 포함된 범위의 비율 확정을 보류한다. 당시 대상 인원 또는 캡처 판독 대조가 필요하다.
-
-## 10월 생활체조 PDF 검산
-
-회원번호가 있는 앞 2쪽과 날짜 칸의 뒤 2쪽을 Y 좌표로 연결했다. 10월 칸만 합산하고 11월 칸은 제외했다. 원문 회원번호는 임시 파일에만 두고 공개 집계에 포함하지 않았다.
-
-- 10/1 34명, 10/6 42명, 10/8 41명, 10/15 40명, 10/20 34명, 10/22 40명, 10/27 42명.
-- 10월 직접 합계 273명·회, 운영 7회, 현재 수납인원 58명.
-- 예정 58×7=406명·회, 기준 결석 133명·회, 출석률 67.2%, 결석률 32.8%.
-- 10월 참여 실인원 55명(이 프로그램·이 달에만 해당).
-- 함께 인쇄된 11월 3일 44회를 제외했다. 인쇄된 합계 317=10월 273+11월 44로 대조했지만 317을 10월 실적으로 쓰지 않는다.
-
-## 향후 수기 자료
-
-월·프로그램·출처 유형(manual)·확인된 출석 합계·운영횟수·출처를 추가할 수 있는 구조이다. 현재 수기 데이터는 미등록이며 미제공 값을 0으로 더하지 않는다. 수기 프로그램과 RF 프로그램의 중복 범위를 확인한 뒤 반영해야 한다.
-
-## 검증
-
-타입 및 코드 검사 외에 `.tools/audit-attendance.ts`에서 프로그램↔월↔전체 합계, 중복 제외, 누락과 0의 구분, 운영 0회의 분모 처리, 수납 기준 초과 시 비율 차단, 10월/11월 분리를 검사한다. `.tools/aggregate-october-rf.mjs`에서 PDF의 개인 날짜 칸 합산과 인쇄 합계의 차이를 대조했다.
+CSV respects the selected program and month. Monthly overview deliberately retains all nine months for trend context, with the selected month highlighted. Program summary and KPI totals follow both filters. Manual monthly totals remain supported by the data type, without user-facing implementation details.
