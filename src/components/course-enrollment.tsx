@@ -7,8 +7,10 @@ import { PageHeader, PageShell, StatCard, StatsGrid } from "@/components/page-sh
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { EnrollmentDashboard } from "@/components/enrollment-dashboard";
+import { downloadCsv } from "@/components/program-analysis-ui";
 
 const fields = ["capacity", "waiting", "applications", "paid", "refunds"] as const;
+const asOfLabel = enrollment.asOf.replace(/-/g, ".");
 const totals = Object.fromEntries(fields.map(field => [field, enrollment.programs.reduce((sum, row) => sum + (row[field] ?? 0), 0)])) as Record<typeof fields[number], number>;
 const displayCount = (value: number | null) => value === null ? "—" : value.toLocaleString("ko-KR");
 const rateValue = (numerator: number | null, denominator: number | null) =>
@@ -45,25 +47,38 @@ export function CourseEnrollment() {
   const filteredTotals = fields.map(field => programs.reduce((sum, row) => sum + (row[field] ?? 0), 0));
 
   function exportCsv() {
-    const rows = [["프로그램명", "정원", "대기자", "신청", "수납", "환불", "신청률(신청/정원)", "수납률(수납/신청)"], ...programs.map(row => [row.name, ...fields.map(field => row[field] ?? ""), displayRate(row.applications, row.capacity), displayRate(row.paid, row.applications)])];
+    const rows = [["프로그램명", "정원", "대기자", "등록인원(강좌별)", "수납인원", "환불인원", "신청률(등록/정원)", "수납률(수납/등록)"], ...programs.map(row => [row.name, ...fields.map(field => row[field] ?? ""), displayRate(row.applications, row.capacity), displayRate(row.paid, row.applications)])];
     const csv = "\uFEFF" + rows.map(row => row.map(cell => `"${String(cell).replaceAll('"', '""')}"`).join(",")).join("\r\n");
     const url = URL.createObjectURL(new Blob([csv], {type: "text/csv;charset=utf-8;"}));
     const link = document.createElement("a");
     link.href = url;
-    link.download = "수강신청프로그램현황_2026-10-22.csv";
+    link.download = `수강신청프로그램현황_${enrollment.asOf}.csv`;
     link.click();
     URL.revokeObjectURL(url);
   }
 
   return (
     <PageShell>
-      <PageHeader title="프로그램 현황 대시보드" description="프로그램별 모집과 수납 현황을 한눈에 확인하세요." eyebrow="2026년 10월 22일 기준" actions={<Button variant="outline" onClick={exportCsv}><Download className="size-4" />CSV 다운로드</Button>} />
-      <StatsGrid className="xl:grid-cols-4">
+      <PageHeader title="프로그램 현황 대시보드" description="프로그램별 모집과 수납 현황을 한눈에 확인하세요." eyebrow={`${asOfLabel} 기준`} actions={<Button variant="outline" onClick={exportCsv}><Download className="size-4" />CSV 다운로드</Button>} />
+      <StatsGrid className="grid-cols-2 xl:grid-cols-3">
         <StatCard label="전체 프로그램" value={`${enrollment.programs.length}개`} icon={BookOpen} description="수강신청 프로그램" />
         <StatCard label="전체 정원" value={`${totals.capacity.toLocaleString("ko-KR")}명`} icon={Users} description="프로그램별 정원 합계" />
-        <StatCard label="신청 합계" value={`${totals.applications.toLocaleString("ko-KR")}건`} icon={ClipboardList} description="여러 강좌 신청 시 중복 집계" />
-        <StatCard label="수납 합계" value={`${totals.paid.toLocaleString("ko-KR")}건`} icon={Wallet} description="수납 금액이 아닌 원본 건수 합계" />
+        <StatCard label="등록 연인원" value={`${totals.applications.toLocaleString("ko-KR")}명`} icon={ClipboardList} description="강좌별 등록인원 합계 · 강좌 간 중복 포함" />
+        <StatCard label="명부 실인원" value={enrollment.uniqueRegistrants === null ? "집계 대기" : `${displayCount(enrollment.uniqueRegistrants)}명`} icon={Users} description="세부 현황 누적 기록의 이용자번호 중복 제외" />
+        <StatCard label="수납인원 합계" value={`${totals.paid.toLocaleString("ko-KR")}명`} icon={Wallet} description="강좌별 수납인원 합계 · 강좌 간 중복 포함" />
+        <StatCard label="환불인원 합계(현황표)" value={`${totals.refunds.toLocaleString("ko-KR")}명`} description="현재 현황표 기재값 · 별도 환불보고서 누계와 다름" />
       </StatsGrid>
+      <p className="rounded-xl border bg-card/80 px-4 py-3 text-xs leading-6 text-muted-foreground">자료 기준일은 {asOfLabel}입니다. 등록 연인원 {totals.applications.toLocaleString("ko-KR")}명은 현재 현황표 {enrollment.programs.length}개 강좌의 등록 합계입니다. 명부 실인원 {displayCount(enrollment.uniqueRegistrants)}명은 세부 현황 {enrollment.rosterProgramCount}개 프로그램의 누적 수납 기록에서 중복 제거한 값으로 집계 범위가 다릅니다. 현재 등록자만의 전체 실인원이나 출석 연인원으로 해석하지 않습니다.</p>
+      <section className="space-y-4 rounded-2xl border bg-card/95 p-5" aria-label="실인원과 연인원 통계">
+        <h2 className="text-lg font-semibold">실인원·연인원 통계 · {asOfLabel} 기준</h2>
+        <div className="grid gap-3 sm:grid-cols-3">
+          <StatCard label="명부 실인원" value={`${displayCount(enrollment.uniqueRegistrants)}명`} description="이용자번호 기준 · 전체 중복 제외" />
+          <StatCard label="명부 강좌별 연인원" value={`${enrollment.rosterProgramEnrollments.toLocaleString("ko-KR")}명`} description="이용자+강좌 중복 제외 후 합계 · 강좌 간 중복 포함" />
+          <StatCard label="명부 수납 기록" value={`${enrollment.rosterRecords.toLocaleString("ko-KR")}건`} description="반복 납부와 0원 기록 포함 · 출석 횟수 아님" />
+        </div>
+        <p className="text-xs leading-6 text-muted-foreground">명부 출처: {enrollment.rosterSource} · 기록 입금일 {enrollment.rosterFirstDate}~{enrollment.rosterLastDate}. 현재 등록 현황표의 등록 연인원 {totals.applications.toLocaleString("ko-KR")}명과 위 명부 강좌별 연인원은 집계 범위가 달라 차이가 있습니다. 출석 자료가 없어 실제 출석 연인원은 계산하지 않습니다.</p>
+        <Button variant="outline" onClick={() => downloadCsv(`실인원_연인원_통계_${enrollment.asOf}.csv`, [["항목", "값", "단위", "집계 기준", "자료 기준일"], ["현재 등록 연인원", totals.applications, "명", "프로그램 현황표 45개 강좌의 등록인원 합계", enrollment.asOf], ["명부 실인원", enrollment.uniqueRegistrants, "명", "세부 현황 전체 이용자번호 중복 제외", enrollment.asOf], ["명부 강좌별 연인원", enrollment.rosterProgramEnrollments, "명", "이용자번호+프로그램명 중복 제외 합계", enrollment.asOf], ["명부 수납 기록", enrollment.rosterRecords, "건", "반복 납부와 0원 포함", enrollment.asOf]])}><Download className="size-4" />인원 통계 CSV 다운로드</Button>
+      </section>
       <EnrollmentDashboard programs={programs} onSelectProgram={name => { setFilter("all"); setSearch(name); document.getElementById("program-status-title")?.scrollIntoView({behavior:"smooth",block:"start"}); }} onFilter={value => { setSearch(""); setFilter(value); document.getElementById("program-status-title")?.scrollIntoView({behavior:"smooth",block:"start"}); }} />
       <section className="overflow-hidden rounded-2xl border border-border bg-card/95 shadow-sm" aria-labelledby="program-status-title">
         <div className="space-y-4 border-b p-4 sm:p-6">
@@ -87,8 +102,8 @@ export function CourseEnrollment() {
         </div>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[860px] text-sm">
-            <caption className="sr-only">2026년 10월 22일 수강신청 프로그램 45개 현황. 빈칸은 대시로 표시합니다.</caption>
-            <thead className="bg-secondary"><tr><th scope="col" className="px-5 py-3 text-left">프로그램명</th>{["정원", "대기자", "신청", "수납", "환불", "신청률", "수납률"].map(label => <th scope="col" key={label} className="px-4 py-3 text-right">{label}</th>)}</tr></thead>
+            <caption className="sr-only">{asOfLabel} 수강신청 프로그램 {enrollment.programs.length}개 현황. 빈칸은 대시로 표시합니다.</caption>
+            <thead className="bg-secondary"><tr><th scope="col" className="px-5 py-3 text-left">프로그램명</th>{["정원", "대기자", "등록인원", "수납인원", "환불인원", "신청률", "수납률"].map(label => <th scope="col" key={label} className="px-4 py-3 text-right">{label}</th>)}</tr></thead>
             <tbody>
               {programs.map(row => <tr key={row.id} className="border-t hover:bg-secondary/50"><th scope="row" className="px-5 py-3 text-left font-medium">{row.name}</th>{fields.map(field => <td key={field} className="px-4 py-3 text-right tabular-nums">{displayCount(row[field])}</td>)}<td className="px-4 py-3 text-right font-medium tabular-nums">{displayRate(row.applications, row.capacity)}</td><td className="px-4 py-3 text-right font-medium tabular-nums">{displayRate(row.paid, row.applications)}</td></tr>)}
               {programs.length === 0 && <tr><td colSpan={8} className="p-10 text-center text-muted-foreground">검색 조건에 맞는 프로그램이 없습니다.</td></tr>}
@@ -98,12 +113,14 @@ export function CourseEnrollment() {
         </div>
         <div className="space-y-1 border-t px-5 py-4 text-xs leading-5 text-muted-foreground">
           <p>출처: {enrollment.source} · 문서 기준일의 현황입니다.</p>
-          <p>—는 원본의 빈칸이며 0과 구분합니다. 합계는 숫자가 기재된 항목만 더한 값입니다. 신청·수납·환불은 각각 원본 값을 유지했습니다.</p>
-          <p>신청률 = 신청 ÷ 정원 × 100 · 수납률 = 수납 ÷ 신청 × 100 (소수점 첫째 자리). 환불은 차감하지 않습니다. 값이 없거나 분모가 0이면 —로 표시하며, 합계 비율은 합산 건수로 계산합니다.</p>
+          <p>—는 원본의 빈칸이며 0과 구분합니다. 합계는 숫자가 기재된 항목만 더한 값입니다. 등록·수납·환불인원은 각각 원본 값을 유지했습니다.</p>
+          <p>신청률 = 등록인원 ÷ 정원 × 100 · 수납률 = 수납인원 ÷ 등록인원 × 100 (소수점 첫째 자리). 환불은 차감하지 않습니다. 값이 없거나 분모가 0이면 —로 표시하며, 합계 비율은 합산 건수로 계산합니다.</p>
           <p>비율 정렬은 반올림 전 값을 기준으로 하며, 계산할 수 없는 항목은 마지막에 표시합니다. CSV에도 선택한 정렬 순서가 적용됩니다.</p>
         </div>
       </section>
     </PageShell>
   );
 }
+
+
 

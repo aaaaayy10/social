@@ -35,8 +35,8 @@ export function EnrollmentDashboard({programs, onSelectProgram, onFilter}: {
     .slice(0, 8);
   const maxValue = metric === "waiting" ? Math.max(1, ...ranked.map(item => item.value)) : Math.max(100, ...ranked.map(item => item.value));
   const summaries = [
-    {label: "정원 대비 신청률", numerator: applications, denominator: capacity, detail: `정원 ${capacity.toLocaleString()}명 중 ${applications.toLocaleString()}건 신청`, color: "#6076ad", icon: ArrowUpRight},
-    {label: "신청 대비 수납률", numerator: paid, denominator: applications, detail: `신청 ${applications.toLocaleString()}건 중 ${paid.toLocaleString()}건 수납`, color: "#397d7b", icon: CircleDollarSign},
+    {label: "정원 대비 신청률", numerator: applications, denominator: capacity, detail: `정원 ${capacity.toLocaleString()}명 중 ${applications.toLocaleString()}명 등록`, color: "#6076ad", icon: ArrowUpRight},
+    {label: "신청 대비 수납률", numerator: paid, denominator: applications, detail: `등록 ${applications.toLocaleString()}명 중 ${paid.toLocaleString()}명 수납`, color: "#397d7b", icon: CircleDollarSign},
   ];
   return (
     <section aria-label="프로그램 운영 대시보드" className="space-y-5">
@@ -52,8 +52,8 @@ export function EnrollmentDashboard({programs, onSelectProgram, onFilter}: {
         })}
         <article className="rounded-2xl border border-border/70 bg-card/95 p-5 shadow-sm">
           <div className="flex items-center justify-between text-sm text-muted-foreground"><h2>수납 차이</h2><ArrowDownLeft className="size-4" /></div>
-          <p className="mt-3 text-3xl font-semibold tabular-nums">{(applications-paid).toLocaleString()}<span className="ml-1 text-base font-normal">건</span></p>
-          <p className="mt-4 text-xs leading-5 text-muted-foreground">신청 합계 − 수납 합계<br />환불은 별도 집계합니다.</p>
+          <p className="mt-3 text-3xl font-semibold tabular-nums">{(applications-paid).toLocaleString()}<span className="ml-1 text-base font-normal">명</span></p>
+          <p className="mt-4 text-xs leading-5 text-muted-foreground">등록인원 합계 − 수납인원 합계<br />환불은 별도 집계합니다.</p>
         </article>
         <article className="rounded-2xl border border-border/70 bg-card/95 p-5 shadow-sm">
           <div className="flex items-center justify-between text-sm text-muted-foreground"><h2>기재된 대기자 합계</h2><Clock3 className="size-4" /></div>
@@ -78,7 +78,7 @@ export function EnrollmentDashboard({programs, onSelectProgram, onFilter}: {
         </article>
         <article className="rounded-2xl border border-border/70 bg-card/95 p-5 shadow-sm sm:p-6">
           <h2 className="text-lg font-semibold">전체 모집 현황</h2>
-          <p className="mt-1 text-xs text-muted-foreground">정원과 신청 건수 기준 · 전체 {all.length}개 프로그램</p>
+          <p className="mt-1 text-xs text-muted-foreground">정원과 등록인원 기준 · 전체 {all.length}개 프로그램</p>
           <div className="my-7 flex items-center justify-center gap-6">
             <div className="relative flex size-32 shrink-0 items-center justify-center rounded-full" style={{background:`conic-gradient(#6076ad 0% ${fullCount/all.length*100}%, #d5dfef ${fullCount/all.length*100}% 100%)`}} role="img" aria-label={`정원 도달 ${fullCount}개, 정원 여유 ${availableCount}개`}>
               <div className="flex size-24 flex-col items-center justify-center rounded-full bg-card"><span className="text-2xl font-semibold">{all.length}</span><span className="text-xs text-muted-foreground">프로그램</span></div>
@@ -86,9 +86,11 @@ export function EnrollmentDashboard({programs, onSelectProgram, onFilter}: {
             <div className="space-y-3 text-sm"><p><span className="mr-2 inline-block size-2.5 rounded-full bg-[#6076ad]" />정원 도달 <strong>{fullCount}개</strong></p><p><span className="mr-2 inline-block size-2.5 rounded-full bg-[#d5dfef]" />정원 여유 <strong>{availableCount}개</strong></p></div>
           </div>
           <div className="space-y-2">{[{value:"full",label:"정원 도달 프로그램",count:fullCount},{value:"available",label:"정원 여유 프로그램",count:availableCount},{value:"waiting",label:"대기자 있는 프로그램",count:waitingCount}].map(item=><button key={item.value} type="button" onClick={()=>onFilter(item.value)} className="flex w-full items-center justify-between rounded-xl border border-border/60 px-4 py-3 text-left text-sm hover:bg-secondary focus-visible:outline-2 focus-visible:outline-ring"><span>{item.label}</span><span className="font-semibold">{item.count}개 →</span></button>)}</div>
-          <p className="mt-4 text-xs leading-5 text-muted-foreground">2026.10.22. 기준 자료입니다. 실시간 현황이 아니며, 대기자와 신청 건수는 강좌별 중복을 포함할 수 있습니다.</p>
+          <p className="mt-4 text-xs leading-5 text-muted-foreground">{enrollment.asOf.replace(/-/g, ".")} 기준 자료입니다. 실시간 현황이 아니며, 대기·등록 인원은 강좌 간 중복을 포함할 수 있습니다.</p>
         </article>
       </div>
     </section>
   );
 }
+
+

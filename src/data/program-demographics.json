@@ -1,23 +1,1245 @@
 {
-  "source": "사용자가 제공한 노년사회화교육 프로그램 이용 현황표",
-  "ageGroups": ["10세 이하", "11~20세", "21~64세", "65~67세", "68~69세", "70~72세", "73~74세", "75세 이상"],
-  "programs": [
-    {"name":"건강체조","usage":[10.2,0.5,9.6],"total":2062,"male":111,"female":1951,"ages":[[null,null],[null,null],[null,33],[null,163],[12,121],[41,274],[null,153],[58,1207]]},
-    {"name":"필라테스 1","usage":[7.4,0.6,6.8],"total":1489,"male":117,"female":1372,"ages":[[null,null],[null,null],[null,88],[null,134],[null,173],[null,88],[26,162],[91,727]]},
-    {"name":"필라테스 2","usage":[7.8,1.0,6.9],"total":1585,"male":198,"female":1387,"ages":[[null,null],[null,null],[null,77],[null,169],[11,143],[75,210],[27,196],[85,592]]},
-    {"name":"요가 1","usage":[7.3,0.5,6.9],"total":1486,"male":97,"female":1389,"ages":[[null,null],[null,null],[null,null],[null,134],[13,107],[11,125],[null,150],[73,873]]},
-    {"name":"요가 2","usage":[7.5,1.2,6.4],"total":1522,"male":237,"female":1285,"ages":[[null,null],[null,null],[1,27],[null,125],[40,215],[52,263],[20,210],[124,445]]},
-    {"name":"라인댄스 1","usage":[10.4,1.0,9.5],"total":2106,"male":193,"female":1913,"ages":[[null,null],[null,null],[null,69],[null,199],[null,314],[36,355],[43,415],[114,561]]},
-    {"name":"라인댄스 2","usage":[6.2,0.7,5.5],"total":1245,"male":136,"female":1109,"ages":[[null,null],[null,null],[null,13],[null,27],[null,14],[null,143],[36,167],[100,745]]},
-    {"name":"힐링노래교실","usage":[6.3,1.1,5.3],"total":1282,"male":215,"female":1067,"ages":[[null,null],[null,null],[6,29],[13,128],[30,125],[27,176],[24,127],[115,482]]},
-    {"name":"생활체조","usage":[8.5,1.2,7.3],"total":1721,"male":240,"female":1481,"ages":[[null,null],[null,null],[19,24],[null,101],[14,164],[null,368],[43,177],[164,647]]},
-    {"name":"하모니카 초급","usage":[0.0,0.0,0.0],"total":4,"male":null,"female":4,"ages":[[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,4]]},
-    {"name":"에어로빅","usage":[11.0,0.2,10.8],"total":2228,"male":35,"female":2193,"ages":[[null,null],[null,null],[null,45],[null,172],[null,133],[null,305],[null,282],[35,1256]]},
-    {"name":"컴퓨터 초급","usage":[0.0,0.0,0.0],"total":3,"male":3,"female":null,"ages":[[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[3,null]]},
-    {"name":"스마트폰 중급","usage":[0.0,0.0,0.0],"total":4,"male":4,"female":null,"ages":[[null,null],[null,null],[null,null],[null,null],[4,null],[null,null],[null,null],[null,null]]},
-    {"name":"스마트폰 초급","usage":[0.2,0.1,0.2],"total":48,"male":12,"female":36,"ages":[[null,null],[null,null],[null,null],[6,4],[null,3],[2,10],[null,15],[4,4]]},
-    {"name":"컴퓨터 활용","usage":[0.2,0.1,0.1],"total":36,"male":16,"female":20,"ages":[[null,null],[null,null],[null,4],[3,3],[1,10],[null,null],[null,null],[12,3]]},
-    {"name":"건강100세 운동교실","usage":[16.8,1.5,15.3],"total":3399,"male":309,"female":3090,"ages":[[null,null],[null,null],[null,46],[null,252],[42,114],[null,517],[null,240],[267,1921]]}
+  "asOf": "2026-11-04",
+  "source": "11. 4. 기준 세부 현황.pdf",
+  "ageGroups": [
+    "64세 이하",
+    "65~69세",
+    "70~74세",
+    "75~79세",
+    "80~84세",
+    "85세 이상"
   ],
-  "sourceTotals": {"total":20220,"male":1923,"female":18297,"usage":[100.0,9.5,90.5],"ages":[[0,0],[0,0],[26,455],[22,1611],[167,1636],[244,2834],[219,2294],[1245,9467]]}
+  "total": {
+    "records": 2645,
+    "registrants": 945,
+    "programEnrollments": 1810,
+    "ageKnown": 943,
+    "ageUnknown": 2,
+    "averageAge": 73.1,
+    "minAge": 58,
+    "maxAge": 91,
+    "ageCounts": [
+      62,
+      237,
+      276,
+      218,
+      114,
+      36
+    ],
+    "genders": {
+      "male": 246,
+      "female": 699,
+      "unknown": 0
+    },
+    "categories": {
+      "일반": 822,
+      "수급자": 107,
+      "장애인(1-3등급)": 3,
+      "수급자(유료)": 4,
+      "타기관중복(식당)": 5,
+      "차상위": 4
+    },
+    "receiptCategories": {
+      "일반": 2239,
+      "수급자": 333,
+      "수급자(유료)": 42,
+      "장애인(1-3등급)": 9,
+      "타기관중복(식당)": 15,
+      "차상위": 5,
+      "선택안함": 2
+    },
+    "membership": {
+      "회원": 945
+    },
+    "months": [
+      {
+        "month": "2026-01",
+        "records": 855,
+        "people": 573,
+        "paidCount": 710,
+        "amount": 37727500
+      },
+      {
+        "month": "2026-02",
+        "records": 322,
+        "people": 260,
+        "paidCount": 185,
+        "amount": 10198500
+      },
+      {
+        "month": "2026-03",
+        "records": 90,
+        "people": 86,
+        "paidCount": 55,
+        "amount": 2167000
+      },
+      {
+        "month": "2026-04",
+        "records": 33,
+        "people": 30,
+        "paidCount": 17,
+        "amount": 508000
+      },
+      {
+        "month": "2026-05",
+        "records": 49,
+        "people": 47,
+        "paidCount": 18,
+        "amount": 498000
+      },
+      {
+        "month": "2026-06",
+        "records": 18,
+        "people": 16,
+        "paidCount": 18,
+        "amount": 311000
+      },
+      {
+        "month": "2026-07",
+        "records": 76,
+        "people": 76,
+        "paidCount": 0,
+        "amount": 0
+      },
+      {
+        "month": "2026-08",
+        "records": 391,
+        "people": 264,
+        "paidCount": 255,
+        "amount": 8610000
+      },
+      {
+        "month": "2026-09",
+        "records": 760,
+        "people": 489,
+        "paidCount": 685,
+        "amount": 25131000
+      },
+      {
+        "month": "2026-10",
+        "records": 45,
+        "people": 43,
+        "paidCount": 27,
+        "amount": 602000
+      },
+      {
+        "month": "2026-11",
+        "records": 6,
+        "people": 5,
+        "paidCount": 6,
+        "amount": 100000
+      }
+    ],
+    "courseCounts": [
+      {
+        "label": "1개",
+        "count": 466
+      },
+      {
+        "label": "2개",
+        "count": 257
+      },
+      {
+        "label": "3개",
+        "count": 119
+      },
+      {
+        "label": "4개",
+        "count": 62
+      },
+      {
+        "label": "5개 이상",
+        "count": 41
+      }
+    ],
+    "multiProgramPeople": 479,
+    "amount": 85853000,
+    "paidCount": 1976,
+    "zeroCount": 669,
+    "firstDate": "2026-01-26",
+    "lastDate": "2026-11-03"
+  },
+  "programs": [
+    {
+      "id": "detail-1",
+      "name": "가락장구",
+      "registrants": 36,
+      "genders": {
+        "male": 6,
+        "female": 30,
+        "unknown": 0
+      },
+      "ageCounts": [
+        0,
+        10,
+        16,
+        6,
+        3,
+        1
+      ],
+      "ageKnown": 36,
+      "ageUnknown": 0,
+      "averageAge": 72.8,
+      "minAge": 65,
+      "maxAge": 87
+    },
+    {
+      "id": "detail-2",
+      "name": "건강100세 운동교실",
+      "registrants": 79,
+      "genders": {
+        "male": 7,
+        "female": 72,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        11,
+        19,
+        19,
+        23,
+        6
+      ],
+      "ageKnown": 79,
+      "ageUnknown": 0,
+      "averageAge": 76.4,
+      "minAge": 63,
+      "maxAge": 89
+    },
+    {
+      "id": "detail-3",
+      "name": "건강체조",
+      "registrants": 96,
+      "genders": {
+        "male": 8,
+        "female": 88,
+        "unknown": 0
+      },
+      "ageCounts": [
+        2,
+        21,
+        21,
+        23,
+        20,
+        9
+      ],
+      "ageKnown": 96,
+      "ageUnknown": 0,
+      "averageAge": 75.4,
+      "minAge": 63,
+      "maxAge": 88
+    },
+    {
+      "id": "detail-4",
+      "name": "금빛스케치",
+      "registrants": 19,
+      "genders": {
+        "male": 7,
+        "female": 12,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        4,
+        6,
+        5,
+        3,
+        0
+      ],
+      "ageKnown": 19,
+      "ageUnknown": 0,
+      "averageAge": 73.2,
+      "minAge": 63,
+      "maxAge": 82
+    },
+    {
+      "id": "detail-5",
+      "name": "기타 고급",
+      "registrants": 39,
+      "genders": {
+        "male": 23,
+        "female": 16,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        10,
+        16,
+        9,
+        3,
+        0
+      ],
+      "ageKnown": 39,
+      "ageUnknown": 0,
+      "averageAge": 72.1,
+      "minAge": 64,
+      "maxAge": 81
+    },
+    {
+      "id": "detail-6",
+      "name": "기타 초중급",
+      "registrants": 36,
+      "genders": {
+        "male": 22,
+        "female": 14,
+        "unknown": 0
+      },
+      "ageCounts": [
+        7,
+        13,
+        9,
+        6,
+        1,
+        0
+      ],
+      "ageKnown": 36,
+      "ageUnknown": 0,
+      "averageAge": 69.1,
+      "minAge": 60,
+      "maxAge": 82
+    },
+    {
+      "id": "detail-7",
+      "name": "난타 중급",
+      "registrants": 42,
+      "genders": {
+        "male": 6,
+        "female": 36,
+        "unknown": 0
+      },
+      "ageCounts": [
+        4,
+        13,
+        18,
+        6,
+        1,
+        0
+      ],
+      "ageKnown": 42,
+      "ageUnknown": 0,
+      "averageAge": 70.3,
+      "minAge": 60,
+      "maxAge": 80
+    },
+    {
+      "id": "detail-8",
+      "name": "난타 초급",
+      "registrants": 47,
+      "genders": {
+        "male": 8,
+        "female": 39,
+        "unknown": 0
+      },
+      "ageCounts": [
+        7,
+        21,
+        11,
+        6,
+        1,
+        0
+      ],
+      "ageKnown": 46,
+      "ageUnknown": 1,
+      "averageAge": 69,
+      "minAge": 60,
+      "maxAge": 83
+    },
+    {
+      "id": "detail-9",
+      "name": "댄스스포츠",
+      "registrants": 27,
+      "genders": {
+        "male": 17,
+        "female": 10,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        4,
+        9,
+        7,
+        4,
+        1
+      ],
+      "ageKnown": 26,
+      "ageUnknown": 1,
+      "averageAge": 74,
+      "minAge": 60,
+      "maxAge": 86
+    },
+    {
+      "id": "detail-10",
+      "name": "동양화",
+      "registrants": 14,
+      "genders": {
+        "male": 11,
+        "female": 3,
+        "unknown": 0
+      },
+      "ageCounts": [
+        0,
+        2,
+        1,
+        4,
+        4,
+        3
+      ],
+      "ageKnown": 14,
+      "ageUnknown": 0,
+      "averageAge": 78.5,
+      "minAge": 66,
+      "maxAge": 88
+    },
+    {
+      "id": "detail-11",
+      "name": "라인댄스 1",
+      "registrants": 70,
+      "genders": {
+        "male": 5,
+        "female": 65,
+        "unknown": 0
+      },
+      "ageCounts": [
+        2,
+        17,
+        25,
+        19,
+        7,
+        0
+      ],
+      "ageKnown": 70,
+      "ageUnknown": 0,
+      "averageAge": 73.1,
+      "minAge": 64,
+      "maxAge": 83
+    },
+    {
+      "id": "detail-12",
+      "name": "라인댄스 2",
+      "registrants": 61,
+      "genders": {
+        "male": 8,
+        "female": 53,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        9,
+        20,
+        14,
+        15,
+        2
+      ],
+      "ageKnown": 61,
+      "ageUnknown": 0,
+      "averageAge": 75.2,
+      "minAge": 63,
+      "maxAge": 86
+    },
+    {
+      "id": "detail-13",
+      "name": "민화 1",
+      "registrants": 14,
+      "genders": {
+        "male": 2,
+        "female": 12,
+        "unknown": 0
+      },
+      "ageCounts": [
+        0,
+        5,
+        6,
+        1,
+        1,
+        1
+      ],
+      "ageKnown": 14,
+      "ageUnknown": 0,
+      "averageAge": 72.6,
+      "minAge": 65,
+      "maxAge": 86
+    },
+    {
+      "id": "detail-14",
+      "name": "민화 2",
+      "registrants": 8,
+      "genders": {
+        "male": 2,
+        "female": 6,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        2,
+        3,
+        0,
+        2,
+        0
+      ],
+      "ageKnown": 8,
+      "ageUnknown": 0,
+      "averageAge": 72.6,
+      "minAge": 62,
+      "maxAge": 84
+    },
+    {
+      "id": "detail-15",
+      "name": "생활체조",
+      "registrants": 97,
+      "genders": {
+        "male": 14,
+        "female": 83,
+        "unknown": 0
+      },
+      "ageCounts": [
+        4,
+        17,
+        35,
+        26,
+        12,
+        3
+      ],
+      "ageKnown": 97,
+      "ageUnknown": 0,
+      "averageAge": 73.9,
+      "minAge": 63,
+      "maxAge": 89
+    },
+    {
+      "id": "detail-16",
+      "name": "서예",
+      "registrants": 18,
+      "genders": {
+        "male": 11,
+        "female": 7,
+        "unknown": 0
+      },
+      "ageCounts": [
+        0,
+        4,
+        4,
+        7,
+        1,
+        2
+      ],
+      "ageKnown": 18,
+      "ageUnknown": 0,
+      "averageAge": 75.7,
+      "minAge": 69,
+      "maxAge": 91
+    },
+    {
+      "id": "detail-17",
+      "name": "숟가락 난타",
+      "registrants": 36,
+      "genders": {
+        "male": 9,
+        "female": 27,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        10,
+        10,
+        8,
+        5,
+        2
+      ],
+      "ageKnown": 36,
+      "ageUnknown": 0,
+      "averageAge": 73.3,
+      "minAge": 64,
+      "maxAge": 86
+    },
+    {
+      "id": "detail-18",
+      "name": "스마트폰 중급",
+      "registrants": 36,
+      "genders": {
+        "male": 18,
+        "female": 18,
+        "unknown": 0
+      },
+      "ageCounts": [
+        5,
+        9,
+        9,
+        9,
+        4,
+        0
+      ],
+      "ageKnown": 36,
+      "ageUnknown": 0,
+      "averageAge": 71.8,
+      "minAge": 61,
+      "maxAge": 82
+    },
+    {
+      "id": "detail-19",
+      "name": "스마트폰 초급",
+      "registrants": 39,
+      "genders": {
+        "male": 21,
+        "female": 18,
+        "unknown": 0
+      },
+      "ageCounts": [
+        0,
+        8,
+        11,
+        10,
+        8,
+        2
+      ],
+      "ageKnown": 39,
+      "ageUnknown": 0,
+      "averageAge": 75.2,
+      "minAge": 66,
+      "maxAge": 86
+    },
+    {
+      "id": "detail-20",
+      "name": "신빠람 사물 중급",
+      "registrants": 30,
+      "genders": {
+        "male": 7,
+        "female": 23,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        11,
+        8,
+        6,
+        3,
+        1
+      ],
+      "ageKnown": 30,
+      "ageUnknown": 0,
+      "averageAge": 72.5,
+      "minAge": 63,
+      "maxAge": 87
+    },
+    {
+      "id": "detail-21",
+      "name": "신빠람 사물 초급",
+      "registrants": 25,
+      "genders": {
+        "male": 10,
+        "female": 15,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        9,
+        4,
+        9,
+        1,
+        1
+      ],
+      "ageKnown": 25,
+      "ageUnknown": 0,
+      "averageAge": 72.7,
+      "minAge": 61,
+      "maxAge": 86
+    },
+    {
+      "id": "detail-22",
+      "name": "실용영어",
+      "registrants": 23,
+      "genders": {
+        "male": 3,
+        "female": 20,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        7,
+        4,
+        7,
+        2,
+        2
+      ],
+      "ageKnown": 23,
+      "ageUnknown": 0,
+      "averageAge": 74,
+      "minAge": 63,
+      "maxAge": 89
+    },
+    {
+      "id": "detail-23",
+      "name": "에어로빅",
+      "registrants": 80,
+      "genders": {
+        "male": 1,
+        "female": 79,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        11,
+        25,
+        20,
+        18,
+        5
+      ],
+      "ageKnown": 80,
+      "ageUnknown": 0,
+      "averageAge": 75.7,
+      "minAge": 63,
+      "maxAge": 87
+    },
+    {
+      "id": "detail-24",
+      "name": "연필인물화 중급",
+      "registrants": 20,
+      "genders": {
+        "male": 4,
+        "female": 16,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        8,
+        4,
+        3,
+        4,
+        0
+      ],
+      "ageKnown": 20,
+      "ageUnknown": 0,
+      "averageAge": 71.8,
+      "minAge": 61,
+      "maxAge": 82
+    },
+    {
+      "id": "detail-25",
+      "name": "연필인물화 초급",
+      "registrants": 23,
+      "genders": {
+        "male": 7,
+        "female": 16,
+        "unknown": 0
+      },
+      "ageCounts": [
+        2,
+        9,
+        7,
+        2,
+        2,
+        1
+      ],
+      "ageKnown": 23,
+      "ageUnknown": 0,
+      "averageAge": 71.2,
+      "minAge": 61,
+      "maxAge": 85
+    },
+    {
+      "id": "detail-26",
+      "name": "오카리나 고급",
+      "registrants": 37,
+      "genders": {
+        "male": 1,
+        "female": 36,
+        "unknown": 0
+      },
+      "ageCounts": [
+        0,
+        3,
+        16,
+        11,
+        6,
+        1
+      ],
+      "ageKnown": 37,
+      "ageUnknown": 0,
+      "averageAge": 75.3,
+      "minAge": 66,
+      "maxAge": 86
+    },
+    {
+      "id": "detail-27",
+      "name": "오카리나 중급",
+      "registrants": 27,
+      "genders": {
+        "male": 5,
+        "female": 22,
+        "unknown": 0
+      },
+      "ageCounts": [
+        5,
+        10,
+        10,
+        2,
+        0,
+        0
+      ],
+      "ageKnown": 27,
+      "ageUnknown": 0,
+      "averageAge": 68.6,
+      "minAge": 61,
+      "maxAge": 76
+    },
+    {
+      "id": "detail-28",
+      "name": "오카리나 초급",
+      "registrants": 28,
+      "genders": {
+        "male": 1,
+        "female": 27,
+        "unknown": 0
+      },
+      "ageCounts": [
+        4,
+        8,
+        14,
+        2,
+        0,
+        0
+      ],
+      "ageKnown": 28,
+      "ageUnknown": 0,
+      "averageAge": 69.8,
+      "minAge": 60,
+      "maxAge": 77
+    },
+    {
+      "id": "detail-29",
+      "name": "요가 1",
+      "registrants": 60,
+      "genders": {
+        "male": 8,
+        "female": 52,
+        "unknown": 0
+      },
+      "ageCounts": [
+        0,
+        14,
+        11,
+        19,
+        14,
+        2
+      ],
+      "ageKnown": 60,
+      "ageUnknown": 0,
+      "averageAge": 75.3,
+      "minAge": 66,
+      "maxAge": 89
+    },
+    {
+      "id": "detail-30",
+      "name": "요가 2",
+      "registrants": 63,
+      "genders": {
+        "male": 11,
+        "female": 52,
+        "unknown": 0
+      },
+      "ageCounts": [
+        5,
+        15,
+        20,
+        11,
+        11,
+        1
+      ],
+      "ageKnown": 63,
+      "ageUnknown": 0,
+      "averageAge": 73,
+      "minAge": 60,
+      "maxAge": 85
+    },
+    {
+      "id": "detail-31",
+      "name": "우쿨렐레",
+      "registrants": 25,
+      "genders": {
+        "male": 1,
+        "female": 24,
+        "unknown": 0
+      },
+      "ageCounts": [
+        5,
+        9,
+        8,
+        3,
+        0,
+        0
+      ],
+      "ageKnown": 25,
+      "ageUnknown": 0,
+      "averageAge": 68.7,
+      "minAge": 60,
+      "maxAge": 77
+    },
+    {
+      "id": "detail-32",
+      "name": "일본어 초급",
+      "registrants": 28,
+      "genders": {
+        "male": 15,
+        "female": 13,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        6,
+        10,
+        7,
+        2,
+        2
+      ],
+      "ageKnown": 28,
+      "ageUnknown": 0,
+      "averageAge": 73.9,
+      "minAge": 61,
+      "maxAge": 89
+    },
+    {
+      "id": "detail-33",
+      "name": "찾아가는 시니어 디지털 스쿨",
+      "registrants": 20,
+      "genders": {
+        "male": 8,
+        "female": 12,
+        "unknown": 0
+      },
+      "ageCounts": [
+        2,
+        5,
+        3,
+        7,
+        2,
+        1
+      ],
+      "ageKnown": 20,
+      "ageUnknown": 0,
+      "averageAge": 73,
+      "minAge": 61,
+      "maxAge": 87
+    },
+    {
+      "id": "detail-34",
+      "name": "치매예방교실",
+      "registrants": 1,
+      "genders": {
+        "male": 1,
+        "female": 0,
+        "unknown": 0
+      },
+      "ageCounts": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "ageKnown": 1,
+      "ageUnknown": 0,
+      "averageAge": 72,
+      "minAge": 72,
+      "maxAge": 72
+    },
+    {
+      "id": "detail-35",
+      "name": "캘리그라피 중급",
+      "registrants": 13,
+      "genders": {
+        "male": 2,
+        "female": 11,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        4,
+        3,
+        3,
+        2,
+        0
+      ],
+      "ageKnown": 13,
+      "ageUnknown": 0,
+      "averageAge": 72.1,
+      "minAge": 63,
+      "maxAge": 82
+    },
+    {
+      "id": "detail-36",
+      "name": "캘리그라피 초급",
+      "registrants": 14,
+      "genders": {
+        "male": 2,
+        "female": 12,
+        "unknown": 0
+      },
+      "ageCounts": [
+        6,
+        1,
+        5,
+        2,
+        0,
+        0
+      ],
+      "ageKnown": 14,
+      "ageUnknown": 0,
+      "averageAge": 68.1,
+      "minAge": 61,
+      "maxAge": 79
+    },
+    {
+      "id": "detail-37",
+      "name": "컴퓨터 초급",
+      "registrants": 33,
+      "genders": {
+        "male": 21,
+        "female": 12,
+        "unknown": 0
+      },
+      "ageCounts": [
+        3,
+        11,
+        7,
+        8,
+        4,
+        0
+      ],
+      "ageKnown": 33,
+      "ageUnknown": 0,
+      "averageAge": 72,
+      "minAge": 60,
+      "maxAge": 84
+    },
+    {
+      "id": "detail-38",
+      "name": "컴퓨터 활용",
+      "registrants": 23,
+      "genders": {
+        "male": 12,
+        "female": 11,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        9,
+        4,
+        4,
+        4,
+        1
+      ],
+      "ageKnown": 23,
+      "ageUnknown": 0,
+      "averageAge": 72.8,
+      "minAge": 61,
+      "maxAge": 87
+    },
+    {
+      "id": "detail-39",
+      "name": "풀잎합창단",
+      "registrants": 39,
+      "genders": {
+        "male": 7,
+        "female": 32,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        7,
+        15,
+        15,
+        1,
+        0
+      ],
+      "ageKnown": 39,
+      "ageUnknown": 0,
+      "averageAge": 73.1,
+      "minAge": 64,
+      "maxAge": 81
+    },
+    {
+      "id": "detail-40",
+      "name": "필라테스 1",
+      "registrants": 51,
+      "genders": {
+        "male": 4,
+        "female": 47,
+        "unknown": 0
+      },
+      "ageCounts": [
+        4,
+        13,
+        11,
+        11,
+        10,
+        2
+      ],
+      "ageKnown": 51,
+      "ageUnknown": 0,
+      "averageAge": 73.2,
+      "minAge": 58,
+      "maxAge": 86
+    },
+    {
+      "id": "detail-41",
+      "name": "필라테스 2",
+      "registrants": 64,
+      "genders": {
+        "male": 8,
+        "female": 56,
+        "unknown": 0
+      },
+      "ageCounts": [
+        5,
+        16,
+        20,
+        14,
+        9,
+        0
+      ],
+      "ageKnown": 64,
+      "ageUnknown": 0,
+      "averageAge": 72.5,
+      "minAge": 60,
+      "maxAge": 84
+    },
+    {
+      "id": "detail-42",
+      "name": "하모니카 중급",
+      "registrants": 36,
+      "genders": {
+        "male": 12,
+        "female": 24,
+        "unknown": 0
+      },
+      "ageCounts": [
+        2,
+        9,
+        16,
+        5,
+        3,
+        1
+      ],
+      "ageKnown": 36,
+      "ageUnknown": 0,
+      "averageAge": 72.1,
+      "minAge": 60,
+      "maxAge": 86
+    },
+    {
+      "id": "detail-43",
+      "name": "하모니카 초급",
+      "registrants": 36,
+      "genders": {
+        "male": 4,
+        "female": 32,
+        "unknown": 0
+      },
+      "ageCounts": [
+        5,
+        11,
+        7,
+        6,
+        5,
+        1
+      ],
+      "ageKnown": 35,
+      "ageUnknown": 1,
+      "averageAge": 71.7,
+      "minAge": 61,
+      "maxAge": 87
+    },
+    {
+      "id": "detail-44",
+      "name": "한문(논어)",
+      "registrants": 22,
+      "genders": {
+        "male": 17,
+        "female": 5,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        5,
+        6,
+        5,
+        3,
+        2
+      ],
+      "ageKnown": 22,
+      "ageUnknown": 0,
+      "averageAge": 74.3,
+      "minAge": 61,
+      "maxAge": 86
+    },
+    {
+      "id": "detail-45",
+      "name": "한자 초급",
+      "registrants": 22,
+      "genders": {
+        "male": 8,
+        "female": 14,
+        "unknown": 0
+      },
+      "ageCounts": [
+        1,
+        7,
+        5,
+        5,
+        2,
+        2
+      ],
+      "ageKnown": 22,
+      "ageUnknown": 0,
+      "averageAge": 73.7,
+      "minAge": 63,
+      "maxAge": 87
+    },
+    {
+      "id": "detail-46",
+      "name": "힐링노래교실",
+      "registrants": 130,
+      "genders": {
+        "male": 24,
+        "female": 106,
+        "unknown": 0
+      },
+      "ageCounts": [
+        5,
+        33,
+        36,
+        31,
+        18,
+        7
+      ],
+      "ageKnown": 130,
+      "ageUnknown": 0,
+      "averageAge": 73.8,
+      "minAge": 61,
+      "maxAge": 89
+    },
+    {
+      "id": "detail-47",
+      "name": "힐링수채화",
+      "registrants": 23,
+      "genders": {
+        "male": 3,
+        "female": 20,
+        "unknown": 0
+      },
+      "ageCounts": [
+        3,
+        5,
+        8,
+        4,
+        3,
+        0
+      ],
+      "ageKnown": 23,
+      "ageUnknown": 0,
+      "averageAge": 71.8,
+      "minAge": 60,
+      "maxAge": 82
+    }
+  ]
 }
