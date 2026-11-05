@@ -74,6 +74,9 @@ export function buildProgramAnalysisInsights(periodId: string) {
     oldest.id !== youngest.id &&
     oldest.age!.averageAge - youngest.age!.averageAge >= 5
   ) {
+    const leadingAge = youngest.age!.counts.indexOf(
+      Math.max(...youngest.age!.counts),
+    );
     items.push({
       id: "age-contrast",
       category: "연령",
@@ -82,6 +85,7 @@ export function buildProgramAnalysisInsights(periodId: string) {
       facts: [
         `${oldest.name}: 평균 ${oldest.age!.averageAge.toFixed(1)}세(나이 확인 ${oldest.age!.ageKnown}명).`,
         `${youngest.name}: 평균 ${youngest.age!.averageAge.toFixed(1)}세(나이 확인 ${youngest.age!.ageKnown}명).`,
+        `${youngest.name}의 주요 이용 연령대: ${demographics.ageGroups[leadingAge]} ${youngest.age!.counts[leadingAge]}명(${pct((youngest.age!.counts[leadingAge] / youngest.age!.ageKnown) * 100)}).`,
       ],
       insight: `${oldest.name}과 ${youngest.name}의 이용 연령 차이를 고려한 수준 선택 안내와 단계별 수업자료 구성 검토`,
       source: demographics.source,

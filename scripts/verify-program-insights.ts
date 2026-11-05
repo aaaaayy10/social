@@ -70,6 +70,8 @@ assert.equal(
 const age = all.items.find((i) => i.category === "연령")!;
 assert.ok(age.facts.join(" ").includes("76.4세"));
 assert.ok(age.facts.join(" ").includes("68.6세"));
+assert.equal(age.facts.length, 3);
+assert.ok(age.facts.some((fact) => fact.includes("주요 이용 연령대")));
 assert.ok(
   all.items
     .find((i) => i.category === "중복 수강")!
