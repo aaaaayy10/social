@@ -1,6 +1,8 @@
 import raw from "@/data/rf-attendance.json";
 import manual from "@/data/manual-attendance.json";
 import expectations from "@/data/attendance-expectations.json";
+import classDates from "@/data/attendance-class-dates.json";
+import { currentEnrollment } from "@/lib/program-metrics";
 
 export type VerifiedExpectation = { month: string; programCode: string; expected: number; sessions: number; source: string; verifiedOn: string };
 export function verifiedAttendance(attended: number | null, sessions: number | null, evidence?: VerifiedExpectation) {
@@ -15,6 +17,7 @@ export function verifiedAttendance(attended: number | null, sessions: number | n
 export type AttendanceRecord = { month: string; programCode: string; sourceId: string; sourceType: "rf" | "manual"; dailyCounts: number[] | null; datedCounts: { date: string; count: number }[] | null; manualTotal: number | null; manualSessions: number | null; readingStatus: string; note: string };
 export type AttendanceSource = { id: string; month: string; type: "rf" | "manual"; format: string; scope: "full" | "partial"; visiblePrograms: number; expectedPrograms: number | null; readingStatus: string; metric: string; note: string; source?: string; sourceSha256?: string };
 export type AttendanceProgram = { code: string; name: string; type: "rf" | "manual" };
+export type AttendanceReview = { month: string; programCode: string; program: string; sourceType: string; attended: number; sessions: number; expected: number | null; reason: string; issues: { date: string | null; count: number; eligible: number | null; slot: number; page?: number; reason: string }[] };
 // Original RF records stay intact; line dance 2 uses the manual source only.
 const rfRecords = raw.records.filter(row => row.programCode !== "A1811");
 const programs = [...raw.programs.filter(row => row.code !== "A1811"), ...manual.programs] as AttendanceProgram[];
@@ -29,11 +32,14 @@ export const attendance = {
   records: [...rfRecords, ...manual.records, ...januaryRecords] as AttendanceRecord[],
   paidSnapshot: { ...raw.paidSnapshot, programs: [...raw.paidSnapshot.programs.filter(row => row.programCode !== "A1811"), ...manual.programs.map(row => ({ programCode: row.code, paid: row.paid }))] },
   manualSource: { name: manual.source, pageCount: manual.pageCount, conflicts: manual.conflicts },
+  review: expectations.review as AttendanceReview[],
+  readingComplete: expectations.readingComplete,
+  reviewedOn: expectations.reviewedOn,
+  corrections: classDates.rfCorrections,
 };
 export function calculateAttendance(record: AttendanceRecord) {
   const program = attendance.programs.find(row => row.code === record.programCode);
-  const row = attendance.paidSnapshot.programs.find(row => row.programCode === record.programCode);
-  const paid = row?.paid ?? null;
+  const paid = program ? currentEnrollment(program.name)?.paid ?? null : null;
   const attended = record.dailyCounts === null ? record.manualTotal : record.dailyCounts.reduce((sum, count) => sum + count, 0);
   const sessions = record.dailyCounts === null ? record.manualSessions : record.dailyCounts.filter(count => count > 0).length;
   const evidence = (expectations.records as VerifiedExpectation[]).find(row => row.month === record.month && row.programCode === record.programCode);
@@ -67,6 +73,8 @@ export function validateAttendance() {
     if (seen.has(key)) throw new Error("중복 월·프로그램 집계가 있습니다.");
     seen.add(key);
     calculateAttendance(row);
+    const classes = classDates.records.find(record => record.month === row.month && record.programCode === row.programCode);
+    if (row.month !== "2026-01" && (!classes || classes.classes.length !== calculateAttendance(row).sessions || classes.classes.reduce((sum, item) => sum + item.count, 0) !== calculateAttendance(row).attended)) throw new Error("전체 원본 회차의 날짜·합계 대조가 누락되었습니다.");
     if (attendance.programs.find(program => program.code === row.programCode)?.type !== row.sourceType) throw new Error("RF·수기 분류가 일치하지 않습니다.");
     if (!attendance.sources.some(source => source.id === row.sourceId && source.month === row.month)) throw new Error("자료 출처가 일치하지 않습니다.");
     if (row.sourceType === "rf" && row.dailyCounts === null) throw new Error("RF 일자별 참석자 수가 없습니다.");

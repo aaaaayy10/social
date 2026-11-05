@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import type { User } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
@@ -45,6 +45,11 @@ const menuSections: MenuSection[] = [
   {
     title: "프로그램 운영",
     items: [
+      {
+        label: "프로그램 현황 대시보드",
+        href: "/dashboard/program-dashboard",
+        icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="4" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="11" width="7" height="10" rx="1" /></svg>,
+      },
       {
         label: "전체 프로그램 현황",
         href: "/dashboard/customers",

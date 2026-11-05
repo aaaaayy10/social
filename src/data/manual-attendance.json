@@ -652,7 +652,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 152,
+      "manualTotal": 154,
       "manualSessions": 7,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 24쪽",
@@ -661,7 +661,7 @@
       ],
       "classCounts": [
         20,
-        20,
+        22,
         21,
         22,
         23,
@@ -803,7 +803,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 201,
+      "manualTotal": 179,
       "manualSessions": 7,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 31쪽",
@@ -811,10 +811,10 @@
         31
       ],
       "classCounts": [
-        34,
+        24,
         28,
-        33,
-        29,
+        23,
+        27,
         22,
         25,
         30
@@ -827,7 +827,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 47,
+      "manualTotal": 37,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 33쪽",
@@ -835,7 +835,7 @@
         33
       ],
       "classCounts": [
-        17,
+        7,
         11,
         8,
         11
@@ -913,7 +913,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 22,
+      "manualTotal": 18,
       "manualSessions": 3,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 37쪽",
@@ -921,8 +921,8 @@
         37
       ],
       "classCounts": [
-        9,
-        9,
+        7,
+        7,
         4
       ]
     },
@@ -1351,7 +1351,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 114,
+      "manualTotal": 118,
       "manualSessions": 8,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 67쪽",
@@ -1366,7 +1366,7 @@
         12,
         16,
         15,
-        13
+        17
       ]
     },
     {
@@ -1520,7 +1520,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 49,
+      "manualTotal": 52,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 74쪽",
@@ -1529,7 +1529,7 @@
       ],
       "classCounts": [
         14,
-        15,
+        18,
         10,
         10
       ]
@@ -1583,7 +1583,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 217,
+      "manualTotal": 227,
       "manualSessions": 9,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 77쪽",
@@ -1591,7 +1591,7 @@
         77
       ],
       "classCounts": [
-        20,
+        30,
         20,
         24,
         26,
@@ -1898,7 +1898,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 123,
+      "manualTotal": 124,
       "manualSessions": 8,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 94쪽",
@@ -1908,7 +1908,7 @@
       "classCounts": [
         17,
         17,
-        14,
+        15,
         18,
         12,
         11,
@@ -1996,7 +1996,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 45,
+      "manualTotal": 47,
       "manualSessions": 5,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 98쪽",
@@ -2005,7 +2005,7 @@
       ],
       "classCounts": [
         11,
-        10,
+        12,
         9,
         8,
         7
@@ -2182,7 +2182,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 132,
+      "manualTotal": 129,
       "manualSessions": 9,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 116쪽",
@@ -2198,7 +2198,7 @@
         12,
         16,
         14,
-        14
+        11
       ]
     },
     {
@@ -2284,7 +2284,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 92,
+      "manualTotal": 86,
       "manualSessions": 5,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 120쪽",
@@ -2295,8 +2295,8 @@
         20,
         18,
         19,
-        19,
-        16
+        17,
+        12
       ]
     },
     {
@@ -2419,7 +2419,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 48,
+      "manualTotal": 38,
       "manualSessions": 5,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 127쪽",
@@ -2427,7 +2427,7 @@
         127
       ],
       "classCounts": [
-        17,
+        7,
         8,
         9,
         7,
@@ -2595,7 +2595,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 123,
+      "manualTotal": 125,
       "manualSessions": 8,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 135쪽",
@@ -2610,7 +2610,7 @@
         17,
         17,
         12,
-        16
+        18
       ]
     },
     {
@@ -2773,7 +2773,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 54,
+      "manualTotal": 59,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 145쪽",
@@ -2782,9 +2782,9 @@
       ],
       "classCounts": [
         15,
-        17,
+        12,
         14,
-        8
+        18
       ]
     },
     {
@@ -2794,7 +2794,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 117,
+      "manualTotal": 118,
       "manualSessions": 7,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 146쪽",
@@ -2802,11 +2802,11 @@
         146
       ],
       "classCounts": [
-        17,
+        19,
         15,
         16,
         15,
-        16,
+        15,
         18,
         20
       ]
@@ -3091,7 +3091,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 99,
+      "manualTotal": 95,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 168쪽",
@@ -3099,9 +3099,9 @@
         168
       ],
       "classCounts": [
-        29,
         24,
-        22,
+        24,
+        23,
         24
       ]
     },
@@ -3153,7 +3153,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 69,
+      "manualTotal": 79,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 171쪽",
@@ -3164,7 +3164,7 @@
         21,
         20,
         19,
-        9
+        19
       ]
     },
     {
@@ -3477,7 +3477,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 98,
+      "manualTotal": 97,
       "manualSessions": 9,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 189쪽",
@@ -3485,7 +3485,7 @@
         189
       ],
       "classCounts": [
-        13,
+        12,
         11,
         12,
         10,
@@ -3677,7 +3677,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 97,
+      "manualTotal": 95,
       "manualSessions": 8,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 199쪽",
@@ -3688,7 +3688,7 @@
         12,
         12,
         11,
-        12,
+        10,
         12,
         12,
         12,
@@ -3702,7 +3702,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 218,
+      "manualTotal": 228,
       "manualSessions": 6,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 207쪽",
@@ -3715,7 +3715,7 @@
         33,
         39,
         42,
-        28
+        38
       ]
     },
     {
@@ -3725,7 +3725,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 102,
+      "manualTotal": 100,
       "manualSessions": 7,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 208쪽",
@@ -3737,9 +3737,9 @@
         16,
         11,
         11,
-        13,
+        17,
         16,
-        18
+        12
       ]
     },
     {
@@ -3982,7 +3982,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 33,
+      "manualTotal": 34,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 220쪽",
@@ -3992,7 +3992,7 @@
       "classCounts": [
         10,
         7,
-        8,
+        9,
         8
       ]
     },
@@ -4155,7 +4155,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 131,
+      "manualTotal": 130,
       "manualSessions": 9,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 228쪽",
@@ -4163,7 +4163,7 @@
         228
       ],
       "classCounts": [
-        18,
+        17,
         14,
         15,
         12,
@@ -4181,7 +4181,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 61,
+      "manualTotal": 56,
       "manualSessions": 5,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 229쪽",
@@ -4189,7 +4189,7 @@
         229
       ],
       "classCounts": [
-        16,
+        11,
         12,
         11,
         11,
@@ -4353,7 +4353,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 116,
+      "manualTotal": 115,
       "manualSessions": 5,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 244쪽",
@@ -4362,7 +4362,7 @@
       ],
       "classCounts": [
         26,
-        26,
+        25,
         28,
         15,
         21
@@ -4396,7 +4396,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 152,
+      "manualTotal": 150,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 246쪽",
@@ -4404,7 +4404,7 @@
         246
       ],
       "classCounts": [
-        37,
+        35,
         38,
         38,
         39
@@ -4417,7 +4417,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 41,
+      "manualTotal": 29,
       "manualSessions": 3,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 247쪽",
@@ -4425,7 +4425,7 @@
         247
       ],
       "classCounts": [
-        19,
+        7,
         10,
         12
       ]
@@ -4457,7 +4457,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 26,
+      "manualTotal": 27,
       "manualSessions": 2,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 249쪽",
@@ -4466,7 +4466,7 @@
       ],
       "classCounts": [
         11,
-        15
+        16
       ]
     },
     {
@@ -4618,7 +4618,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 10,
+      "manualTotal": 11,
       "manualSessions": 2,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 258쪽",
@@ -4627,7 +4627,7 @@
       ],
       "classCounts": [
         5,
-        5
+        6
       ]
     },
     {
@@ -4696,7 +4696,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 65,
+      "manualTotal": 66,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 262쪽",
@@ -4707,7 +4707,7 @@
         14,
         17,
         16,
-        18
+        19
       ]
     },
     {
@@ -4736,7 +4736,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 52,
+      "manualTotal": 50,
       "manualSessions": 3,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 264쪽",
@@ -4745,7 +4745,7 @@
       ],
       "classCounts": [
         16,
-        19,
+        17,
         17
       ]
     },
@@ -4860,7 +4860,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 24,
+      "manualTotal": 25,
       "manualSessions": 3,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 271쪽",
@@ -4869,7 +4869,7 @@
       ],
       "classCounts": [
         9,
-        8,
+        9,
         7
       ]
     },
@@ -5148,7 +5148,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 131,
+      "manualTotal": 134,
       "manualSessions": 8,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 289쪽",
@@ -5156,7 +5156,7 @@
         289
       ],
       "classCounts": [
-        12,
+        15,
         17,
         18,
         18,
@@ -5173,7 +5173,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 371,
+      "manualTotal": 373,
       "manualSessions": 8,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 297쪽",
@@ -5185,7 +5185,7 @@
         47,
         48,
         50,
-        46,
+        48,
         40,
         43,
         48
@@ -5267,7 +5267,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 123,
+      "manualTotal": 125,
       "manualSessions": 6,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 301쪽",
@@ -5278,7 +5278,7 @@
         20,
         19,
         23,
-        17,
+        19,
         22,
         22
       ]
@@ -5477,7 +5477,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 14,
+      "manualTotal": 15,
       "manualSessions": 2,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 312쪽",
@@ -5485,7 +5485,7 @@
         312
       ],
       "classCounts": [
-        8,
+        9,
         6
       ]
     },
@@ -5519,7 +5519,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 32,
+      "manualTotal": 33,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 314쪽",
@@ -5530,7 +5530,7 @@
         7,
         9,
         8,
-        8
+        9
       ]
     },
     {
@@ -5540,7 +5540,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 28,
+      "manualTotal": 30,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 315쪽",
@@ -5551,7 +5551,7 @@
         7,
         7,
         7,
-        7
+        9
       ]
     },
     {
@@ -5795,7 +5795,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 33,
+      "manualTotal": 35,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 328쪽",
@@ -5804,9 +5804,9 @@
       ],
       "classCounts": [
         10,
-        7,
         8,
-        8
+        8,
+        9
       ]
     },
     {
@@ -5816,7 +5816,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 72,
+      "manualTotal": 74,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 329쪽",
@@ -5827,7 +5827,7 @@
         16,
         20,
         19,
-        17
+        19
       ]
     },
     {
@@ -5926,7 +5926,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 305,
+      "manualTotal": 311,
       "manualSessions": 7,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 342쪽",
@@ -5939,7 +5939,7 @@
         45,
         46,
         46,
-        43,
+        49,
         44
       ]
     },
@@ -5976,7 +5976,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 124,
+      "manualTotal": 128,
       "manualSessions": 8,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 344쪽",
@@ -5989,9 +5989,9 @@
         17,
         16,
         14,
-        10,
+        16,
         17,
-        19
+        17
       ]
     },
     {
@@ -6162,7 +6162,7 @@
       "sourceType": "manual",
       "dailyCounts": null,
       "datedCounts": null,
-      "manualTotal": 46,
+      "manualTotal": 41,
       "manualSessions": 4,
       "readingStatus": "스캔 일지 판독",
       "note": "수업별 출석인원 합산 · 352쪽",
@@ -6170,7 +6170,7 @@
         352
       ],
       "classCounts": [
-        16,
+        11,
         9,
         11,
         10
@@ -7075,5 +7075,543 @@
       "selected": 38,
       "decision": "사용자 지정: 더 많은 인원"
     }
-  ]
+  ],
+  "countCorrections": [
+    {
+      "page": 24,
+      "month": "2026-02",
+      "program": "오카리나 중급",
+      "slot": 2,
+      "previous": 20,
+      "count": 22,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 31,
+      "month": "2026-02",
+      "program": "난타 중급",
+      "slot": 1,
+      "previous": 34,
+      "count": 24,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 31,
+      "month": "2026-02",
+      "program": "난타 중급",
+      "slot": 3,
+      "previous": 33,
+      "count": 23,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 31,
+      "month": "2026-02",
+      "program": "난타 중급",
+      "slot": 4,
+      "previous": 29,
+      "count": 27,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 33,
+      "month": "2026-02",
+      "program": "캘리그라피 초급",
+      "slot": 1,
+      "previous": 17,
+      "count": 7,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 37,
+      "month": "2026-02",
+      "program": "민화 2",
+      "slot": 1,
+      "previous": 9,
+      "count": 7,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 37,
+      "month": "2026-02",
+      "program": "민화 2",
+      "slot": 2,
+      "previous": 9,
+      "count": 7,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 67,
+      "month": "2026-03",
+      "program": "댄스스포츠",
+      "slot": 8,
+      "previous": 13,
+      "count": 17,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 74,
+      "month": "2026-03",
+      "program": "우쿨렐레",
+      "slot": 2,
+      "previous": 15,
+      "count": 18,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 77,
+      "month": "2026-03",
+      "program": "난타 중급",
+      "slot": 1,
+      "previous": 20,
+      "count": 30,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 94,
+      "month": "2026-04",
+      "program": "난타 초급",
+      "slot": 3,
+      "previous": 14,
+      "count": 15,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 98,
+      "month": "2026-04",
+      "program": "동양화",
+      "slot": 2,
+      "previous": 10,
+      "count": 12,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 116,
+      "month": "2026-04",
+      "program": "기타 초중급",
+      "slot": 9,
+      "previous": 14,
+      "count": 11,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 120,
+      "month": "2026-04",
+      "program": "하모니카 초급",
+      "slot": 4,
+      "previous": 19,
+      "count": 17,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 120,
+      "month": "2026-04",
+      "program": "하모니카 초급",
+      "slot": 5,
+      "previous": 16,
+      "count": 12,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 127,
+      "month": "2026-04",
+      "program": "캘리그라피 초급",
+      "slot": 1,
+      "previous": 17,
+      "count": 7,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 135,
+      "month": "2026-04",
+      "program": "실용영어",
+      "slot": 8,
+      "previous": 16,
+      "count": 18,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 145,
+      "month": "2026-05",
+      "program": "신빠람 사물 중급",
+      "slot": 2,
+      "previous": 17,
+      "count": 12,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 145,
+      "month": "2026-05",
+      "program": "신빠람 사물 중급",
+      "slot": 4,
+      "previous": 8,
+      "count": 18,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 146,
+      "month": "2026-05",
+      "program": "일본어 초급",
+      "slot": 1,
+      "previous": 17,
+      "count": 19,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 146,
+      "month": "2026-05",
+      "program": "일본어 초급",
+      "slot": 5,
+      "previous": 16,
+      "count": 15,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 168,
+      "month": "2026-05",
+      "program": "하모니카 중급",
+      "slot": 1,
+      "previous": 29,
+      "count": 24,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 168,
+      "month": "2026-05",
+      "program": "하모니카 중급",
+      "slot": 3,
+      "previous": 22,
+      "count": 23,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 171,
+      "month": "2026-05",
+      "program": "가락장구",
+      "slot": 4,
+      "previous": 9,
+      "count": 19,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 189,
+      "month": "2026-06",
+      "program": "난타 초급",
+      "slot": 1,
+      "previous": 13,
+      "count": 12,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 199,
+      "month": "2026-06",
+      "program": "오카리나 초급",
+      "slot": 4,
+      "previous": 12,
+      "count": 10,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 207,
+      "month": "2026-06",
+      "program": "라인댄스 2",
+      "slot": 6,
+      "previous": 28,
+      "count": 38,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 208,
+      "month": "2026-06",
+      "program": "댄스스포츠",
+      "slot": 5,
+      "previous": 13,
+      "count": 17,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 208,
+      "month": "2026-06",
+      "program": "댄스스포츠",
+      "slot": 7,
+      "previous": 18,
+      "count": 12,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 220,
+      "month": "2026-06",
+      "program": "캘리그라피 초급",
+      "slot": 3,
+      "previous": 8,
+      "count": 9,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 228,
+      "month": "2026-06",
+      "program": "실용영어",
+      "slot": 1,
+      "previous": 18,
+      "count": 17,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 229,
+      "month": "2026-06",
+      "program": "컴퓨터 활용",
+      "slot": 1,
+      "previous": 16,
+      "count": 11,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 244,
+      "month": "2026-07",
+      "program": "기타 고급",
+      "slot": 2,
+      "previous": 26,
+      "count": 25,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 246,
+      "month": "2026-07",
+      "program": "오카리나 고급",
+      "slot": 1,
+      "previous": 37,
+      "count": 35,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 247,
+      "month": "2026-07",
+      "program": "하모니카 초급",
+      "slot": 1,
+      "previous": 19,
+      "count": 7,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 249,
+      "month": "2026-07",
+      "program": "우쿨렐레",
+      "slot": 2,
+      "previous": 15,
+      "count": 16,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 258,
+      "month": "2026-07",
+      "program": "민화 2",
+      "slot": 2,
+      "previous": 5,
+      "count": 6,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 262,
+      "month": "2026-07",
+      "program": "실용영어",
+      "slot": 4,
+      "previous": 18,
+      "count": 19,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 264,
+      "month": "2026-07",
+      "program": "스마트폰 중급",
+      "slot": 2,
+      "previous": 19,
+      "count": 17,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 271,
+      "month": "2026-07",
+      "program": "동양화",
+      "slot": 2,
+      "previous": 8,
+      "count": 9,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 289,
+      "month": "2026-09",
+      "program": "컴퓨터 초급",
+      "slot": 1,
+      "previous": 12,
+      "count": 15,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 297,
+      "month": "2026-09",
+      "program": "라인댄스 2",
+      "slot": 5,
+      "previous": 46,
+      "count": 48,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 301,
+      "month": "2026-09",
+      "program": "오카리나 초급",
+      "slot": 4,
+      "previous": 17,
+      "count": 19,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 312,
+      "month": "2026-09",
+      "program": "캘리그라피 중급",
+      "slot": 1,
+      "previous": 8,
+      "count": 9,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 314,
+      "month": "2026-09",
+      "program": "민화 1",
+      "slot": 4,
+      "previous": 8,
+      "count": 9,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 315,
+      "month": "2026-09",
+      "program": "민화 2",
+      "slot": 4,
+      "previous": 7,
+      "count": 9,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 328,
+      "month": "2026-10",
+      "program": "신빠람 사물 초급",
+      "slot": 2,
+      "previous": 7,
+      "count": 8,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 328,
+      "month": "2026-10",
+      "program": "신빠람 사물 초급",
+      "slot": 4,
+      "previous": 8,
+      "count": 9,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 329,
+      "month": "2026-10",
+      "program": "신빠람 사물 중급",
+      "slot": 4,
+      "previous": 17,
+      "count": 19,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 342,
+      "month": "2026-10",
+      "program": "라인댄스 2",
+      "slot": 6,
+      "previous": 43,
+      "count": 49,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 344,
+      "month": "2026-10",
+      "program": "기타 초중급",
+      "slot": 6,
+      "previous": 10,
+      "count": 16,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 344,
+      "month": "2026-10",
+      "program": "기타 초중급",
+      "slot": 8,
+      "previous": 19,
+      "count": 17,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    },
+    {
+      "page": 352,
+      "month": "2026-10",
+      "program": "숟가락 난타",
+      "slot": 1,
+      "previous": 16,
+      "count": 11,
+      "reviewedOn": "2026-11-05",
+      "reason": "확대 원본 출석인원 재대조"
+    }
+  ],
+  "countReview": {
+    "reviewedOn": "2026-11-05",
+    "sourcePages": 280,
+    "classes": 1403,
+    "method": "수기 운영일지 모든 출석인원 칸을 확대 원본과 재대조. 중복 일지는 기존 선택 기준 유지."
+  }
 }

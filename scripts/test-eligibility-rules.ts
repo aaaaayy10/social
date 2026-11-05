@@ -1,0 +1,28 @@
+import assert from "node:assert/strict";
+import { eligibleMembers, normalizeContract, type PaymentContract } from "../src/lib/enrollment-eligibility";
+import { inspectClassEvidence } from "../src/lib/attendance-evidence";
+
+const original: PaymentContract = { memberId: "test-person-a", program: "테스트 강좌", paidOn: "2026-01-26", startsOn: "2026-02-03", endsOn: "2026-09-03", cancelledOn: "2026-02-10" };
+const row = normalizeContract(original);
+assert.equal(row.startsOn, "2026-02-02"); assert.equal(row.endsOn, "2026-07-17");
+for (const [date, expected] of [["2026-02-01", 0], ["2026-02-02", 1], ["2026-02-09", 1], ["2026-02-10", 0]] as const) assert.equal(eligibleMembers([row], "테스트강좌", date).size, expected);
+const late = { ...row, memberId: "test-person-b", paidOn: "2026-03-05", cancelledOn: null };
+assert.equal(eligibleMembers([late], "테스트 강좌", "2026-03-04").size, 0);
+assert.equal(eligibleMembers([late], "테스트 강좌", "2026-03-05").size, 1);
+assert.equal(eligibleMembers([late], "테스트 강좌", "2026-07-17").size, 1);
+assert.equal(eligibleMembers([late], "테스트 강좌", "2026-07-18").size, 0);
+assert.equal(eligibleMembers([late, { ...late }], "테스트 강좌", "2026-03-05").size, 1);
+assert.equal(eligibleMembers([late, { ...late, program: "다른 강좌" }], "테스트 강좌", "2026-03-05").size, 1);
+const autumn = normalizeContract({ ...original, startsOn: "2026-09-07", endsOn: "2027-02-18", cancelledOn: null });
+assert.equal(autumn.endsOn, "2026-12-18");
+assert.equal(normalizeContract({ ...original, program: "일본어 초급" }).startsOn, "2026-03-02");
+const twoSessions = [{ date: "2026-07-16", count: 10, eligible: 12, slot: 1 }, { date: "2026-07-16", count: 12, eligible: 12, slot: 2 }];
+assert.deepEqual(inspectClassEvidence(twoSessions, 2, 22, "2026-07"), { expected: 24, issues: [], verified: true });
+assert.equal(inspectClassEvidence([{ date: null, count: 8, eligible: 10, slot: 1 }], 1, 8).verified, true);
+assert.equal(inspectClassEvidence([{ date: null, count: 8, eligible: null, slot: 1 }], 1, 8).verified, false);
+assert.equal(inspectClassEvidence([{ date: "2026-07-16", count: 13, eligible: 12, slot: 1 }], 1, 13).verified, false);
+assert.throws(() => inspectClassEvidence(twoSessions, 1, 22));
+assert.throws(() => inspectClassEvidence(twoSessions, 2, 23));
+assert.throws(() => inspectClassEvidence(twoSessions, 2, 22, "2026-06"));
+assert.throws(() => inspectClassEvidence([{ date: "2026-02-30", count: 1, eligible: 2, slot: 1 }], 1, 1));
+console.log("PASS: enrollment/payment/refund boundaries, term rules, Japanese opening, duplicate member deduplication, separate same-day sessions, blank-date constant-target proof, source discrepancies and date/count guards.");

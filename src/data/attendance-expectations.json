@@ -1,5 +1,6 @@
 {
   "asOf": "2026-11-04",
+  "reviewedOn": "2026-11-05",
   "sources": [
     {
       "name": "수납 세부 내역(시기별 수강 인원 파악용).pdf",
@@ -8,6 +9,46 @@
     {
       "name": "환불세부 내역(시기별 수강 인원 파악용).pdf",
       "sha256": "909986302a7f32cba38ae09ab27e5d0aa11db484fab1e094689d8f460d9b95bf"
+    },
+    {
+      "name": "10월 일일 이용인원 현황.XLS",
+      "sha256": "8aedc0e54c106082fdfc73f48acdad91b2f47fa03235147cb5d913430776aaec"
+    },
+    {
+      "name": "2월 일일 이용인원 현황.XLS",
+      "sha256": "db5b09b7e1d3339a824db06cdce7d53c91506dc39e83ca07683f3535f8f23e40"
+    },
+    {
+      "name": "3월 일일 이용인원 현황.XLS",
+      "sha256": "13903fdd5d8e5ef1f33637d1331126966d7773ec72ff582d261962a0473d4d9c"
+    },
+    {
+      "name": "4월 일일 이용인원 현황.XLS",
+      "sha256": "0d19e39b72137673fc3215fe9d50e408df174cb7a13162b6b4a28f743747630a"
+    },
+    {
+      "name": "5월 일일 이용인원 현황.XLS",
+      "sha256": "181867748f4886c0d0957d8783f0aee9d2156b509d06f11c9118b63385c6e2df"
+    },
+    {
+      "name": "6월 일일 이용인원 현황.XLS",
+      "sha256": "942a277bdc7c46f166ce278e78e5519b2b2812a56651159d4335b8047b250315"
+    },
+    {
+      "name": "7월 일일 이용인원 현황.XLS",
+      "sha256": "f9e3987dcd109ee081a959b0526f872dd9602fc3bfe67599dd05ead314933c32"
+    },
+    {
+      "name": "8월 일일 이용인원 현황.XLS",
+      "sha256": "171162faa93b1d3e334061bfb3412fc1f374f3cfb98195df3259aecbfc77802d"
+    },
+    {
+      "name": "9월 일일 이용인원 현황.XLS",
+      "sha256": "009cd79475ce9704ad208beda8bbb6b33751692d78c147d5cc62044c36b9044c"
+    },
+    {
+      "name": "2026년 1월~10월 출석자 명단.pdf",
+      "sha256": "f3e963188a1274212cb6c05243a48f79bc21fe6d4756eb5f915d18bc9c97816e"
     }
   ],
   "rules": {
@@ -16,870 +57,3109 @@
     "periods": "일반 프로그램 2.2~7.17 / 9.7~12.18. 일본어 초급 3월 개강. 건강100세는 원본 개별 기간 및 8월 운영 확인 반영",
     "deduplication": "이용자번호+프로그램+일자 중복 제외"
   },
+  "readingComplete": true,
+  "reviewedRecords": 405,
+  "totalRecords": 450,
+  "closedRecords": 91,
   "records": [
     {
-      "month": "2026-04",
-      "programCode": "A1862",
-      "expected": 640,
-      "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 80
-    },
-    {
-      "month": "2026-04",
-      "programCode": "A1802",
-      "expected": 396,
-      "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 44
-    },
-    {
-      "month": "2026-05",
-      "programCode": "A1862",
-      "expected": 400,
+      "month": "2026-02",
+      "programCode": "manual-course-30",
+      "expected": 90,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 80
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
-      "month": "2026-06",
-      "programCode": "A1862",
-      "expected": 640,
-      "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 80
+      "month": "2026-02",
+      "programCode": "manual-course-1",
+      "expected": 142,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
-      "month": "2026-07",
-      "programCode": "A1862",
-      "expected": 640,
-      "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 80
+      "month": "2026-02",
+      "programCode": "manual-course-22",
+      "expected": 48,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
-      "month": "2026-09",
-      "programCode": "A1862",
-      "expected": 640,
-      "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 80
+      "month": "2026-02",
+      "programCode": "manual-course-31",
+      "expected": 91,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
-      "month": "2026-10",
-      "programCode": "A1862",
-      "expected": 400,
+      "month": "2026-02",
+      "programCode": "manual-course-32",
+      "expected": 96,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-19",
+      "expected": 69,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-18",
+      "expected": 61,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-36",
+      "expected": 101,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-11",
+      "expected": 108,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1811",
+      "expected": 178,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-7",
+      "expected": 134,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-15",
+      "expected": 148,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-16",
+      "expected": 236,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-12",
+      "expected": 165,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-17",
+      "expected": 88,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-37",
+      "expected": 115,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-41",
+      "expected": 59,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-44",
+      "expected": 85,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-43",
+      "expected": 103,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-20",
+      "expected": 224,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-21",
+      "expected": 44,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-40",
+      "expected": 44,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-23",
+      "expected": 93,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-27",
+      "expected": 34,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-38",
+      "expected": 23,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-45",
+      "expected": 39,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-26",
+      "expected": 43,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-39",
+      "expected": 41,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-28",
+      "expected": 48,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-35",
+      "expected": 43,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-33",
+      "expected": 71,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-34",
+      "expected": 71,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-24",
+      "expected": 50,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-36",
+      "expected": 176,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 80
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-30",
+      "expected": 68,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-03",
       "programCode": "manual-course-22",
       "expected": 48,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 12
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-19",
+      "expected": 68,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-18",
+      "expected": 59,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-31",
+      "expected": 117,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-32",
+      "expected": 147,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-1",
+      "expected": 197,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-29",
+      "expected": 209,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1811",
+      "expected": 339,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-7",
+      "expected": 162,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-15",
+      "expected": 172,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-03",
       "programCode": "manual-course-16",
       "expected": 280,
       "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 35
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-12",
+      "expected": 225,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-03",
       "programCode": "manual-course-13",
       "expected": 351,
       "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 39
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-17",
+      "expected": 96,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-03",
       "programCode": "manual-course-37",
       "expected": 112,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 28
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-41",
+      "expected": 77,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-44",
+      "expected": 116,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-43",
+      "expected": 103,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-20",
+      "expected": 315,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-21",
+      "expected": 44,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-03",
       "programCode": "manual-course-40",
       "expected": 40,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 10
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-23",
+      "expected": 100,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-27",
+      "expected": 58,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-45",
+      "expected": 53,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-03",
       "programCode": "manual-course-26",
       "expected": 60,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 15
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-39",
+      "expected": 56,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-28",
+      "expected": 269,
+      "sessions": 12,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-35",
+      "expected": 71,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-33",
+      "expected": 73,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-34",
+      "expected": 78,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-18",
       "expected": 56,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 14
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
-      "programCode": "manual-course-31",
-      "expected": 153,
+      "programCode": "manual-course-1",
+      "expected": 206,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-29",
+      "expected": 196,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-19",
+      "expected": 112,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-22",
+      "expected": 64,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-32",
+      "expected": 186,
       "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 17
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-30",
+      "expected": 70,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-36",
       "expected": 140,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 35
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-24",
       "expected": 39,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 13
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-11",
       "expected": 120,
       "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 15
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1811",
+      "expected": 434,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-7",
       "expected": 152,
       "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 19
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-15",
+      "expected": 185,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-16",
       "expected": 315,
       "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 35
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-12",
+      "expected": 213,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-13",
       "expected": 312,
       "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 39
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-17",
       "expected": 120,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 24
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-37",
       "expected": 140,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 28
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-41",
       "expected": 72,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 18
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-44",
+      "expected": 147,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-43",
+      "expected": 121,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-20",
+      "expected": 320,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-21",
+      "expected": 52,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-40",
       "expected": 50,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 10
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-23",
       "expected": 108,
       "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 12
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-27",
+      "expected": 52,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-38",
+      "expected": 23,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-45",
+      "expected": 55,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-26",
+      "expected": 57,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-04",
       "programCode": "manual-course-39",
       "expected": 70,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 14
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-28",
+      "expected": 178,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-35",
+      "expected": 57,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-33",
+      "expected": 91,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-34",
+      "expected": 82,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-22",
       "expected": 52,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 13
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-31",
       "expected": 119,
       "sessions": 7,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 17
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-32",
       "expected": 126,
       "sessions": 6,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 21
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-30",
       "expected": 72,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 18
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-19",
       "expected": 92,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 23
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-29",
+      "expected": 168,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-18",
       "expected": 56,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 14
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-1",
       "expected": 162,
       "sessions": 6,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 27
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-36",
       "expected": 105,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 35
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-24",
+      "expected": 39,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-11",
+      "expected": 98,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "A1811",
       "expected": 322,
       "sessions": 7,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 46
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-7",
+      "expected": 142,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-15",
       "expected": 140,
       "sessions": 7,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 20
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-16",
+      "expected": 251,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-12",
       "expected": 182,
       "sessions": 7,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 26
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-13",
       "expected": 273,
       "sessions": 7,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 39
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-17",
       "expected": 96,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 24
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-37",
       "expected": 112,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 28
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-41",
       "expected": 54,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 18
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-44",
       "expected": 120,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 30
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-43",
+      "expected": 97,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-20",
+      "expected": 238,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-21",
       "expected": 40,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 10
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-40",
       "expected": 40,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 10
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-23",
+      "expected": 87,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-27",
       "expected": 39,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 13
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-38",
       "expected": 15,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 5
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-45",
+      "expected": 54,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-26",
       "expected": 42,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 14
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-28",
       "expected": 154,
       "sessions": 7,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 22
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
       "programCode": "manual-course-35",
       "expected": 42,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 14
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-05",
-      "programCode": "manual-course-33",
-      "expected": 72,
+      "programCode": "manual-course-34",
+      "expected": 88,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 18
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-29",
+      "expected": 189,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-1",
       "expected": 243,
       "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 27
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-18",
+      "expected": 60,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-19",
       "expected": 69,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 23
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-22",
       "expected": 39,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 13
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-32",
       "expected": 168,
       "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 21
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-31",
+      "expected": 142,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-30",
       "expected": 72,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 18
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-36",
+      "expected": 180,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-24",
       "expected": 42,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 14
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-11",
+      "expected": 116,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1811",
+      "expected": 279,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-7",
       "expected": 154,
       "sessions": 7,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 22
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-15",
       "expected": 180,
       "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 20
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-16",
       "expected": 333,
       "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 37
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-12",
       "expected": 208,
       "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 26
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-13",
       "expected": 312,
       "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 39
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-17",
+      "expected": 100,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-37",
+      "expected": 120,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-41",
       "expected": 90,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 18
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-44",
       "expected": 90,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 30
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-43",
       "expected": 96,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 24
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-20",
       "expected": 306,
       "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 34
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-21",
       "expected": 40,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 10
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-40",
       "expected": 40,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 10
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-23",
       "expected": 117,
       "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 13
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-27",
       "expected": 65,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 13
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-38",
       "expected": 25,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 5
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-45",
       "expected": 28,
       "sessions": 2,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 14
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-26",
       "expected": 70,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 14
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-39",
       "expected": 39,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 13
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-28",
       "expected": 207,
       "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 23
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-35",
       "expected": 70,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 14
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-06",
       "programCode": "manual-course-34",
       "expected": 92,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 23
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-24",
+      "expected": 28,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-11",
+      "expected": 64,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1811",
+      "expected": 235,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-7",
+      "expected": 154,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-15",
+      "expected": 100,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-16",
+      "expected": 185,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-12",
+      "expected": 104,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-13",
+      "expected": 156,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-17",
+      "expected": 75,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-37",
+      "expected": 90,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-41",
+      "expected": 36,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-44",
+      "expected": 90,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-43",
+      "expected": 72,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-20",
+      "expected": 170,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-21",
+      "expected": 30,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-40",
+      "expected": 30,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-23",
+      "expected": 52,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-27",
+      "expected": 26,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-45",
+      "expected": 42,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-26",
+      "expected": 28,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-39",
+      "expected": 39,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-28",
+      "expected": 92,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-35",
+      "expected": 28,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-33",
+      "expected": 54,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-34",
+      "expected": 46,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-36",
+      "expected": 74,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-32",
+      "expected": 105,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-29",
+      "expected": 92,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-31",
+      "expected": 90,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-22",
+      "expected": 39,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-1",
+      "expected": 108,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-18",
+      "expected": 15,
+      "sessions": 1,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-19",
+      "expected": 46,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-30",
+      "expected": 54,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-24",
+      "expected": 42,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-36",
+      "expected": 157,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-18",
+      "expected": 24,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-19",
+      "expected": 100,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-1",
+      "expected": 177,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-30",
+      "expected": 19,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-29",
+      "expected": 80,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-31",
+      "expected": 104,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-22",
+      "expected": 46,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-32",
+      "expected": 158,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1811",
+      "expected": 426,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-15",
+      "expected": 154,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-16",
+      "expected": 221,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-11",
+      "expected": 142,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-12",
+      "expected": 150,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-13",
+      "expected": 234,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-17",
+      "expected": 48,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-41",
+      "expected": 84,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-44",
+      "expected": 64,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-43",
+      "expected": 60,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-20",
+      "expected": 204,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-21",
+      "expected": 24,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-40",
+      "expected": 19,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-23",
+      "expected": 75,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-26",
+      "expected": 47,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-39",
+      "expected": 60,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-28",
+      "expected": 115,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-35",
+      "expected": 75,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-33",
+      "expected": 37,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-34",
+      "expected": 77,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-24",
+      "expected": 28,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-36",
       "expected": 160,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 40
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-29",
+      "expected": 142,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-1",
+      "expected": 177,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-18",
+      "expected": 51,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-19",
       "expected": 100,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 25
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-30",
+      "expected": 56,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-22",
       "expected": 48,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 12
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-31",
       "expected": 65,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 13
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-32",
+      "expected": 134,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "A1811",
       "expected": 371,
       "sessions": 7,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 53
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-7",
       "expected": 171,
       "sessions": 9,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 19
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-15",
+      "expected": 209,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-16",
+      "expected": 303,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-11",
       "expected": 168,
       "sessions": 7,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 24
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-12",
       "expected": 175,
       "sessions": 7,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 25
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-13",
+      "expected": 272,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-17",
+      "expected": 122,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-37",
       "expected": 130,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 26
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-41",
       "expected": 63,
       "sessions": 3,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 21
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-44",
       "expected": 56,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 14
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-43",
       "expected": 145,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 29
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-20",
+      "expected": 308,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-21",
+      "expected": 62,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-40",
       "expected": 50,
       "sessions": 5,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 10
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-23",
       "expected": 96,
       "sessions": 8,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 12
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-27",
       "expected": 40,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 10
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-38",
       "expected": 28,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 7
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-45",
       "expected": 56,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 14
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-26",
+      "expected": 38,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-39",
       "expected": 60,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 15
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-28",
+      "expected": 125,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
     },
     {
       "month": "2026-10",
       "programCode": "manual-course-35",
       "expected": 76,
       "sessions": 4,
-      "source": "수납·환불 세부 내역 대조: 해당 월의 모든 가능한 운영일에서 유효 이용자 수가 동일함. 이용자+프로그램+일자 중복 제거.",
-      "verifiedOn": "2026-11-04",
-      "eligiblePerSession": 19
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-33",
+      "expected": 75,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "manual-course-34",
+      "expected": 57,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1862",
+      "expected": 400,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A0164",
+      "expected": 519,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1810",
+      "expected": 530,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1817",
+      "expected": 393,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1831",
+      "expected": 415,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1804",
+      "expected": 337,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1805",
+      "expected": 441,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1802",
+      "expected": 335,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1803",
+      "expected": 340,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-10",
+      "programCode": "A1813",
+      "expected": 507,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A0164",
+      "expected": 372,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1810",
+      "expected": 366,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1817",
+      "expected": 381,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1831",
+      "expected": 414,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1804",
+      "expected": 275,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1805",
+      "expected": 300,
+      "sessions": 7,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1802",
+      "expected": 353,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1803",
+      "expected": 236,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-02",
+      "programCode": "A1813",
+      "expected": 152,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1862",
+      "expected": 80,
+      "sessions": 1,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A0164",
+      "expected": 150,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1810",
+      "expected": 124,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1817",
+      "expected": 150,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1831",
+      "expected": 211,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1804",
+      "expected": 144,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1805",
+      "expected": 83,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1802",
+      "expected": 44,
+      "sessions": 1,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1803",
+      "expected": 150,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-03",
+      "programCode": "A1813",
+      "expected": 88,
+      "sessions": 1,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1862",
+      "expected": 640,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A0164",
+      "expected": 688,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1810",
+      "expected": 541,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1817",
+      "expected": 609,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1831",
+      "expected": 536,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1804",
+      "expected": 427,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1805",
+      "expected": 337,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1802",
+      "expected": 396,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1803",
+      "expected": 434,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-04",
+      "programCode": "A1813",
+      "expected": 374,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1862",
+      "expected": 320,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A0164",
+      "expected": 158,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1810",
+      "expected": 181,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1817",
+      "expected": 299,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1831",
+      "expected": 334,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1804",
+      "expected": 188,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1805",
+      "expected": 126,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1802",
+      "expected": 175,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1803",
+      "expected": 195,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-05",
+      "programCode": "A1813",
+      "expected": 296,
+      "sessions": 3,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1862",
+      "expected": 720,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A0164",
+      "expected": 718,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1810",
+      "expected": 535,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1817",
+      "expected": 585,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1831",
+      "expected": 588,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1804",
+      "expected": 388,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1805",
+      "expected": 391,
+      "sessions": 9,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1802",
+      "expected": 342,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1803",
+      "expected": 393,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-06",
+      "programCode": "A1813",
+      "expected": 396,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1862",
+      "expected": 640,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1810",
+      "expected": 295,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1817",
+      "expected": 292,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1831",
+      "expected": 256,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1804",
+      "expected": 240,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1805",
+      "expected": 220,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1802",
+      "expected": 210,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1803",
+      "expected": 245,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A1813",
+      "expected": 198,
+      "sessions": 2,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-08",
+      "programCode": "A1862",
+      "expected": 639,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1862",
+      "expected": 640,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A0164",
+      "expected": 330,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1810",
+      "expected": 337,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1817",
+      "expected": 290,
+      "sessions": 5,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1831",
+      "expected": 348,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1804",
+      "expected": 371,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1805",
+      "expected": 279,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1802",
+      "expected": 175,
+      "sessions": 4,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1803",
+      "expected": 382,
+      "sessions": 8,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
+      "programCode": "A1813",
+      "expected": 441,
+      "sessions": 6,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차는 각각 포함. 날짜 미기재는 원본 기간 내 유효 대상 인원이 동일할 때만 확정.",
+      "verifiedOn": "2026-11-05"
+    }
+  ],
+  "review": [
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-24",
+      "program": "힐링수채화",
+      "sourceType": "manual",
+      "attended": 36,
+      "sessions": 3,
+      "expected": 36,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-02-09",
+          "count": 13,
+          "page": 11,
+          "slot": 2,
+          "eligible": 12,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-02",
+      "programCode": "manual-course-13",
+      "program": "오카리나 고급",
+      "sourceType": "manual",
+      "attended": 271,
+      "sessions": 7,
+      "expected": 280,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-02-27",
+          "count": 40,
+          "page": 25,
+          "slot": 7,
+          "eligible": 39,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-11",
+      "program": "오카리나 초급",
+      "sourceType": "manual",
+      "attended": 126,
+      "sessions": 9,
+      "expected": 128,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-03-03",
+          "count": 15,
+          "page": 46,
+          "slot": 1,
+          "eligible": 14,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-03",
+      "programCode": "manual-course-38",
+      "program": "민화 2",
+      "sourceType": "manual",
+      "attended": 31,
+      "sessions": 5,
+      "expected": 30,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-03-10",
+          "count": 7,
+          "page": 83,
+          "slot": 2,
+          "eligible": 6,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        },
+        {
+          "date": "2026-03-17",
+          "count": 7,
+          "page": 83,
+          "slot": 3,
+          "eligible": 6,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        },
+        {
+          "date": "2026-03-24",
+          "count": 7,
+          "page": 83,
+          "slot": 4,
+          "eligible": 5,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-04",
+      "programCode": "manual-course-31",
+      "program": "한문(논어)",
+      "sourceType": "manual",
+      "attended": 96,
+      "sessions": 9,
+      "expected": 153,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-04-08",
+          "count": 21,
+          "page": 97,
+          "slot": 3,
+          "eligible": 17,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-39",
+      "program": "연필인물화 중급",
+      "sourceType": "manual",
+      "attended": 55,
+      "sessions": 4,
+      "expected": 54,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-05-20",
+          "count": 14,
+          "page": 181,
+          "slot": 3,
+          "eligible": 13,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        },
+        {
+          "date": "2026-05-27",
+          "count": 14,
+          "page": 181,
+          "slot": 4,
+          "eligible": 13,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-05",
+      "programCode": "manual-course-33",
+      "program": "스마트폰 중급",
+      "sourceType": "manual",
+      "attended": 72,
+      "sessions": 4,
+      "expected": 72,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-05-14",
+          "count": 19,
+          "page": 184,
+          "slot": 2,
+          "eligible": 18,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-06",
+      "programCode": "manual-course-33",
+      "program": "스마트폰 중급",
+      "sourceType": "manual",
+      "attended": 73,
+      "sessions": 4,
+      "expected": 72,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-06-04",
+          "count": 19,
+          "page": 230,
+          "slot": 1,
+          "eligible": 18,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        },
+        {
+          "date": "2026-06-11",
+          "count": 20,
+          "page": 230,
+          "slot": 2,
+          "eligible": 18,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "manual-course-38",
+      "program": "민화 2",
+      "sourceType": "manual",
+      "attended": 11,
+      "sessions": 2,
+      "expected": 10,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-07-14",
+          "count": 6,
+          "page": 258,
+          "slot": 2,
+          "eligible": 5,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-7",
+      "program": "댄스스포츠",
+      "sourceType": "manual",
+      "attended": 92,
+      "sessions": 6,
+      "expected": 109,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-09-17",
+          "count": 19,
+          "page": 298,
+          "slot": 4,
+          "eligible": 18,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-37",
+      "program": "하모니카 중급",
+      "sourceType": "manual",
+      "attended": 48,
+      "sessions": 2,
+      "expected": 50,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-09-10",
+          "count": 26,
+          "page": 305,
+          "slot": 1,
+          "eligible": 25,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-27",
+      "program": "민화 1",
+      "sourceType": "manual",
+      "attended": 33,
+      "sessions": 4,
+      "expected": 34,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-09-29",
+          "count": 9,
+          "page": 314,
+          "slot": 4,
+          "eligible": 8,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-38",
+      "program": "민화 2",
+      "sourceType": "manual",
+      "attended": 30,
+      "sessions": 4,
+      "expected": 28,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-09-29",
+          "count": 9,
+          "page": 315,
+          "slot": 4,
+          "eligible": 7,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-45",
+      "program": "금빛스케치",
+      "sourceType": "manual",
+      "attended": 41,
+      "sessions": 4,
+      "expected": null,
+      "reason": "수업일 미기재·판독 불가로 대상 인원 확정 불가",
+      "issues": [
+        {
+          "date": null,
+          "count": 11,
+          "page": 316,
+          "slot": 4,
+          "eligible": null,
+          "reason": "수업일 미기재·판독 불가로 대상 인원 확정 불가"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "programCode": "A0164",
+      "program": "건강체조",
+      "sourceType": "rf",
+      "attended": 164,
+      "sessions": 7,
+      "expected": 320,
+      "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음",
+      "issues": [
+        {
+          "date": "2026-07-21",
+          "count": 15,
+          "slot": 5,
+          "eligible": 0,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        },
+        {
+          "date": "2026-07-23",
+          "count": 1,
+          "slot": 6,
+          "eligible": 0,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        },
+        {
+          "date": "2026-07-28",
+          "count": 1,
+          "slot": 7,
+          "eligible": 0,
+          "reason": "출석 인원이 수납 명부의 유효 대상 인원보다 많음"
+        }
+      ]
     }
   ]
 }
