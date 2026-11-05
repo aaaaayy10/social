@@ -381,7 +381,7 @@ export function EbgComparisons({ analysis }: { analysis: InsightAnalysis }) {
           </div>
           <div>
             <h3 className="mb-3 text-sm font-semibold">
-              분야별 대기 건수 · 제안 분류
+              분야별 확인된 대기 합계 · 제안 분류
             </h3>
             <EvidenceBars
               rows={[...analysis.demand.fields]
@@ -389,7 +389,7 @@ export function EbgComparisons({ analysis }: { analysis: InsightAnalysis }) {
                 .map((f) => ({
                   label: f.name,
                   value: f.waiting,
-                  detail: `분야 정원 ${f.capacity}명 대비 대기율 ${f.capacity ? rate((f.waiting / f.capacity) * 100) : "산출 불가"} · 개인별 대기 중복 미확인`,
+                  detail: `대기 기재 ${f.waitingKnownPrograms}/${f.programs}개 강좌 · ${f.waitingRate === null ? "미기재 포함: 분야 대기율 미산출" : "분야 대기율 " + rate(f.waitingRate)} · 개인별 대기 중복 미확인`,
                 }))}
               unit="건"
             />
@@ -425,7 +425,9 @@ export function EbgComparisons({ analysis }: { analysis: InsightAnalysis }) {
                   <td className="p-2">{p.applications}건</td>
                   <td className="p-2">{p.capacity}명</td>
                   <td className="p-2">{rate(p.registration)}</td>
-                  <td className="p-2">{p.waiting ?? "미기재"}건</td>
+                  <td className="p-2">
+                    {p.waiting === null ? "미기재" : p.waiting + "건"}
+                  </td>
                   <td className="p-2">{rate(p.waitingRate)}</td>
                 </tr>
               ))}

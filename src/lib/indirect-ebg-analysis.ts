@@ -123,12 +123,21 @@ export function buildIndirectEbgAnalysis(periodId: string) {
   ]
     .map((f) => {
       const members = programs.filter((p) => p.fieldId === f.id);
+      const waitingKnown = members.filter((p) => p.waiting !== null);
+      const waiting = waitingKnown.reduce((sum, p) => sum + p.waiting!, 0);
+      const capacity = members.reduce((sum, p) => sum + (p.capacity ?? 0), 0);
       return {
         ...f,
         programs: members.length,
         registered: members.reduce((s, p) => s + (p.applications ?? 0), 0),
-        capacity: members.reduce((s, p) => s + (p.capacity ?? 0), 0),
-        waiting: members.reduce((s, p) => s + (p.waiting ?? 0), 0),
+        capacity,
+        waiting,
+        waitingKnownPrograms: waitingKnown.length,
+        waitingRate:
+          waitingKnown.length === members.length &&
+          members.every((p) => p.capacity !== null)
+            ? ratio(waiting, capacity)
+            : null,
       };
     })
     .filter((f) => f.programs > 0);

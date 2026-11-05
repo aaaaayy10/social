@@ -16,6 +16,15 @@ assert.equal(all.programCount, 45);
 assert.equal(all.summary.attended, 43175);
 assert.equal(all.summary.expected, 58989);
 assert.equal(
+  all.demand.fields.reduce((sum, field) => sum + field.waitingKnownPrograms, 0),
+  27,
+);
+for (const field of all.demand.fields) {
+  if (field.waitingKnownPrograms < field.programs)
+    assert.equal(field.waitingRate, null);
+  else assert.equal(field.waitingRate, (field.waiting / field.capacity) * 100);
+}
+assert.equal(
   all.demand.fields.reduce((sum, field) => sum + field.registered, 0),
   1318,
 );
