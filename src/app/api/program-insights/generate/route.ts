@@ -10,6 +10,7 @@ import {
   buildInsightAiPayload,
 } from "@/lib/program-insights";
 import { aiPrefix, loadInsightContext } from "@/lib/program-insight-store";
+import { insightAiEnabled } from "@/lib/program-insight-mode";
 export const maxDuration = 60;
 const json = (data: unknown, status = 200) =>
   NextResponse.json(data, {
@@ -27,6 +28,8 @@ export async function POST(request: Request) {
   }
   if (!insightPeriods.some((p) => p.id === body?.period))
     return json({ error: "분석기간을 확인해 주세요." }, 400);
+  if (!insightAiEnabled)
+    return json({ error: "현재는 기본 분석·기록 모드입니다. 외부 AI 연결은 사용하지 않습니다." }, 403);
   const token = process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN;
   if (!token)
     return json(

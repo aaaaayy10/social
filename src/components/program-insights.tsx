@@ -31,6 +31,7 @@ import {
   type SavedAiAnalysis,
 } from "@/lib/program-insights";
 import { buildInsightReport } from "@/lib/program-insight-report";
+import { insightAiEnabled } from "@/lib/program-insight-mode";
 
 type Payload = {
   analysis: InsightAnalysis;
@@ -275,7 +276,7 @@ export function ProgramInsights() {
           >
             자료·기록 새로고침
           </Button>
-          <Button
+          {insightAiEnabled && <Button
             onClick={generate}
             disabled={!payload || loading || busy || saving}
           >
@@ -285,12 +286,11 @@ export function ProgramInsights() {
               <Sparkles className="size-4" />
             )}
             {busy ? "AI 분석 중…" : "AI 해석·인사이트 생성"}
-          </Button>
+          </Button>}
         </div>
         <p className="w-full text-xs leading-5 text-muted-foreground">
           기간 선택은 출석·거래월 추이에 적용됩니다. 등록·대기는 현재 시점,
-          연령·중복 수강은 누적 명부입니다. AI에는 프로그램별 집계 근거만
-          전송하며 개인별 원장·담당자 메모는 전송하지 않습니다.
+          연령·중복 수강은 누적 명부입니다. 기본 분석 모드로 사용하며 외부 AI에 자료를 전송하지 않습니다.
         </p>
       </div>
       {error && (
@@ -376,11 +376,11 @@ export function ProgramInsights() {
               </p>
             </details>
             <AnalysisPanel
-              title="AI 분석 결과"
+              title="데이터 분석 결과"
               description={
                 payload.savedAi
                   ? `AI 해석 생성 ${new Date(payload.savedAi.generatedAt).toLocaleString("ko-KR")} · ${payload.savedAi.model} · 숫자는 공통 집계에서 계산`
-                  : "현재는 실제 지표를 계산한 규칙 기반 분석입니다. AI 생성 버튼으로 해석을 추가할 수 있습니다."
+                  : "기존 집계로 계산한 기본 분석입니다. 간접 EBG와 개선 방향은 담당자가 검토하는 참고 제안입니다."
               }
             >
               <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
@@ -528,7 +528,7 @@ export function ProgramInsights() {
             {topic && draft && (
               <AnalysisPanel
                 title="사업개선 검토 및 결과"
-                description={`${topic.title} · ${drafts[key] ? "저장하지 않은 초안" : "저장된 기록 또는 기본 제안"} · 입력 내용은 AI로 전송하지 않습니다.`}
+                description={`${topic.title} · ${drafts[key] ? "저장하지 않은 초안" : "저장된 기록 또는 기본 제안"} · 검토 기록은 서버에 저장됩니다.`}
               >
                 <div className="mb-4 rounded-xl border bg-secondary/25 p-4">
                   <h3
@@ -677,7 +677,7 @@ export function ProgramInsights() {
                       ? "최근 서버 저장 " +
                         new Date(saved.updatedAt).toLocaleString("ko-KR")
                       : "서버 저장 기록 없음"}{" "}
-                    · AI가 운영 변경이나 처리 완료를 자동 결정하지 않습니다.
+                    · 운영 변경과 반영 여부는 담당자가 직접 결정합니다.
                   </p>
                   <Button onClick={save} disabled={saving || busy}>
                     {saving ? (

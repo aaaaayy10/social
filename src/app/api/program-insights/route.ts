@@ -5,6 +5,7 @@ import {
 } from "@/lib/route-auth";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { insightPeriods, type InsightReview } from "@/lib/program-insights";
+import { insightAiEnabled } from "@/lib/program-insight-mode";
 import {
   aiPrefix,
   loadInsightContext,
@@ -44,9 +45,9 @@ export async function GET(request: NextRequest) {
     return json({
       ...context,
       records,
-      savedAi,
+      savedAi: insightAiEnabled ? savedAi : null,
       viewerId: user.id,
-      aiAvailable: Boolean(
+      aiAvailable: insightAiEnabled && Boolean(
         process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN,
       ),
     });
