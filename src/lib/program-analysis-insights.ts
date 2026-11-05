@@ -28,8 +28,6 @@ export function buildProgramAnalysisInsights(periodId: string) {
     items: ProgramAnalysisInsight[] = [];
   const agePeriod =
     demographics.total.firstDate + "~" + demographics.total.lastDate;
-  const demographicBasis =
-    "누적 명부 · 강좌별 이용자 중복 제외, 강좌 간 중복 포함 · 신청 선호도 아님";
   const profiles = a.programs.map((p) => ({
     program: p,
     profile: demographics.programs.find((d) => norm(d.name) === norm(p.name)),
@@ -57,7 +55,10 @@ export function buildProgramAnalysisInsights(periodId: string) {
         `${demand.name}: 정원 ${demand.capacity}명·등록 ${demand.applications}건, 신청률 ${pct(demand.registration!)}.`,
         `대기 신청 ${demand.waiting}건, 정원 대비 대기율 ${pct(demand.waitingRate!)}.`,
       ],
-      insight: `${demand.name}의 정원 대비 대기 수요를 고려한 추가 반 개설 또는 정원 확대 검토`,
+      insight:
+        demand.fieldId === "digital"
+          ? `${demand.name}의 기초 디지털교육 대기 수요를 바탕으로 반복 입문반과 생활 디지털 활용 체험특강 편성 검토`
+          : `${demand.name}의 대기 수요를 바탕으로 ${demand.field} 입문 체험특강과 추가 선택과정 편성 검토`,
       source: "11. 4. 기준 수강신청프로그램현황.pdf",
       period: a.asOf + " 현재",
       basis:
@@ -68,73 +69,153 @@ export function buildProgramAnalysisInsights(periodId: string) {
     ),
     oldest = ages[0],
     youngest = ages.at(-1);
+  const older = a.characteristics.ageGroups[4],
+    younger = a.characteristics.ageGroups[1];
+  const olderField = older?.fields.toSorted(
+      (left, right) => right.people - left.people,
+    )[0],
+    youngerField = younger?.fields.toSorted(
+      (left, right) => right.people - left.people,
+    )[0];
+  const olderExamples = olderField
+    ? older.ranking
+        .filter((p) => p.field === olderField.name)
+        .slice(0, 2)
+        .map((p) => p.name)
+    : [];
+  const youngerExamples = youngerField
+    ? younger.ranking
+        .filter((p) => p.field === youngerField.name)
+        .slice(0, 2)
+        .map((p) => p.name)
+    : [];
   if (
     oldest &&
     youngest &&
-    oldest.id !== youngest.id &&
-    oldest.age!.averageAge - youngest.age!.averageAge >= 5
+    olderField &&
+    youngerField &&
+    older.total >= 20 &&
+    younger.total >= 20 &&
+    olderField.id !== youngerField.id &&
+    olderExamples.length &&
+    youngerExamples.length
   ) {
-    const leadingAge = youngest.age!.counts.indexOf(
-      Math.max(...youngest.age!.counts),
-    );
+    const oldInYoung =
+        younger.fields.find((field) => field.id === olderField.id)?.people ?? 0,
+      youngInOld =
+        older.fields.find((field) => field.id === youngerField.id)?.people ?? 0;
     items.push({
       id: "age-contrast",
       category: "연령",
-      title: oldest.name + "·" + youngest.name + " — 이용 연령 차이",
-      programs: [oldest.name, youngest.name],
-      facts: [
-        `${oldest.name}: 평균 ${oldest.age!.averageAge.toFixed(1)}세(나이 확인 ${oldest.age!.ageKnown}명).`,
-        `${youngest.name}: 평균 ${youngest.age!.averageAge.toFixed(1)}세(나이 확인 ${youngest.age!.ageKnown}명).`,
-        `${youngest.name}의 주요 이용 연령대: ${demographics.ageGroups[leadingAge]} ${youngest.age!.counts[leadingAge]}명(${pct((youngest.age!.counts[leadingAge] / youngest.age!.ageKnown) * 100)}).`,
+      title: "연령대별로 다른 활동 분야 이용",
+      programs: [
+        ...new Set([
+          ...olderExamples,
+          ...youngerExamples,
+          oldest.name,
+          youngest.name,
+        ]),
       ],
-      insight: `${oldest.name}과 ${youngest.name}의 이용 연령 차이를 고려한 수준 선택 안내와 단계별 수업자료 구성 검토`,
+      facts: [
+        `${olderExamples.join("·")} 등 ${olderField.name}: ${older.label} 강좌 이용 ${olderField.people}/${older.total}건(${pct((olderField.people / older.total) * 100)}), ${younger.label} ${pct((oldInYoung / younger.total) * 100)}.`,
+        `${youngerExamples.join("·")} 등 ${youngerField.name}: ${younger.label} 강좌 이용 ${youngerField.people}/${younger.total}건(${pct((youngerField.people / younger.total) * 100)}), ${older.label} ${pct((youngInOld / older.total) * 100)}.`,
+        `${oldest.name} 평균 ${oldest.age!.averageAge.toFixed(1)}세·${youngest.name} ${youngest.age!.averageAge.toFixed(1)}세(각 나이 확인 ${oldest.age!.ageKnown}명·${youngest.age!.ageKnown}명).`,
+      ],
+      insight: `${older.label}의 ${olderField.name} 이용과 ${younger.label}의 ${youngerField.name} 이용 경향을 반영한 연령대별 분야 체험특강 기획 검토`,
       source: demographics.source,
       period: agePeriod,
       basis:
-        demographicBasis +
-        " · 나이 확인 20명 이상 강좌 비교 · 연령만으로 학습 능력·요구 난이도를 단정하지 않음",
+        "연령대별 강좌 이용 건수 비중 · 강좌 간 동일인 중복 포함, 실인원·선호도 아님 · 분야는 분석용 제안 · 연령만으로 신체·학습 능력을 단정하지 않음",
     });
   }
-  const genderCandidates = genderProfiles.filter(
-    (r) => r.profile!.genders.male + r.profile!.genders.female >= 20,
-  );
-  const male = [...genderCandidates].sort(
-    (a, b) =>
-      b.profile!.genders.male /
-        (b.profile!.genders.male + b.profile!.genders.female) -
-      a.profile!.genders.male /
-        (a.profile!.genders.male + a.profile!.genders.female),
-  )[0];
-  const female = [...genderCandidates]
-    .filter((r) => r.program.id !== male?.program.id)
+  const genderTotals = {
+    male: genderProfiles.reduce(
+      (sum, row) => sum + row.profile!.genders.male,
+      0,
+    ),
+    female: genderProfiles.reduce(
+      (sum, row) => sum + row.profile!.genders.female,
+      0,
+    ),
+  };
+  const genderFields = a.characteristics.classifications.fields.map((field) => {
+    const rows = genderProfiles.filter(
+        (row) => row.program.fieldId === field.id,
+      ),
+      male = rows.reduce((sum, row) => sum + row.profile!.genders.male, 0),
+      female = rows.reduce((sum, row) => sum + row.profile!.genders.female, 0);
+    return {
+      id: field.id,
+      name: field.name,
+      male,
+      female,
+      maleShare: genderTotals.male ? (male / genderTotals.male) * 100 : 0,
+      femaleShare: genderTotals.female
+        ? (female / genderTotals.female) * 100
+        : 0,
+      programs: rows.map((row) => row.program.name),
+    };
+  });
+  const maleFields = genderFields
+    .filter((field) => field.maleShare - field.femaleShare >= 5)
     .sort(
-      (a, b) =>
-        b.profile!.genders.female /
-          (b.profile!.genders.male + b.profile!.genders.female) -
-        a.profile!.genders.female /
-          (a.profile!.genders.male + a.profile!.genders.female),
+      (left, right) =>
+        right.maleShare -
+        right.femaleShare -
+        (left.maleShare - left.femaleShare),
+    )
+    .slice(0, 2);
+  const femaleField = genderFields
+    .filter((field) => field.femaleShare - field.maleShare >= 5)
+    .sort(
+      (left, right) =>
+        right.femaleShare -
+        right.maleShare -
+        (left.femaleShare - left.maleShare),
     )[0];
-  if (male && female) {
-    const m = male.profile!,
-      f = female.profile!,
-      mn = m.genders.male + m.genders.female,
-      fn = f.genders.male + f.genders.female;
-    if (m.genders.male / mn >= 0.6 && f.genders.female / fn >= 0.8)
+  const maleLargest = genderFields.toSorted(
+    (left, right) => right.male - left.male,
+  )[0];
+  const exampleFor = (ids: string[], gender: "male" | "female") =>
+    genderProfiles
+      .filter((row) => ids.includes(row.program.fieldId))
+      .sort(
+        (left, right) =>
+          right.profile!.genders[gender] - left.profile!.genders[gender],
+      )[0]?.program.name;
+  if (
+    maleFields.length &&
+    femaleField &&
+    maleLargest &&
+    genderTotals.male &&
+    genderTotals.female
+  ) {
+    const maleCount = maleFields.reduce((sum, field) => sum + field.male, 0),
+      femaleCount = maleFields.reduce((sum, field) => sum + field.female, 0),
+      maleNames = maleFields.map((field) => field.name).join("·");
+    const maleExamples = maleFields
+        .map((field) => exampleFor([field.id], "male"))
+        .filter((name): name is string => !!name),
+      femaleExample = exampleFor([femaleField.id], "female"),
+      largestExample = exampleFor([maleLargest.id], "male");
+    if (femaleExample && largestExample && maleExamples.length)
       items.push({
         id: "gender-contrast",
         category: "성별",
-        title: m.name + "·" + f.name + " — 성별 이용 구성 차이",
-        programs: [m.name, f.name],
-        facts: [
-          `${m.name}: 성별 확인 ${mn}명 중 남성 ${m.genders.male}명(${pct((m.genders.male / mn) * 100)}).`,
-          `${f.name}: 성별 확인 ${fn}명 중 여성 ${f.genders.female}명(${pct((f.genders.female / fn) * 100)}).`,
+        title: "성별에 따라 다른 분야 이용 경향",
+        programs: [
+          ...new Set([...maleExamples, femaleExample, largestExample]),
         ],
-        insight: `${m.name}과 ${f.name}의 성별 이용 구성 차이를 고려한 모집 홍보 매체와 안내 문구의 다양화 검토`,
+        facts: [
+          `${maleExamples.join("·")} 등 ${maleNames}: 남성 강좌 이용 ${maleCount}/${genderTotals.male}건(${pct((maleCount / genderTotals.male) * 100)}), 여성 ${femaleCount}/${genderTotals.female}건(${pct((femaleCount / genderTotals.female) * 100)}).`,
+          `${femaleExample} 등 ${femaleField.name}: 여성 강좌 이용 ${femaleField.female}/${genderTotals.female}건(${pct(femaleField.femaleShare)}), 남성 ${femaleField.male}/${genderTotals.male}건(${pct(femaleField.maleShare)}).`,
+          `남성 이용 최다 분야는 ${maleLargest.name} ${maleLargest.male}건(${pct(maleLargest.maleShare)}, 예: ${largestExample}).`,
+        ],
+        insight: `남성의 상대적으로 높은 ${maleNames} 이용 비중과 여성의 ${femaleField.name} 이용 경향을 고려한 분야별 신규 강좌·특강 주제 편성 검토`,
         source: demographics.source,
         period: agePeriod,
         basis:
-          demographicBasis +
-          " · 성별 확인 20명 이상 강좌 비교 · 성별 선호도나 모집 제한의 증거 아님",
+          "성별별 강좌 이용 건수 비중 · 여러 강좌 이용은 중복 포함, 고유 남녀 실인원 비율 아님 · 분야는 제안 분류 · 선호도·정적 성향·향후 참여 성별을 확정 예측하지 않음",
       });
   }
   const volume = [...a.programs]
@@ -145,7 +226,53 @@ export function buildProgramAnalysisInsights(periodId: string) {
   const trend =
     a.participation.trends.find((t) => t.name !== volume?.name) ??
     a.participation.trends[0];
-  if (trend)
+  const eligibleLevels = a.programs.filter(
+    (p) =>
+      !p.adjusted &&
+      p.attendance.pendingCount === 0 &&
+      (p.attendance.sessions ?? 0) >= 4 &&
+      p.attendance.attendanceRate !== null,
+  );
+  const levelPairs = eligibleLevels
+    .flatMap((low) => {
+      const matched = norm(low.name).match(/^(.*?)(초중급|초급)$/);
+      if (!matched) return [];
+      const target = matched[2] === "초급" ? "중급" : "고급";
+      const high = eligibleLevels.find(
+        (p) =>
+          norm(p.name) === matched[1] + target && p.fieldId === low.fieldId,
+      );
+      if (!high) return [];
+      const gap =
+        high.attendance.attendanceRate! - low.attendance.attendanceRate!;
+      return gap >= 10 ? [{ low, high, gap }] : [];
+    })
+    .sort((left, right) => right.gap - left.gap);
+  const levels = levelPairs[0];
+  if (levels) {
+    const { low, high } = levels,
+      change = a.participation.trends.find((t) => t.programId === low.id);
+    const facts = [
+      `${low.name}: 출석률 ${pct(low.attendance.attendanceRate!)}·결석률 ${pct(low.attendance.absenceRate!)}(${low.attendance.sessions}회).`,
+      `${high.name}: 출석률 ${pct(high.attendance.attendanceRate!)}·결석률 ${pct(high.attendance.absenceRate!)}(${high.attendance.sessions}회).`,
+    ];
+    if (change)
+      facts.push(
+        `${low.name}은 ${change.from} ${pct(change.previousRate)}에서 ${change.to} ${pct(change.rate)}로 변화(각 ${change.previousSessions}회·${change.sessions}회).`,
+      );
+    items.push({
+      id: "participation-level-" + low.id + "-" + high.id,
+      category: "출석·참여",
+      title: low.name + "·" + high.name + " — 과정별 참여 특성 차이",
+      programs: [low.name, high.name],
+      facts,
+      insight: `${low.name}과 ${high.name}의 참여 비율 차이를 고려한 짧은 체험 입문과정과 단계별 성취를 경험하는 소단위 학습과정 기획 검토`,
+      source: "RF 일일 이용인원 XLS·수기 프로그램 운영일지",
+      period: a.period.label,
+      basis:
+        "같은 활동의 수준별 강좌·동일 기간 · 대상 보정·미검증 구간 제외 · 대상자 구성·운영 횟수·RF 누락 가능성에 유의 · 난이도나 과정 효과가 원인으로 입증된 것은 아님",
+    });
+  } else if (trend)
     items.push({
       id: "participation-" + trend.programId + "-" + trend.to,
       category: "출석·참여",
@@ -155,7 +282,7 @@ export function buildProgramAnalysisInsights(periodId: string) {
         `${trend.name}: ${trend.from} 출석률 ${pct(trend.previousRate)}(${trend.previousSessions}회) → ${trend.to} ${pct(trend.rate)}(${trend.sessions}회).`,
         `${trend.to} 실제 참석 ${n(trend.attended)}명·회 / 대상 ${n(trend.expected)}명·회, 결석률 ${pct(100 - trend.rate)}.`,
       ],
-      insight: `${trend.name}의 월별 참여 비율 하락을 고려한 수업 안내와 참여 독려 방식의 보완 검토`,
+      insight: `${trend.name}의 월별 참여 변화에 대응하는 단기 완결형 체험과정과 선택형 수업 구성 검토`,
       source: "RF 일일 이용인원 XLS·수기 프로그램 운영일지",
       period: trend.from + "~" + trend.to,
       basis:
@@ -173,7 +300,7 @@ export function buildProgramAnalysisInsights(periodId: string) {
           `${low.name}: 실제 참석 ${n(low.attendance.attended!)}명·회, 집계 출석률 ${pct(low.attendance.attendanceRate!)}.`,
           `같은 기간 결석률 ${pct(low.attendance.absenceRate!)}·수업 ${low.attendance.sessions}회.`,
         ],
-        insight: `${low.name}의 참여 비율과 결석 규모를 고려한 수업 안내와 참여 독려 방식의 보완 검토`,
+        insight: `${low.name}의 참여 비율을 고려한 짧은 체험수업과 학습 단위별 재구성 검토`,
         source: "RF 일일 이용인원 XLS·수기 프로그램 운영일지",
         period: a.period.label,
         basis:
@@ -199,7 +326,7 @@ export function buildProgramAnalysisInsights(periodId: string) {
           `${pair.aName}·${pair.bName} 공통 유효 수납자 ${pair.people}명(각 강좌 수납자 대비 ${pct((pair.people / na) * 100)}·${pct((pair.people / nb) * 100)}).`,
           `현재 수납 실인원 ${n(c.combinations.people)}명 중 복수 강좌 이용 ${n(c.combinations.multiplePeople)}명.`,
         ],
-        insight: `${pair.aName}과 ${pair.bName}의 공통 수강을 고려한 비중복 시간대 편성 검토`,
+        insight: `${pair.aName}과 ${pair.bName}을 함께 이용하는 경향을 반영한 활동 주제별 선택·심화 과정 기획 검토`,
         source: c.combinations.sources.map((s) => s.name).join(" / "),
         period: c.combinations.asOf + " 유효 수납",
         basis:
@@ -231,7 +358,7 @@ export function buildProgramAnalysisInsights(periodId: string) {
           `${left} 분야와 ${right} 분야를 함께 이용하는 현재 유효 수납자 ${fieldPair.people}명(수납 실인원 ${c.combinations.people}명 중 ${pct((fieldPair.people / c.combinations.people) * 100)}).`,
           `예: ${programPair.aName}·${programPair.bName} 공통 이용 ${programPair.people}명.`,
         ],
-        insight: `${left}과 ${right}를 함께 이용하는 특성을 활용한 선택형 연계 프로그램 기획 검토`,
+        insight: `${left}과 ${right}를 함께 이용하는 특성을 활용해 두 분야를 결합한 복합형 체험특강 기획 검토`,
         source: c.combinations.sources.map((s) => s.name).join(" / "),
         period: c.combinations.asOf + " 유효 수납",
         basis:
@@ -249,7 +376,7 @@ export function buildProgramAnalysisInsights(periodId: string) {
         `${volume.name}: ${a.period.label} 실제 참석 ${n(volume.attendance.attended!)}명·회·수업 ${volume.attendance.sessions}회.`,
         `회당 평균 참석 ${(volume.attendance.attended! / volume.attendance.sessions!).toFixed(1)}명(연인원/운영 횟수).`,
       ],
-      insight: `${volume.name}의 회당 참여 규모를 고려한 강의실과 운영 인력 배치 검토`,
+      insight: `${volume.name}의 집단형 참여 규모를 고려해 본 강좌를 보완하는 소그룹 체험·주제별 선택특강 편성 검토`,
       source: "RF 일일 이용인원 XLS·수기 프로그램 운영일지",
       period: a.period.label,
       basis:
@@ -303,7 +430,8 @@ export function buildProgramAnalysisInsights(periodId: string) {
     },
   ];
   return {
-    version: "analysis-only-v1",
+    version: "planning-patterns-v2",
+    genderFieldUse: { totals: genderTotals, fields: genderFields },
     mode: "rules",
     asOf: a.asOf,
     period: a.period,
@@ -318,7 +446,7 @@ export function buildProgramAnalysisInsights(periodId: string) {
         period: agePeriod,
         programs: genderProfiles.length,
         basis:
-          "프로그램별 성별 합계 대조 · 남녀 비율의 분모는 성별 확인 인원 · 나이 확인 인원과 분리",
+          "프로그램별 성별 합계 대조 · 분야 비중의 분모는 해당 성별의 강좌 이용 건수 합계 · 강좌 간 동일인 중복 포함",
       },
     ],
     fieldCriteria: c.classifications,
