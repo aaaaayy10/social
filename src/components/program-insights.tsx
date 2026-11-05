@@ -1,1 +1,1 @@
-export { IndirectEbg as ProgramInsights } from "@/components/indirect-ebg";
+﻿export { ProgramAnalysisInsightsPage as ProgramInsights } from "@/components/program-analysis-insights";

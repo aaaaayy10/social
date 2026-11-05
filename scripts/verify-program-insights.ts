@@ -1,213 +1,158 @@
-import "./test-insight-workflow";
-import assert from "node:assert/strict";
+﻿import assert from "node:assert/strict";
 import {
-  buildInsightAnalysis,
-  emptyReview,
-  normalizeInsightStatus,
-  buildInsightAiPayload,
-  validateAiInsights,
-} from "../src/lib/program-insights";
-import { buildInsightReport } from "../src/lib/program-insight-report";
+  buildProgramAnalysisInsights,
+  analysisCategories,
+} from "../src/lib/program-analysis-insights";
+import { buildProgramAnalysisInsightReport } from "../src/lib/program-analysis-insight-report";
+import { buildIndirectEbgAnalysis } from "../src/lib/indirect-ebg-analysis";
 import { attendance } from "../src/lib/attendance-analysis";
-import { insightAiEnabled } from "../src/lib/program-insight-mode";
-const all = buildInsightAnalysis("all"),
-  jan = buildInsightAnalysis("2026-01"),
-  second = buildInsightAnalysis("second");
+import demographics from "../src/data/program-demographics.json";
+const all = buildProgramAnalysisInsights("all"),
+  january = buildProgramAnalysisInsights("2026-01"),
+  base = buildIndirectEbgAnalysis("all");
+assert.equal(all.mode, "rules");
 assert.equal(all.programCount, 45);
-assert.equal(all.summary.attended, 43175);
-assert.equal(all.summary.expected, 58989);
-assert.equal(
-  all.demand.fields.reduce((sum, field) => sum + field.waitingKnownPrograms, 0),
-  27,
-);
-for (const field of all.demand.fields) {
-  if (field.waitingKnownPrograms < field.programs)
-    assert.equal(field.waitingRate, null);
-  else assert.equal(field.waitingRate, (field.waiting / field.capacity) * 100);
-}
-assert.equal(
-  all.demand.fields.reduce((sum, field) => sum + field.registered, 0),
-  1318,
-);
-assert.equal(
-  all.demand.fields.reduce((sum, field) => sum + field.waiting, 0),
-  all.programs.reduce((sum, program) => sum + (program.waiting ?? 0), 0),
-);
-assert.equal(jan.summary.attended, 0);
-assert.equal(jan.topics.filter((t) => t.area === "participation").length, 0);
+assert.equal(all.quality.genderPrograms, 45);
+assert.equal(all.quality.genderExcluded, 0);
+assert.equal(all.quality.waitingKnown, 27);
+assert.equal(new Set(all.items.map((i) => i.id)).size, all.items.length);
+assert.ok(all.items.length > 0);
+assert.ok(all.items.length <= 8);
+assert.equal(new Set(all.items.map((i) => i.insight)).size, all.items.length);
 assert.deepEqual(
-  all.topics.filter((t) => t.area === "demand").map((t) => t.facts),
-  jan.topics.filter((t) => t.area === "demand").map((t) => t.facts),
+  all.areas.map((a) => a.category),
+  [...analysisCategories],
 );
-assert.deepEqual(
-  all.topics.slice(0, 3).map((t) => t.area),
-  ["demand", "characteristics", "participation"],
-);
-assert.equal(new Set(all.topics.map((t) => t.id)).size, all.topics.length);
-for (const topic of all.topics) {
-  assert.ok(topic.programs.length && topic.facts.length && topic.checks.length);
-  assert.ok(topic.question && topic.ebg && topic.action && topic.scope);
-  for (const name of topic.programs)
-    assert.ok(all.programs.some((p) => p.name === name));
-}
-assert.equal(second.monthly.length, 2);
-assert.deepEqual(
-  second.cash.map((c) => c.month),
-  ["2026-09", "2026-10"],
-);
-assert.throws(() => buildInsightAnalysis("invalid"));
-const c = all.characteristics;
-assert.equal(c.ageProgramCount, 45);
-assert.ok(c.classifications.status.includes("미확정"));
-assert.equal(
-  all.programs.filter((p) => p.fieldId === "unclassified").length,
-  0,
-);
-const names = c.classifications.fields
-  .flatMap((f) => f.programs)
-  .map((n) => n.replace(/\s/g, ""));
-assert.equal(names.length, 45);
-assert.equal(new Set(names).size, 45);
-for (const p of all.programs) {
-  assert.equal(
-    p.age!.counts.reduce((s, n) => s + n, 0),
-    p.age!.ageKnown,
-  );
-}
-for (const group of c.ageGroups) {
-  assert.equal(
-    group.ranking.reduce((s, p) => s + p.people, 0),
-    group.total,
-  );
-  assert.equal(
-    group.fields.reduce((s, f) => s + f.people, 0),
-    group.total,
-  );
-  if (group.total)
+for (const item of all.items) {
+  assert.ok(item.facts.length >= 1 && item.facts.length <= 3);
+  assert.ok(item.source && item.period && item.basis);
+  assert.ok(item.insight.endsWith("검토"));
+  assert.ok(!item.insight.includes("\n"));
+  assert.ok(!/[.!?。]/.test(item.insight));
+  assert.ok(item.facts.some((f) => /\d/.test(f)));
+  assert.ok(item.programs.length > 0);
+  for (const name of item.programs) {
+    assert.ok(base.programs.some((p) => p.name === name));
     assert.ok(
-      Math.abs(group.fields.reduce((s, f) => s + f.share!, 0) - 100) < 1e-9,
+      item.facts.some((f) => f.includes(name)) || item.title.includes(name),
     );
-  for (const row of group.ranking) {
-    assert.equal(row.ageUsageShare, (row.people / group.total) * 100);
-    assert.equal(row.programShare, (row.people / row.programKnown) * 100);
   }
+  for (const disallowed of [
+    "stage",
+    "workflowHistory",
+    "fieldEvidence",
+    "finding",
+    "confirmedInsight",
+    "review",
+    "decisionReason",
+  ])
+    assert.ok(!(disallowed in item));
 }
-assert.equal(c.combinationValid, true);
-assert.equal(c.fieldCombinationValid, true);
-assert.equal(c.combinations.people, 763);
-assert.equal(c.combinations.enrollments, 1309);
-assert.equal(c.combinations.multiplePeople, 358);
-assert.equal(c.combinations.programPairs[0].people, 20);
+const demand = all.items.find((i) => i.category === "신청·대기")!;
+assert.ok(demand.facts.join(" ").includes("스마트폰 초급"));
+assert.ok(demand.facts.join(" ").includes("39건"));
+assert.ok(demand.basis.includes("고유 대기자 수 아님"));
+const gender = all.items.find((i) => i.category === "성별")!;
+assert.ok(gender.facts.join(" ").includes("77.3%"));
+assert.ok(gender.facts.join(" ").includes("98.8%"));
+for (const name of gender.programs) {
+  const d = demographics.programs.find((p) => p.name === name)!;
+  assert.equal(
+    d.genders.male + d.genders.female + d.genders.unknown,
+    d.registrants,
+  );
+  assert.ok(Object.values(d.genders).every((v) => v >= 0));
+}
 assert.equal(
-  c.combinations.distribution.reduce((s, r) => s + r.people, 0),
-  763,
+  gender.period,
+  demographics.total.firstDate + "~" + demographics.total.lastDate,
 );
-for (const pair of c.combinations.programPairs)
-  for (const id of [pair.a, pair.b])
-    assert.ok(
-      pair.people <=
-        c.combinations.programCounts.find((p) => p.programId === id)!.people,
-    );
-for (const t of all.participation.trends) {
-  assert.equal(Number(t.to.slice(5)) - Number(t.from.slice(5)), 1);
-  assert.ok(t.drop >= 10 && t.sessions >= 2 && t.previousSessions >= 2);
-  const p = all.programs.find((p) => p.id === t.programId)!;
-  for (const month of [t.from, t.to])
-    assert.ok(
-      !attendance.adjustments.some(
-        (a) => a.programCode === p.monthly[0].programCode && a.month === month,
-      ),
-    );
-}
-assert.equal(normalizeInsightStatus("검토 중"), "반영 검토");
-assert.equal(normalizeInsightStatus("결과 확인"), "반영 완료");
-assert.equal(insightAiEnabled, false);
-const first = all.topics[0],
-  malicious = {
-    ...emptyReview(first.id),
-    workflowVersion: 3,
-    stage: "결과 확인" as const,
-    status: "반영 완료" as const,
-    fieldEvidence: "<script>alert(1)</script>",
-    verificationMethods: ["담당자 확인"] as ["담당자 확인"],
-    finding: "가설 확인" as const,
-    confirmedInsight: "검증용 확정 내용",
-    decisionReason: "검증용 판단",
-    timing: "검증용 실제 시기",
-    followUp: "검증용 실제 확인 결과",
-    updatedAt: "2026-11-05T00:00:00Z",
-    opinion: "<script>alert(1)</script>",
-    implementation: "<img src=x onerror=alert(1)>",
-    snapshot: {
-      asOf: all.asOf,
-      period: all.period.label,
-      facts: first.facts,
-      fingerprint: "test",
-    },
-  };
-const report = buildInsightReport(all, { [first.id]: malicious }, null, "test");
-assert.ok(report.includes("A4 landscape"));
-assert.ok(report.includes("간접 EBG"));
-assert.ok(report.includes("현장 확인 결과"));
-assert.ok(report.includes("외부 AI 모델 분석이 아닙니다"));
-assert.ok(!report.includes("<script>alert"));
-assert.ok(report.includes("&lt;script"));
-assert.ok(report.includes("&lt;img"));
-assert.ok(report.includes("최대5건"));
-const appliedMarker = "검증용 핵심 실제 반영 사례";
-const manyRecords = Object.fromEntries(
-  all.topics.map((topic, index) => [
-    topic.id,
-    {
-      ...malicious,
-      id: topic.id,
-      stage:
-        index === all.topics.length - 1
-          ? ("반영 완료" as const)
-          : ("인사이트 확정" as const),
-      status:
-        index === all.topics.length - 1
-          ? ("반영 완료" as const)
-          : ("반영 검토" as const),
-      implementation: index === all.topics.length - 1 ? appliedMarker : "",
-    },
-  ]),
+const age = all.items.find((i) => i.category === "연령")!;
+assert.ok(age.facts.join(" ").includes("76.4세"));
+assert.ok(age.facts.join(" ").includes("68.6세"));
+assert.ok(
+  all.items
+    .find((i) => i.category === "중복 수강")!
+    .facts.join(" ")
+    .includes("20명"),
 );
 assert.ok(
-  buildInsightReport(all, manyRecords, null, "test").includes(appliedMarker),
-  "Applied cases must precede pending reviews in the one-page report",
+  all.items
+    .find((i) => i.category === "프로그램 분야")!
+    .facts.join(" ")
+    .includes("92명"),
 );
-const emptyReport = buildInsightReport(all, {}, null, "test");
-assert.ok(emptyReport.includes("사업개선 검토 단계"));
-assert.ok(emptyReport.includes("담당자가 확정한 인사이트가 아직 없습니다"));
-const outbound = buildInsightAiPayload({
-  ...all,
-  privateNotes: "do-not-send",
-} as typeof all);
-assert.ok(!JSON.stringify(outbound).includes("do-not-send"));
-assert.deepEqual(Object.keys(outbound), ["asOf", "period", "topics"]);
-assert.throws(() =>
-  validateAiInsights(
-    [{ id: "fake", ebg: "가설", meaning: "검토", action: "확인" }],
-    [first.id],
-  ),
+assert.ok(
+  all.items
+    .find((i) => i.category === "프로그램 분야")!
+    .basis.includes("제안 분류"),
 );
-assert.ok(!/memberId|2011-\d{5}/.test(JSON.stringify(c.combinations)));
+const trend = all.items.find(
+  (i) =>
+    i.id.startsWith("participation-") && !i.id.startsWith("participation-low-"),
+)!;
+assert.ok(trend);
+const original = base.participation.trends.find(
+  (t) => trend.id === "participation-" + t.programId + "-" + t.to,
+)!;
+assert.ok(original.sessions >= 2 && original.previousSessions >= 2);
+assert.equal(Number(original.to.slice(5)) - Number(original.from.slice(5)), 1);
+for (const month of [original.from, original.to]) {
+  const p = base.programs.find((p) => p.id === original.programId)!;
+  assert.ok(
+    !attendance.adjustments.some(
+      (a) => a.month === month && a.programCode === p.monthly[0].programCode,
+    ),
+  );
+}
+assert.equal(january.items.filter((i) => i.category === "출석·참여").length, 0);
+assert.deepEqual(
+  january.items.filter((i) => i.category !== "출석·참여"),
+  all.items.filter((i) => i.category !== "출석·참여"),
+);
+assert.equal(buildProgramAnalysisInsights("second").period.from, "2026-09");
+assert.throws(() => buildProgramAnalysisInsights("invalid"));
+assert.equal(base.summary.attended, 43175);
+assert.equal(base.summary.expected, 58989);
+const report = buildProgramAnalysisInsightReport(all);
+assert.ok(report.includes("A4 landscape"));
+assert.ok(report.includes("39건"));
+assert.ok(report.includes("외부 AI 모델 미사용"));
+for (const prohibited of [
+  "담당자 검토 의견",
+  "현장 확인",
+  "반영 완료",
+  "가설 확정",
+  "workflowHistory",
+])
+  assert.ok(!report.includes(prohibited));
+const malicious = {
+  ...all.items[0],
+  title: "<script>alert(1)</script>",
+  insight: "<img src=x onerror=alert(1)>",
+};
+const escaped = buildProgramAnalysisInsightReport(all, [malicious]);
+assert.ok(escaped.includes("&lt;script"));
+assert.ok(escaped.includes("&lt;img"));
+assert.ok(!escaped.includes("<script>"));
+const payload = JSON.stringify(all);
+for (const prohibited of [
+  "memberId",
+  "workflowHistory",
+  "fieldEvidence",
+  "savedAi",
+  "viewerId",
+])
+  assert.ok(!payload.includes(prohibited));
 console.log(
   JSON.stringify({
-    programs: 45,
-    insights: all.topics.length,
-    januaryInsights: jan.topics.length,
-    areas: all.topics.slice(0, 3).map((t) => t.area),
+    programs: all.programCount,
+    insights: all.items.length,
+    januaryInsights: january.items.length,
+    areas: all.areas.map((a) => a.category),
+    titles: all.items.map((i) => i.title),
+    genderPrograms: all.quality.genderPrograms,
     actualVisits: 43175,
-    expectedVisits: 58989,
-    ageGroups: c.ageGroups.map((g) => ({
-      label: g.label,
-      courseUses: g.total,
-    })),
-    currentPaidPeople: 763,
-    multiple: 358,
-    topPair: c.combinations.programPairs[0],
-    trends: all.participation.trends.length,
+    readOnly: true,
   }),
 );
