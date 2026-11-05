@@ -1,0 +1,2798 @@
+{
+  "asOf": "2026-11-04",
+  "scope": "45개 현재 프로그램의 기준일 유효 수납 이용자 · 0원 수납 포함 · 이용자번호/강좌 중복 제거 · 실제 동시 출석 또는 시간표 조합 아님",
+  "sources": [
+    {
+      "name": "수납 세부 내역(시기별 수강 인원 파악용).pdf",
+      "sha256": "4e47711a7caed9ccce60c9477533090ba039ae83899b1cfd8687a44328e8e3da"
+    },
+    {
+      "name": "환불세부 내역(시기별 수강 인원 파악용).pdf",
+      "sha256": "909986302a7f32cba38ae09ab27e5d0aa11db484fab1e094689d8f460d9b95bf"
+    }
+  ],
+  "programCount": 45,
+  "people": 763,
+  "enrollments": 1309,
+  "multiplePeople": 358,
+  "distribution": [
+    {
+      "courses": 1,
+      "people": 405
+    },
+    {
+      "courses": 2,
+      "people": 234
+    },
+    {
+      "courses": 3,
+      "people": 78
+    },
+    {
+      "courses": 4,
+      "people": 29
+    },
+    {
+      "courses": 5,
+      "people": 16
+    },
+    {
+      "courses": 6,
+      "people": 1
+    }
+  ],
+  "programCounts": [
+    {
+      "programId": "course-1",
+      "name": "난타 초급",
+      "people": 32
+    },
+    {
+      "programId": "course-2",
+      "name": "건강체조",
+      "people": 59
+    },
+    {
+      "programId": "course-3",
+      "name": "필라테스 1",
+      "people": 42
+    },
+    {
+      "programId": "course-4",
+      "name": "필라테스 2",
+      "people": 48
+    },
+    {
+      "programId": "course-5",
+      "name": "요가 1",
+      "people": 46
+    },
+    {
+      "programId": "course-6",
+      "name": "요가 2",
+      "people": 50
+    },
+    {
+      "programId": "course-7",
+      "name": "댄스스포츠",
+      "people": 19
+    },
+    {
+      "programId": "course-8",
+      "name": "라인댄스 1",
+      "people": 59
+    },
+    {
+      "programId": "course-9",
+      "name": "라인댄스 2",
+      "people": 54
+    },
+    {
+      "programId": "course-10",
+      "name": "힐링노래교실",
+      "people": 70
+    },
+    {
+      "programId": "course-11",
+      "name": "오카리나 초급",
+      "people": 24
+    },
+    {
+      "programId": "course-12",
+      "name": "오카리나 중급",
+      "people": 25
+    },
+    {
+      "programId": "course-13",
+      "name": "오카리나 고급",
+      "people": 38
+    },
+    {
+      "programId": "course-14",
+      "name": "생활체조",
+      "people": 58
+    },
+    {
+      "programId": "course-15",
+      "name": "기타 초중급",
+      "people": 28
+    },
+    {
+      "programId": "course-16",
+      "name": "기타 고급",
+      "people": 37
+    },
+    {
+      "programId": "course-17",
+      "name": "하모니카 초급",
+      "people": 23
+    },
+    {
+      "programId": "course-18",
+      "name": "신빠람 사물 초급",
+      "people": 13
+    },
+    {
+      "programId": "course-19",
+      "name": "신빠람 사물 중급",
+      "people": 25
+    },
+    {
+      "programId": "course-20",
+      "name": "난타 중급",
+      "people": 35
+    },
+    {
+      "programId": "course-21",
+      "name": "캘리그라피 초급",
+      "people": 12
+    },
+    {
+      "programId": "course-22",
+      "name": "동양화",
+      "people": 11
+    },
+    {
+      "programId": "course-23",
+      "name": "서예",
+      "people": 12
+    },
+    {
+      "programId": "course-24",
+      "name": "힐링수채화",
+      "people": 13
+    },
+    {
+      "programId": "course-25",
+      "name": "에어로빅",
+      "people": 60
+    },
+    {
+      "programId": "course-26",
+      "name": "연필인물화 초급",
+      "people": 12
+    },
+    {
+      "programId": "course-27",
+      "name": "민화 1",
+      "people": 10
+    },
+    {
+      "programId": "course-28",
+      "name": "실용영어",
+      "people": 17
+    },
+    {
+      "programId": "course-29",
+      "name": "일본어 초급",
+      "people": 20
+    },
+    {
+      "programId": "course-30",
+      "name": "한자 초급",
+      "people": 13
+    },
+    {
+      "programId": "course-31",
+      "name": "한문(논어)",
+      "people": 13
+    },
+    {
+      "programId": "course-32",
+      "name": "컴퓨터 초급",
+      "people": 19
+    },
+    {
+      "programId": "course-33",
+      "name": "스마트폰 중급",
+      "people": 19
+    },
+    {
+      "programId": "course-34",
+      "name": "스마트폰 초급",
+      "people": 19
+    },
+    {
+      "programId": "course-35",
+      "name": "컴퓨터 활용",
+      "people": 19
+    },
+    {
+      "programId": "course-36",
+      "name": "풀잎합창단",
+      "people": 40
+    },
+    {
+      "programId": "course-37",
+      "name": "하모니카 중급",
+      "people": 26
+    },
+    {
+      "programId": "course-38",
+      "name": "민화 2",
+      "people": 7
+    },
+    {
+      "programId": "course-39",
+      "name": "연필인물화 중급",
+      "people": 15
+    },
+    {
+      "programId": "course-40",
+      "name": "캘리그라피 중급",
+      "people": 9
+    },
+    {
+      "programId": "course-41",
+      "name": "우쿨렐레",
+      "people": 21
+    },
+    {
+      "programId": "course-42",
+      "name": "건강100세 운동교실",
+      "people": 80
+    },
+    {
+      "programId": "course-43",
+      "name": "가락장구",
+      "people": 29
+    },
+    {
+      "programId": "course-44",
+      "name": "숟가락 난타",
+      "people": 14
+    },
+    {
+      "programId": "course-45",
+      "name": "금빛스케치",
+      "people": 14
+    }
+  ],
+  "programPairs": [
+    {
+      "a": "course-25",
+      "b": "course-42",
+      "aName": "에어로빅",
+      "bName": "건강100세 운동교실",
+      "people": 20
+    },
+    {
+      "a": "course-2",
+      "b": "course-42",
+      "aName": "건강체조",
+      "bName": "건강100세 운동교실",
+      "people": 18
+    },
+    {
+      "a": "course-14",
+      "b": "course-42",
+      "aName": "생활체조",
+      "bName": "건강100세 운동교실",
+      "people": 17
+    },
+    {
+      "a": "course-42",
+      "b": "course-9",
+      "aName": "건강100세 운동교실",
+      "bName": "라인댄스 2",
+      "people": 17
+    },
+    {
+      "a": "course-42",
+      "b": "course-5",
+      "aName": "건강100세 운동교실",
+      "bName": "요가 1",
+      "people": 14
+    },
+    {
+      "a": "course-42",
+      "b": "course-6",
+      "aName": "건강100세 운동교실",
+      "bName": "요가 2",
+      "people": 14
+    },
+    {
+      "a": "course-10",
+      "b": "course-2",
+      "aName": "힐링노래교실",
+      "bName": "건강체조",
+      "people": 12
+    },
+    {
+      "a": "course-25",
+      "b": "course-8",
+      "aName": "에어로빅",
+      "bName": "라인댄스 1",
+      "people": 12
+    },
+    {
+      "a": "course-3",
+      "b": "course-9",
+      "aName": "필라테스 1",
+      "bName": "라인댄스 2",
+      "people": 12
+    },
+    {
+      "a": "course-5",
+      "b": "course-9",
+      "aName": "요가 1",
+      "bName": "라인댄스 2",
+      "people": 12
+    },
+    {
+      "a": "course-3",
+      "b": "course-42",
+      "aName": "필라테스 1",
+      "bName": "건강100세 운동교실",
+      "people": 11
+    },
+    {
+      "a": "course-3",
+      "b": "course-6",
+      "aName": "필라테스 1",
+      "bName": "요가 2",
+      "people": 11
+    },
+    {
+      "a": "course-10",
+      "b": "course-5",
+      "aName": "힐링노래교실",
+      "bName": "요가 1",
+      "people": 9
+    },
+    {
+      "a": "course-2",
+      "b": "course-25",
+      "aName": "건강체조",
+      "bName": "에어로빅",
+      "people": 9
+    },
+    {
+      "a": "course-12",
+      "b": "course-36",
+      "aName": "오카리나 중급",
+      "bName": "풀잎합창단",
+      "people": 8
+    },
+    {
+      "a": "course-13",
+      "b": "course-17",
+      "aName": "오카리나 고급",
+      "bName": "하모니카 초급",
+      "people": 8
+    },
+    {
+      "a": "course-14",
+      "b": "course-2",
+      "aName": "생활체조",
+      "bName": "건강체조",
+      "people": 8
+    },
+    {
+      "a": "course-14",
+      "b": "course-20",
+      "aName": "생활체조",
+      "bName": "난타 중급",
+      "people": 8
+    },
+    {
+      "a": "course-25",
+      "b": "course-3",
+      "aName": "에어로빅",
+      "bName": "필라테스 1",
+      "people": 8
+    },
+    {
+      "a": "course-25",
+      "b": "course-4",
+      "aName": "에어로빅",
+      "bName": "필라테스 2",
+      "people": 8
+    },
+    {
+      "a": "course-25",
+      "b": "course-6",
+      "aName": "에어로빅",
+      "bName": "요가 2",
+      "people": 8
+    },
+    {
+      "a": "course-10",
+      "b": "course-42",
+      "aName": "힐링노래교실",
+      "bName": "건강100세 운동교실",
+      "people": 7
+    },
+    {
+      "a": "course-2",
+      "b": "course-4",
+      "aName": "건강체조",
+      "bName": "필라테스 2",
+      "people": 7
+    },
+    {
+      "a": "course-2",
+      "b": "course-5",
+      "aName": "건강체조",
+      "bName": "요가 1",
+      "people": 7
+    },
+    {
+      "a": "course-25",
+      "b": "course-9",
+      "aName": "에어로빅",
+      "bName": "라인댄스 2",
+      "people": 7
+    },
+    {
+      "a": "course-3",
+      "b": "course-5",
+      "aName": "필라테스 1",
+      "bName": "요가 1",
+      "people": 7
+    },
+    {
+      "a": "course-4",
+      "b": "course-6",
+      "aName": "필라테스 2",
+      "bName": "요가 2",
+      "people": 7
+    },
+    {
+      "a": "course-14",
+      "b": "course-25",
+      "aName": "생활체조",
+      "bName": "에어로빅",
+      "people": 6
+    },
+    {
+      "a": "course-14",
+      "b": "course-9",
+      "aName": "생활체조",
+      "bName": "라인댄스 2",
+      "people": 6
+    },
+    {
+      "a": "course-4",
+      "b": "course-42",
+      "aName": "필라테스 2",
+      "bName": "건강100세 운동교실",
+      "people": 6
+    },
+    {
+      "a": "course-4",
+      "b": "course-8",
+      "aName": "필라테스 2",
+      "bName": "라인댄스 1",
+      "people": 6
+    },
+    {
+      "a": "course-6",
+      "b": "course-8",
+      "aName": "요가 2",
+      "bName": "라인댄스 1",
+      "people": 6
+    },
+    {
+      "a": "course-10",
+      "b": "course-14",
+      "aName": "힐링노래교실",
+      "bName": "생활체조",
+      "people": 5
+    },
+    {
+      "a": "course-10",
+      "b": "course-43",
+      "aName": "힐링노래교실",
+      "bName": "가락장구",
+      "people": 5
+    },
+    {
+      "a": "course-12",
+      "b": "course-37",
+      "aName": "오카리나 중급",
+      "bName": "하모니카 중급",
+      "people": 5
+    },
+    {
+      "a": "course-14",
+      "b": "course-4",
+      "aName": "생활체조",
+      "bName": "필라테스 2",
+      "people": 5
+    },
+    {
+      "a": "course-16",
+      "b": "course-36",
+      "aName": "기타 고급",
+      "bName": "풀잎합창단",
+      "people": 5
+    },
+    {
+      "a": "course-25",
+      "b": "course-5",
+      "aName": "에어로빅",
+      "bName": "요가 1",
+      "people": 5
+    },
+    {
+      "a": "course-36",
+      "b": "course-37",
+      "aName": "풀잎합창단",
+      "bName": "하모니카 중급",
+      "people": 5
+    },
+    {
+      "a": "course-4",
+      "b": "course-9",
+      "aName": "필라테스 2",
+      "bName": "라인댄스 2",
+      "people": 5
+    },
+    {
+      "a": "course-12",
+      "b": "course-3",
+      "aName": "오카리나 중급",
+      "bName": "필라테스 1",
+      "people": 4
+    },
+    {
+      "a": "course-13",
+      "b": "course-29",
+      "aName": "오카리나 고급",
+      "bName": "일본어 초급",
+      "people": 4
+    },
+    {
+      "a": "course-13",
+      "b": "course-36",
+      "aName": "오카리나 고급",
+      "bName": "풀잎합창단",
+      "people": 4
+    },
+    {
+      "a": "course-14",
+      "b": "course-5",
+      "aName": "생활체조",
+      "bName": "요가 1",
+      "people": 4
+    },
+    {
+      "a": "course-19",
+      "b": "course-8",
+      "aName": "신빠람 사물 중급",
+      "bName": "라인댄스 1",
+      "people": 4
+    },
+    {
+      "a": "course-2",
+      "b": "course-6",
+      "aName": "건강체조",
+      "bName": "요가 2",
+      "people": 4
+    },
+    {
+      "a": "course-2",
+      "b": "course-9",
+      "aName": "건강체조",
+      "bName": "라인댄스 2",
+      "people": 4
+    },
+    {
+      "a": "course-20",
+      "b": "course-43",
+      "aName": "난타 중급",
+      "bName": "가락장구",
+      "people": 4
+    },
+    {
+      "a": "course-20",
+      "b": "course-8",
+      "aName": "난타 중급",
+      "bName": "라인댄스 1",
+      "people": 4
+    },
+    {
+      "a": "course-36",
+      "b": "course-9",
+      "aName": "풀잎합창단",
+      "bName": "라인댄스 2",
+      "people": 4
+    },
+    {
+      "a": "course-42",
+      "b": "course-8",
+      "aName": "건강100세 운동교실",
+      "bName": "라인댄스 1",
+      "people": 4
+    },
+    {
+      "a": "course-1",
+      "b": "course-7",
+      "aName": "난타 초급",
+      "bName": "댄스스포츠",
+      "people": 3
+    },
+    {
+      "a": "course-10",
+      "b": "course-11",
+      "aName": "힐링노래교실",
+      "bName": "오카리나 초급",
+      "people": 3
+    },
+    {
+      "a": "course-10",
+      "b": "course-18",
+      "aName": "힐링노래교실",
+      "bName": "신빠람 사물 초급",
+      "people": 3
+    },
+    {
+      "a": "course-11",
+      "b": "course-19",
+      "aName": "오카리나 초급",
+      "bName": "신빠람 사물 중급",
+      "people": 3
+    },
+    {
+      "a": "course-11",
+      "b": "course-20",
+      "aName": "오카리나 초급",
+      "bName": "난타 중급",
+      "people": 3
+    },
+    {
+      "a": "course-11",
+      "b": "course-8",
+      "aName": "오카리나 초급",
+      "bName": "라인댄스 1",
+      "people": 3
+    },
+    {
+      "a": "course-13",
+      "b": "course-37",
+      "aName": "오카리나 고급",
+      "bName": "하모니카 중급",
+      "people": 3
+    },
+    {
+      "a": "course-13",
+      "b": "course-4",
+      "aName": "오카리나 고급",
+      "bName": "필라테스 2",
+      "people": 3
+    },
+    {
+      "a": "course-14",
+      "b": "course-18",
+      "aName": "생활체조",
+      "bName": "신빠람 사물 초급",
+      "people": 3
+    },
+    {
+      "a": "course-14",
+      "b": "course-19",
+      "aName": "생활체조",
+      "bName": "신빠람 사물 중급",
+      "people": 3
+    },
+    {
+      "a": "course-14",
+      "b": "course-6",
+      "aName": "생활체조",
+      "bName": "요가 2",
+      "people": 3
+    },
+    {
+      "a": "course-14",
+      "b": "course-7",
+      "aName": "생활체조",
+      "bName": "댄스스포츠",
+      "people": 3
+    },
+    {
+      "a": "course-16",
+      "b": "course-37",
+      "aName": "기타 고급",
+      "bName": "하모니카 중급",
+      "people": 3
+    },
+    {
+      "a": "course-17",
+      "b": "course-41",
+      "aName": "하모니카 초급",
+      "bName": "우쿨렐레",
+      "people": 3
+    },
+    {
+      "a": "course-19",
+      "b": "course-2",
+      "aName": "신빠람 사물 중급",
+      "bName": "건강체조",
+      "people": 3
+    },
+    {
+      "a": "course-2",
+      "b": "course-44",
+      "aName": "건강체조",
+      "bName": "숟가락 난타",
+      "people": 3
+    },
+    {
+      "a": "course-20",
+      "b": "course-9",
+      "aName": "난타 중급",
+      "bName": "라인댄스 2",
+      "people": 3
+    },
+    {
+      "a": "course-21",
+      "b": "course-24",
+      "aName": "캘리그라피 초급",
+      "bName": "힐링수채화",
+      "people": 3
+    },
+    {
+      "a": "course-21",
+      "b": "course-36",
+      "aName": "캘리그라피 초급",
+      "bName": "풀잎합창단",
+      "people": 3
+    },
+    {
+      "a": "course-24",
+      "b": "course-45",
+      "aName": "힐링수채화",
+      "bName": "금빛스케치",
+      "people": 3
+    },
+    {
+      "a": "course-28",
+      "b": "course-30",
+      "aName": "실용영어",
+      "bName": "한자 초급",
+      "people": 3
+    },
+    {
+      "a": "course-28",
+      "b": "course-33",
+      "aName": "실용영어",
+      "bName": "스마트폰 중급",
+      "people": 3
+    },
+    {
+      "a": "course-3",
+      "b": "course-37",
+      "aName": "필라테스 1",
+      "bName": "하모니카 중급",
+      "people": 3
+    },
+    {
+      "a": "course-3",
+      "b": "course-8",
+      "aName": "필라테스 1",
+      "bName": "라인댄스 1",
+      "people": 3
+    },
+    {
+      "a": "course-32",
+      "b": "course-34",
+      "aName": "컴퓨터 초급",
+      "bName": "스마트폰 초급",
+      "people": 3
+    },
+    {
+      "a": "course-36",
+      "b": "course-41",
+      "aName": "풀잎합창단",
+      "bName": "우쿨렐레",
+      "people": 3
+    },
+    {
+      "a": "course-4",
+      "b": "course-5",
+      "aName": "필라테스 2",
+      "bName": "요가 1",
+      "people": 3
+    },
+    {
+      "a": "course-43",
+      "b": "course-8",
+      "aName": "가락장구",
+      "bName": "라인댄스 1",
+      "people": 3
+    },
+    {
+      "a": "course-6",
+      "b": "course-9",
+      "aName": "요가 2",
+      "bName": "라인댄스 2",
+      "people": 3
+    },
+    {
+      "a": "course-1",
+      "b": "course-19",
+      "aName": "난타 초급",
+      "bName": "신빠람 사물 중급",
+      "people": 2
+    },
+    {
+      "a": "course-1",
+      "b": "course-21",
+      "aName": "난타 초급",
+      "bName": "캘리그라피 초급",
+      "people": 2
+    },
+    {
+      "a": "course-1",
+      "b": "course-32",
+      "aName": "난타 초급",
+      "bName": "컴퓨터 초급",
+      "people": 2
+    },
+    {
+      "a": "course-1",
+      "b": "course-41",
+      "aName": "난타 초급",
+      "bName": "우쿨렐레",
+      "people": 2
+    },
+    {
+      "a": "course-10",
+      "b": "course-19",
+      "aName": "힐링노래교실",
+      "bName": "신빠람 사물 중급",
+      "people": 2
+    },
+    {
+      "a": "course-10",
+      "b": "course-8",
+      "aName": "힐링노래교실",
+      "bName": "라인댄스 1",
+      "people": 2
+    },
+    {
+      "a": "course-10",
+      "b": "course-9",
+      "aName": "힐링노래교실",
+      "bName": "라인댄스 2",
+      "people": 2
+    },
+    {
+      "a": "course-11",
+      "b": "course-25",
+      "aName": "오카리나 초급",
+      "bName": "에어로빅",
+      "people": 2
+    },
+    {
+      "a": "course-11",
+      "b": "course-6",
+      "aName": "오카리나 초급",
+      "bName": "요가 2",
+      "people": 2
+    },
+    {
+      "a": "course-12",
+      "b": "course-16",
+      "aName": "오카리나 중급",
+      "bName": "기타 고급",
+      "people": 2
+    },
+    {
+      "a": "course-12",
+      "b": "course-39",
+      "aName": "오카리나 중급",
+      "bName": "연필인물화 중급",
+      "people": 2
+    },
+    {
+      "a": "course-12",
+      "b": "course-41",
+      "aName": "오카리나 중급",
+      "bName": "우쿨렐레",
+      "people": 2
+    },
+    {
+      "a": "course-12",
+      "b": "course-9",
+      "aName": "오카리나 중급",
+      "bName": "라인댄스 2",
+      "people": 2
+    },
+    {
+      "a": "course-13",
+      "b": "course-45",
+      "aName": "오카리나 고급",
+      "bName": "금빛스케치",
+      "people": 2
+    },
+    {
+      "a": "course-14",
+      "b": "course-3",
+      "aName": "생활체조",
+      "bName": "필라테스 1",
+      "people": 2
+    },
+    {
+      "a": "course-14",
+      "b": "course-43",
+      "aName": "생활체조",
+      "bName": "가락장구",
+      "people": 2
+    },
+    {
+      "a": "course-14",
+      "b": "course-44",
+      "aName": "생활체조",
+      "bName": "숟가락 난타",
+      "people": 2
+    },
+    {
+      "a": "course-14",
+      "b": "course-8",
+      "aName": "생활체조",
+      "bName": "라인댄스 1",
+      "people": 2
+    },
+    {
+      "a": "course-15",
+      "b": "course-37",
+      "aName": "기타 초중급",
+      "bName": "하모니카 중급",
+      "people": 2
+    },
+    {
+      "a": "course-15",
+      "b": "course-41",
+      "aName": "기타 초중급",
+      "bName": "우쿨렐레",
+      "people": 2
+    },
+    {
+      "a": "course-16",
+      "b": "course-3",
+      "aName": "기타 고급",
+      "bName": "필라테스 1",
+      "people": 2
+    },
+    {
+      "a": "course-16",
+      "b": "course-39",
+      "aName": "기타 고급",
+      "bName": "연필인물화 중급",
+      "people": 2
+    },
+    {
+      "a": "course-18",
+      "b": "course-42",
+      "aName": "신빠람 사물 초급",
+      "bName": "건강100세 운동교실",
+      "people": 2
+    },
+    {
+      "a": "course-19",
+      "b": "course-21",
+      "aName": "신빠람 사물 중급",
+      "bName": "캘리그라피 초급",
+      "people": 2
+    },
+    {
+      "a": "course-19",
+      "b": "course-30",
+      "aName": "신빠람 사물 중급",
+      "bName": "한자 초급",
+      "people": 2
+    },
+    {
+      "a": "course-19",
+      "b": "course-4",
+      "aName": "신빠람 사물 중급",
+      "bName": "필라테스 2",
+      "people": 2
+    },
+    {
+      "a": "course-19",
+      "b": "course-42",
+      "aName": "신빠람 사물 중급",
+      "bName": "건강100세 운동교실",
+      "people": 2
+    },
+    {
+      "a": "course-19",
+      "b": "course-5",
+      "aName": "신빠람 사물 중급",
+      "bName": "요가 1",
+      "people": 2
+    },
+    {
+      "a": "course-2",
+      "b": "course-20",
+      "aName": "건강체조",
+      "bName": "난타 중급",
+      "people": 2
+    },
+    {
+      "a": "course-2",
+      "b": "course-8",
+      "aName": "건강체조",
+      "bName": "라인댄스 1",
+      "people": 2
+    },
+    {
+      "a": "course-20",
+      "b": "course-42",
+      "aName": "난타 중급",
+      "bName": "건강100세 운동교실",
+      "people": 2
+    },
+    {
+      "a": "course-21",
+      "b": "course-30",
+      "aName": "캘리그라피 초급",
+      "bName": "한자 초급",
+      "people": 2
+    },
+    {
+      "a": "course-21",
+      "b": "course-33",
+      "aName": "캘리그라피 초급",
+      "bName": "스마트폰 중급",
+      "people": 2
+    },
+    {
+      "a": "course-23",
+      "b": "course-35",
+      "aName": "서예",
+      "bName": "컴퓨터 활용",
+      "people": 2
+    },
+    {
+      "a": "course-23",
+      "b": "course-42",
+      "aName": "서예",
+      "bName": "건강100세 운동교실",
+      "people": 2
+    },
+    {
+      "a": "course-23",
+      "b": "course-5",
+      "aName": "서예",
+      "bName": "요가 1",
+      "people": 2
+    },
+    {
+      "a": "course-24",
+      "b": "course-6",
+      "aName": "힐링수채화",
+      "bName": "요가 2",
+      "people": 2
+    },
+    {
+      "a": "course-25",
+      "b": "course-43",
+      "aName": "에어로빅",
+      "bName": "가락장구",
+      "people": 2
+    },
+    {
+      "a": "course-26",
+      "b": "course-3",
+      "aName": "연필인물화 초급",
+      "bName": "필라테스 1",
+      "people": 2
+    },
+    {
+      "a": "course-28",
+      "b": "course-35",
+      "aName": "실용영어",
+      "bName": "컴퓨터 활용",
+      "people": 2
+    },
+    {
+      "a": "course-3",
+      "b": "course-36",
+      "aName": "필라테스 1",
+      "bName": "풀잎합창단",
+      "people": 2
+    },
+    {
+      "a": "course-3",
+      "b": "course-39",
+      "aName": "필라테스 1",
+      "bName": "연필인물화 중급",
+      "people": 2
+    },
+    {
+      "a": "course-30",
+      "b": "course-31",
+      "aName": "한자 초급",
+      "bName": "한문(논어)",
+      "people": 2
+    },
+    {
+      "a": "course-30",
+      "b": "course-33",
+      "aName": "한자 초급",
+      "bName": "스마트폰 중급",
+      "people": 2
+    },
+    {
+      "a": "course-32",
+      "b": "course-40",
+      "aName": "컴퓨터 초급",
+      "bName": "캘리그라피 중급",
+      "people": 2
+    },
+    {
+      "a": "course-32",
+      "b": "course-43",
+      "aName": "컴퓨터 초급",
+      "bName": "가락장구",
+      "people": 2
+    },
+    {
+      "a": "course-33",
+      "b": "course-41",
+      "aName": "스마트폰 중급",
+      "bName": "우쿨렐레",
+      "people": 2
+    },
+    {
+      "a": "course-34",
+      "b": "course-4",
+      "aName": "스마트폰 초급",
+      "bName": "필라테스 2",
+      "people": 2
+    },
+    {
+      "a": "course-34",
+      "b": "course-5",
+      "aName": "스마트폰 초급",
+      "bName": "요가 1",
+      "people": 2
+    },
+    {
+      "a": "course-35",
+      "b": "course-36",
+      "aName": "컴퓨터 활용",
+      "bName": "풀잎합창단",
+      "people": 2
+    },
+    {
+      "a": "course-36",
+      "b": "course-4",
+      "aName": "풀잎합창단",
+      "bName": "필라테스 2",
+      "people": 2
+    },
+    {
+      "a": "course-36",
+      "b": "course-45",
+      "aName": "풀잎합창단",
+      "bName": "금빛스케치",
+      "people": 2
+    },
+    {
+      "a": "course-36",
+      "b": "course-8",
+      "aName": "풀잎합창단",
+      "bName": "라인댄스 1",
+      "people": 2
+    },
+    {
+      "a": "course-37",
+      "b": "course-9",
+      "aName": "하모니카 중급",
+      "bName": "라인댄스 2",
+      "people": 2
+    },
+    {
+      "a": "course-39",
+      "b": "course-4",
+      "aName": "연필인물화 중급",
+      "bName": "필라테스 2",
+      "people": 2
+    },
+    {
+      "a": "course-39",
+      "b": "course-44",
+      "aName": "연필인물화 중급",
+      "bName": "숟가락 난타",
+      "people": 2
+    },
+    {
+      "a": "course-40",
+      "b": "course-45",
+      "aName": "캘리그라피 중급",
+      "bName": "금빛스케치",
+      "people": 2
+    },
+    {
+      "a": "course-43",
+      "b": "course-44",
+      "aName": "가락장구",
+      "bName": "숟가락 난타",
+      "people": 2
+    },
+    {
+      "a": "course-44",
+      "b": "course-8",
+      "aName": "숟가락 난타",
+      "bName": "라인댄스 1",
+      "people": 2
+    },
+    {
+      "a": "course-5",
+      "b": "course-8",
+      "aName": "요가 1",
+      "bName": "라인댄스 1",
+      "people": 2
+    },
+    {
+      "a": "course-1",
+      "b": "course-10",
+      "aName": "난타 초급",
+      "bName": "힐링노래교실",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-14",
+      "aName": "난타 초급",
+      "bName": "생활체조",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-15",
+      "aName": "난타 초급",
+      "bName": "기타 초중급",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-22",
+      "aName": "난타 초급",
+      "bName": "동양화",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-26",
+      "aName": "난타 초급",
+      "bName": "연필인물화 초급",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-30",
+      "aName": "난타 초급",
+      "bName": "한자 초급",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-31",
+      "aName": "난타 초급",
+      "bName": "한문(논어)",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-34",
+      "aName": "난타 초급",
+      "bName": "스마트폰 초급",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-35",
+      "aName": "난타 초급",
+      "bName": "컴퓨터 활용",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-37",
+      "aName": "난타 초급",
+      "bName": "하모니카 중급",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-42",
+      "aName": "난타 초급",
+      "bName": "건강100세 운동교실",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-43",
+      "aName": "난타 초급",
+      "bName": "가락장구",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-5",
+      "aName": "난타 초급",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-8",
+      "aName": "난타 초급",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-1",
+      "b": "course-9",
+      "aName": "난타 초급",
+      "bName": "라인댄스 2",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-16",
+      "aName": "힐링노래교실",
+      "bName": "기타 고급",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-20",
+      "aName": "힐링노래교실",
+      "bName": "난타 중급",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-25",
+      "aName": "힐링노래교실",
+      "bName": "에어로빅",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-26",
+      "aName": "힐링노래교실",
+      "bName": "연필인물화 초급",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-27",
+      "aName": "힐링노래교실",
+      "bName": "민화 1",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-28",
+      "aName": "힐링노래교실",
+      "bName": "실용영어",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-3",
+      "aName": "힐링노래교실",
+      "bName": "필라테스 1",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-30",
+      "aName": "힐링노래교실",
+      "bName": "한자 초급",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-33",
+      "aName": "힐링노래교실",
+      "bName": "스마트폰 중급",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-34",
+      "aName": "힐링노래교실",
+      "bName": "스마트폰 초급",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-35",
+      "aName": "힐링노래교실",
+      "bName": "컴퓨터 활용",
+      "people": 1
+    },
+    {
+      "a": "course-10",
+      "b": "course-6",
+      "aName": "힐링노래교실",
+      "bName": "요가 2",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-18",
+      "aName": "오카리나 초급",
+      "bName": "신빠람 사물 초급",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-2",
+      "aName": "오카리나 초급",
+      "bName": "건강체조",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-22",
+      "aName": "오카리나 초급",
+      "bName": "동양화",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-24",
+      "aName": "오카리나 초급",
+      "bName": "힐링수채화",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-27",
+      "aName": "오카리나 초급",
+      "bName": "민화 1",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-30",
+      "aName": "오카리나 초급",
+      "bName": "한자 초급",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-34",
+      "aName": "오카리나 초급",
+      "bName": "스마트폰 초급",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-37",
+      "aName": "오카리나 초급",
+      "bName": "하모니카 중급",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-4",
+      "aName": "오카리나 초급",
+      "bName": "필라테스 2",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-41",
+      "aName": "오카리나 초급",
+      "bName": "우쿨렐레",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-42",
+      "aName": "오카리나 초급",
+      "bName": "건강100세 운동교실",
+      "people": 1
+    },
+    {
+      "a": "course-11",
+      "b": "course-43",
+      "aName": "오카리나 초급",
+      "bName": "가락장구",
+      "people": 1
+    },
+    {
+      "a": "course-12",
+      "b": "course-17",
+      "aName": "오카리나 중급",
+      "bName": "하모니카 초급",
+      "people": 1
+    },
+    {
+      "a": "course-12",
+      "b": "course-20",
+      "aName": "오카리나 중급",
+      "bName": "난타 중급",
+      "people": 1
+    },
+    {
+      "a": "course-12",
+      "b": "course-21",
+      "aName": "오카리나 중급",
+      "bName": "캘리그라피 초급",
+      "people": 1
+    },
+    {
+      "a": "course-12",
+      "b": "course-26",
+      "aName": "오카리나 중급",
+      "bName": "연필인물화 초급",
+      "people": 1
+    },
+    {
+      "a": "course-12",
+      "b": "course-33",
+      "aName": "오카리나 중급",
+      "bName": "스마트폰 중급",
+      "people": 1
+    },
+    {
+      "a": "course-12",
+      "b": "course-5",
+      "aName": "오카리나 중급",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-12",
+      "b": "course-8",
+      "aName": "오카리나 중급",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-13",
+      "b": "course-14",
+      "aName": "오카리나 고급",
+      "bName": "생활체조",
+      "people": 1
+    },
+    {
+      "a": "course-13",
+      "b": "course-16",
+      "aName": "오카리나 고급",
+      "bName": "기타 고급",
+      "people": 1
+    },
+    {
+      "a": "course-13",
+      "b": "course-2",
+      "aName": "오카리나 고급",
+      "bName": "건강체조",
+      "people": 1
+    },
+    {
+      "a": "course-13",
+      "b": "course-23",
+      "aName": "오카리나 고급",
+      "bName": "서예",
+      "people": 1
+    },
+    {
+      "a": "course-13",
+      "b": "course-25",
+      "aName": "오카리나 고급",
+      "bName": "에어로빅",
+      "people": 1
+    },
+    {
+      "a": "course-13",
+      "b": "course-34",
+      "aName": "오카리나 고급",
+      "bName": "스마트폰 초급",
+      "people": 1
+    },
+    {
+      "a": "course-13",
+      "b": "course-5",
+      "aName": "오카리나 고급",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-13",
+      "b": "course-9",
+      "aName": "오카리나 고급",
+      "bName": "라인댄스 2",
+      "people": 1
+    },
+    {
+      "a": "course-14",
+      "b": "course-16",
+      "aName": "생활체조",
+      "bName": "기타 고급",
+      "people": 1
+    },
+    {
+      "a": "course-14",
+      "b": "course-17",
+      "aName": "생활체조",
+      "bName": "하모니카 초급",
+      "people": 1
+    },
+    {
+      "a": "course-14",
+      "b": "course-23",
+      "aName": "생활체조",
+      "bName": "서예",
+      "people": 1
+    },
+    {
+      "a": "course-14",
+      "b": "course-33",
+      "aName": "생활체조",
+      "bName": "스마트폰 중급",
+      "people": 1
+    },
+    {
+      "a": "course-14",
+      "b": "course-36",
+      "aName": "생활체조",
+      "bName": "풀잎합창단",
+      "people": 1
+    },
+    {
+      "a": "course-14",
+      "b": "course-39",
+      "aName": "생활체조",
+      "bName": "연필인물화 중급",
+      "people": 1
+    },
+    {
+      "a": "course-14",
+      "b": "course-41",
+      "aName": "생활체조",
+      "bName": "우쿨렐레",
+      "people": 1
+    },
+    {
+      "a": "course-14",
+      "b": "course-45",
+      "aName": "생활체조",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-15",
+      "b": "course-27",
+      "aName": "기타 초중급",
+      "bName": "민화 1",
+      "people": 1
+    },
+    {
+      "a": "course-15",
+      "b": "course-29",
+      "aName": "기타 초중급",
+      "bName": "일본어 초급",
+      "people": 1
+    },
+    {
+      "a": "course-15",
+      "b": "course-32",
+      "aName": "기타 초중급",
+      "bName": "컴퓨터 초급",
+      "people": 1
+    },
+    {
+      "a": "course-15",
+      "b": "course-34",
+      "aName": "기타 초중급",
+      "bName": "스마트폰 초급",
+      "people": 1
+    },
+    {
+      "a": "course-15",
+      "b": "course-36",
+      "aName": "기타 초중급",
+      "bName": "풀잎합창단",
+      "people": 1
+    },
+    {
+      "a": "course-15",
+      "b": "course-4",
+      "aName": "기타 초중급",
+      "bName": "필라테스 2",
+      "people": 1
+    },
+    {
+      "a": "course-15",
+      "b": "course-45",
+      "aName": "기타 초중급",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-15",
+      "b": "course-7",
+      "aName": "기타 초중급",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-15",
+      "b": "course-8",
+      "aName": "기타 초중급",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-15",
+      "b": "course-9",
+      "aName": "기타 초중급",
+      "bName": "라인댄스 2",
+      "people": 1
+    },
+    {
+      "a": "course-16",
+      "b": "course-20",
+      "aName": "기타 고급",
+      "bName": "난타 중급",
+      "people": 1
+    },
+    {
+      "a": "course-16",
+      "b": "course-29",
+      "aName": "기타 고급",
+      "bName": "일본어 초급",
+      "people": 1
+    },
+    {
+      "a": "course-17",
+      "b": "course-19",
+      "aName": "하모니카 초급",
+      "bName": "신빠람 사물 중급",
+      "people": 1
+    },
+    {
+      "a": "course-17",
+      "b": "course-20",
+      "aName": "하모니카 초급",
+      "bName": "난타 중급",
+      "people": 1
+    },
+    {
+      "a": "course-17",
+      "b": "course-24",
+      "aName": "하모니카 초급",
+      "bName": "힐링수채화",
+      "people": 1
+    },
+    {
+      "a": "course-17",
+      "b": "course-28",
+      "aName": "하모니카 초급",
+      "bName": "실용영어",
+      "people": 1
+    },
+    {
+      "a": "course-17",
+      "b": "course-36",
+      "aName": "하모니카 초급",
+      "bName": "풀잎합창단",
+      "people": 1
+    },
+    {
+      "a": "course-17",
+      "b": "course-4",
+      "aName": "하모니카 초급",
+      "bName": "필라테스 2",
+      "people": 1
+    },
+    {
+      "a": "course-17",
+      "b": "course-43",
+      "aName": "하모니카 초급",
+      "bName": "가락장구",
+      "people": 1
+    },
+    {
+      "a": "course-17",
+      "b": "course-45",
+      "aName": "하모니카 초급",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-17",
+      "b": "course-5",
+      "aName": "하모니카 초급",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-17",
+      "b": "course-8",
+      "aName": "하모니카 초급",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-18",
+      "b": "course-2",
+      "aName": "신빠람 사물 초급",
+      "bName": "건강체조",
+      "people": 1
+    },
+    {
+      "a": "course-18",
+      "b": "course-26",
+      "aName": "신빠람 사물 초급",
+      "bName": "연필인물화 초급",
+      "people": 1
+    },
+    {
+      "a": "course-19",
+      "b": "course-20",
+      "aName": "신빠람 사물 중급",
+      "bName": "난타 중급",
+      "people": 1
+    },
+    {
+      "a": "course-19",
+      "b": "course-37",
+      "aName": "신빠람 사물 중급",
+      "bName": "하모니카 중급",
+      "people": 1
+    },
+    {
+      "a": "course-19",
+      "b": "course-43",
+      "aName": "신빠람 사물 중급",
+      "bName": "가락장구",
+      "people": 1
+    },
+    {
+      "a": "course-19",
+      "b": "course-44",
+      "aName": "신빠람 사물 중급",
+      "bName": "숟가락 난타",
+      "people": 1
+    },
+    {
+      "a": "course-19",
+      "b": "course-6",
+      "aName": "신빠람 사물 중급",
+      "bName": "요가 2",
+      "people": 1
+    },
+    {
+      "a": "course-19",
+      "b": "course-7",
+      "aName": "신빠람 사물 중급",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-2",
+      "b": "course-27",
+      "aName": "건강체조",
+      "bName": "민화 1",
+      "people": 1
+    },
+    {
+      "a": "course-2",
+      "b": "course-3",
+      "aName": "건강체조",
+      "bName": "필라테스 1",
+      "people": 1
+    },
+    {
+      "a": "course-2",
+      "b": "course-33",
+      "aName": "건강체조",
+      "bName": "스마트폰 중급",
+      "people": 1
+    },
+    {
+      "a": "course-2",
+      "b": "course-38",
+      "aName": "건강체조",
+      "bName": "민화 2",
+      "people": 1
+    },
+    {
+      "a": "course-2",
+      "b": "course-43",
+      "aName": "건강체조",
+      "bName": "가락장구",
+      "people": 1
+    },
+    {
+      "a": "course-20",
+      "b": "course-25",
+      "aName": "난타 중급",
+      "bName": "에어로빅",
+      "people": 1
+    },
+    {
+      "a": "course-20",
+      "b": "course-27",
+      "aName": "난타 중급",
+      "bName": "민화 1",
+      "people": 1
+    },
+    {
+      "a": "course-20",
+      "b": "course-32",
+      "aName": "난타 중급",
+      "bName": "컴퓨터 초급",
+      "people": 1
+    },
+    {
+      "a": "course-20",
+      "b": "course-37",
+      "aName": "난타 중급",
+      "bName": "하모니카 중급",
+      "people": 1
+    },
+    {
+      "a": "course-20",
+      "b": "course-4",
+      "aName": "난타 중급",
+      "bName": "필라테스 2",
+      "people": 1
+    },
+    {
+      "a": "course-20",
+      "b": "course-5",
+      "aName": "난타 중급",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-21",
+      "b": "course-22",
+      "aName": "캘리그라피 초급",
+      "bName": "동양화",
+      "people": 1
+    },
+    {
+      "a": "course-21",
+      "b": "course-23",
+      "aName": "캘리그라피 초급",
+      "bName": "서예",
+      "people": 1
+    },
+    {
+      "a": "course-21",
+      "b": "course-26",
+      "aName": "캘리그라피 초급",
+      "bName": "연필인물화 초급",
+      "people": 1
+    },
+    {
+      "a": "course-21",
+      "b": "course-29",
+      "aName": "캘리그라피 초급",
+      "bName": "일본어 초급",
+      "people": 1
+    },
+    {
+      "a": "course-21",
+      "b": "course-41",
+      "aName": "캘리그라피 초급",
+      "bName": "우쿨렐레",
+      "people": 1
+    },
+    {
+      "a": "course-21",
+      "b": "course-5",
+      "aName": "캘리그라피 초급",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-21",
+      "b": "course-7",
+      "aName": "캘리그라피 초급",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-21",
+      "b": "course-8",
+      "aName": "캘리그라피 초급",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-22",
+      "b": "course-23",
+      "aName": "동양화",
+      "bName": "서예",
+      "people": 1
+    },
+    {
+      "a": "course-22",
+      "b": "course-24",
+      "aName": "동양화",
+      "bName": "힐링수채화",
+      "people": 1
+    },
+    {
+      "a": "course-22",
+      "b": "course-26",
+      "aName": "동양화",
+      "bName": "연필인물화 초급",
+      "people": 1
+    },
+    {
+      "a": "course-22",
+      "b": "course-27",
+      "aName": "동양화",
+      "bName": "민화 1",
+      "people": 1
+    },
+    {
+      "a": "course-22",
+      "b": "course-40",
+      "aName": "동양화",
+      "bName": "캘리그라피 중급",
+      "people": 1
+    },
+    {
+      "a": "course-22",
+      "b": "course-45",
+      "aName": "동양화",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-22",
+      "b": "course-6",
+      "aName": "동양화",
+      "bName": "요가 2",
+      "people": 1
+    },
+    {
+      "a": "course-22",
+      "b": "course-7",
+      "aName": "동양화",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-22",
+      "b": "course-8",
+      "aName": "동양화",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-23",
+      "b": "course-29",
+      "aName": "서예",
+      "bName": "일본어 초급",
+      "people": 1
+    },
+    {
+      "a": "course-23",
+      "b": "course-33",
+      "aName": "서예",
+      "bName": "스마트폰 중급",
+      "people": 1
+    },
+    {
+      "a": "course-23",
+      "b": "course-39",
+      "aName": "서예",
+      "bName": "연필인물화 중급",
+      "people": 1
+    },
+    {
+      "a": "course-24",
+      "b": "course-31",
+      "aName": "힐링수채화",
+      "bName": "한문(논어)",
+      "people": 1
+    },
+    {
+      "a": "course-24",
+      "b": "course-32",
+      "aName": "힐링수채화",
+      "bName": "컴퓨터 초급",
+      "people": 1
+    },
+    {
+      "a": "course-24",
+      "b": "course-36",
+      "aName": "힐링수채화",
+      "bName": "풀잎합창단",
+      "people": 1
+    },
+    {
+      "a": "course-24",
+      "b": "course-38",
+      "aName": "힐링수채화",
+      "bName": "민화 2",
+      "people": 1
+    },
+    {
+      "a": "course-24",
+      "b": "course-4",
+      "aName": "힐링수채화",
+      "bName": "필라테스 2",
+      "people": 1
+    },
+    {
+      "a": "course-24",
+      "b": "course-40",
+      "aName": "힐링수채화",
+      "bName": "캘리그라피 중급",
+      "people": 1
+    },
+    {
+      "a": "course-24",
+      "b": "course-7",
+      "aName": "힐링수채화",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-24",
+      "b": "course-8",
+      "aName": "힐링수채화",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-25",
+      "b": "course-30",
+      "aName": "에어로빅",
+      "bName": "한자 초급",
+      "people": 1
+    },
+    {
+      "a": "course-25",
+      "b": "course-38",
+      "aName": "에어로빅",
+      "bName": "민화 2",
+      "people": 1
+    },
+    {
+      "a": "course-26",
+      "b": "course-31",
+      "aName": "연필인물화 초급",
+      "bName": "한문(논어)",
+      "people": 1
+    },
+    {
+      "a": "course-26",
+      "b": "course-36",
+      "aName": "연필인물화 초급",
+      "bName": "풀잎합창단",
+      "people": 1
+    },
+    {
+      "a": "course-26",
+      "b": "course-37",
+      "aName": "연필인물화 초급",
+      "bName": "하모니카 중급",
+      "people": 1
+    },
+    {
+      "a": "course-26",
+      "b": "course-40",
+      "aName": "연필인물화 초급",
+      "bName": "캘리그라피 중급",
+      "people": 1
+    },
+    {
+      "a": "course-26",
+      "b": "course-45",
+      "aName": "연필인물화 초급",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-26",
+      "b": "course-6",
+      "aName": "연필인물화 초급",
+      "bName": "요가 2",
+      "people": 1
+    },
+    {
+      "a": "course-26",
+      "b": "course-7",
+      "aName": "연필인물화 초급",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-27",
+      "b": "course-28",
+      "aName": "민화 1",
+      "bName": "실용영어",
+      "people": 1
+    },
+    {
+      "a": "course-27",
+      "b": "course-37",
+      "aName": "민화 1",
+      "bName": "하모니카 중급",
+      "people": 1
+    },
+    {
+      "a": "course-27",
+      "b": "course-42",
+      "aName": "민화 1",
+      "bName": "건강100세 운동교실",
+      "people": 1
+    },
+    {
+      "a": "course-27",
+      "b": "course-9",
+      "aName": "민화 1",
+      "bName": "라인댄스 2",
+      "people": 1
+    },
+    {
+      "a": "course-28",
+      "b": "course-39",
+      "aName": "실용영어",
+      "bName": "연필인물화 중급",
+      "people": 1
+    },
+    {
+      "a": "course-28",
+      "b": "course-4",
+      "aName": "실용영어",
+      "bName": "필라테스 2",
+      "people": 1
+    },
+    {
+      "a": "course-28",
+      "b": "course-5",
+      "aName": "실용영어",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-28",
+      "b": "course-8",
+      "aName": "실용영어",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-29",
+      "b": "course-30",
+      "aName": "일본어 초급",
+      "bName": "한자 초급",
+      "people": 1
+    },
+    {
+      "a": "course-29",
+      "b": "course-31",
+      "aName": "일본어 초급",
+      "bName": "한문(논어)",
+      "people": 1
+    },
+    {
+      "a": "course-29",
+      "b": "course-32",
+      "aName": "일본어 초급",
+      "bName": "컴퓨터 초급",
+      "people": 1
+    },
+    {
+      "a": "course-29",
+      "b": "course-33",
+      "aName": "일본어 초급",
+      "bName": "스마트폰 중급",
+      "people": 1
+    },
+    {
+      "a": "course-29",
+      "b": "course-34",
+      "aName": "일본어 초급",
+      "bName": "스마트폰 초급",
+      "people": 1
+    },
+    {
+      "a": "course-29",
+      "b": "course-37",
+      "aName": "일본어 초급",
+      "bName": "하모니카 중급",
+      "people": 1
+    },
+    {
+      "a": "course-29",
+      "b": "course-4",
+      "aName": "일본어 초급",
+      "bName": "필라테스 2",
+      "people": 1
+    },
+    {
+      "a": "course-29",
+      "b": "course-5",
+      "aName": "일본어 초급",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-29",
+      "b": "course-6",
+      "aName": "일본어 초급",
+      "bName": "요가 2",
+      "people": 1
+    },
+    {
+      "a": "course-3",
+      "b": "course-43",
+      "aName": "필라테스 1",
+      "bName": "가락장구",
+      "people": 1
+    },
+    {
+      "a": "course-3",
+      "b": "course-44",
+      "aName": "필라테스 1",
+      "bName": "숟가락 난타",
+      "people": 1
+    },
+    {
+      "a": "course-30",
+      "b": "course-38",
+      "aName": "한자 초급",
+      "bName": "민화 2",
+      "people": 1
+    },
+    {
+      "a": "course-31",
+      "b": "course-34",
+      "aName": "한문(논어)",
+      "bName": "스마트폰 초급",
+      "people": 1
+    },
+    {
+      "a": "course-31",
+      "b": "course-38",
+      "aName": "한문(논어)",
+      "bName": "민화 2",
+      "people": 1
+    },
+    {
+      "a": "course-31",
+      "b": "course-45",
+      "aName": "한문(논어)",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-32",
+      "b": "course-33",
+      "aName": "컴퓨터 초급",
+      "bName": "스마트폰 중급",
+      "people": 1
+    },
+    {
+      "a": "course-32",
+      "b": "course-37",
+      "aName": "컴퓨터 초급",
+      "bName": "하모니카 중급",
+      "people": 1
+    },
+    {
+      "a": "course-32",
+      "b": "course-38",
+      "aName": "컴퓨터 초급",
+      "bName": "민화 2",
+      "people": 1
+    },
+    {
+      "a": "course-32",
+      "b": "course-45",
+      "aName": "컴퓨터 초급",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-32",
+      "b": "course-5",
+      "aName": "컴퓨터 초급",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-32",
+      "b": "course-7",
+      "aName": "컴퓨터 초급",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-33",
+      "b": "course-35",
+      "aName": "스마트폰 중급",
+      "bName": "컴퓨터 활용",
+      "people": 1
+    },
+    {
+      "a": "course-33",
+      "b": "course-4",
+      "aName": "스마트폰 중급",
+      "bName": "필라테스 2",
+      "people": 1
+    },
+    {
+      "a": "course-33",
+      "b": "course-43",
+      "aName": "스마트폰 중급",
+      "bName": "가락장구",
+      "people": 1
+    },
+    {
+      "a": "course-33",
+      "b": "course-5",
+      "aName": "스마트폰 중급",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-33",
+      "b": "course-8",
+      "aName": "스마트폰 중급",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-34",
+      "b": "course-35",
+      "aName": "스마트폰 초급",
+      "bName": "컴퓨터 활용",
+      "people": 1
+    },
+    {
+      "a": "course-34",
+      "b": "course-40",
+      "aName": "스마트폰 초급",
+      "bName": "캘리그라피 중급",
+      "people": 1
+    },
+    {
+      "a": "course-34",
+      "b": "course-41",
+      "aName": "스마트폰 초급",
+      "bName": "우쿨렐레",
+      "people": 1
+    },
+    {
+      "a": "course-34",
+      "b": "course-42",
+      "aName": "스마트폰 초급",
+      "bName": "건강100세 운동교실",
+      "people": 1
+    },
+    {
+      "a": "course-34",
+      "b": "course-45",
+      "aName": "스마트폰 초급",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-34",
+      "b": "course-7",
+      "aName": "스마트폰 초급",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-34",
+      "b": "course-9",
+      "aName": "스마트폰 초급",
+      "bName": "라인댄스 2",
+      "people": 1
+    },
+    {
+      "a": "course-35",
+      "b": "course-42",
+      "aName": "컴퓨터 활용",
+      "bName": "건강100세 운동교실",
+      "people": 1
+    },
+    {
+      "a": "course-36",
+      "b": "course-39",
+      "aName": "풀잎합창단",
+      "bName": "연필인물화 중급",
+      "people": 1
+    },
+    {
+      "a": "course-36",
+      "b": "course-5",
+      "aName": "풀잎합창단",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-36",
+      "b": "course-7",
+      "aName": "풀잎합창단",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-37",
+      "b": "course-39",
+      "aName": "하모니카 중급",
+      "bName": "연필인물화 중급",
+      "people": 1
+    },
+    {
+      "a": "course-37",
+      "b": "course-40",
+      "aName": "하모니카 중급",
+      "bName": "캘리그라피 중급",
+      "people": 1
+    },
+    {
+      "a": "course-37",
+      "b": "course-41",
+      "aName": "하모니카 중급",
+      "bName": "우쿨렐레",
+      "people": 1
+    },
+    {
+      "a": "course-37",
+      "b": "course-45",
+      "aName": "하모니카 중급",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-38",
+      "b": "course-4",
+      "aName": "민화 2",
+      "bName": "필라테스 2",
+      "people": 1
+    },
+    {
+      "a": "course-38",
+      "b": "course-40",
+      "aName": "민화 2",
+      "bName": "캘리그라피 중급",
+      "people": 1
+    },
+    {
+      "a": "course-38",
+      "b": "course-45",
+      "aName": "민화 2",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-39",
+      "b": "course-41",
+      "aName": "연필인물화 중급",
+      "bName": "우쿨렐레",
+      "people": 1
+    },
+    {
+      "a": "course-39",
+      "b": "course-43",
+      "aName": "연필인물화 중급",
+      "bName": "가락장구",
+      "people": 1
+    },
+    {
+      "a": "course-39",
+      "b": "course-6",
+      "aName": "연필인물화 중급",
+      "bName": "요가 2",
+      "people": 1
+    },
+    {
+      "a": "course-39",
+      "b": "course-8",
+      "aName": "연필인물화 중급",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-4",
+      "b": "course-45",
+      "aName": "필라테스 2",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-4",
+      "b": "course-7",
+      "aName": "필라테스 2",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-41",
+      "b": "course-45",
+      "aName": "우쿨렐레",
+      "bName": "금빛스케치",
+      "people": 1
+    },
+    {
+      "a": "course-41",
+      "b": "course-7",
+      "aName": "우쿨렐레",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-41",
+      "b": "course-8",
+      "aName": "우쿨렐레",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-41",
+      "b": "course-9",
+      "aName": "우쿨렐레",
+      "bName": "라인댄스 2",
+      "people": 1
+    },
+    {
+      "a": "course-42",
+      "b": "course-44",
+      "aName": "건강100세 운동교실",
+      "bName": "숟가락 난타",
+      "people": 1
+    },
+    {
+      "a": "course-43",
+      "b": "course-5",
+      "aName": "가락장구",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-44",
+      "b": "course-6",
+      "aName": "숟가락 난타",
+      "bName": "요가 2",
+      "people": 1
+    },
+    {
+      "a": "course-45",
+      "b": "course-5",
+      "aName": "금빛스케치",
+      "bName": "요가 1",
+      "people": 1
+    },
+    {
+      "a": "course-45",
+      "b": "course-7",
+      "aName": "금빛스케치",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-6",
+      "b": "course-7",
+      "aName": "요가 2",
+      "bName": "댄스스포츠",
+      "people": 1
+    },
+    {
+      "a": "course-7",
+      "b": "course-8",
+      "aName": "댄스스포츠",
+      "bName": "라인댄스 1",
+      "people": 1
+    },
+    {
+      "a": "course-7",
+      "b": "course-9",
+      "aName": "댄스스포츠",
+      "bName": "라인댄스 2",
+      "people": 1
+    }
+  ],
+  "fieldMappingSignature": "가락장구:music|건강100세운동교실:health|건강체조:health|금빛스케치:art|기타고급:music|기타초중급:music|난타중급:music|난타초급:music|댄스스포츠:health|동양화:art|라인댄스1:health|라인댄스2:health|민화1:art|민화2:art|생활체조:health|서예:art|숟가락난타:music|스마트폰중급:digital|스마트폰초급:digital|신빠람사물중급:music|신빠람사물초급:music|실용영어:culture|에어로빅:health|연필인물화중급:art|연필인물화초급:art|오카리나고급:music|오카리나중급:music|오카리나초급:music|요가1:health|요가2:health|우쿨렐레:music|일본어초급:culture|캘리그라피중급:art|캘리그라피초급:art|컴퓨터초급:digital|컴퓨터활용:digital|풀잎합창단:music|필라테스1:health|필라테스2:health|하모니카중급:music|하모니카초급:music|한문(논어):culture|한자초급:culture|힐링노래교실:music|힐링수채화:art",
+  "fieldCounts": [
+    {
+      "fieldId": "music",
+      "people": 385
+    },
+    {
+      "fieldId": "health",
+      "people": 348
+    },
+    {
+      "fieldId": "digital",
+      "people": 70
+    },
+    {
+      "fieldId": "art",
+      "people": 95
+    },
+    {
+      "fieldId": "culture",
+      "people": 56
+    }
+  ],
+  "fieldPairs": [
+    {
+      "a": "health",
+      "b": "music",
+      "people": 92
+    },
+    {
+      "a": "art",
+      "b": "music",
+      "people": 29
+    },
+    {
+      "a": "art",
+      "b": "health",
+      "people": 23
+    },
+    {
+      "a": "digital",
+      "b": "music",
+      "people": 16
+    },
+    {
+      "a": "culture",
+      "b": "music",
+      "people": 14
+    },
+    {
+      "a": "digital",
+      "b": "health",
+      "people": 9
+    },
+    {
+      "a": "art",
+      "b": "culture",
+      "people": 8
+    },
+    {
+      "a": "art",
+      "b": "digital",
+      "people": 7
+    },
+    {
+      "a": "culture",
+      "b": "digital",
+      "people": 7
+    },
+    {
+      "a": "culture",
+      "b": "health",
+      "people": 6
+    }
+  ]
+}

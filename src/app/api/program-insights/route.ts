@@ -4,7 +4,11 @@ import {
   createRouteAuthErrorResponse,
 } from "@/lib/route-auth";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { insightPeriods, type InsightReview } from "@/lib/program-insights";
+import {
+  insightPeriods,
+  normalizeInsightStatus,
+  type InsightReview,
+} from "@/lib/program-insights";
 import { insightAiEnabled } from "@/lib/program-insight-mode";
 import {
   aiPrefix,
@@ -25,12 +29,11 @@ export async function GET(request: NextRequest) {
     return json({ error: "분석기간을 확인해 주세요." }, 400);
   try {
     const context = await loadInsightContext(period),
-      ids = context.analysis.topics.map((t) => t.id),
-      keys = ids.map((id) => recordPrefix + period + ":" + id);
+      prefix = recordPrefix + period + ":";
     const { data, error } = await createAdminClient()
       .from("system_settings")
       .select("key,value,updated_at")
-      .in("key", [...keys, aiPrefix + context.fingerprint]);
+      .like("key", prefix + "%");
     if (error) throw error;
     const records: Record<string, InsightReview> = {};
     let savedAi = null;
@@ -39,7 +42,12 @@ export async function GET(request: NextRequest) {
         savedAi = JSON.parse(row.value);
       else {
         const value = JSON.parse(row.value);
-        records[value.id] = { ...value, updatedAt: row.updated_at };
+        records[value.id] = {
+          ...value,
+          originalStatus: value.originalStatus ?? value.status,
+          status: normalizeInsightStatus(value.status),
+          updatedAt: row.updated_at,
+        };
       }
     }
     return json({
@@ -47,9 +55,11 @@ export async function GET(request: NextRequest) {
       records,
       savedAi: insightAiEnabled ? savedAi : null,
       viewerId: user.id,
-      aiAvailable: insightAiEnabled && Boolean(
-        process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN,
-      ),
+      aiAvailable:
+        insightAiEnabled &&
+        Boolean(
+          process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN,
+        ),
     });
   } catch {
     return json(
@@ -94,17 +104,30 @@ export async function PATCH(request: NextRequest) {
       updatedAt = new Date().toISOString();
     const { revision, ...fields } = input;
     const topic = context.analysis.topics.find((t) => t.id === input.id)!;
+    const db = createAdminClient();
+    const existing = await db
+      .from("system_settings")
+      .select("value")
+      .eq("key", key)
+      .maybeSingle();
+    if (existing.error) throw existing.error;
     const record = {
+      ...(existing.data ? JSON.parse(existing.data.value) : {}),
       ...fields,
       snapshot: {
         asOf: context.analysis.asOf,
         period: context.analysis.period.label,
         facts: topic.facts,
         fingerprint: context.fingerprint,
+        title: topic.title,
+        question: topic.question,
+        scope: topic.scope,
+        checks: topic.checks,
+        ebg: topic.ebg,
+        action: topic.action,
       },
       updatedBy: user.id,
     };
-    const db = createAdminClient();
     const saved =
       revision === null
         ? await db

@@ -30,11 +30,6 @@ export async function loadInsightContext(period: string) {
         recruitment: d.recruitment,
         seats: d.seats,
       };
-      analysis.topics
-        .find((t) => t.id === "participation")!
-        .facts.push(
-          `관리 현황 ${d.asOf} 기준: 생활체조 제공 RF 명부에서 최근 연속 결석 ${d.absence}명, 대기자 충원 검토 ${d.recruitment}개 프로그램·${d.seats}자리. 선택기간 출석률과 별도 범위입니다.`,
-        );
     }
   } catch {
     /* Other verified sources remain usable. */
@@ -47,9 +42,14 @@ export async function loadInsightContext(period: string) {
         asOf: analysis.asOf,
         facts: analysis.topics.map((t) => ({
           id: t.id,
+          question: t.question,
           facts: t.facts,
           scope: t.scope,
+          ebg: t.ebg,
+          checks: t.checks,
+          action: t.action,
         })),
+        classification: analysis.characteristics.classifications,
       }),
     )
     .digest("hex");
@@ -92,10 +92,7 @@ export function validateReviewBody(body: unknown, ids: string[]) {
   ) as Pick<InsightReview, (typeof reviewFields)[number]>;
   if (b.status === "미반영" && !fields.notAppliedReason)
     throw Error("미반영 사유를 입력해 주세요.");
-  if (
-    (b.status === "반영 완료" || b.status === "결과 확인") &&
-    !fields.implementation
-  )
+  if (b.status === "반영 완료" && !fields.implementation)
     throw Error("실제 개선 내용을 입력해 주세요.");
   if (
     b.confirmed &&
