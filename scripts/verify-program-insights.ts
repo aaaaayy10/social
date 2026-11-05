@@ -15,6 +15,14 @@ const all = buildInsightAnalysis("all"),
 assert.equal(all.programCount, 45);
 assert.equal(all.summary.attended, 43175);
 assert.equal(all.summary.expected, 58989);
+assert.equal(
+  all.demand.fields.reduce((sum, field) => sum + field.registered, 0),
+  1318,
+);
+assert.equal(
+  all.demand.fields.reduce((sum, field) => sum + field.waiting, 0),
+  all.programs.reduce((sum, program) => sum + (program.waiting ?? 0), 0),
+);
 assert.equal(jan.summary.attended, 0);
 assert.equal(jan.topics.filter((t) => t.area === "participation").length, 0);
 assert.deepEqual(

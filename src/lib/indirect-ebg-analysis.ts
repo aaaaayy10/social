@@ -74,6 +74,14 @@ export function buildIndirectEbgAnalysis(periodId: string) {
     combinations.people === programMetrics.currentPaidUnique &&
     combinations.enrollments === programMetrics.totals.paid &&
     combinations.programCount === programs.length &&
+    combinations.programCounts.length === programs.length &&
+    combinations.sources.length === programMetrics.ledger.sources.length &&
+    combinations.sources.every((source) =>
+      programMetrics.ledger.sources.some(
+        (current) =>
+          current.name === source.name && current.sha256 === source.sha256,
+      ),
+    ) &&
     combinations.programCounts.every((p) =>
       programs.some(
         (r) => r.id === p.programId && r.name === p.name && r.paid === p.people,

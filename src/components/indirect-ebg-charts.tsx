@@ -346,6 +346,95 @@ export function EbgComparisons({ analysis }: { analysis: InsightAnalysis }) {
       <h2 className="font-semibold">필요한 근거를 펼쳐서 비교하세요</h2>
       <details className="rounded-2xl border bg-card p-4">
         <summary className="cursor-pointer text-sm font-semibold">
+          프로그램·분야별 신청·대기 수요 · 현재 현황
+        </summary>
+        <p className="mt-3 text-xs leading-6 text-muted-foreground">
+          {analysis.asOf} 현재 {analysis.programCount}개 강좌의 등록·대기
+          건수입니다. 강좌 간 중복 포함이며 고유 신청자 수나 선호도 비율이
+          아닙니다. 분야는 프로그램명에 따른 미확정 제안 분류입니다.
+        </p>
+        <div className="my-4 grid gap-5 lg:grid-cols-2">
+          <div>
+            <h3 className="mb-3 text-sm font-semibold">
+              분야별 등록 건수 · 제안 분류
+            </h3>
+            <EvidenceBars
+              rows={[...analysis.demand.fields]
+                .sort((a, b) => b.registered - a.registered)
+                .map((f) => ({
+                  label: f.name,
+                  value: f.registered,
+                  detail: `${f.programs}개 강좌 · 전체 등록 ${number(analysis.programs.reduce((s, p) => s + (p.applications ?? 0), 0))}건 중 ${rate(
+                    (f.registered /
+                      Math.max(
+                        1,
+                        analysis.programs.reduce(
+                          (s, p) => s + (p.applications ?? 0),
+                          0,
+                        ),
+                      )) *
+                      100,
+                  )} · 정원 ${f.capacity}명`,
+                }))}
+              unit="건"
+            />
+          </div>
+          <div>
+            <h3 className="mb-3 text-sm font-semibold">
+              분야별 대기 건수 · 제안 분류
+            </h3>
+            <EvidenceBars
+              rows={[...analysis.demand.fields]
+                .sort((a, b) => b.waiting - a.waiting)
+                .map((f) => ({
+                  label: f.name,
+                  value: f.waiting,
+                  detail: `분야 정원 ${f.capacity}명 대비 대기율 ${f.capacity ? rate((f.waiting / f.capacity) * 100) : "산출 불가"} · 개인별 대기 중복 미확인`,
+                }))}
+              unit="건"
+            />
+          </div>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[660px] text-xs">
+            <caption className="sr-only">
+              현재 프로그램별 등록 정원 대기 신청률 비교
+            </caption>
+            <thead>
+              <tr className="border-b text-left">
+                {[
+                  "프로그램",
+                  "제안 분야",
+                  "등록",
+                  "정원",
+                  "신청률 · 등록/정원",
+                  "대기",
+                  "대기율 · 대기/정원",
+                ].map((h) => (
+                  <th className="p-2" key={h}>
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {analysis.demand.ranking.map((p) => (
+                <tr className="border-b" key={p.id}>
+                  <th className="p-2 text-left">{p.name}</th>
+                  <td className="p-2">{p.field}</td>
+                  <td className="p-2">{p.applications}건</td>
+                  <td className="p-2">{p.capacity}명</td>
+                  <td className="p-2">{rate(p.registration)}</td>
+                  <td className="p-2">{p.waiting ?? "미기재"}건</td>
+                  <td className="p-2">{rate(p.waitingRate)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </details>
+      <details className="rounded-2xl border bg-card p-4">
+        <summary className="cursor-pointer text-sm font-semibold">
           연령대별 이용현황 · 인원과 두 가지 비율 비교
         </summary>
         <p className="mt-3 text-xs leading-6 text-muted-foreground">
