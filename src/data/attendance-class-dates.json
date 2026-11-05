@@ -11,13 +11,6 @@
       "reason": "원본 수업일 숫자 미기재 또는 판독 불가"
     },
     {
-      "month": "2026-09",
-      "program": "금빛스케치",
-      "page": 316,
-      "slot": 4,
-      "reason": "원본 수업일 숫자 미기재 또는 판독 불가"
-    },
-    {
       "month": "2026-10",
       "program": "가락장구",
       "page": 353,
@@ -9788,7 +9781,7 @@
           "slot": 3
         },
         {
-          "date": null,
+          "date": "2026-09-30",
           "count": 11,
           "page": 316,
           "slot": 4
@@ -15194,6 +15187,19 @@
       "actual": 285,
       "previousSessions": 6,
       "sessions": 7
+    }
+  ],
+  "supplementalConfirmations": [
+    {
+      "month": "2026-09",
+      "programCode": "manual-course-45",
+      "page": 316,
+      "slot": 4,
+      "date": "2026-09-30",
+      "count": 11,
+      "reviewedOn": "2026-11-05",
+      "source": "사용자 첨부: 2026년 9월 금빛스케치 운영일지 사진",
+      "note": "사진에서 9/9 10명, 9/16 11명, 9/23 9명, 9/30 11명 확인. 기존 합계41명·회 유지."
     }
   ]
 }

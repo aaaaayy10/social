@@ -266,31 +266,10 @@
     }
   ],
   "verification": {
-    "verifiedMonths": 358,
-    "pendingMonths": 1
+    "verifiedMonths": 359,
+    "pendingMonths": 0
   },
-  "pending": [
-    {
-      "month": "2026-09",
-      "programCode": "manual-course-45",
-      "program": "금빛스케치",
-      "sourceType": "manual",
-      "attended": 41,
-      "sessions": 4,
-      "expected": null,
-      "reason": "수업일 미기재·판독 불가로 대상 인원 확정 불가",
-      "issues": [
-        {
-          "date": null,
-          "count": 11,
-          "page": 316,
-          "slot": 4,
-          "eligible": null,
-          "reason": "수업일 미기재·판독 불가로 대상 인원 확정 불가"
-        }
-      ]
-    }
-  ],
+  "pending": [],
   "months": [
     {
       "month": "2026-01",

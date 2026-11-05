@@ -2197,6 +2197,15 @@
     },
     {
       "month": "2026-09",
+      "programCode": "manual-course-45",
+      "expected": 56,
+      "sessions": 4,
+      "adjustedSessions": 0,
+      "source": "수업 회차별 입금·개강·종강·환불일 대조. 같은 날 별도 회차 각각 포함. 날짜 미기재는 대상 인원 일정한 경우만 산정.",
+      "verifiedOn": "2026-11-05"
+    },
+    {
+      "month": "2026-09",
       "programCode": "manual-course-26",
       "expected": 47,
       "sessions": 4,
@@ -3285,28 +3294,7 @@
       "verifiedOn": "2026-11-05"
     }
   ],
-  "review": [
-    {
-      "month": "2026-09",
-      "programCode": "manual-course-45",
-      "program": "금빛스케치",
-      "sourceType": "manual",
-      "attended": 41,
-      "sessions": 4,
-      "expected": null,
-      "reason": "수업일 미기재·판독 불가로 대상 인원 확정 불가",
-      "issues": [
-        {
-          "date": null,
-          "count": 11,
-          "page": 316,
-          "slot": 4,
-          "eligible": null,
-          "reason": "수업일 미기재·판독 불가로 대상 인원 확정 불가"
-        }
-      ]
-    }
-  ],
+  "review": [],
   "adjustments": [
     {
       "date": "2026-02-09",
