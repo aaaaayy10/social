@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { eligibleMembers, normalizeContract, type PaymentContract } from "../src/lib/enrollment-eligibility";
 import { inspectClassEvidence } from "../src/lib/attendance-evidence";
+import { applyAttendanceTargets, isExcludedClass } from "../src/lib/attendance-adjustments";
 
 const original: PaymentContract = { memberId: "test-person-a", program: "테스트 강좌", paidOn: "2026-01-26", startsOn: "2026-02-03", endsOn: "2026-09-03", cancelledOn: "2026-02-10" };
 const row = normalizeContract(original);
@@ -21,6 +22,16 @@ assert.deepEqual(inspectClassEvidence(twoSessions, 2, 22, "2026-07"), { expected
 assert.equal(inspectClassEvidence([{ date: null, count: 8, eligible: 10, slot: 1 }], 1, 8).verified, true);
 assert.equal(inspectClassEvidence([{ date: null, count: 8, eligible: null, slot: 1 }], 1, 8).verified, false);
 assert.equal(inspectClassEvidence([{ date: "2026-07-16", count: 13, eligible: 12, slot: 1 }], 1, 13).verified, false);
+const unadjusted = [{ date: "2026-03-10", count: 13, eligible: 12, slot: 1 }, { date: "2026-03-17", count: 8, eligible: 12, slot: 2 }];
+const adjusted = applyAttendanceTargets(unadjusted);
+assert.equal(adjusted.adjustments.length, 1);assert.equal(adjusted.adjustments[0].ledgerEligible,12);
+assert.equal(inspectClassEvidence(adjusted.classes,2,21).expected,25);
+assert.equal(inspectClassEvidence(adjusted.classes,2,21).verified,true);
+assert.equal(unadjusted[0].eligible,12);
+assert.equal(applyAttendanceTargets([{date:null,count:11,eligible:null,slot:1}]).classes[0].eligible,null);
+assert.equal(isExcludedClass('A0164','2026-07-21'),true);
+assert.equal(isExcludedClass('A0164','2026-07-17'),false);
+assert.equal(isExcludedClass('A1862','2026-07-21'),false);
 assert.throws(() => inspectClassEvidence(twoSessions, 1, 22));
 assert.throws(() => inspectClassEvidence(twoSessions, 2, 23));
 assert.throws(() => inspectClassEvidence(twoSessions, 2, 22, "2026-06"));

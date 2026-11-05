@@ -3,6 +3,7 @@ import manual from "@/data/manual-attendance.json";
 import expectations from "@/data/attendance-expectations.json";
 import classDates from "@/data/attendance-class-dates.json";
 import { currentEnrollment } from "@/lib/program-metrics";
+import { isExcludedClass } from "@/lib/attendance-adjustments";
 
 export type VerifiedExpectation = { month: string; programCode: string; expected: number; sessions: number; source: string; verifiedOn: string };
 export function verifiedAttendance(attended: number | null, sessions: number | null, evidence?: VerifiedExpectation) {
@@ -19,7 +20,11 @@ export type AttendanceSource = { id: string; month: string; type: "rf" | "manual
 export type AttendanceProgram = { code: string; name: string; type: "rf" | "manual" };
 export type AttendanceReview = { month: string; programCode: string; program: string; sourceType: string; attended: number; sessions: number; expected: number | null; reason: string; issues: { date: string | null; count: number; eligible: number | null; slot: number; page?: number; reason: string }[] };
 // Original RF records stay intact; line dance 2 uses the manual source only.
-const rfRecords = raw.records.filter(row => row.programCode !== "A1811");
+const rfRecords = raw.records.filter(row => row.programCode !== "A1811").map(row => {
+  if (!row.datedCounts) return row;
+  const datedCounts = row.datedCounts.filter(item => !isExcludedClass(row.programCode, item.date));
+  return { ...row, datedCounts, dailyCounts: datedCounts.map(item => item.count) };
+});
 const programs = [...raw.programs.filter(row => row.code !== "A1811"), ...manual.programs] as AttendanceProgram[];
 const januaryRecords: AttendanceRecord[] = programs.map(program => ({ month: "2026-01", programCode: program.code, sourceId: "january-vacation-" + program.type, sourceType: program.type, dailyCounts: program.type === "rf" ? [] : null, datedCounts: null, manualTotal: program.type === "manual" ? 0 : null, manualSessions: program.type === "manual" ? 0 : null, readingStatus: "사용자 확인", note: "1월 방학 · 일본어 초급은 3월 개강" }));
 const januarySources: AttendanceSource[] = (["rf", "manual"] as const).map(type => ({ id: "january-vacation-" + type, month: "2026-01", type, format: "user-confirmation", scope: "full", visiblePrograms: programs.filter(program => program.type === type).length, expectedPrograms: programs.filter(program => program.type === type).length, readingStatus: "사용자 확인", metric: "방학 휴강", note: "1월 전체 방학 · 실적0" }));
@@ -36,6 +41,7 @@ export const attendance = {
   readingComplete: expectations.readingComplete,
   reviewedOn: expectations.reviewedOn,
   corrections: classDates.rfCorrections,
+  adjustments: expectations.adjustments,
 };
 export function calculateAttendance(record: AttendanceRecord) {
   const program = attendance.programs.find(row => row.code === record.programCode);
@@ -73,7 +79,8 @@ export function validateAttendance() {
     if (seen.has(key)) throw new Error("중복 월·프로그램 집계가 있습니다.");
     seen.add(key);
     calculateAttendance(row);
-    const classes = classDates.records.find(record => record.month === row.month && record.programCode === row.programCode);
+    const sourceClasses = classDates.records.find(record => record.month === row.month && record.programCode === row.programCode);
+    const classes = sourceClasses ? { ...sourceClasses, classes: sourceClasses.classes.filter(item => !isExcludedClass(row.programCode, item.date)) } : undefined;
     if (row.month !== "2026-01" && (!classes || classes.classes.length !== calculateAttendance(row).sessions || classes.classes.reduce((sum, item) => sum + item.count, 0) !== calculateAttendance(row).attended)) throw new Error("전체 원본 회차의 날짜·합계 대조가 누락되었습니다.");
     if (attendance.programs.find(program => program.code === row.programCode)?.type !== row.sourceType) throw new Error("RF·수기 분류가 일치하지 않습니다.");
     if (!attendance.sources.some(source => source.id === row.sourceId && source.month === row.month)) throw new Error("자료 출처가 일치하지 않습니다.");

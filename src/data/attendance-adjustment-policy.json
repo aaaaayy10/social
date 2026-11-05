@@ -1,0 +1,9 @@
+{
+  "confirmedOn": "2026-11-05",
+  "overflowRule": "회차별 대상 인원 = 수납 명부 대상과 실제 참석 인원 중 큰 값. 환불 원인으로 단정하지 않음.",
+  "excludedClasses": [
+    {"programCode":"A0164","date":"2026-07-21","count":15,"reason":"사용자 확인: 건강체조 종강 이후 기록 집계 제외"},
+    {"programCode":"A0164","date":"2026-07-23","count":1,"reason":"사용자 확인: 건강체조 종강 이후 기록 집계 제외"},
+    {"programCode":"A0164","date":"2026-07-28","count":1,"reason":"사용자 확인: 건강체조 종강 이후 기록 집계 제외"}
+  ]
+}
