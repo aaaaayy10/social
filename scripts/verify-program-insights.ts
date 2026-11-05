@@ -1,4 +1,5 @@
-﻿import assert from "node:assert/strict";
+import "./test-insight-workflow";
+import assert from "node:assert/strict";
 import {
   buildInsightAnalysis,
   emptyReview,
@@ -124,6 +125,17 @@ assert.equal(insightAiEnabled, false);
 const first = all.topics[0],
   malicious = {
     ...emptyReview(first.id),
+    workflowVersion: 3,
+    stage: "결과 확인" as const,
+    status: "반영 완료" as const,
+    fieldEvidence: "<script>alert(1)</script>",
+    verificationMethods: ["담당자 확인"] as ["담당자 확인"],
+    finding: "가설 확인" as const,
+    confirmedInsight: "검증용 확정 내용",
+    decisionReason: "검증용 판단",
+    timing: "검증용 실제 시기",
+    followUp: "검증용 실제 확인 결과",
+    updatedAt: "2026-11-05T00:00:00Z",
     opinion: "<script>alert(1)</script>",
     implementation: "<img src=x onerror=alert(1)>",
     snapshot: {
@@ -136,12 +148,38 @@ const first = all.topics[0],
 const report = buildInsightReport(all, { [first.id]: malicious }, null, "test");
 assert.ok(report.includes("A4 landscape"));
 assert.ok(report.includes("간접 EBG"));
-assert.ok(report.includes("추가 확인"));
-assert.ok(report.includes("외부 AI 연결 없음"));
+assert.ok(report.includes("현장 확인 결과"));
+assert.ok(report.includes("외부 AI 모델 분석이 아닙니다"));
 assert.ok(!report.includes("<script>alert"));
 assert.ok(report.includes("&lt;script"));
 assert.ok(report.includes("&lt;img"));
 assert.ok(report.includes("최대5건"));
+const appliedMarker = "검증용 핵심 실제 반영 사례";
+const manyRecords = Object.fromEntries(
+  all.topics.map((topic, index) => [
+    topic.id,
+    {
+      ...malicious,
+      id: topic.id,
+      stage:
+        index === all.topics.length - 1
+          ? ("반영 완료" as const)
+          : ("인사이트 확정" as const),
+      status:
+        index === all.topics.length - 1
+          ? ("반영 완료" as const)
+          : ("반영 검토" as const),
+      implementation: index === all.topics.length - 1 ? appliedMarker : "",
+    },
+  ]),
+);
+assert.ok(
+  buildInsightReport(all, manyRecords, null, "test").includes(appliedMarker),
+  "Applied cases must precede pending reviews in the one-page report",
+);
+const emptyReport = buildInsightReport(all, {}, null, "test");
+assert.ok(emptyReport.includes("사업개선 검토 단계"));
+assert.ok(emptyReport.includes("담당자가 확정한 인사이트가 아직 없습니다"));
 const outbound = buildInsightAiPayload({
   ...all,
   privateNotes: "do-not-send",

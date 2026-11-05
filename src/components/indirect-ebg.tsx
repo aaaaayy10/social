@@ -1,19 +1,25 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { FileText, Save, Loader2, ArrowDown, CheckCircle2 } from "lucide-react";
+import { FileText, ArrowDown, CheckCircle2 } from "lucide-react";
 import { PageShell } from "@/components/page-shell";
 import { Button } from "@/components/ui/button";
 import { EbgOverview, EbgComparisons } from "@/components/indirect-ebg-charts";
 import {
   emptyReview,
   insightPeriods,
-  insightStatuses,
   normalizeInsightStatus,
   type InsightAnalysis,
   type InsightReview,
   type InsightTopic,
 } from "@/lib/program-insights";
+import {
+  WorkflowSummary,
+  WorkflowCards,
+  WorkflowEditor,
+  ReviewHistory,
+} from "@/components/insight-workflow";
+import { normalizeWorkflowReview } from "@/lib/program-insight-workflow";
 import { buildInsightReport } from "@/lib/program-insight-report";
 type Payload = {
   analysis: InsightAnalysis;
@@ -39,6 +45,8 @@ const legacyTitles: Record<string, string> = {
 };
 const fresh = (topic: InsightTopic): InsightReview => ({
   ...emptyReview(topic.id),
+  workflowVersion: 3,
+  stage: "분석 후보",
   editedEbg: topic.ebg,
   editedMeaning: topic.meaning,
   editedAction: topic.action,
@@ -98,7 +106,9 @@ export function IndirectEbg() {
     topic = topics.find((t) => t.id === selected),
     key = keyOf(period, selected),
     saved = payload?.records[selected],
-    draft = topic ? (drafts[key] ?? saved ?? fresh(topic)) : null;
+    draft = topic
+      ? normalizeWorkflowReview(drafts[key] ?? saved ?? fresh(topic))
+      : null;
   const activeIds = new Set(topics.map((t) => t.id)),
     archived = Object.values(payload?.records ?? {}).filter(
       (r) => !activeIds.has(r.id),
@@ -122,8 +132,11 @@ export function IndirectEbg() {
       }
   }
   function update(values: Partial<InsightReview>) {
-    if (!draft) return;
-    storeDraft({ ...drafts, [key]: { ...draft, ...values } });
+    if (!draft || saving) return;
+    storeDraft({
+      ...drafts,
+      [key]: { ...draft, ...values, workflowVersion: 3 },
+    });
     setMessage(
       "작성 중인 초안입니다. 검토 기록 저장을 누르면 서버에 보존됩니다.",
     );
@@ -137,9 +150,11 @@ export function IndirectEbg() {
       const body = {
         ...draft,
         status: normalizeInsightStatus(draft.status),
-        confirmed: true,
+        confirmed: false,
         notAppliedReason:
-          draft.status === "미반영" ? draft.opinion : draft.notAppliedReason,
+          draft.status === "미반영"
+            ? draft.decisionReason || draft.notAppliedReason
+            : draft.notAppliedReason,
         period,
         fingerprint: payload.fingerprint,
         revision: draft.updatedAt ?? null,
@@ -171,6 +186,7 @@ export function IndirectEbg() {
     }
   }
   function selectTopic(id: string) {
+    if (saving) return;
     setSelected(id);
     setTimeout(
       () =>
@@ -282,7 +298,7 @@ export function IndirectEbg() {
         </label>
         <p className="text-xs text-muted-foreground">
           {a
-            ? `${a.programCount}개 프로그램 · 근거 기반 가설 ${topics.length}건 · 외부 AI 연결 없는 기본 분석`
+            ? `${a.programCount}개 프로그램 · 근거 기반 가설 ${topics.length}건 · 규칙 기반 자동 분석·가설 생성 · 외부 AI 모델 미사용`
             : "기존 데이터를 연결하고 있습니다."}
         </p>
         <Button
@@ -321,6 +337,11 @@ export function IndirectEbg() {
         a &&
         payload && (
           <>
+            <WorkflowSummary
+              topics={topics}
+              records={payload.records}
+              fingerprint={payload.fingerprint}
+            />
             <EbgOverview analysis={a} />
             <div
               className="flex justify-center text-muted-foreground"
@@ -328,150 +349,15 @@ export function IndirectEbg() {
             >
               <ArrowDown className="size-5" />
             </div>
-            <section aria-label="간접 EBG 및 사업 인사이트">
-              <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
-                <div>
-                  <h2 className="text-lg font-semibold">
-                    간접 EBG 및 사업 인사이트
-                  </h2>
-                  <p className="mt-1 text-xs leading-6 text-muted-foreground">
-                    실제 프로그램과 수치가 있는 관찰만 제시합니다. 욕구 가설은
-                    직접 EBG로 확인해야 하며 선호·욕구의 확정 결과가 아닙니다.
-                  </p>
-                </div>
-                <span className="rounded-full bg-secondary px-3 py-1 text-xs">
-                  {topics.length}건 · 고정된 다섯 항목을 채우지 않음
-                </span>
-              </div>
-              <div className="grid items-start gap-4 lg:grid-cols-3">
-                {(showAll ? topics : topics.slice(0, 3)).map((t) => {
-                  const record = payload.records[t.id];
-                  return (
-                    <article
-                      key={t.id}
-                      className="min-w-0 rounded-2xl border bg-card p-5"
-                      aria-label={t.title}
-                    >
-                      <div className="mb-2 flex items-center justify-between gap-2">
-                        <span className="rounded bg-secondary px-2 py-1 text-[10px]">
-                          {t.area === "demand"
-                            ? "이용 수요"
-                            : t.area === "characteristics"
-                              ? "이용자 특성"
-                              : "참여 패턴"}
-                        </span>
-                        <span className="text-[10px] text-muted-foreground">
-                          분석 가설 · 미확정
-                        </span>
-                      </div>
-                      <h3 className="text-sm font-semibold leading-6">
-                        {t.title}
-                      </h3>
-                      <p className="my-2 text-xs leading-6">{t.question}</p>
-                      <div className="space-y-3 border-y py-3 text-xs leading-6">
-                        <div>
-                          <h4 className="font-semibold">
-                            ① 데이터에서 확인된 사실
-                          </h4>
-                          <p className="line-clamp-3 text-muted-foreground">
-                            {t.facts.join(" ")}
-                          </p>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold">
-                            ② 간접 EBG · 욕구에 대한 해석
-                          </h4>
-                          <p className="line-clamp-3 text-muted-foreground">
-                            {t.ebg}
-                          </p>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold">
-                            ③ 직접 EBG로 추가 확인
-                          </h4>
-                          <p className="line-clamp-2 text-muted-foreground">
-                            {t.checks[0]}
-                          </p>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold">
-                            ④ 사업개선 검토 방향
-                          </h4>
-                          <p className="line-clamp-2 text-muted-foreground">
-                            {t.action}
-                          </p>
-                        </div>
-                      </div>
-                      <details className="mt-3 text-xs leading-6">
-                        <summary className="cursor-pointer font-medium">
-                          전체 근거·질문·검토 방향
-                        </summary>
-                        <div className="mt-2 space-y-3">
-                          <ul className="list-disc pl-4">
-                            {t.facts.map((f) => (
-                              <li key={f}>{f}</li>
-                            ))}
-                          </ul>
-                          <p>
-                            <b>욕구 가설</b> · {t.ebg}
-                          </p>
-                          <p>{t.meaning}</p>
-                          <ol className="list-decimal pl-4">
-                            {t.checks.map((q) => (
-                              <li key={q}>{q}</li>
-                            ))}
-                          </ol>
-                          <p>
-                            <b>조건부 검토</b> · {t.action}
-                          </p>
-                          <p className="text-[10px] text-muted-foreground">
-                            {t.scope}
-                          </p>
-                          <Link
-                            href={t.href}
-                            className="text-primary underline"
-                          >
-                            관련 원본 지표
-                          </Link>
-                        </div>
-                      </details>
-                      <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
-                        <span className="text-[10px] text-muted-foreground">
-                          {record
-                            ? "담당자 결정: " + record.status
-                            : "담당자 검토 기록 없음"}
-                        </span>
-                        <Button
-                          size="sm"
-                          variant={selected === t.id ? "default" : "outline"}
-                          onClick={() => selectTopic(t.id)}
-                        >
-                          검토 기록
-                        </Button>
-                      </div>
-                    </article>
-                  );
-                })}
-              </div>
-              {topics.length > 3 && (
-                <div className="mt-4 text-center">
-                  <Button
-                    variant="outline"
-                    onClick={() => setShowAll((v) => !v)}
-                  >
-                    {showAll
-                      ? "주요 세 가지로 접기"
-                      : `근거가 확인된 나머지 ${topics.length - 3}건 보기`}
-                  </Button>
-                </div>
-              )}
-              {topics.length === 0 && (
-                <p className="rounded-xl border bg-card p-5 text-sm">
-                  선택 범위에서 구체적인 인사이트 근거가 확인되지 않았습니다.
-                  임의의 제안을 만들지 않습니다.
-                </p>
-              )}
-            </section>
+            <WorkflowCards
+              topics={topics}
+              records={payload.records}
+              fingerprint={payload.fingerprint}
+              showAll={showAll}
+              onToggle={() => setShowAll((v) => !v)}
+              onSelect={selectTopic}
+              disabled={saving}
+            />
             <details className="rounded-2xl border bg-card p-5">
               <summary className="cursor-pointer text-sm font-semibold">
                 연령·분야·강좌 조합·참여의 상세 근거 비교
@@ -530,174 +416,27 @@ export function IndirectEbg() {
               </p>
             </details>
             {topic && draft && (
-              <section
-                id="ebg-record"
-                className="scroll-mt-4 rounded-2xl border bg-card p-5"
-                aria-label="사업개선 기록"
-              >
-                <div className="mb-4">
-                  <p className="text-[10px] font-semibold text-muted-foreground">
-                    담당자의 직접 확인과 결정 · 분석 가설과 별도 보존
-                  </p>
-                  <h2 className="mt-1 text-lg font-semibold">사업개선 기록</h2>
-                  <p className="mt-1 text-xs text-muted-foreground">
-                    {topic.title} ·{" "}
-                    {drafts[key]
-                      ? "서버에 저장하지 않은 초안"
-                      : "저장된 기록 또는 새 검토"}{" "}
-                    ·{" "}
-                    {saved?.updatedAt
-                      ? "최근 저장 " +
-                        new Date(saved.updatedAt).toLocaleString("ko-KR")
-                      : "서버 저장 전"}
-                  </p>
-                </div>
-                <div className="rounded-xl border bg-secondary/25 p-4 text-xs leading-6">
-                  <h3 className="font-semibold">
-                    ① 분석 및 인사이트 · 자동 불러오기
-                  </h3>
-                  <p className="mt-2">
-                    <b>분석 질문</b> · {topic.question}
-                  </p>
-                  <ul className="mt-1 list-disc pl-4">
-                    {topic.facts.map((f) => (
-                      <li key={f}>{f}</li>
-                    ))}
-                  </ul>
-                  <p className="mt-2">
-                    <b>욕구 가설</b> · {topic.ebg}
-                  </p>
-                  <ul className="mt-2 list-disc pl-4">
-                    {topic.checks.map((q) => (
-                      <li key={q}>{q}</li>
-                    ))}
-                  </ul>
-                  <p className="mt-2">
-                    <b>검토 방향</b> · {topic.action}
-                  </p>
-                  <p className="mt-2 text-[10px] text-muted-foreground">
-                    {topic.scope}
-                  </p>
-                </div>
-                {saved?.snapshot &&
-                  saved.snapshot.fingerprint !== payload.fingerprint && (
-                    <p
-                      role="status"
-                      className="mt-3 rounded-lg bg-amber-50 p-3 text-xs leading-6"
-                    >
-                      저장 후 분석 근거가 달라졌습니다. 기존 기록을 보존했으니
-                      자동 분석 내용과 현장 확인 결과를 다시 검토해 주세요.
-                    </p>
-                  )}
-                <div className="mt-5 grid gap-4 md:grid-cols-2">
-                  <label className="text-sm font-medium md:col-span-2">
-                    ② 담당자 검토 의견
-                    <textarea
-                      aria-label="담당자 검토 의견"
-                      value={draft.opinion}
-                      maxLength={2500}
-                      rows={3}
-                      onChange={(e) =>
-                        update({ opinion: e.target.value, confirmed: false })
-                      }
-                      placeholder="직접 EBG와 현장에서 실제 확인한 사항을 기록하세요. 미반영 결정이면 사유를 함께 적어 주세요."
-                      className="mt-2 w-full rounded-lg border bg-card p-3 text-sm leading-6"
-                    />
-                  </label>
-                  <label className="text-sm font-medium">
-                    ③ 개선 결정
-                    <select
-                      aria-label="개선 결정"
-                      value={normalizeInsightStatus(draft.status)}
-                      onChange={(e) =>
-                        update({
-                          status: e.target.value as InsightReview["status"],
-                          confirmed: false,
-                        })
-                      }
-                      className="mt-2 h-10 w-full rounded-lg border bg-card px-3"
-                    >
-                      {insightStatuses.map((s) => (
-                        <option key={s}>{s}</option>
-                      ))}
-                    </select>
-                  </label>
-                  <label className="text-sm font-medium">
-                    ④ 사업 반영 시기
-                    <input
-                      aria-label="사업 반영 시기"
-                      value={draft.timing}
-                      maxLength={120}
-                      onChange={(e) =>
-                        update({ timing: e.target.value, confirmed: false })
-                      }
-                      placeholder="예: 다음 학기 개강 전"
-                      className="mt-2 h-10 w-full rounded-lg border bg-card px-3"
-                    />
-                  </label>
-                  <label className="text-sm font-medium md:col-span-2">
-                    ④ 사업 반영 내용
-                    <textarea
-                      aria-label="사업 반영 내용"
-                      value={draft.implementation}
-                      maxLength={2500}
-                      rows={3}
-                      onChange={(e) =>
-                        update({
-                          implementation: e.target.value,
-                          confirmed: false,
-                        })
-                      }
-                      placeholder="검토 중인 계획과 실제로 변경한 내용을 구분해 작성하세요."
-                      className="mt-2 w-full rounded-lg border bg-card p-3 text-sm leading-6"
-                    />
-                  </label>
-                  <label className="text-sm font-medium md:col-span-2">
-                    ⑤ 개선 결과
-                    <textarea
-                      aria-label="개선 결과"
-                      value={draft.followUp}
-                      maxLength={2500}
-                      rows={3}
-                      onChange={(e) =>
-                        update({ followUp: e.target.value, confirmed: false })
-                      }
-                      placeholder="적용 후 변화가 확인된 경우에만 결과와 후속 확인 내용을 기록하세요."
-                      className="mt-2 w-full rounded-lg border bg-card p-3 text-sm leading-6"
-                    />
-                  </label>
-                </div>
-                <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t pt-4">
-                  <p className="text-xs leading-6 text-muted-foreground">
-                    저장은 담당자의 검토 기록이며 욕구 가설의 사실 확정을
-                    의미하지 않습니다.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <Button
-                      variant="outline"
-                      onClick={() => {
-                        const next = { ...drafts };
-                        delete next[key];
-                        storeDraft(next);
-                        setMessage(
-                          "초안을 지우고 불러온 서버 기록으로 돌아갔습니다. 저장 충돌 시 먼저 자료·기록 새로고침을 눌러 주세요.",
-                        );
-                      }}
-                      disabled={saving}
-                    >
-                      초안 지우고 서버 기록 사용
-                    </Button>
-                    <Button onClick={save} disabled={saving}>
-                      {saving ? (
-                        <Loader2 className="size-4 animate-spin" />
-                      ) : (
-                        <Save className="size-4" />
-                      )}
-                      검토 기록 저장
-                    </Button>
-                  </div>
-                </div>
-              </section>
+              <WorkflowEditor
+                topic={topic}
+                draft={draft}
+                saved={saved}
+                fingerprint={payload.fingerprint}
+                saving={saving}
+                hasDraft={!!drafts[key]}
+                error={error}
+                message={message}
+                onUpdate={update}
+                onSave={save}
+                onClear={() => {
+                  const next = { ...drafts };
+                  delete next[key];
+                  storeDraft(next);
+                  setError("");
+                  setMessage(
+                    "서버 기록으로 돌아갔습니다. 충돌 시 자료·기록 새로고침을 눌러 주세요.",
+                  );
+                }}
+              />
             )}
             {(archived.length > 0 || archivedDrafts.length > 0) && (
               <details className="rounded-2xl border bg-card p-4">
@@ -734,6 +473,11 @@ export function IndirectEbg() {
                     ))}
                     {(
                       [
+                        ["현장 확인", r.fieldEvidence],
+                        ["확인 방법", r.verificationMethods?.join(" / ")],
+                        ["확인 결과", r.finding],
+                        ["담당자 확정 인사이트", r.confirmedInsight],
+                        ["개선 판단 근거", r.decisionReason],
                         ["이전 분석 검토", r.review],
                         ["담당자 의견", r.opinion],
                         ["반영 시기", r.timing],
@@ -751,8 +495,10 @@ export function IndirectEbg() {
                           <b>{title}</b> · {v}
                         </p>
                       ))}
+                    <ReviewHistory record={r} />
                     {draft && (
                       <Button
+                        disabled={saving}
                         size="sm"
                         variant="outline"
                         className="mt-3"
@@ -765,6 +511,12 @@ export function IndirectEbg() {
                             followUp: r.followUp,
                             notAppliedReason: r.notAppliedReason,
                             status: "반영 검토",
+                            stage: "분석 후보",
+                            fieldEvidence: "",
+                            verificationMethods: [],
+                            finding: "",
+                            confirmedInsight: "",
+                            decisionReason: "",
                             confirmed: false,
                           });
                           document

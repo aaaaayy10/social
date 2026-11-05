@@ -76,6 +76,14 @@ export type InsightReview = {
   editedMeaning: string;
   editedAction: string;
   updatedAt: string | null;
+  workflowVersion?: number;
+  stage?: InsightStage;
+  fieldEvidence?: string;
+  verificationMethods?: VerificationMethod[];
+  finding?: VerificationFinding | "";
+  confirmedInsight?: string;
+  decisionReason?: string;
+  workflowHistory?: InsightChange[];
   snapshot?: {
     asOf: string;
     period: string;
@@ -88,6 +96,38 @@ export type InsightReview = {
     ebg?: string;
     action?: string;
   };
+};
+export const insightStages = [
+  "분석 후보",
+  "확인 중",
+  "인사이트 확정",
+  "개선 검토",
+  "반영 완료",
+  "결과 확인",
+] as const;
+export type InsightStage = (typeof insightStages)[number];
+export const verificationMethods = [
+  "어르신 의견",
+  "강사 의견",
+  "담당자 확인",
+  "추가 데이터 분석",
+  "기타",
+] as const;
+export type VerificationMethod = (typeof verificationMethods)[number];
+export const verificationFindings = [
+  "가설 확인",
+  "일부 확인",
+  "확인되지 않음",
+  "추가 확인 필요",
+] as const;
+export type VerificationFinding = (typeof verificationFindings)[number];
+export type InsightChange = {
+  version: number;
+  at: string;
+  kind: "legacy" | "save";
+  stage: InsightStage;
+  changes: { field: string; before: unknown; after: unknown }[];
+  source?: InsightReview["snapshot"];
 };
 export type AiInsight = {
   id: string;

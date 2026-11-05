@@ -11,6 +11,10 @@ import {
 } from "@/lib/program-insights";
 import { insightAiEnabled } from "@/lib/program-insight-mode";
 import {
+  normalizeWorkflowReview,
+  appendWorkflowHistory,
+} from "@/lib/program-insight-workflow";
+import {
   aiPrefix,
   loadInsightContext,
   recordPrefix,
@@ -42,12 +46,12 @@ export async function GET(request: NextRequest) {
         savedAi = JSON.parse(row.value);
       else {
         const value = JSON.parse(row.value);
-        records[value.id] = {
+        records[value.id] = normalizeWorkflowReview({
           ...value,
           originalStatus: value.originalStatus ?? value.status,
           status: normalizeInsightStatus(value.status),
           updatedAt: row.updated_at,
-        };
+        });
       }
     }
     return json({
@@ -107,7 +111,7 @@ export async function PATCH(request: NextRequest) {
     const db = createAdminClient();
     const existing = await db
       .from("system_settings")
-      .select("value")
+      .select("value,updated_at")
       .eq("key", key)
       .maybeSingle();
     if (existing.error) throw existing.error;
@@ -128,6 +132,17 @@ export async function PATCH(request: NextRequest) {
       },
       updatedBy: user.id,
     };
+    const previous = existing.data
+      ? {
+          ...JSON.parse(existing.data.value),
+          updatedAt: existing.data.updated_at,
+        }
+      : null;
+    record.workflowHistory = appendWorkflowHistory(
+      previous,
+      { ...record, updatedAt },
+      updatedAt,
+    );
     const saved =
       revision === null
         ? await db

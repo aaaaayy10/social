@@ -6,6 +6,11 @@ import {
   type InsightReview,
 } from "@/lib/program-insights";
 import { GET as managementSummary } from "@/app/api/management-summary/route";
+import {
+  parseWorkflowInput,
+  normalizeWorkflowReview,
+  workflowValidationError,
+} from "@/lib/program-insight-workflow";
 export const recordPrefix = "program-insight:review:";
 export const aiPrefix = "program-insight:ai:";
 export async function loadInsightContext(period: string) {
@@ -90,20 +95,18 @@ export function validateReviewBody(body: unknown, ids: string[]) {
       return [key, (b[key] as string).trim()];
     }),
   ) as Pick<InsightReview, (typeof reviewFields)[number]>;
-  if (b.status === "미반영" && !fields.notAppliedReason)
-    throw Error("미반영 사유를 입력해 주세요.");
-  if (b.status === "반영 완료" && !fields.implementation)
-    throw Error("실제 개선 내용을 입력해 주세요.");
-  if (
-    b.confirmed &&
-    (!fields.editedEbg || !fields.editedMeaning || !fields.editedAction)
-  )
-    throw Error("확정할 해석·사업 인사이트·개선 방향을 모두 입력해 주세요.");
-  return {
+  const workflow = parseWorkflowInput(b);
+  const candidate = {
     id: b.id,
     status: b.status as InsightReview["status"],
-    confirmed: b.confirmed,
+    confirmed: !["분석 후보", "확인 중"].includes(workflow.stage),
     revision: b.revision as string | null,
     ...fields,
+    ...workflow,
   };
+  const error = workflowValidationError(
+    normalizeWorkflowReview({ ...candidate, updatedAt: null }),
+  );
+  if (error) throw Error(error);
+  return candidate;
 }
