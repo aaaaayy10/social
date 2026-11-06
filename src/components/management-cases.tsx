@@ -1,4 +1,5 @@
 ﻿"use client";
+import { notifyManagementSaved } from "@/lib/management-summary-events";
 import enrollment from "@/data/course-enrollment.json";
 import { useCallback, useEffect, useState } from "react";
 import { PageHeader, PageShell, StatsGrid } from "@/components/page-shell";
@@ -50,6 +51,7 @@ export function ManagementCases() {
       setData(previous => previous ? { ...previous, actions: { ...previous.actions, [id]: result.action } } : previous);
       setDrafts(previous => ({ ...previous, [id]: result.action }));
       setMessages(previous => ({ ...previous, [id]: "저장 완료" }));
+      notifyManagementSaved();
     } catch (error) { setMessages(previous => ({ ...previous, [id]: error instanceof Error ? error.message : "저장 실패" })); }
     finally { setSaving(previous => ({ ...previous, [id]: false })); }
   }

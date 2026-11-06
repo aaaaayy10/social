@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import Link from "next/link";
+import { useManagementSummary } from "@/lib/hooks/use-management-summary";
 import { Bar, BarChart, CartesianGrid, Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { ArrowUpRight, RefreshCw } from "lucide-react";
 import demographics from "@/data/program-demographics.json";
@@ -13,7 +14,6 @@ import { PageShell } from "@/components/page-shell";
 import { money, number, percent } from "@/components/program-analysis-ui";
 import { Button } from "@/components/ui/button";
 
-type ManagementSummary = { total: number; pending: number; counts: Record<string, number>; absence: number; recruitment: number; seats: number };
 const colors = ["#3d7499", "#64a695", "#e0b968"];
 const monthly = attendance.months.map(month => ({ month: Number(month.slice(5)) + "월", RF: summarizeAttendance(attendance.records.filter(row => row.month === month && row.sourceType === "rf")).attended ?? 0, 수기: summarizeAttendance(attendance.records.filter(row => row.month === month && row.sourceType === "manual")).attended ?? 0 }));
 const cash = programMetrics.ledger.months.map(row => ({ month: Number(row.month.slice(5)) + "월", 수납: row.deposit / 10000, 환불: row.refund / 10000 }));
@@ -27,27 +27,23 @@ function Panel({ title, href, note, children, className = "" }: { title: string;
 }
 
 export function ProgramDashboard() {
-  const [management, setManagement] = useState<ManagementSummary | null>(null);
-  const [error, setError] = useState(false);
   const [refresh, setRefresh] = useState(0);
-  useEffect(() => {
-    const controller = new AbortController();
-    fetch("/api/management-summary", { cache: "no-store", signal: controller.signal }).then(async response => {
-      if (!response.ok) throw new Error("관리 요약 조회 실패");
-      setManagement(await response.json()); setError(false);
-    }).catch(error => { if (error.name !== "AbortError") setError(true); });
-    return () => controller.abort();
-  }, [refresh]);
+  const { management, error } = useManagementSummary(refresh);
   const occupancy = programMetrics.totals.applications / programMetrics.totals.capacity * 100;
   const kpis = [
     { label: "운영 프로그램", value: `${programMetrics.programs}`, unit: "개", detail: "RF 10개 · 수기 35개", href: "/dashboard/customers", color: "#3d7499" },
     { label: "현재 수납 실인원", value: number(programMetrics.currentPaidUnique), unit: "명", detail: `${programMetrics.ledgerAsOf} 명부 · 강좌 간 중복 제외`, href: "/dashboard/projects", color: "#356d67" },
     { label: "현재 등록 건수", value: number(programMetrics.totals.applications), unit: "건", detail: `수납 ${number(programMetrics.totals.paid)}건 · 중복 포함`, href: "/dashboard/customers", color: "#67758a" },
-    { label: "관리 필요 · 미완료", value: management ? number(management.pending) : error ? "조회 실패" : "조회 중", unit: management ? "건" : "", detail: management ? `전체 ${management.total}건 중 ${management.counts["처리 완료"]}건 완료` : "관리 상태 새로고침으로 재조회", href: "/dashboard/revenues", color: "#896734" },
   ];
   return <PageShell className="space-y-3">
     <header className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border bg-white/90 p-4 shadow-sm"><div><p className="text-[10px] font-semibold tracking-[0.2em] text-slate-500">PROGRAM OPERATIONS DASHBOARD</p><h1 className="mt-1 text-xl font-bold tracking-tight">프로그램 현황 대시보드</h1><p className="mt-1 text-xs leading-5 text-slate-500">목포이랜드노인복지관 · 모집·수납 건수 {enrollment.asOf} · 명부·금액 11월 4일 · 출석 1~10월</p></div><Button variant="outline" size="sm" onClick={() => setRefresh(value => value + 1)}><RefreshCw className="size-3.5" />관리 상태 새로고침</Button></header>
-    <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">{kpis.map(row => <Link key={row.label} href={row.href} className="overflow-hidden rounded-xl border border-white/50 p-3 text-white shadow-sm focus-visible:outline-2 focus-visible:outline-ring" style={{ backgroundColor: row.color }}><p className="text-xs font-medium text-white/90">{row.label}</p><p className="my-1 text-2xl font-semibold tabular-nums">{row.value}<span className="ml-1 text-sm font-normal">{row.unit}</span></p><p className="text-[10px] leading-5 text-white/85">{row.detail}</p></Link>)}</div>
+    <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">{kpis.map(row => <Link key={row.label} href={row.href} className="overflow-hidden rounded-xl border border-white/50 p-3 text-white shadow-sm focus-visible:outline-2 focus-visible:outline-ring" style={{ backgroundColor: row.color }}><p className="text-xs font-medium text-white/90">{row.label}</p><p className="my-1 text-2xl font-semibold tabular-nums">{row.value}<span className="ml-1 text-sm font-normal">{row.unit}</span></p><p className="text-[10px] leading-5 text-white/85">{row.detail}</p></Link>)}
+      <Link href="/dashboard/revenues" aria-label="관리 처리 현황 상세 보기" className="col-span-2 min-w-0 overflow-hidden rounded-xl border border-white/50 bg-[#896734] p-3 text-white shadow-sm sm:col-span-1 focus-visible:outline-2 focus-visible:outline-ring">
+        <p className="text-xs font-medium text-white/90">관리 처리 현황</p>
+        <dl className="my-2 grid grid-cols-3 divide-x divide-white/25" aria-live="polite" aria-atomic="true">{[['관리 필요', '확인 필요'], ['처리 중', '처리 중'], ['처리 완료', '처리 완료']].map(([label, status]) => <div key={status} className="min-w-0 px-1 text-center first:pl-0 last:pr-0"><dt className="whitespace-nowrap text-[10px] sm:text-[11px]">{label}</dt><dd className="mt-1 text-xl font-semibold tabular-nums">{management ? number(management.counts[status]) : '—'}<span className="ml-0.5 text-[10px] font-normal">건</span></dd></div>)}</dl>
+        <p className="text-[10px] leading-5 text-white/85">{error ? (management ? '연결 확인 필요 · 이전 조회값' : '관리 상태 조회 실패 · 재시도 중') : management ? '저장 후 자동 반영 · 5초마다 갱신' : '관리 상태 조회 중'}</p>
+      </Link>
+    </div>
     {error && <p role="alert" className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs">관리 상태를 불러오지 못했습니다. 새로고침으로 다시 조회할 수 있습니다. 앞서 표시된 상태는 이전 조회 결과입니다.</p>}
     <div className="grid items-start gap-4 xl:grid-cols-3">
       <Panel title="월별 실제 참여 연인원" href="/dashboard/quotations" note="RF·수기 출석 합산 · 단위 명·회 · 반복 출석 포함" className="xl:col-span-2">
