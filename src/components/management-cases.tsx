@@ -1,7 +1,7 @@
 ﻿"use client";
 import enrollment from "@/data/course-enrollment.json";
 import { useCallback, useEffect, useState } from "react";
-import { PageHeader, PageShell, StatCard, StatsGrid } from "@/components/page-shell";
+import { PageHeader, PageShell, StatsGrid } from "@/components/page-shell";
 import { Button } from "@/components/ui/button";
 import { managementStatuses, type CaseAction, type ManagementCase, type ManagementPayload } from "@/lib/management-cases";
 
@@ -87,8 +87,19 @@ export function ManagementCases() {
     {loading && <p role="status" className="rounded-xl border bg-card p-5">관리 자료를 불러오는 중입니다.</p>}
     {error && <p role="alert" className="rounded-xl border bg-rose-50 p-5">{error} <Button variant="outline" onClick={() => void load()}>다시 시도</Button></p>}
     {data && <>
-      <StatsGrid className="grid-cols-1 sm:grid-cols-3"><StatCard label="3회 이상 연속 결석" value={`${absence.length}명`} description="제공된 최근 수업일부터 연속 결석한 회원" tone="warning" /><StatCard label="대기자 충원 필요" value={`${recruitment.length}개 / ${recruitment.reduce((sum, row) => sum + (row.contactTarget ?? 0), 0)}자리`} description="정원 여유 + 대기자 있음" tone="brand" /><StatCard label="처리 완료" value={`${cases.filter(row => data.actions[row.id]?.status === "처리 완료").length} / ${cases.length}건`} description="담당자가 저장한 처리 상태" /></StatsGrid>
-      <div className="flex flex-wrap gap-2 text-xs">{managementStatuses.map(value => <button key={value} onClick={() => setStatus(previous => previous === value ? "all" : value)} aria-pressed={status === value} className={`rounded-full border px-4 py-2 ${status === value ? "bg-primary text-primary-foreground" : "bg-card"}`}>{value} {cases.filter(row => (data.actions[row.id]?.status ?? "확인 필요") === value).length}건</button>)}{dirtyCount > 0 && <span className="px-3 py-2 text-amber-800">미저장 {dirtyCount}건 · 항목별 저장을 눌러 주세요.</span>}</div>
+      <StatsGrid className="grid-cols-1 sm:grid-cols-3" aria-label="처리 상태 요약">
+        {managementStatuses.map((value, index) => <button key={value} type="button" onClick={() => setStatus(previous => previous === value ? "all" : value)} aria-pressed={status === value} aria-label={value + ' 상태 보기'} className={
+          "overflow-hidden rounded-2xl border text-left shadow-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring " +
+          (status === value ? "ring-2 ring-primary " : "") +
+          ["border-amber-200 bg-amber-50/70", "border-sky-200 bg-sky-50/80", "border-emerald-200 bg-emerald-50/70"][index]
+        }><div className="p-5"><p className="text-sm font-medium text-muted-foreground">{value}</p><p className="mt-2 text-3xl font-semibold tabular-nums">{cases.filter(row => (data.actions[row.id]?.status ?? "확인 필요") === value).length}<span className="ml-1 text-base font-normal">건</span></p></div><p className="border-t border-inherit px-5 py-3 text-xs text-muted-foreground">{status === value ? "선택됨 · 다시 누르면 전체 보기" : "선택하면 해당 상태만 표시"}</p></button>)}
+      </StatsGrid>
+      <div className="flex flex-wrap gap-2 text-xs" aria-label="관리 유형 요약">
+        <span className="rounded-full border bg-card px-4 py-2">3회 이상 연속 결석 {absence.length}명</span>
+        <span className="rounded-full border bg-card px-4 py-2">대기자 충원 필요 {recruitment.length}개 / {recruitment.reduce((sum, row) => sum + (row.contactTarget ?? 0), 0)}자리</span>
+        <span className="rounded-full border bg-card px-4 py-2">처리 완료 {cases.filter(row => data.actions[row.id]?.status === "처리 완료").length} / {cases.length}건</span>
+        {dirtyCount > 0 && <span className="px-3 py-2 text-amber-800">미저장 {dirtyCount}건 · 항목별 저장을 눌러 주세요.</span>}
+      </div>
       <div className="flex flex-wrap gap-3 rounded-xl border bg-card p-4"><label className="text-xs">유형<select aria-label="관리 유형" value={kind} onChange={event => setKind(event.target.value)} className={control}><option value="all">전체 관리 항목</option><option value="absence">연속 결석</option><option value="recruitment">대기자 충원</option></select></label><label className="text-xs">상태<select aria-label="관리 상태" value={status} onChange={event => setStatus(event.target.value)} className={control}><option value="all">전체 상태</option>{managementStatuses.map(value => <option key={value}>{value}</option>)}</select></label><label className="min-w-0 basis-full flex-1 text-xs sm:basis-auto">검색<input aria-label="관리 항목 검색" value={search} onChange={event => setSearch(event.target.value)} placeholder="회원번호 또는 프로그램명" className={control} /></label></div>
       <p className="text-xs leading-6 text-muted-foreground">제공 자료 기준 최근 수업일부터 3회 이상 연속 결석한 회원만 표시합니다. 이후 출석자는 제외합니다. 충원 현황은 {enrollment.asOf} 자료이며, 충원 목표는 정원 여유와 대기자 중 작은 수입니다. 처리 상태 변경은 등록·취소를 자동 변경하지 않습니다.</p>
       <div className="grid items-start gap-4 lg:grid-cols-[minmax(250px,1fr)_minmax(0,2fr)]">
