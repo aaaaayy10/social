@@ -38,11 +38,12 @@ export function currentAbsenceCases(source: PrivateCaseSource): ManagementCase[]
   }).sort((a, b) => (b.endingStreak ?? 0) - (a.endingStreak ?? 0));
 }
 
+// Retain existing case identities and saved actions across snapshot date updates.
 export function buildRecruitmentCases(): ManagementCase[] {
   return enrollment.programs.flatMap(program => {
     if (program.capacity === null || program.applications === null || program.waiting === null || program.waiting <= 0 || program.capacity <= program.applications) return [];
     const vacancies = program.capacity - program.applications;
-    return [{ id: `recruitment-${enrollment.asOf}-${program.id}`, kind: "recruitment" as const, title: "대기자 연락·충원 확인", programName: program.name, capacity: program.capacity, registered: program.applications, paid: program.paid, waiting: program.waiting, vacancies, contactTarget: Math.min(vacancies, program.waiting) }];
+    return [{ id: `recruitment-${enrollment.rosterAsOf}-${program.id}`, kind: "recruitment" as const, title: "대기자 연락·충원 확인", programName: program.name, capacity: program.capacity, registered: program.applications, paid: program.paid, waiting: program.waiting, vacancies, contactTarget: Math.min(vacancies, program.waiting) }];
   }).sort((a, b) => (b.vacancies ?? 0) - (a.vacancies ?? 0) || (b.waiting ?? 0) - (a.waiting ?? 0));
 }
 

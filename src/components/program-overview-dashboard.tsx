@@ -28,8 +28,8 @@ export function ProgramOverviewDashboard() {
   return <section aria-label="프로그램 운영 요약 대시보드" className="space-y-5">
     <StatsGrid className="grid-cols-2 xl:grid-cols-4">
       <StatCard label="운영 프로그램" value={`${programMetrics.programs}개`} description="RF 10개 · 수기 35개" tone="brand" />
-      <StatCard label={metricDefinitions.paidUnique} value={`${number(programMetrics.currentPaidUnique)}명`} description="유효 수납 명부 · 강좌 간 중복 제외" />
-      <StatCard label={metricDefinitions.registrations} value={`${number(programMetrics.totals.applications)}건`} description="강좌 간 중복 포함 · 11월 4일 현황표" />
+      <StatCard label={metricDefinitions.paidUnique} value={`${number(programMetrics.currentPaidUnique)}명`} description="11월 4일 유효 수납 명부 · 강좌 간 중복 제외" />
+      <StatCard label={metricDefinitions.registrations} value={`${number(programMetrics.totals.applications)}건`} description={`강좌 간 중복 포함 · ${programMetrics.asOf} 현황표`} />
       <Link href="/dashboard/revenues" className="rounded-2xl focus-visible:outline-2 focus-visible:outline-ring"><StatCard label="관리 필요 · 미완료" value={management ? `${management.pending}건` : failed ? "조회 실패" : "조회 중"} description={management ? `전체 ${management.total}건 · 상세 확인 →` : "관리 필요에서 다시 확인 →"} tone="warning" /></Link>
     </StatsGrid>
     <div className="grid gap-5 xl:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
@@ -39,7 +39,7 @@ export function ProgramOverviewDashboard() {
         <p className="mt-3 text-xs leading-6 text-muted-foreground">1월 방학 · 8월 건강100세 운동교실만 운영. 참여 연인원은 반복 출석을 포함하며 실인원과 구분합니다.</p>
       </AnalysisPanel>
       <div className="space-y-5">
-        <AnalysisPanel title="등록 현황" description="2026.11.04 기준 · 정원 대비 등록 건수">
+        <AnalysisPanel title="등록 현황" description={`${programMetrics.asOf} 기준 · 정원 대비 등록 건수`}>
           <div className="flex items-end justify-between"><strong className="text-3xl tabular-nums">{occupancy.toFixed(1)}%</strong><span className="text-xs text-muted-foreground">{number(programMetrics.totals.applications)} / {number(programMetrics.totals.capacity)}</span></div>
           <div className="mt-3 h-3 overflow-hidden rounded-full bg-secondary" role="img" aria-label={`정원 대비 등록률 ${occupancy.toFixed(1)}%`}><div className="h-full rounded-full bg-[#4f77ab]" style={{ width: `${occupancy}%` }} /></div>
           <p className="mt-4 text-xs leading-6">{metricDefinitions.paid} <strong>{number(programMetrics.totals.paid)}건</strong> · 강좌 간 중복 포함<br />현재 등록 실인원: <strong>집계 대기</strong></p>
@@ -49,6 +49,6 @@ export function ProgramOverviewDashboard() {
         </AnalysisPanel>
       </div>
     </div>
-    <p className="text-xs leading-6 text-muted-foreground">집계 기준 통일: 현재 등록·수납은 현황표, 실인원·성별·연령은 누적 명부, 참여 연인원은 실제 출석 기록을 사용합니다. 현재 등록자만의 실인원과 과거 출석 대상 건수는 유효 등록·취소 명부 확인 후 확정합니다.</p>
+    <p className="text-xs leading-6 text-muted-foreground">자료별 기준: 등록·대기·수납·환불 건수는 11월 6일 현황표입니다. 실인원·성별·연령과 금액은 11월 4일 자료를 유지하며, 참여 연인원과 출석 대상 건수는 기존 날짜별 기록을 유지합니다. 현황표만으로 개인별 수납자 변경을 추정하지 않습니다.</p>
   </section>;
 }

@@ -213,3 +213,8 @@ console.log(
     readOnly: true,
   }),
 );
+
+assert.equal(all.asOf,'2026-11-06');
+assert.equal(base.characteristics.combinationValid,true);
+assert.equal(base.characteristics.combinations.asOf,'2026-11-04');
+assert.ok(all.items.find(item=>item.category==='신청·대기')!.source==='수강신청프로그램현황.pdf');

@@ -70,9 +70,9 @@ export function buildIndirectEbgAnalysis(periodId: string) {
     .sort()
     .join("|");
   const combinationValid =
-    combinations.asOf === enrollment.asOf &&
+    combinations.asOf === programMetrics.ledgerAsOf &&
     combinations.people === programMetrics.currentPaidUnique &&
-    combinations.enrollments === programMetrics.totals.paid &&
+    combinations.enrollments === programMetrics.ledger.currentPaid &&
     combinations.programCount === programs.length &&
     combinations.programCounts.length === programs.length &&
     combinations.sources.length === programMetrics.ledger.sources.length &&
@@ -84,7 +84,8 @@ export function buildIndirectEbgAnalysis(periodId: string) {
     ) &&
     combinations.programCounts.every((p) =>
       programs.some(
-        (r) => r.id === p.programId && r.name === p.name && r.paid === p.people,
+        (r) => r.id === p.programId && r.name === p.name &&
+          programMetrics.ledger.programs.some((entry) => norm(entry.name) === norm(r.name) && entry.paid === p.people),
       ),
     );
   const fieldCombinationValid =
@@ -411,7 +412,7 @@ export function buildIndirectEbgAnalysis(periodId: string) {
   const sourceScopes = [
     {
       title: "관심·신청 수요",
-      source: "11. 4. 기준 수강신청프로그램현황.pdf",
+      source: enrollment.source,
       period: enrollment.asOf + " 현재",
       programs: programs.length,
       basis:

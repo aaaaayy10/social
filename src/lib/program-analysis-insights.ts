@@ -1,4 +1,5 @@
-﻿import demographics from "@/data/program-demographics.json";
+﻿import enrollment from "@/data/course-enrollment.json";
+import demographics from "@/data/program-demographics.json";
 import { buildIndirectEbgAnalysis } from "@/lib/indirect-ebg-analysis";
 const n = (value: number) => value.toLocaleString("ko-KR");
 const pct = (value: number) => value.toFixed(1) + "%";
@@ -59,7 +60,7 @@ export function buildProgramAnalysisInsights(periodId: string) {
         demand.fieldId === "digital"
           ? `${demand.name}의 기초 디지털교육 대기 수요를 바탕으로 반복 입문반과 생활 디지털 활용 체험특강 편성 검토`
           : `${demand.name}의 대기 수요를 바탕으로 ${demand.field} 입문 체험특강과 추가 선택과정 편성 검토`,
-      source: "11. 4. 기준 수강신청프로그램현황.pdf",
+      source: enrollment.source,
       period: a.asOf + " 현재",
       basis:
         "신청률=등록/정원 · 대기율=대기/정원 · 대기는 신청 건수이며 고유 대기자 수 아님",

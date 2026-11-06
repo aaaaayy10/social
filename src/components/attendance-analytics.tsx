@@ -44,7 +44,7 @@ export function AttendanceAnalytics() {
   }
   return <PageShell>
     <PageHeader title="출석/결석 관리" eyebrow="2026년 1~10월 · 11월 4일 기준" description="전체 45개 프로그램 · RF 10개, 수기 35개의 월별 출석·결석 통계입니다." actions={<Button variant="outline" onClick={exportCsv}><Download className="size-4" />통계 CSV</Button>} />
-    <p className="text-xs leading-6 text-muted-foreground">11월 4일 현재 등록 {number(programMetrics.totals.applications)}건 · 유효 수납 {number(programMetrics.totals.paid)}건 · 수납 실인원 {number(programMetrics.currentPaidUnique)}명. 이 현재 인원을 과거 출석률 분모로 사용하지 않습니다.</p>
+    <p className="text-xs leading-6 text-muted-foreground">{programMetrics.asOf} 현황표 등록 {number(programMetrics.totals.applications)}건 · 수납 {number(programMetrics.totals.paid)}건. 수납 실인원 {number(programMetrics.currentPaidUnique)}명은 {programMetrics.ledgerAsOf} 명부 기준입니다. 이 현재 인원을 과거 출석률 분모로 사용하지 않습니다.</p>
     <div className="flex flex-wrap items-end gap-4 rounded-xl border bg-card p-4">
       <label className="min-w-0 text-sm">조회월<select aria-label="출석 조회월" value={month} onChange={event => setMonth(event.target.value)} className="mt-1 block h-10 max-w-full rounded-lg border bg-card px-3"><option value="all">전체 기간 · 1~10월</option>{attendance.months.map(value => <option key={value} value={value}>{value}{value === "2026-08" ? " · 방학" : value === "2026-01" ? " · 방학" : ""}</option>)}</select></label>
       <label className="min-w-0 text-sm">출석 구분<select aria-label="출석 구분" value={sourceType} onChange={event => { setSourceType(event.target.value); setProgramCode("all"); }} className="mt-1 block h-10 max-w-full rounded-lg border bg-card px-3"><option value="all">전체 · 45개</option><option value="rf">RF · 10개</option><option value="manual">수기 · 35개</option></select></label>

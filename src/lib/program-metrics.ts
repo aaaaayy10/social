@@ -12,6 +12,8 @@ export const metricDefinitions = {
 const fields = ["capacity", "applications", "paid", "waiting", "refunds"] as const;
 export const programMetrics = {
   asOf: enrollment.asOf,
+  paidAsOf: enrollment.paidAsOf,
+  ledgerAsOf: ledger.asOf,
   programs: enrollment.programs.length,
   totals: Object.fromEntries(fields.map(field => [field, enrollment.programs.reduce((sum, row) => sum + (row[field] ?? 0), 0)])) as Record<typeof fields[number], number>,
   cumulativeUnique: ledger.cumulativeUnique,
