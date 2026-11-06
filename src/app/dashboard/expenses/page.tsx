@@ -375,7 +375,7 @@ export default function ExpensesPage() {
   return (
     <PageShell>
       <PageHeader
-        title="매입 관리"
+        title="만족도 조사 분석"
         description="강사비, 외주비, 운영비 등 매입 내역과 지급 상태를 관리합니다."
         actions={
           <div className="flex flex-wrap gap-2">

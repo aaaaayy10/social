@@ -134,7 +134,7 @@ export default function ExpenseDetailPage() {
     <PageShell>
       <PageHeader
         breadcrumbs={[
-          { label: "매입관리", href: "/dashboard/expenses" },
+          { label: "만족도 조사 분석", href: "/dashboard/expenses" },
           { label: mask("title", expense.title) },
         ]}
         title={mask("title", expense.title)}

@@ -64,7 +64,7 @@ export function ProgramAnalysisInsightsPage() {
           <p className="text-[10px] font-semibold tracking-wide text-muted-foreground">
             회원·프로그램 데이터에서 발견한 이용 특성
           </p>
-          <h1 className="mt-1 text-xl font-bold">사업개선 인사이트</h1>
+          <h1 className="mt-1 text-xl font-bold">인사이트</h1>
           <p className="mt-2 text-xs leading-6 text-muted-foreground">
             데이터 분석 → 실제 이용 특성 발견 → 사업개선 방향
           </p>

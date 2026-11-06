@@ -97,7 +97,7 @@ function NewExpenseContent() {
     <PageShell>
       <PageHeader
         breadcrumbs={[
-          { label: "매입관리", href: "/dashboard/expenses" },
+          { label: "만족도 조사 분석", href: "/dashboard/expenses" },
           { label: "신규 등록" },
         ]}
         title="매입 등록"

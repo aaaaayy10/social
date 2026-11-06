@@ -143,7 +143,7 @@ export default function RecurringExpensesPage() {
     <PageShell>
       <PageHeader
         breadcrumbs={[
-          { label: "매입관리", href: "/dashboard/expenses" },
+          { label: "만족도 조사 분석", href: "/dashboard/expenses" },
           { label: "반복 매입 템플릿" },
         ]}
         title="반복 매입 템플릿"
@@ -153,7 +153,7 @@ export default function RecurringExpensesPage() {
             <Button variant="outline" asChild>
               <Link href="/dashboard/expenses">
                 <ArrowLeft className="h-4 w-4" />
-                매입관리
+                만족도 조사 분석
               </Link>
             </Button>
             <Button

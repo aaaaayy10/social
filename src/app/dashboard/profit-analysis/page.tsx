@@ -210,7 +210,7 @@ export default function ProfitAnalysisPage() {
   return (
     <PageShell>
       <PageHeader
-        title="영업이익 분석"
+        title="강사 평가 분석"
         description="월별 매출·매입·영업이익을 한 화면에서 비교하고, 카테고리별로 어디서 돈을 벌고 어디서 쓰는지 확인합니다."
       />
 

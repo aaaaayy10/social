@@ -4,6 +4,7 @@ import type { User } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Lightbulb, ClipboardCheck, UserStar } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
@@ -112,36 +113,19 @@ const menuSections: MenuSection[] = [
         ),
       },
       {
-        label: "사업 개선 인사이트",
+        label: "인사이트",
         href: "/dashboard/deposits",
-        icon: (
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" />
-            <path d="M3 5v14a2 2 0 0 0 2 2h16v-5" />
-            <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
-          </svg>
-        ),
+        icon: <Lightbulb className="size-5" aria-hidden="true" />,
       },
       {
-        label: "매입관리",
+        label: "만족도 조사 분석",
         href: "/dashboard/expenses",
-        icon: (
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M3 6h18" />
-            <path d="M3 14h18" />
-            <path d="M16 10l5 4-5 4" />
-          </svg>
-        ),
+        icon: <ClipboardCheck className="size-5" aria-hidden="true" />,
       },
       {
-        label: "영업이익분석",
+        label: "강사 평가 분석",
         href: "/dashboard/profit-analysis",
-        icon: (
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M3 3v18h18" />
-            <path d="M7 14l4-4 4 4 6-6" />
-          </svg>
-        ),
+        icon: <UserStar className="size-5" aria-hidden="true" />,
       },
     ],
   },
