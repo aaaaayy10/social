@@ -45,26 +45,73 @@ export function buildProgramAnalysisInsights(periodId: string) {
         r.profile.registrants &&
       r.profile.genders.male + r.profile.genders.female > 0,
   );
-  const demand = a.demand.unmet[0];
-  if (demand)
+  const digitalDemand = a.programs
+    .filter(p => p.fieldId === "digital" && (p.waiting ?? 0) > 0)
+    .toSorted((left, right) => right.waiting! - left.waiting!);
+  const digitalLead = digitalDemand[0];
+  if (digitalLead) {
+    const others = digitalDemand.slice(1);
     items.push({
-      id: "demand-" + demand.id,
+      id: "demand-" + digitalLead.id,
       category: "신청·대기",
-      title: demand.name + " — 높은 대기 수요",
-      programs: [demand.name],
+      title: digitalLead.name + " — 높은 대기 수요",
+      programs: digitalDemand.map(p => p.name),
       facts: [
-        `${demand.name}: 정원 ${demand.capacity}명·등록 ${demand.applications}건, 신청률 ${pct(demand.registration!)}.`,
-        `대기 신청 ${demand.waiting}건, 정원 대비 대기율 ${pct(demand.waitingRate!)}.`,
+        `${digitalLead.name}: 정원 ${digitalLead.capacity}명·등록 ${digitalLead.applications}건, 대기 신청 ${digitalLead.waiting}건.`,
+        ...(others.length ? [`${others.map(p => p.name + " 대기 " + p.waiting + "건").join(" · ")}.`] : []),
+        `정보화 강좌의 기재 대기 중 ${digitalLead.name}이 최다로, 여러 디지털 교육 강좌에서 참여 수요가 확인됩니다.`,
       ],
-      insight:
-        demand.fieldId === "digital"
-          ? `${demand.name}의 기초 디지털교육 대기 수요를 바탕으로 반복 입문반과 생활 디지털 활용 체험특강 편성 검토`
-          : `${demand.name}의 대기 수요를 바탕으로 ${demand.field} 입문 체험특강과 추가 선택과정 편성 검토`,
+      insight: "스마트폰·컴퓨터 교육의 대기 수요를 반영해 스마트폰·디지털 신규 강좌를 추가하고 반복 접할 수 있는 체험형 특강도 지속 편성하는 방안 검토",
       source: enrollment.source,
       period: a.asOf + " 현재",
-      basis:
-        "신청률=등록/정원 · 대기율=대기/정원 · 대기는 신청 건수이며 고유 대기자 수 아님",
+      basis: "대기는 신청 건수이며 고유 대기자 수 아님 · 현재 정보화 강좌 간 비교 · 시계열 수요 증가나 선호·욕구의 강도를 확정하는 자료는 아님",
     });
+  }
+  const health = a.programs.filter(p => p.fieldId === "health");
+  const knownWaiting = a.programs.filter(p => p.waiting !== null).reduce((sum, p) => sum + p.waiting!, 0);
+  const healthWaiting = health.reduce((sum, p) => sum + (p.waiting ?? 0), 0);
+  const healthExamples = health.filter(p => (p.waiting ?? 0) > 0).toSorted((left, right) => right.waiting! - left.waiting!);
+  const highlightedHealth = healthExamples.filter(p => ["에어로빅", "건강100세운동교실", "필라테스2"].includes(norm(p.name)));
+  const matureExamples = highlightedHealth.map(p => ({program: p, profile: profiles.find(row => row.program.id === p.id)?.profile}))
+    .filter(row => row.profile && row.profile.ageKnown >= 20 && row.profile.averageAge >= 75 && row.profile.genders.female > row.profile.genders.male);
+  if (knownWaiting > 0 && healthWaiting / knownWaiting > 0.5 && matureExamples.length) {
+    const examples = [...new Map([...healthExamples.slice(0, 4), ...highlightedHealth].map(p => [p.id, p])).values()];
+    items.push({
+      id: "demand-health-pattern",
+      category: "신청·대기",
+      title: "건강·운동 프로그램 — 집중된 대기 수요",
+      programs: examples.map(p => p.name),
+      facts: [
+        `건강·운동 분야 기재 대기 ${healthWaiting}/${knownWaiting}건(${pct(healthWaiting / knownWaiting * 100)})으로 전체 기재 대기의 과반입니다.`,
+        `대기: ${examples.map(p => p.name + " " + p.waiting + "건").join(" · ")}.`,
+        matureExamples.map(row => `${row.program.name} 여성 ${pct(row.profile!.genders.female / (row.profile!.genders.male + row.profile!.genders.female) * 100)}·평균 ${row.profile!.averageAge.toFixed(1)}세`).join(" · ") + "(누적 이용 명부).",
+      ],
+      insight: "건강·운동의 대기 수요와 평균 75세 이상 강좌의 높은 여성 이용 비중을 고려해 연령·운동 강도·참여 방식에 맞춘 신규 건강운동 프로그램 개설 검토",
+      source: enrollment.source + " / " + demographics.source,
+      period: `대기 ${a.asOf} · 성별·연령 ${agePeriod} 누적 명부`,
+      basis: `분야는 분석용 제안 · 건강·운동 대기 기재 ${health.filter(p => p.waiting !== null).length}/${health.length}강좌, 빈칸 제외 · 대기는 중복 가능 건수 · 성별·연령은 대기자 명부 아님 · 필라테스 등 모든 강좌가 평균 75세 이상인 것은 아님`,
+    });
+  }
+  const song = a.programs.find(p => norm(p.name) === "힐링노래교실");
+  const comparable = a.programs.filter(p => p.attendance.attendanceRate !== null && p.attendance.pendingCount === 0 && (p.attendance.sessions ?? 0) > 0);
+  if (song && !song.adjusted && song.attendance.pendingCount === 0 && song.attendance.attendanceRate !== null && song.attendance.attendanceRate <= 65 && (song.attendance.sessions ?? 0) > 0) {
+    const rank = 1 + comparable.filter(p => p.attendance.attendanceRate! < song.attendance.attendanceRate!).length;
+    items.push({
+      id: "participation-song-ebg",
+      category: "출석·참여",
+      title: "힐링노래교실 — 낮은 출석률의 원인 확인 필요",
+      programs: [song.name],
+      facts: [
+        `${song.name}: ${a.asOf} 등록 ${song.applications}건, ${a.period.label} 출석률 ${pct(song.attendance.attendanceRate)}·결석률 ${pct(song.attendance.absenceRate!)}.`,
+        `같은 기간 조회표의 집계 출석률 낮은 순 ${rank}위/${comparable.length}개 강좌(전체 비교표는 대상 보정 포함).`,
+        `실제 출석 ${n(song.attendance.attended!)} / 당시 수업별 대상 합계 ${n(song.attendance.expected!)}명·회, 수업 ${song.attendance.sessions}회.`,
+      ],
+      insight: "힐링노래교실의 결석 사유·수업 시간과 구성·RF 기록 누락을 직접 EBG로 확인해 참여 저조 원인을 분석하고 운영 개선 방향을 도출하는 방안 검토",
+      source: enrollment.source + " / RF 일일 이용인원 XLS·수기 프로그램 운영일지",
+      period: `등록 ${a.asOf} · 출석 ${a.period.label}`,
+      basis: "본 강좌는 검증 범위·대상 보정 없는 비율 · 순위는 보정 포함 전체 조회표의 참고 비교 · 현재 등록자와 과거 출석 대상은 동일 집단 아님 · 개인 결석·낮은 만족도·RF 누락 원인을 확정하지 않음",
+    });
+  }
   const ages = a.characteristics.averageAges.filter(
       (p) => p.age!.ageKnown >= 20,
     ),
@@ -367,22 +414,6 @@ export function buildProgramAnalysisInsights(periodId: string) {
       });
     }
   }
-  if (volume)
-    items.push({
-      id: "volume-" + volume.id,
-      category: "출석·참여",
-      title: volume.name + " — 실제 참여 규모",
-      programs: [volume.name],
-      facts: [
-        `${volume.name}: ${a.period.label} 실제 참석 ${n(volume.attendance.attended!)}명·회·수업 ${volume.attendance.sessions}회.`,
-        `회당 평균 참석 ${(volume.attendance.attended! / volume.attendance.sessions!).toFixed(1)}명(연인원/운영 횟수).`,
-      ],
-      insight: `${volume.name}의 집단형 참여 규모를 고려해 본 강좌를 보완하는 소그룹 체험·주제별 선택특강 편성 검토`,
-      source: "RF 일일 이용인원 XLS·수기 프로그램 운영일지",
-      period: a.period.label,
-      basis:
-        "실제 참석의 합계 · 반복 참여 포함, 서로 다른 실인원·개인 지속률 아님 · 출석 대상 추정량을 참석으로 사용하지 않음",
-    });
   const validItems = items.filter(
     (item) =>
       item.facts.length > 0 &&
@@ -431,7 +462,7 @@ export function buildProgramAnalysisInsights(periodId: string) {
     },
   ];
   return {
-    version: "planning-patterns-v2",
+    version: "demand-and-ebg-v3",
     genderFieldUse: { totals: genderTotals, fields: genderFields },
     mode: "rules",
     asOf: a.asOf,

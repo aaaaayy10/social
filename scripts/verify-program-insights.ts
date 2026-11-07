@@ -157,7 +157,8 @@ for (const t of base.participation.trends) {
     );
 }
 for (const item of all.items) {
-  assert.ok(/특강|과정|강좌/.test(item.insight));
+  if (item.id === "participation-song-ebg") assert.ok(item.insight.includes("직접 EBG"));
+  else assert.ok(/특강|과정|강좌/.test(item.insight));
   assert.ok(
     !/홍보 매체|안내 문구|강의실과 운영 인력|비중복 시간대/.test(item.insight),
   );
@@ -218,3 +219,25 @@ assert.equal(all.asOf,'2026-11-06');
 assert.equal(base.characteristics.combinationValid,true);
 assert.equal(base.characteristics.combinations.asOf,'2026-11-04');
 assert.ok(all.items.find(item=>item.category==='신청·대기')!.source==='수강신청프로그램현황.pdf');
+
+// Requested demand/EBG cards retain actual source scopes and never infer a trend or wait-list demographics.
+assert.equal(all.items.length,8);
+assert.equal(january.items.length,6);
+assert.equal(all.items[1].id,'demand-health-pattern');
+assert.equal(all.items[2].id,'participation-song-ebg');
+assert.ok(!all.items.some(item=>item.id.startsWith('volume-')));
+assert.ok(demand.programs.includes('컴퓨터 초급')&&demand.programs.includes('컴퓨터 활용'));
+assert.ok(demand.basis.includes('시계열'));
+assert.ok(!demand.insight.includes('점점'));
+const health=all.items[1];
+for(const value of ['213/296건','72.0%','91.1%','76.4세','98.8%','75.7세'])assert.ok(health.facts.join(' ').includes(value));
+assert.ok(health.basis.includes('9/11강좌'));
+assert.ok(health.basis.includes('대기자 명부 아님'));
+assert.ok(health.basis.includes('모든 강좌가 평균 75세 이상인 것은 아님'));
+const song=all.items[2],songSource=base.programs.find(p=>p.name==='힐링노래교실')!;
+assert.equal(songSource.adjusted,false);assert.equal(songSource.attendance.pendingCount,0);
+assert.equal(songSource.attendance.attended,1349);assert.equal(songSource.attendance.expected,2452);
+for(const value of ['70건','55.0%','45.0%','2위/45개','1,349','2,452'])assert.ok(song.facts.join(' ').includes(value));
+assert.ok(song.basis.includes('동일 집단 아님'));
+assert.ok(song.insight.includes('직접 EBG'));
+assert.ok(!buildProgramAnalysisInsights('2026-08').items.some(item=>item.id==='participation-song-ebg'));
