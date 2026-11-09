@@ -2,6 +2,9 @@
 
 import { programMetrics } from "@/lib/program-metrics";
 import { useState } from "react";
+import Link from "next/link";
+import { useManagementSummary } from "@/lib/hooks/use-management-summary";
+import { AttendanceColumns, AttendanceTrend, VisualBars, VisualDonut } from "@/components/analysis-v25-charts";
 import { Download } from "lucide-react";
 import { attendance, calculateAttendance, summarizeAttendance, validateAttendance } from "@/lib/attendance-analysis";
 import { PageHeader, PageShell, StatCard, StatsGrid } from "@/components/page-shell";
@@ -15,6 +18,7 @@ export function AttendanceAnalytics() {
   const [programCode, setProgramCode] = useState("all");
   const [sourceType, setSourceType] = useState("all");
   const [programSort, setProgramSort] = useState("default");
+  const { management, error: managementError } = useManagementSummary(0);
   let errorMessage = "";
   try { validateAttendance(); } catch (error) { errorMessage = error instanceof Error ? error.message : "자료 검증 실패"; }
   if (errorMessage) return <PageShell><PageHeader title="출석/결석 관리" /><p role="alert" className="rounded-xl border bg-rose-50 p-5">{errorMessage} · 확인 전에는 합계를 표시하지 않습니다.</p></PageShell>;
@@ -38,6 +42,8 @@ export function AttendanceAnalytics() {
   const active = programRows.filter(row => (row.sessions ?? 0) > 0).length;
   const leading = [...programRows].sort((a, b) => (b.attended ?? 0) - (a.attended ?? 0))[0];
   const peak = [...monthRows].sort((a, b) => (b.attended ?? 0) - (a.attended ?? 0))[0];
+  const visibleMonths = month === "all" ? attendance.months : [month];
+  const visibleMonthRows = monthRows.filter(row => visibleMonths.includes(row.month));
   const monthMaximum = Math.max(1, ...monthRows.map(row => row.attended ?? 0));
   function exportCsv() {
     downloadCsv(`프로그램_출석통계_${attendance.asOf}.csv`, [["월", "프로그램", "출석 구분", "참여 연인원", "수업 일수", "출석 대상 연인원 · 보정 포함", "결석 연인원", "집계 출석률", "집계 결석률", "집계 상태", "대상 산정 방식", "기준일"], ...rows.map(record => { const row = calculateAttendance(record); return [row.month, row.programName, row.sourceType === "rf" ? "RF" : "수기", row.attended, row.sessions, row.expected, row.absent, row.verification === "closed" ? "—" : rate(row.attendanceRate), row.verification === "closed" ? "—" : rate(row.absenceRate), row.verification === "verified" ? "집계 완료" : row.verification === "closed" ? "방학/미개강" : "원본 확인", attendance.adjustments.some(item => item.month === row.month && item.programCode === row.programCode) ? "참석인원 보정 포함" : "날짜별 수납 명부 대조", attendance.asOf]; })]);
@@ -51,11 +57,31 @@ export function AttendanceAnalytics() {
       <label className="min-w-0 text-sm">프로그램<select aria-label="출석 프로그램" value={programCode} onChange={event => setProgramCode(event.target.value)} className="mt-1 block h-10 max-w-full rounded-lg border bg-card px-3"><option value="all">전체 프로그램</option>{availablePrograms.map(row => <option key={row.code} value={row.code}>{row.name} · {row.type === "rf" ? "RF" : "수기"}</option>)}</select></label>
       <p className="text-xs leading-6 text-muted-foreground">8월은 방학으로 건강100세 운동교실만 운영했습니다.</p>
     </div>
-    <p className="rounded-xl border bg-card p-4 text-xs leading-6 text-muted-foreground">RF 2~10월 전체를 원본 XLS 날짜별 셀로 다시 집계했습니다. 수기는 운영일지의 수업 날짜와 참석 인원을 연결해 합산했습니다. 라인댄스 2는 수기로 변경했습니다. 1월은 전체 방학으로 운영·출석 0이며, 일본어 초급은 3월 개강으로 1~2월 실적이 0입니다.</p>
+    <section aria-label="출석 분석 핵심 운영지표"><StatsGrid className="grid-cols-2 xl:grid-cols-3">
+      <StatCard label="참여 연인원" value={summary.attended===null?'—':number(summary.attended)+'명·회'} description="RF 기존 출결 + 수기 운영일지 · 제공 범위 합계" tone="brand" />
+      <StatCard label="출석 대상 연인원 · 보정 포함" value={summary.expected===null?'원본 확인':number(summary.expected)+'명·회'} description="명부 대상과 실제 참석 중 큰 값 · 날짜 확인 범위" />
+      <StatCard label="집계 출석률" value={summary.sessions===0?'미운영':rate(summary.attendanceRate)} description={'검증 출석 '+number(summary.verifiedAttended ?? 0)+' ÷ 대상 '+number(summary.expected)+'건'} />
+      <StatCard label="집계 결석률" value={summary.sessions===0?'미운영':rate(summary.absenceRate)} description={'검증 결석 '+number(summary.absent)+' ÷ 대상 '+number(summary.expected)+'건'} />
+      <StatCard label="운영 프로그램 수" value={active+'개'} description="선택 기간 · 실제 수업이 있는 프로그램" />
+      <StatCard label="수업 횟수" value={summary.sessions===null?'—':number(summary.sessions)+'회'} description="선택 기간의 강좌별 수업 횟수 합계" />
+    </StatsGrid></section>
+    <section aria-label="출석 분석 추가 시각화" className="grid gap-5 xl:grid-cols-2">
+      <AnalysisPanel title="출석·결석 구성" description={attendance.asOf+' 자료 · '+(month==='all'?'1~10월':month)+' · 선택 프로그램·출석 구분 적용 · 집계 가능 범위만 비교'}><VisualDonut label="출석 결석 구성 시각화" unit="명·회" centerLabel="출석 대상" denominator={summary.expected} values={[{label:'검증 범위 출석',value:summary.expected===null?null:summary.verifiedAttended ?? 0,color:'#557ead'},{label:'검증 범위 결석',value:summary.absent,color:'#d19861'}]} /><p className="mt-3 text-xs leading-6 text-muted-foreground">실제 전체 참여와 비율 검증 범위는 구분합니다. 출석 대상·보정 및 검증 기준은 아래 원본 설명과 같습니다.</p></AnalysisPanel>
+      <AnalysisPanel title="월별 실제 참여 연인원" description={attendance.asOf+' 자료 · 조회월·프로그램·출석 구분 적용 · 반복 참여 포함'}><AttendanceColumns rows={visibleMonthRows} /></AnalysisPanel>
+      <AnalysisPanel title="월별 출석률·결석률 추이" description="조회월·프로그램·출석 구분 적용 · 미운영/집계 불가 월은 선을 연결하지 않음"><AttendanceTrend rows={visibleMonthRows} /></AnalysisPanel>
+      <AnalysisPanel title="프로그램별 출석률 비교" description={(month==='all'?'1~10월':month)+' · 기존 집계 비율과 동일 · 대상 보정 포함'}><label className="mb-4 flex flex-wrap items-center gap-2 text-xs">비율 정렬<select aria-label="프로그램 출석률 차트 정렬" value={programSort} onChange={event=>setProgramSort(event.target.value)} className="h-9 rounded-lg border bg-card px-3"><option value="default">기본 순서</option><option value="attendance-desc">출석률 높은 순</option><option value="attendance-asc">출석률 낮은 순</option><option value="absence-desc">결석률 높은 순</option><option value="absence-asc">결석률 낮은 순</option></select></label><div className="max-h-[520px] overflow-y-auto pr-2"><VisualBars label="프로그램 출석률 비교 시각화" unit="%" maximum={100} values={sortedPrograms.map(row=>({label:row.name,value:row.sessions===0?null:row.attendanceRate,emptyLabel:row.sessions===0?'미운영':'집계 불가',color:'#5b8da7',detail:'참여 '+number(row.attended)+' · 검증 출석 '+number(row.verifiedAttended ?? 0)+' · 결석 '+number(row.absent)+'명·회 · 결석률 '+(row.sessions===0?'미운영':rate(row.absenceRate))+' · 수업 '+number(row.sessions)+'회'}))} /></div></AnalysisPanel>
+    </section>
+    <section aria-label="관리 필요 연계 요약" className="rounded-2xl border bg-card p-5"><h2 className="text-lg font-semibold">관리 필요 현황 연결</h2><p className="mt-1 text-xs leading-6 text-muted-foreground">관리 화면의 전체 저장 현황 · 출석 조회 필터와 별도 · 연속 결석 11월 4일 자료 / 충원 {programMetrics.asOf} · 자동 갱신</p><div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-5">{[
+      {label:'3회 이상 연속 결석',value:management?number(management.absence)+'명':'—'},
+      {label:'대기자 충원 필요',value:management?management.recruitment+'개 / '+management.seats+'자리':'—'},
+      ...['확인 필요','처리 중','처리 완료'].map(status=>({label:status,value:management?number(management.counts[status])+'건':'—'}))
+    ].map(item=><Link key={item.label} href="/dashboard/revenues" className="rounded-xl border bg-secondary/30 p-4 focus-visible:outline-2 focus-visible:outline-ring"><span className="text-xs text-muted-foreground">{item.label}</span><strong className="mt-2 block text-lg">{item.value}</strong><span className="mt-2 block text-[10px] text-primary">관리 필요에서 확인 →</span></Link>)}</div>{managementError&&<p role="status" className="mt-3 text-xs text-amber-800">관리 현황 연결을 확인해 주세요. 표시된 값이 있으면 이전 조회값입니다.</p>}<p className="mt-3 text-xs text-muted-foreground">처리 완료는 담당자가 저장한 상태만 반영합니다. 자동 추출만으로 수강취소나 충원을 처리하지 않습니다.</p></section>
+    <details className="rounded-2xl border bg-card p-4"><summary className="cursor-pointer text-sm font-semibold">기존 출석 KPI·원본·보정·검증 설명 펼치기</summary><div className="mt-5 space-y-4">    <p className="rounded-xl border bg-card p-4 text-xs leading-6 text-muted-foreground">RF 2~10월 전체를 원본 XLS 날짜별 셀로 다시 집계했습니다. 수기는 운영일지의 수업 날짜와 참석 인원을 연결해 합산했습니다. 라인댄스 2는 수기로 변경했습니다. 1월은 전체 방학으로 운영·출석 0이며, 일본어 초급은 3월 개강으로 1~2월 실적이 0입니다.</p>
     {visibleConflicts.length > 0 && <p role="status" className="rounded-xl border border-sky-200 bg-sky-50 p-4 text-xs leading-6">풀잎합창단 중복 일지의 인원 차이: {visibleConflicts.map(row => row.date + " (" + row.counts.join("/") + "명 → " + row.selected + "명 반영)").join(" · ")}. 사용자 지정에 따라 더 많은 인원을 선택해 한 번만 집계했습니다.</p>}
     {discrepancies.length > 0 && <details className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs leading-6"><summary className="cursor-pointer font-medium">원본 확인 필요 {discrepancies.length}개 프로그램·월 · 회차별 사유 보기</summary><p className="mt-2">전체 자료의 날짜 대조는 완료했습니다. 아래는 원본끼리 인원이 맞지 않거나 날짜가 미기재된 구간입니다. 실제 출석 합계는 유지하고 해당 월의 집계 비율에서만 제외했습니다.</p><div className="mt-3 space-y-2">{discrepancies.map(row => <p key={row.month + row.programCode} className="rounded-lg bg-white/70 p-3"><strong>{row.month} {row.program}</strong><br />{row.issues.map(issue => (issue.date ?? "수업일 미기재") + ": 참석 " + issue.count + "명 / 대상 " + (issue.eligible === null ? "확인 필요" : issue.eligible + "명") + (issue.page ? " · 일지 " + issue.page + "쪽" : " · RF 원본")).join(" / ")}</p>)}</div><Button variant="outline" className="mt-3" onClick={() => downloadCsv("출석_원본확인목록_2026-11-04.csv", [["월","프로그램","수업일","참석","대상","원본 쪽","사유"], ...discrepancies.flatMap(row => row.issues.map(issue => [row.month,row.program,issue.date,issue.count,issue.eligible,issue.page ?? null,issue.reason]))])}>원본 확인 목록 CSV</Button></details>}
     <p className="rounded-xl border border-sky-200 bg-sky-50 p-4 text-xs leading-6">2026.11.05 원본 대조 완료 · 자료 기준 2026.11.04. RF 엑셀 날짜별 셀과 수기 운영일지의 출석인원 칸을 재대조했습니다. 선택 범위의 실제 참여는 {number(summary.attended)}명·회입니다. 건강체조 종강 이후 기록은 제외하며, 참석 인원 보정 규칙을 반영했습니다.</p>
     <p className="rounded-xl border border-sky-200 bg-sky-50 p-4 text-xs leading-6">11월 5일 사용자 지정 집계: 건강체조 7월 17일 종강 이후 3회·17명·회 제외. 회차별 대상은 수납 명부 대상과 실제 참석 인원 중 큰 값입니다. 선택 범위에서 {adjustments.length}회차에 참석인원 보정을 적용했습니다. 보정은 환불 시점·사유의 검증을 의미하지 않습니다. 수업 날짜가 없어 대상을 정할 수 없는 구간은 원본 확인으로 유지합니다.</p>
+
     <StatsGrid className="grid-cols-2 xl:grid-cols-3">
       <StatCard label="참여 연인원" value={summary.attended === null ? "—" : `${number(summary.attended)}명·회`} description="RF 기존 출결 + 수기 운영일지 · 제공 범위 합계" tone="brand" />
       <StatCard label="출석 대상 연인원 · 보정 포함" value={summary.expected === null ? "원본 확인" : `${number(summary.expected)}명·회`} description="명부 대상과 실제 참석 중 큰 값 · 날짜 확인 범위" />
@@ -63,9 +89,9 @@ export function AttendanceAnalytics() {
       <StatCard label="집계 출석률" value={rate(summary.attendanceRate)} description={`검증 출석 ${number(summary.verifiedAttended ?? 0)} ÷ 대상 ${number(summary.expected)}건`} />
       <StatCard label="집계 결석률" value={rate(summary.absenceRate)} description={`검증 결석 ${number(summary.absent)} ÷ 대상 ${number(summary.expected)}건`} />
       <StatCard label="검증 범위 결석 연인원" value={summary.absent === null ? "원본 확인" : `${number(summary.absent)}명·회`} description="검증 범위 대상 건수 − 같은 범위 출석 합계" />
-    </StatsGrid>
+    </StatsGrid></div></details>
     <p role="status" className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs leading-6">현재 수납 건수로 과거 출석 대상을 추정하지 않습니다. 회차별 입금·환불일을 반영한 명부를 대조하고, 참석 인원이 더 많으면 그 인원을 대상으로 적용합니다. 집계 {summary.verifiedCount ?? 0}개 / 원본 확인 {summary.pendingCount ?? 0}개 프로그램·월입니다. 날짜 미기재 회차는 원본 기간 내 대상 인원이 동일할 때만 산정합니다. 방학·미개강의 출석·결석은 0이며 비율은 산출하지 않습니다.</p>
-    <div className="grid gap-5 xl:grid-cols-2">
+    <details className="rounded-2xl border bg-card p-4"><summary className="cursor-pointer text-sm font-semibold">기존 월별 참여 추이·프로그램별 참여 비교 펼치기</summary><p className="mt-3 text-xs leading-6 text-muted-foreground">기존 월별 참여 추이는 전체 월을 고정 참고하며 프로그램·출석 구분을 적용합니다. 프로그램별 참여 비교는 선택 조회월까지 적용합니다.</p><div className="mt-5">    <div className="grid gap-5 xl:grid-cols-2">
       <AnalysisPanel title="월별 참여 추이" description="출석 구분·프로그램 필터 적용 · 1월 방학 · 8월 방학">
         <div className="space-y-4">{monthRows.map(row => <div key={row.month} className="grid grid-cols-[65px_minmax(20px,1fr)_85px] items-center gap-3 text-xs"><span>{row.month}</span><span className="h-3 overflow-hidden rounded-full bg-secondary" aria-hidden="true"><span className="block h-full rounded-full" style={{ width: `${(row.attended ?? 0) / monthMaximum * 100}%`, backgroundColor: row.month === "2026-08" ? "#b07a43" : "#6076ad" }} /></span><span className="text-right tabular-nums">{number(row.attended)}명·회</span></div>)}</div>
         {month === "all" && <p className="mt-5 text-xs text-muted-foreground">최다 참여 월: {peak.month} · {number(peak.attended)}명·회</p>}
@@ -75,9 +101,10 @@ export function AttendanceAnalytics() {
         {leading && (leading.attended ?? 0) > 0 && <p className="mt-5 text-xs text-muted-foreground">최다 참여 프로그램: {leading.name} · {number(leading.attended)}명·회</p>}
       </AnalysisPanel>
     </div>
+</div></details>
     <AnalysisPanel title="프로그램 · 월별 출석률" description="색상은 집계 가능 비율에만 적용합니다. 회색은 원본 확인, 방학은 별도 표시합니다.">
-      <div className="mb-3 flex flex-wrap gap-3 text-xs"><span>🟩 90% 이상</span><span>🟨 70~90% 미만</span><span>🟥 70% 미만</span><span>회색: 원본 확인</span><span>방학: 운영 0회</span></div>
-      <div className="overflow-x-auto"><table className="w-full min-w-[850px] text-xs"><caption className="sr-only">프로그램 월별 검증 출석률</caption><thead><tr><th scope="col" className="p-2 text-left">프로그램</th>{attendance.months.map(value => <th scope="col" className="p-2" key={value}>{Number(value.slice(5))}월</th>)}</tr></thead><tbody>{availablePrograms.filter(program => codes.includes(program.code)).map(program => <tr key={program.code}><th scope="row" className="whitespace-nowrap p-2 text-left font-medium">{program.name}</th>{attendance.months.map(value => { const record = attendance.records.find(row => row.programCode === program.code && row.month === value); const cell = record ? calculateAttendance(record) : null; const valueRate = cell?.attendanceRate ?? null; return <td key={value} className="border-2 border-card p-2 text-center" title={cell ? value + " · 출석 " + number(cell.attended) + "명·회 · " + number(cell.sessions) + "회 운영" : "자료 없음"} style={{ backgroundColor: cell?.verification === "closed" ? "#f8fafc" : valueRate === null ? "#e2e8f0" : valueRate >= 90 ? "#c3e6d3" : valueRate >= 70 ? "#f8e5af" : "#f3c8c8", color: "#172554" }}>{cell?.verification === "closed" ? (value === "2026-02" && program.name === "일본어 초급" ? "미개강" : "방학") : valueRate === null ? "원본 확인" : rate(valueRate)}</td>; })}</tr>)}</tbody></table></div>
+      <div className="mb-3 flex flex-wrap gap-3 text-xs"><span>🟩 90% 이상</span><span>🟨 70~90% 미만</span><span>🟥 70% 미만</span><span>회색: 원본 확인</span><span>방학: 운영 0회 · 미운영</span></div>
+      <div className="overflow-x-auto"><table className={"w-full text-xs " + (month === "all" ? "min-w-[850px]" : "")}><caption className="sr-only">프로그램 월별 검증 출석률</caption><thead><tr><th scope="col" className="p-2 text-left">프로그램</th>{visibleMonths.map(value => <th scope="col" className="p-2" key={value}>{Number(value.slice(5))}월</th>)}</tr></thead><tbody>{availablePrograms.filter(program => codes.includes(program.code)).map(program => <tr key={program.code}><th scope="row" className="whitespace-nowrap p-2 text-left font-medium">{program.name}</th>{visibleMonths.map(value => { const record = attendance.records.find(row => row.programCode === program.code && row.month === value); const cell = record ? calculateAttendance(record) : null; const valueRate = cell?.attendanceRate ?? null; return <td key={value} className="border-2 border-card p-2 text-center" title={cell ? value + " · 출석 " + number(cell.attended) + "명·회 · " + number(cell.sessions) + "회 운영" : "자료 없음"} style={{ backgroundColor: cell?.verification === "closed" ? "#f8fafc" : valueRate === null ? "#e2e8f0" : valueRate >= 90 ? "#c3e6d3" : valueRate >= 70 ? "#f8e5af" : "#f3c8c8", color: "#172554" }}>{cell?.verification === "closed" ? <><span className="block">미운영</span><span className="text-[10px]">{value === "2026-02" && program.name === "일본어 초급" ? "미개강" : "방학"}</span></> : valueRate === null ? "원본 확인" : rate(valueRate)}</td>; })}</tr>)}</tbody></table></div>
     </AnalysisPanel>
     <AnalysisPanel title="프로그램별 출석·결석 현황" description={month === "all" ? "제공 자료 누적 · 회당 평균은 전체 참여 연인원 ÷ 전체 수업 횟수. 비율은 집계 월만 합산" : `${month} · 회당 평균은 전체 참여 연인원 ÷ 수업 일수. 비율은 집계 범위만 합산`}>
       <label className="mb-4 flex flex-wrap items-center gap-3 text-sm">프로그램 정렬<select aria-label="프로그램 통계 정렬" value={programSort} onChange={event => setProgramSort(event.target.value)} className="h-10 max-w-full rounded-lg border bg-card px-3"><option value="default">기본 순서</option><option value="attendance-desc">출석률 높은 순</option><option value="attendance-asc">출석률 낮은 순</option><option value="absence-desc">결석률 높은 순</option><option value="absence-asc">결석률 낮은 순</option></select></label>

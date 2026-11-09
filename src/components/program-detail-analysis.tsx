@@ -3,6 +3,7 @@
 import { currentEnrollment } from "@/lib/program-metrics";
 import { PopulationSummary } from "@/components/population-summary";
 import { programMetrics } from "@/lib/program-metrics";
+import { MoneyMonths, VisualBars, VisualDonut } from "@/components/analysis-v25-charts";
 import { useState } from "react";
 import { Download, Search } from "lucide-react";
 import data from "@/data/program-details.json";
@@ -33,6 +34,12 @@ export function ProgramDetailAnalysis() {
     }
     return b[sort] - a[sort];
   });
+  const financialRows = program ? data.refundReport.programs.filter(row => row.name === program.name) : data.refundReport.programs;
+  const financialMonths = Array.from({length:12},(_,i)=>{
+    const month = programMetrics.ledgerAsOf.slice(0,4) + '-' + String(i+1).padStart(2,'0');
+    const entry = programMetrics.ledger.months.find(row=>row.month===month);
+    return {month,deposit:entry?.deposit ?? null,refund:entry?.refund ?? null,balance:entry ? entry.deposit-entry.refund : null};
+  });
   function exportCsv() {
     downloadCsv(`프로그램_세부분석_${data.asOf}.csv`, [["프로그램", "성별·연령 명부 실인원", "명부 수납 기록", "유료 기록", "0원 기록", "남", "여", "평균 만 나이", "나이 제외", "현재 등록 건수", "현재 수납 건수", "원본 입금인원", "원본 환불인원", "환불보고서 환불액", "환불보고서 입금액", "환불보고서 차인잔액", "명부·금액 기준일", "등록·수납 현황표 기준일"], ...filtered.map(row => [row.name, row.registrants, row.records, row.paidCount, row.zeroCount, row.genders.male, row.genders.female, row.averageAge, row.ageUnknown, currentEnrollment(row.name)?.applications ?? null, currentEnrollment(row.name)?.paid ?? null, row.refundReport?.depositCount ?? null, row.refundReport?.count ?? null, row.refundReport?.refund ?? null, row.refundReport?.deposit ?? null, row.refundReport?.balance ?? null, data.asOf, programMetrics.asOf])]);
   }
@@ -41,9 +48,9 @@ export function ProgramDetailAnalysis() {
   }
   return <PageShell>
     <PageHeader title="수납/환불 세부 분석" eyebrow={`${data.asOf} 기준 · 세부 현황 + 환불·수납 금액표`} description="금액은 지정한 환불·수납 금액 PDF로 통일하고, 인원은 명부에서 중복 여부를 구분합니다." actions={<Button variant="outline" onClick={exportCsv} disabled={!filtered.length}><Download className="size-4" />비교표 CSV 다운로드</Button>} />
-    <PopulationSummary />
-    <p className="rounded-xl border bg-secondary/50 p-4 text-xs leading-6">최신 수납 명부 누적 실인원은 {number(programMetrics.cumulativeUnique)}명입니다. 아래 성별·연령 분석은 개인정보 항목이 확보된 기존 명부 {number(programMetrics.demographicUnique)}명 범위이며, 신규 명부 전체의 성별·연령으로 확대 추정하지 않습니다.</p>
-    <div className="rounded-2xl border border-sky-200 bg-sky-50/70 p-5 text-xs leading-6 text-sky-950"><strong>자료 기준일: {data.asOf}</strong><p>명부에는 {data.total.firstDate}~{data.total.lastDate} 입금 기록이 있습니다. 이 화면의 수납액·환불액·차인잔액은 모두 지정한 환불·수납 금액 PDF를 사용합니다. 명부의 금액 열은 통계 금액으로 혼합하지 않습니다. 현재 등록·수납 열은 {programMetrics.asOf} 현황표(45개), 금액·성별·연령은 {data.asOf} 자료(47개 프로그램)입니다.</p></div>
+
+
+
     <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border bg-card p-4"><label htmlFor="detail-program" className="text-sm font-semibold">상세 분석 대상</label><select id="detail-program" value={selected} onChange={event => setSelected(event.target.value)} className="h-10 w-full max-w-full rounded-lg border bg-card px-3 text-sm sm:w-72"><option value="all">전체 명부</option>{data.programs.map(row => <option key={row.id} value={row.id}>{row.name}</option>)}</select></div>
     <section aria-label="수납·환불 금액표" className="space-y-3"><h2 className="text-lg font-semibold">{program?.name ?? "전체"} · 환불·수납 금액표 기준</h2><p className="text-xs leading-6 text-muted-foreground">{data.refundReport.periodLabel} · {data.refundReport.source} ({data.refundReport.sourcePages}쪽, {data.refundReport.programs.length}개 프로그램). 금액은 이 PDF 원본 값을 그대로 사용합니다. 환불 인원은 원본 표의 합계로, 개인 식별자가 없어 전체 실인원으로 중복 제거할 수 없습니다.</p><StatsGrid className="grid-cols-2 xl:grid-cols-3">
       <StatCard label="입금인원 합계(원본)" value={report?.depositCount == null ? "—" : `${number(report.depositCount)}명`} description="원본 입금인원 열 · 중복 포함 가능" />
@@ -53,6 +60,17 @@ export function ProgramDetailAnalysis() {
       <StatCard label="차인잔액" value={money(report?.balance ?? null)} description="동일 보고서 내 입금액 − 환불액" tone="positive" />
       <StatCard label="환불금액 비중" value={report?.refund == null || report?.deposit == null ? "—" : percent(report.refund, report.deposit)} description="원본 환불액 ÷ 입금액" />
     </StatsGrid><p className="text-xs text-muted-foreground">—는 원본 빈칸 또는 보고서 대상 외 항목입니다. 원본의 빈칸을 임의의 0원으로 바꾸지 않았습니다.</p><Button variant="outline" onClick={exportRefundCsv}><Download className="size-4" />환불보고서 CSV 다운로드</Button></section>
+    <section aria-label="수납 환불 추가 시각화" className="grid gap-5 xl:grid-cols-2">
+      <AnalysisPanel title="월별 수납·환불액 비교" description={program ? title + ' · 프로그램별 월별 금액 미제공' : programMetrics.ledgerAsOf + ' 수납·환불 세부 명부 · 전체 입금일/환불일 기준'}><MoneyMonths rows={financialMonths} kind="comparison" unavailable={!!program} /><p className="mt-3 text-xs leading-6 text-muted-foreground">전체 월별 금액은 기존 세부 명부와 동일합니다. 11월은 자료 기준일까지의 부분 집계이며 12월은 미제공입니다.</p></AnalysisPanel>
+      <AnalysisPanel title="월별 차인액 추이" description={program ? title + ' · 프로그램별 월별 금액 미제공' : programMetrics.ledgerAsOf + ' · 같은 월 수납액 − 환불액 · 전체 명부'}><MoneyMonths rows={financialMonths} kind="balance" unavailable={!!program} /></AnalysisPanel>
+      <AnalysisPanel title={(program?.name ?? '전체') + ' · 환불금액 비중 시각화'} description={data.refundReport.periodLabel + ' · 환불금액/수납액 · 인원 비율 아님'}><VisualDonut label="환불금액 비중 도넛차트" unit="원" centerLabel="수납액" denominator={report?.deposit ?? null} values={[{label:'환불액',value:report?.refund ?? null,color:'#d19861'},{label:'차인잔액',value:report?.balance ?? null,color:'#557ead'}]} /><p className="mt-3 text-xs leading-6 text-muted-foreground">원본의 빈칸은 0원으로 채우지 않습니다. 금액이 미기재되었거나 수납액이 0원이면 비중을 집계하지 않습니다.</p></AnalysisPanel>
+      <AnalysisPanel title={(program ? title : '프로그램별') + ' · 수납액 비교'} description={data.asOf + ' 지정 금액표 · ' + (program ? '선택 프로그램' : '금액 기재 상위 10개') + ' · 비중은 전체 수납액 대비'}><VisualBars label="프로그램 수납액 비교 시각화" unit="원" values={[...financialRows].filter(row=>row.deposit!==null).sort((a,b)=>(b.deposit ?? 0)-(a.deposit ?? 0)).slice(0,10).map(row=>({label:row.name,value:row.deposit,share:data.refundReport.totals.deposit ? row.deposit!/data.refundReport.totals.deposit*100 : null}))} /></AnalysisPanel>
+      <AnalysisPanel title={(program ? title : '프로그램별') + ' · 환불액 비교'} description={data.asOf + ' 지정 금액표 · ' + (program ? '선택 프로그램' : '금액 기재 상위 10개') + ' · 비중은 전체 환불액 대비'}><VisualBars label="프로그램 환불액 비교 시각화" unit="원" values={[...financialRows].filter(row=>row.refund!==null).sort((a,b)=>(b.refund ?? 0)-(a.refund ?? 0)).slice(0,10).map(row=>({label:row.name,value:row.refund,share:data.refundReport.totals.refund ? row.refund!/data.refundReport.totals.refund*100 : null,color:'#c9905e'}))} /><p className="mt-3 text-xs text-muted-foreground">환불 금액 미기재 프로그램은 순위에서 제외합니다.</p></AnalysisPanel>
+      <AnalysisPanel title={(program ? title : '프로그램별') + ' · 차인액 비교'} description={data.asOf + ' 지정 금액표 차인잔액 · 상위 10개 · 전체 차인잔액 대비 비중'}><VisualBars label="프로그램 차인액 비교 시각화" unit="원" values={[...financialRows].filter(row=>row.balance!==null).sort((a,b)=>(b.balance ?? 0)-(a.balance ?? 0)).slice(0,10).map(row=>({label:row.name,value:row.balance,share:data.refundReport.totals.balance ? row.balance!/data.refundReport.totals.balance*100 : null,color:'#639c90'}))} /></AnalysisPanel>
+    </section>
+    <details className="rounded-2xl border bg-card p-4"><summary className="cursor-pointer text-sm font-semibold">공통 인원·명부 집계 기준 펼치기</summary><div className="mt-4 space-y-4">
+    <div className="rounded-2xl border border-sky-200 bg-sky-50/70 p-5 text-xs leading-6 text-sky-950"><strong>자료 기준일: {data.asOf}</strong><p>명부에는 {data.total.firstDate}~{data.total.lastDate} 입금 기록이 있습니다. 이 화면의 수납액·환불액·차인잔액은 모두 지정한 환불·수납 금액 PDF를 사용합니다. 명부의 금액 열은 통계 금액으로 혼합하지 않습니다. 현재 등록·수납 열은 {programMetrics.asOf} 현황표(45개), 금액·성별·연령은 {data.asOf} 자료(47개 프로그램)입니다.</p></div>    <PopulationSummary />
+    <p className="rounded-xl border bg-secondary/50 p-4 text-xs leading-6">최신 수납 명부 누적 실인원은 {number(programMetrics.cumulativeUnique)}명입니다. 아래 성별·연령 분석은 개인정보 항목이 확보된 기존 명부 {number(programMetrics.demographicUnique)}명 범위이며, 신규 명부 전체의 성별·연령으로 확대 추정하지 않습니다.</p></div></details>
     <details className="rounded-2xl border bg-card p-4"><summary className="cursor-pointer text-sm font-semibold">누적 명부 참고 지표 펼치기</summary>
     <section aria-label={`${title} 핵심 지표`} aria-live="polite" className="space-y-3"><h2 className="text-lg font-semibold">{title} · 세부 현황 기준</h2><StatsGrid className="grid-cols-2 xl:grid-cols-4">
       <StatCard label="누적 명부 기록 건수" value={`${number(current.records)}건`} description="같은 사람의 반복 기록도 포함 · 출석 실적 아님" tone="brand" />
@@ -61,13 +79,14 @@ export function ProgramDetailAnalysis() {
       <StatCard label="평균 만 나이" value={`${current.averageAge.toFixed(1)}세`} description={`${data.asOf} 기준 · 유효 ${number(current.ageKnown)}명`} />
     </StatsGrid><p className="text-xs leading-6 text-muted-foreground">남 {number(current.genders.male)}명 · 여 {number(current.genders.female)}명 · 나이 제외 {current.ageUnknown}명. 명부의 환불금액 열은 전부 미기재입니다. 이 빈칸을 실제 환불 0원으로 해석하지 않습니다.</p></section>
     </details>
-    <div className="grid gap-5 xl:grid-cols-2"><AnalysisPanel title="월별 수납액" description="최신 수납 세부 명부 · 실제 입금월 기준"><AnalysisBars entries={programMetrics.ledger.months.map(row => ({ label: row.month, value: row.deposit }))} unit="원" /></AnalysisPanel><AnalysisPanel title="월별 환불액" description="최신 환불 세부 명부 · 실제 환불 처리월 기준"><AnalysisBars entries={programMetrics.ledger.months.map(row => ({ label: row.month, value: row.refund }))} unit="원" color="#b07a43" /></AnalysisPanel></div>
+    <details className="rounded-2xl border bg-card p-4"><summary className="cursor-pointer text-sm font-semibold">기존 월별 금액·명부 참고 분석 펼치기</summary><p className="mt-3 text-xs text-muted-foreground">아래 월별 수납액·환불액은 전체 세부 명부 기준의 고정 참고자료입니다. 나머지 명부 분석은 상세 분석 대상 선택을 적용합니다.</p><div className="mt-5 space-y-5">    <div className="grid gap-5 xl:grid-cols-2"><AnalysisPanel title="월별 수납액" description="최신 수납 세부 명부 · 실제 입금월 기준"><AnalysisBars entries={programMetrics.ledger.months.map(row => ({ label: row.month, value: row.deposit }))} unit="원" /></AnalysisPanel><AnalysisPanel title="월별 환불액" description="최신 환불 세부 명부 · 실제 환불 처리월 기준"><AnalysisBars entries={programMetrics.ledger.months.map(row => ({ label: row.month, value: row.refund }))} unit="원" color="#b07a43" /></AnalysisPanel></div>
     <div className="grid gap-5 xl:grid-cols-2">
       <AnalysisPanel title={`${title} · 연령 분포`} description="11월 4일 기준 만 나이 · 프로그램 내 이용자 중복 제외"><AnalysisBars entries={data.ageGroups.map((label, index) => ({ label, value: current.ageCounts[index] }))} color="#518681" /></AnalysisPanel>
       <AnalysisPanel title={`${title} · 대상구분`} description="세부 현황의 이용자 정보 기준"><AnalysisBars entries={Object.entries(current.categories).map(([label, value]) => ({ label, value }))} /><p className="mt-4 text-xs">여성 {percent(current.genders.female, current.registrants)} · 남성 {percent(current.genders.male, current.registrants)}</p></AnalysisPanel>
       <AnalysisPanel title={`${title} · 입금월별 명부 기록`} description="세부 현황 명부의 입금일 기준 · 환불월 자료는 미제공"><AnalysisBars entries={current.months.map(row => ({ label: row.month, value: row.records }))} unit="건" /></AnalysisPanel>
       <AnalysisPanel title="환불보고서 · 환불액 상위 10개" description="원본에 환불액이 기재된 프로그램만 비교"><AnalysisBars entries={[...data.refundReport.programs].filter(row => row.refund !== null).sort((a, b) => (b.refund ?? 0) - (a.refund ?? 0)).slice(0, 10).map(row => ({ label: row.name, value: row.refund ?? 0 }))} unit="원" color="#b07a43" /></AnalysisPanel>
     </div>
+</div></details>
     <AnalysisPanel title={`${title} · 월별 명부 기록 상세`} description="월별 인원은 그 달 안에서만 중복 제거하므로 월별 인원의 합은 전체 실인원이 아닙니다.">
       <div className="overflow-x-auto"><table className="w-full text-xs"><caption className="sr-only">세부 현황 입금월별 통계</caption><thead><tr className="border-b"><th scope="col" className="px-3 py-3 text-left">입금월</th>{["월별 실인원", "기록", "유료 기록"].map(label => <th key={label} scope="col" className={tableCell}>{label}</th>)}</tr></thead><tbody>{current.months.map(row => <tr key={row.month} className="border-b"><th scope="row" className="px-3 py-3 text-left font-normal">{row.month}</th><td className={tableCell}>{number(row.people)}명</td><td className={tableCell}>{number(row.records)}건</td><td className={tableCell}>{number(row.paidCount)}건</td></tr>)}</tbody></table></div>
     </AnalysisPanel>
