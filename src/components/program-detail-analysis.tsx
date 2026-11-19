@@ -5,7 +5,6 @@ import { PopulationSummary } from "@/components/population-summary";
 import { programMetrics } from "@/lib/program-metrics";
 import { MoneyMonths, VisualBars, VisualDonut } from "@/components/analysis-v25-charts";
 import { useState } from "react";
-import { InstructorFeeAnalysis } from "@/components/instructor-fee-analysis";
 import { Download, Search } from "lucide-react";
 import { financialAnalysisData as data } from "@/lib/financial-analysis-scope";
 import { PageHeader, PageShell, StatCard, StatsGrid } from "@/components/page-shell";
@@ -98,7 +97,6 @@ export function ProgramDetailAnalysis() {
       <p className="mt-4 text-xs leading-6 text-muted-foreground">명부 프로그램별 실인원 합계는 {number(data.total.programEnrollments)}명이며 강좌 간 중복을 제외한 실인원은 {number(data.total.registrants)}명입니다. 이 화면은 제외 대상 반영 후 명부·금액표 각 43개 프로그램을 표시합니다. 위 명부 인구통계의 전체 합계는 원본 전체 범위 참고값입니다.</p>
     </AnalysisPanel>
     <details className="rounded-2xl border bg-card p-5"><summary className="cursor-pointer text-sm font-semibold">출처·계산·자료 차이 안내</summary><ul className="mt-4 list-disc space-y-2 pl-5 text-xs leading-6 text-muted-foreground"><li>{data.source}: {data.pages}쪽 중 앞 62쪽과 뒤 62쪽의 같은 좌표 행을 검증해 연결했습니다. 이용자번호·생년월일 원문은 집계 데이터에 넣지 않았습니다.</li><li>실인원은 이용자번호 중복 제외, 고유 이용자·강좌 조합은 이용자번호+프로그램명 중복 제외입니다. 명부 기록 건수는 반복 납부를 포함합니다. 참여 연인원은 출석/결석 관리의 RF·수기 실제 출석 합계입니다. 수납 기록은 반복 납부를 포함하므로 출석 연인원이 아닙니다.</li><li>평균 만 나이는 {data.asOf} 고정 기준이며, 누락·유효하지 않은 날짜·0~120세 범위 밖 값은 제외했습니다.</li><li>환불보고서 합계: 입금액 {money(data.refundReport.totals.deposit)} − 환불액 {money(data.refundReport.totals.refund)} = 차인잔액 {money(data.refundReport.totals.balance)}. 지정된 PDF의 수납(입금)·환불·차인잔액을 화면 금액으로 사용합니다.</li><li>프로그램 현황표의 환불인원 합계와 환불보고서의 기간 누계는 다르며 같은 수치로 맞추지 않았습니다. 금액표 합계와 새 수납·환불 세부 명부의 프로그램별 건수·금액을 모두 대조해 일치함을 확인했습니다. 월별 금액은 각 입금일·환불일 기준이며 현재 수강 인원과 구분합니다.</li><li>목록 표기 차이인 ‘난타초급/난타 초급’, ‘난타중급/난타 중급’은 띄어쓰기를 맞춰 연결했습니다.</li></ul></details>
-    <InstructorFeeAnalysis />
   </PageShell>;
 }
 

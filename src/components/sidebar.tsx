@@ -4,7 +4,7 @@ import type { User } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Lightbulb, ClipboardCheck, UserStar } from "lucide-react";
+import { Lightbulb, ClipboardCheck, UserStar, Wallet } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
@@ -83,6 +83,11 @@ const menuSections: MenuSection[] = [
             <path d="m19.5 19.5-1.5-1.5" />
           </svg>
         ),
+      },
+      {
+        label: "강사료 지출 현황",
+        href: "/dashboard/instructor-fees",
+        icon: <Wallet className="size-5" aria-hidden="true" />,
       },
     ],
   },
