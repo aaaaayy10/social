@@ -16,7 +16,7 @@ export const instructorFeeRows = names.map(name => {
   const refund = report?.refund ?? null;
   const balance = report?.balance ?? null;
   return { name, fee, transport, total, deposit, refund, balance,
-    depositDifference: deposit === null ? null : total - deposit,
-    balanceDifference: balance === null ? null : total - balance };
+    depositDifference: deposit === null ? null : deposit - total,
+    balanceDifference: balance === null ? null : balance - total };
 });
 export const normalizeFeeSearch = key;
