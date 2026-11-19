@@ -1,0 +1,184 @@
+{
+  "period": "2026년 2~10월",
+  "source": "사용자 첨부 2026년 2~10월 강사료·재능기부 교통비 지급명단 캡처",
+  "policy": "8월 방학 지출 0원. 자료에 없는 강사료는 사용자 지시에 따라 무료 강의 0원. 시니어합창단 지휘자·반주자는 풀잎합창단으로 합산.",
+  "unallocatedTransport": 0,
+  "unallocatedReason": "7월 교통비 원본 재확인: 힐링수채화 20,000원, 오카리나 초급 40,000원으로 배분 완료.",
+  "programs": [
+    {
+      "name": "건강체조",
+      "fee": 2320000,
+      "transport": 0
+    },
+    {
+      "name": "필라테스 1",
+      "fee": 2320000,
+      "transport": 0
+    },
+    {
+      "name": "필라테스 2",
+      "fee": 2360000,
+      "transport": 0
+    },
+    {
+      "name": "요가 1",
+      "fee": 2320000,
+      "transport": 0
+    },
+    {
+      "name": "요가 2",
+      "fee": 2320000,
+      "transport": 0
+    },
+    {
+      "name": "에어로빅",
+      "fee": 2360000,
+      "transport": 0
+    },
+    {
+      "name": "라인댄스 1",
+      "fee": 2400000,
+      "transport": 0
+    },
+    {
+      "name": "라인댄스 2",
+      "fee": 2120000,
+      "transport": 0
+    },
+    {
+      "name": "댄스스포츠",
+      "fee": 2360000,
+      "transport": 0
+    },
+    {
+      "name": "기타 초중급",
+      "fee": 4130000,
+      "transport": 0
+    },
+    {
+      "name": "기타 고급",
+      "fee": 2360000,
+      "transport": 0
+    },
+    {
+      "name": "오카리나 중급",
+      "fee": 2320000,
+      "transport": 0
+    },
+    {
+      "name": "오카리나 고급",
+      "fee": 2360000,
+      "transport": 0
+    },
+    {
+      "name": "하모니카 초급",
+      "fee": 1705000,
+      "transport": 0
+    },
+    {
+      "name": "하모니카 중급",
+      "fee": 1705000,
+      "transport": 0
+    },
+    {
+      "name": "우쿨렐레",
+      "fee": 1960000,
+      "transport": 0
+    },
+    {
+      "name": "숟가락 난타",
+      "fee": 1650000,
+      "transport": 0
+    },
+    {
+      "name": "가락장구",
+      "fee": 1705000,
+      "transport": 0
+    },
+    {
+      "name": "난타 중급",
+      "fee": 2440000,
+      "transport": 0
+    },
+    {
+      "name": "힐링노래교실",
+      "fee": 3400000,
+      "transport": 0
+    },
+    {
+      "name": "캘리그라피 초급",
+      "fee": 1540000,
+      "transport": 0
+    },
+    {
+      "name": "캘리그라피 중급",
+      "fee": 1705000,
+      "transport": 0
+    },
+    {
+      "name": "서예",
+      "fee": 2320000,
+      "transport": 0
+    },
+    {
+      "name": "민화 1",
+      "fee": 2100000,
+      "transport": 0
+    },
+    {
+      "name": "민화 2",
+      "fee": 2100000,
+      "transport": 0
+    },
+    {
+      "name": "금빛스케치",
+      "fee": 1890000,
+      "transport": 0
+    },
+    {
+      "name": "연필인물화 초급",
+      "fee": 1595000,
+      "transport": 0
+    },
+    {
+      "name": "연필인물화 중급",
+      "fee": 1650000,
+      "transport": 0
+    },
+    {
+      "name": "실용영어",
+      "fee": 2240000,
+      "transport": 0
+    },
+    {
+      "name": "컴퓨터 활용",
+      "fee": 2100000,
+      "transport": 0
+    },
+    {
+      "name": "스마트폰 초급",
+      "fee": 1920000,
+      "transport": 0
+    },
+    {
+      "name": "스마트폰 중급",
+      "fee": 1160000,
+      "transport": 0
+    },
+    {
+      "name": "풀잎합창단",
+      "fee": 5400000,
+      "transport": 0
+    },
+    {
+      "name": "힐링수채화",
+      "fee": 0,
+      "transport": 230000
+    },
+    {
+      "name": "오카리나 초급",
+      "fee": 0,
+      "transport": 430000
+    }
+  ]
+}
