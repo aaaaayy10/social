@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { currentEnrollment, programMetrics } from "@/lib/program-metrics";
+import { ProgramCategoryEnrollment } from "@/components/program-category-enrollment";
 import { useState } from "react";
 import { Download } from "lucide-react";
 import data from "@/data/program-demographics.json";
@@ -41,6 +42,7 @@ export function ProgramDemographics() {
       <StatCard label="복수 강좌 이용자 · 전체 명부" value={number(data.total.multiProgramPeople) + '명'} description={percent(data.total.multiProgramPeople, data.total.registrants) + ' · 전체 ' + number(data.total.registrants) + '명 기준 고정 · 개인별 2개 이상 강좌'} />
     </StatsGrid></section>
 
+    <ProgramCategoryEnrollment />
     <section aria-label="이용자 분석 시각화" className="grid gap-5 xl:grid-cols-2">
       <AnalysisPanel title={title + ' · 성별 구성'} description={data.asOf + ' 명부 · 이용자번호 중복 제외 · 성별 미상도 별도 표시'}><VisualDonut label="성별 구성 시각화" centerLabel="분석 실인원" denominator={current.registrants} values={[{label:'여성',value:current.genders.female,color:'#659f9b'},{label:'남성',value:current.genders.male,color:'#557ead'},...(current.genders.unknown ? [{label:'성별 미상',value:current.genders.unknown,color:'#a5aebc'}] : [])]} /></AnalysisPanel>
       <AnalysisPanel title={title + ' · 연령별 이용현황'} description={'유효 생년월일 ' + number(current.ageKnown) + '명 · ' + data.asOf + ' 기준 · 가장 큰 구간 강조'}><AgeColumns label="연령별 이용현황 시각화" denominator={current.ageKnown} values={data.ageGroups.map((label,i)=>({label,value:current.ageCounts[i]}))} /></AnalysisPanel>
